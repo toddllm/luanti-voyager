@@ -66,6 +66,10 @@ async def run_agent(args):
         world_path=args.world_path
     )
     
+    # Note the port being used
+    if args.port != 30000:
+        logger.info(f"Using custom port: {args.port}")
+    
     # Check if LLM is configured
     if args.llm:
         logger.info(f"Using LLM: {args.llm}")
@@ -111,6 +115,13 @@ def main():
         "-v", "--verbose",
         action="store_true",
         help="Enable verbose logging"
+    )
+    
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=30000,
+        help="Luanti server port (default: 30000, test: 40000)"
     )
     
     args = parser.parse_args()
