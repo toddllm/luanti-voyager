@@ -46,3 +46,8 @@ luanti-source-voyager-fork/
 # LLM API keys
 api_keys.json
 credentials/
+
+# Test server files
+test-server/test_world/
+test-server/test-server.log
+test-server/test-server-output.log

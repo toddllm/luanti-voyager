@@ -59,7 +59,7 @@ if [ ! -d "$TEST_WORLD" ]; then
     cat > "$TEST_WORLD/world.mt" <<EOF
 enable_damage = false
 creative_mode = true
-gameid = mineclone2
+gameid = devtest
 backend = sqlite3
 player_backend = sqlite3
 auth_backend = sqlite3

@@ -159,18 +159,7 @@ function voyager.get_bot_state(name)
     return state
 end
 
--- HTTP API for external control
-local ie = minetest.request_insecure_environment()
-if ie then
-    local http = ie.require("socket.http")
-    local json = ie.require("json") or minetest.write_json
-    
-    -- Start HTTP server for bot commands
-    minetest.register_globalstep(function(dtime)
-        -- This is simplified - in reality we'd use a proper async HTTP server
-        -- For POC, we'll use a command file approach
-    end)
-end
+-- File-based API for external control (simpler and more reliable for POC)
 
 -- Command file interface (simpler for POC)
 local command_file = minetest.get_worldpath() .. "/voyager_commands.txt"

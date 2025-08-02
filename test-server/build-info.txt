@@ -1,0 +1,24 @@
+Luanti Fork Build Information
+============================
+Build Date: Sat Aug  2 06:31:30 PM EDT 2025
+Build Type: Vanilla (unmodified)
+Source Path: /home/tdeshane/luanti/luanti-voyager/luanti-source-voyager-fork
+Binary Path: /home/tdeshane/luanti/luanti-voyager/luanti-source-voyager-fork/bin/luanti
+Build Configuration:
+- Client: ON
+- Server: ON
+- Sound: OFF (minimal build)
+- Internationalization: OFF (minimal build)
+- Run in place: TRUE
+
+Version Output:
+Luanti 5.14.0-dev-39417cf7a (Linux)
+Using Lua 5.1.5
+Built by GCC 13.3
+Running on Linux/6.8.0 x86_64
+BUILD_TYPE=Release
+RUN_IN_PLACE=1
+USE_CURL=1
+USE_GETTEXT=0
+USE_SOUND=0
+STATIC_SHAREDIR="."
