@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luanti Voyager - Agent Vision</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: #e0e0e0;
+        }
+        
+        .header {
+            background: #2a2a2a;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #4CAF50;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 1rem;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .vision-panel {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .vision-panel h2 {
+            margin-top: 0;
+            color: #4CAF50;
+            font-size: 1.2rem;
+        }
+        
+        #world-view {
+            width: 100%;
+            height: 600px;
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-panel {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .info-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-section h3 {
+            margin: 0 0 0.5rem 0;
+            color: #4CAF50;
+            font-size: 1rem;
+        }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.25rem 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .stat:last-child {
+            border-bottom: none;
+        }
+        
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 4px;
+            margin-top: 0.5rem;
+        }
+        
+        .inventory-slot {
+            aspect-ratio: 1;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        .inventory-slot.filled {
+            background: #2a3a2a;
+            color: #4CAF50;
+            border-color: #4CAF50;
+        }
+        
+        .action-log {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 0.5rem;
+            height: 200px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .log-entry {
+            padding: 0.25rem;
+            border-bottom: 1px solid #222;
+        }
+        
+        .log-entry.action {
+            color: #4CAF50;
+        }
+        
+        .log-entry.error {
+            color: #f44336;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .status.connected {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .status.disconnected {
+            background: #f44336;
+            color: white;
+        }
+        
+        .block {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .block.wood {
+            background: #8B4513;
+        }
+        
+        .block.stone {
+            background: #808080;
+        }
+        
+        .block.dirt {
+            background: #654321;
+        }
+        
+        .block.air {
+            background: transparent;
+        }
+        
+        .agent {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #4CAF50;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+        }
+        
+        .agent::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 Luanti Voyager - Agent Vision</h1>
+    </div>
+    
+    <div class="container">
+        <div class="vision-panel">
+            <h2>World View <span id="connection-status" class="status disconnected">Disconnected</span></h2>
+            <div id="world-view">
+                <div class="agent" id="agent" style="left: 50%; top: 50%;"></div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="info-section">
+                <h3>Agent Status</h3>
+                <div class="stat">
+                    <span>Name:</span>
+                    <span id="agent-name">-</span>
+                </div>
+                <div class="stat">
+                    <span>Position:</span>
+                    <span id="agent-pos">0, 0, 0</span>
+                </div>
+                <div class="stat">
+                    <span>Health:</span>
+                    <span id="agent-health">20/20</span>
+                </div>
+                <div class="stat">
+                    <span>Current Action:</span>
+                    <span id="current-action">Idle</span>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>Inventory</h3>
+                <div class="inventory-grid" id="inventory">
+                    <!-- Inventory slots will be generated here -->
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>Nearby Blocks</h3>
+                <div class="stat">
+                    <span>Wood:</span>
+                    <span id="nearby-wood">0</span>
+                </div>
+                <div class="stat">
+                    <span>Stone:</span>
+                    <span id="nearby-stone">0</span>
+                </div>
+                <div class="stat">
+                    <span>Ores:</span>
+                    <span id="nearby-ores">0</span>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>Action Log</h3>
+                <div class="action-log" id="action-log">
+                    <div class="log-entry">Waiting for agent connection...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

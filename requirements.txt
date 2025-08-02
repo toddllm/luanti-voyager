@@ -2,6 +2,10 @@
 numpy>=1.21.0
 asyncio-dgram>=2.1.2  # For UDP communication with Luanti
 
+# Web UI dependencies
+aiohttp>=3.8.0  # For HTTP server
+websockets>=10.0  # For WebSocket server
+
 # LLM Support (all optional - pick what you want!)
 openai>=1.0.0  # For GPT models
 anthropic>=0.3.0  # For Claude

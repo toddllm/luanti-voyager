@@ -40,6 +40,19 @@ Always check ports before starting:
 |--------|------|---------|
 | Production | 30000 | DO NOT TOUCH - Live server |
 | Test | 40000 | Safe for experiments |
+| Web UI | 8080 | Agent visualization interface |
+| WebSocket | 8081 | Real-time agent data |
+
+## Network Access Settings
+
+By default, servers allow LAN access (bind to 0.0.0.0). This is useful for:
+- Testing from other devices on your network
+- Sharing demos with teammates
+- Mobile device testing
+
+**For localhost-only development:**
+- Edit `luanti-test.conf` and set `bind_address = 127.0.0.1`
+- Run agent with `--no-lan-access` flag
 
 ## What's Different
 

@@ -12,6 +12,7 @@ from pathlib import Path
 import os
 
 from .agent import VoyagerAgent
+from .web_server import VoyagerWebServer
 
 
 def setup_logging(verbose: bool = False):
@@ -60,10 +61,28 @@ async def run_agent(args):
     logger.info("🚀 Welcome to Luanti Voyager!")
     logger.info(f"Starting agent '{args.name}'...")
     
+    # Start web server if enabled
+    web_server = None
+    if args.web_ui:
+        web_server = VoyagerWebServer(
+            host='0.0.0.0' if args.lan_access else '127.0.0.1',
+            http_port=args.web_port,
+            ws_port=args.web_port + 1
+        )
+        ws_server, runner = await web_server.start()
+        
+        if args.lan_access:
+            logger.info(f"🌐 Web UI: http://192.168.68.145:{args.web_port}")
+            logger.info(f"🔌 WebSocket: ws://192.168.68.145:{args.web_port + 1}")
+        else:
+            logger.info(f"🌐 Web UI: http://localhost:{args.web_port}")
+            logger.info(f"🔌 WebSocket: ws://localhost:{args.web_port + 1}")
+    
     # Create agent
     agent = VoyagerAgent(
         name=args.name,
-        world_path=args.world_path
+        world_path=args.world_path,
+        web_server=web_server
     )
     
     # Note the port being used
@@ -122,6 +141,34 @@ def main():
         type=int,
         default=30000,
         help="Luanti server port (default: 30000, test: 40000)"
+    )
+    
+    parser.add_argument(
+        "--web-ui",
+        action="store_true",
+        default=True,
+        help="Enable web UI for visualization (default: enabled)"
+    )
+    
+    parser.add_argument(
+        "--web-port",
+        type=int,
+        default=8090,
+        help="Web UI port (default: 8090)"
+    )
+    
+    parser.add_argument(
+        "--lan-access",
+        action="store_true",
+        default=True,
+        help="Allow LAN access to servers (default: enabled, use --no-lan-access for localhost only)"
+    )
+    
+    parser.add_argument(
+        "--no-lan-access",
+        dest="lan_access",
+        action="store_false",
+        help="Restrict to localhost only"
     )
     
     args = parser.parse_args()

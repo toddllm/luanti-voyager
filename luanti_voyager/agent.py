@@ -30,7 +30,7 @@ class AgentState:
 class VoyagerAgent:
     """An autonomous agent that explores and learns in Luanti."""
     
-    def __init__(self, name: str = "VoyagerBot", world_path: str = None):
+    def __init__(self, name: str = "VoyagerBot", world_path: str = None, web_server=None):
         self.name = name
         self.world_path = Path(world_path) if world_path else Path.home() / ".minetest" / "worlds" / "world"
         self.command_file = self.world_path / "voyager_commands.txt"
@@ -47,6 +47,9 @@ class VoyagerAgent:
         
         # LLM placeholder
         self.llm = None  # We'll add this later
+        
+        # Web server for visualization
+        self.web_server = web_server
         
     async def start(self):
         """Start the agent."""
@@ -116,6 +119,16 @@ class VoyagerAgent:
                 ]
             )
             
+            # Update web UI if connected
+            if self.web_server and self.state:
+                self.web_server.update_agent_position(
+                    self.state.pos["x"],
+                    self.state.pos["y"],
+                    self.state.pos["z"]
+                )
+                self.web_server.update_inventory(self.state.inventory)
+                self.web_server.update_nearby_blocks(self.state.nearby_blocks)
+            
     async def _perception_loop(self):
         """Continuously update agent's perception of the world."""
         while self.running:
@@ -169,7 +182,12 @@ class VoyagerAgent:
         
     async def _execute_action(self, action: Dict[str, Any]):
         """Execute an action."""
-        logger.info(f"Executing: {action['type']} - {action.get('reason', 'No reason')}")
+        action_desc = f"{action['type']} - {action.get('reason', 'No reason')}"
+        logger.info(f"Executing: {action_desc}")
+        
+        # Log to web UI
+        if self.web_server:
+            self.web_server.log_action(action_desc)
         
         if action["type"] == "move":
             response = await self._send_command(
