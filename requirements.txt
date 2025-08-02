@@ -1,0 +1,21 @@
+# Core dependencies
+numpy>=1.21.0
+asyncio-dgram>=2.1.2  # For UDP communication with Luanti
+
+# LLM Support (all optional - pick what you want!)
+openai>=1.0.0  # For GPT models
+anthropic>=0.3.0  # For Claude
+# ollama  # Uncomment for local models
+# transformers  # Uncomment for HuggingFace models
+
+# Utilities
+python-dotenv>=0.19.0  # For environment variables
+pyyaml>=6.0  # For configuration files
+tqdm>=4.65.0  # Progress bars
+colorama>=0.4.6  # Colored terminal output
+
+# Development (optional)
+pytest>=7.0.0
+black>=22.0.0
+ruff>=0.1.0
+ipython>=8.0.0

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Luanti/Minetest
+worlds/*/players/
+worlds/*/env_meta.txt
+worlds/*/map.sqlite
+worlds/*/map.sqlite-journal
+worlds/*/ipban.txt
+worlds/*/auth.txt
+worlds/*/auth.sqlite
+*.sqlite
+*.sqlite-journal
+
+# Agent files
+voyager_commands.txt
+voyager_responses.txt
+skills/*
+!skills/.gitkeep
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Temporarily exclude the large Luanti fork
+luanti-source-voyager-fork/
+
+# LLM API keys
+api_keys.json
+credentials/
