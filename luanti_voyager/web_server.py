@@ -52,6 +52,13 @@ class VoyagerWebServer:
         
         # Start HTTP server
         app = web.Application()
+        
+        # Serve index.html for root
+        async def index(request):
+            return web.FileResponse(self.web_ui_path / 'index.html')
+            
+        # Serve other static files
+        app.router.add_get('/', index)
         app.router.add_static('/', path=self.web_ui_path, name='static')
         
         runner = web.AppRunner(app)
