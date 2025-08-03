@@ -115,6 +115,31 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 **🚧 Known Issues (help wanted!):**
 - [ ] **Terrain generation** - Replace void world with actual Luanti terrain ([Issues #1-3](https://github.com/toddllm/luanti-voyager/issues))
 
+### 🧪 Testing Framework - Build with Confidence!
+
+**Comprehensive test suite now available:**
+```bash
+# Run all tests
+python -m pytest tests/
+
+# Run specific test categories
+python -m pytest tests/unit/          # Component tests
+python -m pytest tests/integration/   # System tests
+python -m pytest tests/behaviors/     # Agent behavior tests
+python -m pytest tests/skills/        # Skill safety tests
+
+# Example output:
+============================= test session starts ==============================
+tests/unit/test_memory.py::TestSkillMemory::test_remember_skill PASSED   [100%]
+========================= 1 passed, 1 warning in 0.01s =========================
+```
+
+Test coverage includes:
+- **Memory persistence** - Skills and strategies saved/loaded correctly
+- **LLM mocking** - Test without API calls
+- **Agent behaviors** - Void escape, survival, exploration
+- **Skill safety** - Sandboxing and code validation
+
 ### 🎯 Community Contributions Welcome
 - [ ] **Advanced LLM integration** - Multi-step reasoning and planning ([Issue #4](https://github.com/toddllm/luanti-voyager/issues/4))
 - [ ] **Skill sharing between agents** - Multi-agent collaboration ([Issue #5](https://github.com/toddllm/luanti-voyager/issues/5))
