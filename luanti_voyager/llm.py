@@ -39,9 +39,12 @@ class OpenAILLM(BaseLLM):
     async def generate(self, prompt: str, **kwargs) -> str:
         """Generate response from OpenAI."""
         try:
+            messages = kwargs.get("messages")
+            if messages is None:
+                messages = [{"role": "user", "content": prompt}]
             response = await self.client.chat.completions.create(
                 model=self.model,
-                messages=[{"role": "user", "content": prompt}],
+                messages=messages,
                 max_tokens=kwargs.get("max_tokens", 1000),
                 temperature=kwargs.get("temperature", 0.7)
             )
@@ -83,8 +86,8 @@ class AnthropicLLM(BaseLLM):
 
 class OllamaLLM(BaseLLM):
     """Ollama local LLM integration."""
-    
-    def __init__(self, model: str = "llama3", base_url: str = "http://localhost:11434"):
+
+    def __init__(self, model: Optional[str] = None, base_url: Optional[str] = None):
         self.model = model or os.getenv("OLLAMA_MODEL", "llama3")
         self.base_url = base_url or os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
         
@@ -110,24 +113,30 @@ class OllamaLLM(BaseLLM):
                 "model": self.model,
                 "prompt": prompt,
                 "stream": False,
-                "options": {
-                    "temperature": kwargs.get("temperature", 0.7),
-                    "num_predict": kwargs.get("max_tokens", 1000)
-                }
             }
+            if "temperature" in kwargs or "max_tokens" in kwargs:
+                payload["options"] = {
+                    "temperature": kwargs.get("temperature", 0.7),
+                    "num_predict": kwargs.get("max_tokens", 1000),
+                }
             
-            async with session.post(f"{self.base_url}/api/generate", json=payload) as response:
-                if response.status == 200:
-                    result = await response.json()
-                    return result.get("response", "ERROR: Empty response from Ollama")
-                else:
-                    error_text = await response.text()
-                    logger.error(f"Ollama API error {response.status}: {error_text}")
-                    return f"ERROR: Ollama API error {response.status}"
-                    
+            response = await session.post(
+                f"{self.base_url}/api/generate", json=payload
+            )
+            if response.status == 200:
+                result = await response.json()
+                return result.get("response", "")
+            error_text = await response.text()
+            logger.error(
+                f"Ollama API error {response.status}: {error_text}"
+            )
+            raise RuntimeError("Ollama request failed")
+
         except Exception as e:
             logger.error(f"Ollama connection error: {e}")
-            return f"ERROR: Failed to connect to Ollama at {self.base_url}"
+            raise RuntimeError(
+                f"Failed to connect to Ollama at {self.base_url}: {e}"
+            ) from e
     
     async def close(self):
         """Close the aiohttp session."""
@@ -137,8 +146,9 @@ class OllamaLLM(BaseLLM):
 
 class VoyagerLLM:
     """LLM interface for Voyager agent decision making."""
-    
-    def __init__(self, provider: str = "none", **kwargs):
+
+    def __init__(self, provider: Optional[str] = None, **kwargs):
+        provider = provider or os.getenv("LLM_PROVIDER", "none")
         self.provider = provider
         self.llm: Optional[BaseLLM] = None
         

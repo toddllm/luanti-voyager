@@ -120,9 +120,15 @@ async def skill_function(agent, world):
                 if isinstance(node, ast.Attribute):
                     if node.attr.startswith('_'):
                         return False  # No private attributes
+                if isinstance(node, ast.Call):
+                    if isinstance(node.func, ast.Name) and node.func.id in {'open', 'exec', 'eval'}:
+                        return False  # No file or dynamic execution
                         
             # Must have the skill_function
-            functions = [n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef)]
+            functions = [
+                n for n in ast.walk(tree)
+                if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))
+            ]
             if not any(f.name == 'skill_function' for f in functions):
                 return False
                 

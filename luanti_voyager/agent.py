@@ -67,10 +67,7 @@ class VoyagerAgent:
         
         # Learning components (to be expanded)
         self.skills = {}  # Learned skills
-        self.memory = []  # Short-term memory
-        
-        # LLM placeholder
-        self.llm = None  # We'll add this later
+        self.short_term_memory = []  # Short-term memory
         
         # Web server for visualization
         self.web_server = web_server
