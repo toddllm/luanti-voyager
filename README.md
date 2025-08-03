@@ -98,10 +98,15 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 ## 🗺️ Where We're Going
 
 ### Right Now - Get It Working
-- [ ] Basic agent that doesn't immediately die
-- [ ] Simple perception and actions
-- [ ] First few learned skills
-- [ ] Documentation that doesn't suck
+- [x] **Real-time 3D viewer** - Working Three.js visualization with WebSocket streaming
+- [x] **Agent exploration** - Bot moves, teleports, and explores world via file-based commands  
+- [x] **Block detection** - Agent perceives nearby blocks and reports world state
+- [x] **Web interface** - Live agent monitoring and 3D visualization at localhost:8090
+- [x] **Screenshot workflow** - Paste interface for rapid documentation (paste → describe → save)
+- [ ] **Terrain generation** - Replace void world with actual Luanti terrain
+- [ ] **LLM integration** - Connect agent decisions to language model reasoning
+- [ ] **Basic survival** - Agent learns to avoid death and basic world interaction
+- [ ] **Skill memory** - Save and reuse learned behaviors
 
 ### Soon - Make It Smart
 - [ ] Better LLM integration
@@ -148,10 +153,13 @@ luanti-voyager/
 
 ## 📊 How We'll Know It's Working
 
-- **It survives longer than 5 minutes**
-- **It learns something new**
-- **It surprises us**
-- **Someone says "whoa, I didn't expect that"**
+- [x] **Real-time visualization works** - 3D viewer shows agent movement and world state ✅
+- [x] **Agent moves autonomously** - Bot explores and responds to environment ✅
+- [x] **Development workflow is smooth** - Screenshot paste and documentation tools work ✅
+- [ ] **It survives longer than 5 minutes** - Basic survival and safety behaviors
+- [ ] **It learns something new** - Demonstrates skill acquisition and memory
+- [ ] **It surprises us** - Emergent behaviors we didn't program
+- [ ] **Someone says "whoa, I didn't expect that"** - The ultimate test
 - **The community gets excited**
 
 We'll figure out proper benchmarks later. For now, let's just build cool stuff!
