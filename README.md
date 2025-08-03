@@ -146,6 +146,46 @@ Test coverage includes:
 - [ ] **Learning from failure** - Adaptive behavior improvement ([Issue #6](https://github.com/toddllm/luanti-voyager/issues/6))
 - [ ] **Community challenges** - Competitions and showcases ([Issue #7](https://github.com/toddllm/luanti-voyager/issues/7))
 
+## 🤝 Learning from Mindcraft: Multi-Agent Innovation
+
+We're inspired by [Mindcraft](https://github.com/kolbytn/mindcraft), an impressive **Minecraft agent framework** that pioneered multi-agent coordination in voxel worlds. While Mindcraft focuses on Minecraft, we're adapting their best ideas for the open-source Luanti ecosystem.
+
+### What is Mindcraft?
+- **A Minecraft AI agent** framework by Kolby Nottingham
+- Features multi-agent collaboration and flexible LLM integration  
+- Uses Mineflayer to control bots in Minecraft servers
+- Research focus: "Collaborating Action by Action" (paper coming 2025)
+
+### What We're Learning from Mindcraft
+We've done a [comprehensive analysis](docs/mindcraft_analysis.md) of their approach and identified key innovations to bring to Luanti:
+
+1. **Multi-Agent Coordination** 🤖🤖
+   - Agents that work together on complex tasks
+   - Communication protocols for sharing information
+   - Team-based goal decomposition
+
+2. **Profile-Based Behaviors** 📋
+   - JSON-configurable agent personalities
+   - Easy experimentation with different agent types
+   - Role specialization (builder, explorer, defender)
+
+3. **Flexible LLM Support** 🧠
+   - Support for OpenAI, Anthropic, Google, and local models
+   - Hot-swappable AI backends
+   - Model-agnostic design
+
+4. **Safety-First Design** 🔒
+   - Sandboxed code execution
+   - Security warnings for public servers
+   - Careful handling of LLM-generated code
+
+### Our Integration Plan
+We're implementing these Mindcraft-inspired features for Luanti:
+- [Integration Proposal](docs/mindcraft_integration_proposal.md)
+- [Research Report](research_reports/mindcraft_integration_research_2025-08-03.md)
+
+The goal: Combine Mindcraft's multi-agent expertise with Luanti Voyager's open-ended learning for unprecedented AI capabilities in open-source voxel worlds!
+
 ### Eventually - Make It Amazing
 - [ ] Multi-agent societies
 - [ ] Agents that mod the game
