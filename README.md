@@ -163,6 +163,58 @@ We're standing on the shoulders of giants:
 - [Luanti](https://github.com/luanti/luanti) - Gave us the perfect playground
 - You - For being here and making this real
 
+## 🔮 Vision Roadmap: From Symbolic to Visual
+
+*Understanding how Luanti Voyager approaches visual perception*
+
+### The Mindcraft Model
+
+Following Mindcraft's proven approach, we implement **structured data re-rendering** rather than screen capture:
+
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Game API** | Luanti mod system | Provides structured events for chunks, blocks, entities, inventory - no pixels required |
+| **3D Viewer** | Three.js + WebSocket | Real-time browser visualization that re-renders the agent's world from structured data |
+| **Agent Integration** | Python WebSocket server | Streams game state updates to create live "prismarine-viewer" style experience |
+
+**Key insight:** This is not screen capture of the game client - it's a real-time 3D re-render built from protocol data the agent already receives.
+
+### Current Implementation (Phase 1)
+
+✅ **Symbolic-First Architecture**
+- Rich game state: position, inventory, nearby blocks (5x5x5 radius)
+- WebSocket streaming to Three.js viewer at `http://localhost:8090/viewer`
+- Real-time agent visualization with block rendering
+- Follow-cam and free-look camera controls
+
+✅ **Why This Works**
+- Keeps prompts small (JSON not JPG)
+- Avoids vision model latency/cost
+- Provides contributors with live 3D browser window
+- Identical to how Minecraft Voyager operates (no visual input)
+
+### Future Upgrade Path (Phase 2+)
+
+When ready for multimodal capabilities:
+
+- **Option A**: Enhance current viewer to capture frames programmatically
+- **Option B**: Add Luanti client screenshot API integration  
+- **Option C**: Integrate with GPT-4V/LLaVA-Next for pixel understanding
+
+The architecture supports both approaches seamlessly - visual input becomes just another `observation_space` key.
+
+### Try It Now
+
+```bash
+# Start the integrated experience
+python -m luanti_voyager.main --port 40000
+
+# Open browser to see live 3D view
+open http://localhost:8090/viewer
+```
+
+*Watch your agent explore in real-time 3D while staying symbol-first for efficiency.*
+
 ## 📄 The Legal Stuff
 
 MIT License - basically do whatever you want! See [LICENSE](LICENSE) for the formal version.

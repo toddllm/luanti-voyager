@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luanti Voyager - 3D Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            overflow: hidden;
+        }
+        
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        #renderer {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        
+        .status {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        .connected {
+            color: #4ade80;
+        }
+        
+        .disconnected {
+            color: #ef4444;
+        }
+        
+        .position {
+            color: #60a5fa;
+        }
+        
+        .blocks {
+            color: #fbbf24;
+        }
+        
+        #controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="renderer"></div>
+        
+        <div id="ui">
+            <div class="status">
+                <strong>Luanti Voyager 3D Viewer</strong>
+            </div>
+            <div id="connection-status" class="status disconnected">
+                ⚫ Disconnected
+            </div>
+            <div id="agent-position" class="status position">
+                📍 Position: Loading...
+            </div>
+            <div id="blocks-count" class="status blocks">
+                🧱 Blocks: Loading...
+            </div>
+        </div>
+        
+        <div id="controls">
+            <strong>Controls:</strong><br>
+            Mouse: Look around<br>
+            WASD: Move camera<br>
+            Space/Shift: Up/Down<br>
+            F: Follow agent
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Three.js setup
+        let scene, camera, renderer, controls;
+        let agentMesh, blockMeshes = [];
+        let following = true;
+        
+        // WebSocket connection
+        let ws = null;
+        const WS_PORT = 8091;
+        
+        // Block materials (simple color mapping)
+        const blockMaterials = {
+            'default:stone': new THREE.MeshLambertMaterial({ color: 0x808080 }),
+            'default:dirt': new THREE.MeshLambertMaterial({ color: 0x8B4513 }),
+            'default:grass': new THREE.MeshLambertMaterial({ color: 0x228B22 }),
+            'default:wood': new THREE.MeshLambertMaterial({ color: 0xDEB887 }),
+            'default:leaves': new THREE.MeshLambertMaterial({ color: 0x32CD32 }),
+            'default:water': new THREE.MeshLambertMaterial({ color: 0x4169E1, transparent: true, opacity: 0.7 }),
+            'default:sand': new THREE.MeshLambertMaterial({ color: 0xF4A460 }),
+            'ignore': new THREE.MeshLambertMaterial({ color: 0x404040 })
+        };
+        
+        function init() {
+            // Scene
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x87CEEB); // Sky blue
+            
+            // Camera
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.set(0, 10, 10);
+            
+            // Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            document.getElementById('renderer').appendChild(renderer.domElement);
+            
+            // Lighting
+            const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+            scene.add(ambientLight);
+            
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+            directionalLight.position.set(10, 10, 5);
+            directionalLight.castShadow = true;
+            directionalLight.shadow.mapSize.width = 2048;
+            directionalLight.shadow.mapSize.height = 2048;
+            scene.add(directionalLight);
+            
+            // Agent (red cube)
+            const agentGeometry = new THREE.BoxGeometry(1, 2, 1);
+            const agentMaterial = new THREE.MeshLambertMaterial({ color: 0xff0000 });
+            agentMesh = new THREE.Mesh(agentGeometry, agentMaterial);
+            agentMesh.position.set(0, 1, 0);
+            scene.add(agentMesh);
+            
+            // Simple controls
+            setupControls();
+            
+            // WebSocket connection will be initiated from main load event
+            
+            // Start render loop
+            animate();
+        }
+        
+        function setupControls() {
+            const keys = {};
+            
+            document.addEventListener('keydown', (event) => {
+                keys[event.code] = true;
+                
+                if (event.code === 'KeyF') {
+                    following = !following;
+                    console.log('Following agent:', following);
+                }
+            });
+            
+            document.addEventListener('keyup', (event) => {
+                keys[event.code] = false;
+            });
+            
+            // Mouse controls
+            let mouseDown = false;
+            let mouseX = 0, mouseY = 0;
+            
+            document.addEventListener('mousedown', (event) => {
+                mouseDown = true;
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+            });
+            
+            document.addEventListener('mouseup', () => {
+                mouseDown = false;
+            });
+            
+            document.addEventListener('mousemove', (event) => {
+                if (!mouseDown) return;
+                
+                const deltaX = event.clientX - mouseX;
+                const deltaY = event.clientY - mouseY;
+                
+                // Simple camera rotation
+                camera.rotation.y -= deltaX * 0.01;
+                camera.rotation.x -= deltaY * 0.01;
+                camera.rotation.x = Math.max(-Math.PI/2, Math.min(Math.PI/2, camera.rotation.x));
+                
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+            });
+            
+            // Movement update
+            function updateMovement() {
+                if (!following) {
+                    const speed = 0.5;
+                    
+                    if (keys['KeyW']) camera.position.z -= speed;
+                    if (keys['KeyS']) camera.position.z += speed;
+                    if (keys['KeyA']) camera.position.x -= speed;
+                    if (keys['KeyD']) camera.position.x += speed;
+                    if (keys['Space']) camera.position.y += speed;
+                    if (keys['ShiftLeft']) camera.position.y -= speed;
+                }
+                
+                requestAnimationFrame(updateMovement);
+            }
+            updateMovement();
+        }
+        
+        function connectWebSocket() {
+            const wsUrl = `ws://${window.location.hostname}:${WS_PORT}`;
+            
+            try {
+                ws = new WebSocket(wsUrl);
+                
+                ws.onopen = () => {
+                    console.log('🔌 Connected to Luanti Voyager WebSocket');
+                    console.log('📺 3D Viewer ready - watching for agent data...');
+                    updateConnectionStatus(true);
+                };
+                
+                ws.onmessage = (event) => {
+                    try {
+                        const data = JSON.parse(event.data);
+                        
+                        // Detailed debugging for agent actions
+                        // Process message quietly unless there are real blocks
+                        
+                        // Filter out ignore blocks and reduce logging
+                        if (data.nearby_blocks) {
+                            const realBlocks = data.nearby_blocks.filter(block => block.type !== 'ignore');
+                            if (realBlocks.length > 0) {
+                                const blockTypes = {};
+                                realBlocks.forEach(block => {
+                                    blockTypes[block.type] = (blockTypes[block.type] || 0) + 1;
+                                });
+                                console.log(`🧱 Found ${realBlocks.length} real blocks:`, blockTypes);
+                                
+                                // Only update scene if we have real blocks
+                                data.nearby_blocks = realBlocks;
+                                updateScene(data);
+                            } else {
+                                // Just update agent position quietly, don't clear existing blocks
+                                if (data.agent_position) {
+                                    const pos = data.agent_position;
+                                    agentMesh.position.set(pos.x, pos.y + 1, pos.z);
+                                    // Log only occasionally to reduce verbosity
+                                    if (Math.random() < 0.1) {
+                                        console.log(`🤖 Agent exploring void at (${pos.x.toFixed(1)}, ${pos.y.toFixed(1)}, ${pos.z.toFixed(1)})`);
+                                    }
+                                }
+                            }
+                        } else {
+                            updateScene(data);
+                        }
+                    } catch (e) {
+                        console.error('Failed to parse message:', e);
+                    }
+                };
+                
+                ws.onerror = (error) => {
+                    console.error('WebSocket error:', error);
+                    updateConnectionStatus(false);
+                };
+                
+                ws.onclose = () => {
+                    console.log('Disconnected from Luanti Voyager');
+                    updateConnectionStatus(false);
+                    // Reconnect after 3 seconds
+                    setTimeout(connectWebSocket, 3000);
+                };
+                
+            } catch (error) {
+                console.error('Failed to connect:', error);
+                updateConnectionStatus(false);
+                setTimeout(connectWebSocket, 3000);
+            }
+        }
+        
+        function updateConnectionStatus(connected) {
+            const statusEl = document.getElementById('connection-status');
+            if (connected) {
+                statusEl.textContent = '🟢 Connected';
+                statusEl.className = 'status connected';
+            } else {
+                statusEl.textContent = '🔴 Disconnected';
+                statusEl.className = 'status disconnected';
+            }
+        }
+        
+        function updateScene(data) {
+            if (!data.agent_position) return;
+            
+            // Update agent position
+            const pos = data.agent_position;
+            const oldPos = agentMesh.position;
+            const moved = Math.abs(oldPos.x - pos.x) > 0.1 || Math.abs(oldPos.z - pos.z) > 0.1;
+            
+            agentMesh.position.set(pos.x, pos.y + 1, pos.z);
+            
+            if (moved) {
+                console.log(`🚀 Agent moved to (${pos.x.toFixed(1)}, ${pos.y.toFixed(1)}, ${pos.z.toFixed(1)})`);
+            }
+            
+            // Update camera to follow agent if following mode
+            if (following) {
+                camera.position.set(pos.x, pos.y + 5, pos.z + 10);
+                camera.lookAt(pos.x, pos.y + 1, pos.z);
+            }
+            
+            // Only clear and update blocks if we have new block data
+            if (data.nearby_blocks && data.nearby_blocks.length > 0) {
+                // Clear old blocks
+                const oldBlockCount = blockMeshes.length;
+                blockMeshes.forEach(mesh => scene.remove(mesh));
+                blockMeshes = [];
+                
+                console.log(`🔄 Updating ${data.nearby_blocks.length} blocks (was ${oldBlockCount})`);
+                
+                data.nearby_blocks.forEach(block => {
+                    const blockPos = block.pos;
+                    const blockName = block.type;
+                    
+                    // Get material for block type
+                    let material = blockMaterials[blockName];
+                    if (!material) {
+                        // Default material for unknown blocks - make it bright so we notice
+                        const randomColor = Math.floor(Math.random() * 0xffffff);
+                        material = new THREE.MeshLambertMaterial({ color: randomColor });
+                        blockMaterials[blockName] = material;
+                        console.log(`🎨 New block type discovered: ${blockName} (color: #${randomColor.toString(16)})`);
+                    }
+                    
+                    // Create block mesh
+                    const geometry = new THREE.BoxGeometry(1, 1, 1);
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.position.set(blockPos.x, blockPos.y, blockPos.z);
+                    mesh.castShadow = true;
+                    mesh.receiveShadow = true;
+                    
+                    scene.add(mesh);
+                    blockMeshes.push(mesh);
+                });
+            }
+            
+            // Update UI
+            updateUI(data);
+        }
+        
+        function updateUI(data) {
+            if (data.agent_position) {
+                const pos = data.agent_position;
+                document.getElementById('agent-position').textContent = 
+                    `📍 Position: ${pos.x.toFixed(1)}, ${pos.y.toFixed(1)}, ${pos.z.toFixed(1)}`;
+            }
+            
+            if (data.nearby_blocks) {
+                document.getElementById('blocks-count').textContent = 
+                    `🧱 Blocks: ${data.nearby_blocks.length}`;
+            }
+        }
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Test with static data to verify 3D viewer works
+        function testStaticBlocks() {
+            console.log('🧪 Testing with static blocks...');
+            
+            // Create test blocks in a small grid
+            const testBlocks = [];
+            for (let x = -2; x <= 2; x++) {
+                for (let z = -2; z <= 2; z++) {
+                    // Ground layer
+                    testBlocks.push({
+                        type: 'default:dirt_with_grass',
+                        pos: {x: x, y: 10, z: z}
+                    });
+                    // Stone below
+                    testBlocks.push({
+                        type: 'default:stone',
+                        pos: {x: x, y: 9, z: z}
+                    });
+                }
+            }
+            
+            // Add a tree in the center
+            testBlocks.push({type: 'default:tree', pos: {x: 0, y: 11, z: 0}});
+            testBlocks.push({type: 'default:tree', pos: {x: 0, y: 12, z: 0}});
+            testBlocks.push({type: 'default:leaves', pos: {x: 0, y: 13, z: 0}});
+            
+            // Test agent position
+            const testAgent = {x: 0, y: 12, z: 0};
+            
+            console.log(`🧱 Generated ${testBlocks.length} test blocks`);
+            
+            // Update the 3D scene
+            updateScene({
+                agent_position: testAgent,
+                nearby_blocks: testBlocks
+            });
+        }
+
+        // Initialize when page loads
+        window.addEventListener('load', () => {
+            console.log('🎮 Luanti Voyager 3D Viewer Starting...');
+            console.log('⚡ Enhanced exploration mode active');
+            console.log('🔍 Watch this console for real-time agent debugging');
+            
+            init();
+            
+            // Test with static blocks first
+            setTimeout(() => {
+                testStaticBlocks();
+            }, 1000);
+            
+            // Then try WebSocket connection
+            setTimeout(() => {
+                connectWebSocket();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

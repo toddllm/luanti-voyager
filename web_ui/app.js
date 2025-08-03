@@ -5,7 +5,7 @@ let worldView = null;
 let agentElement = null;
 
 // Configuration
-const WS_PORT = 8765;  // WebSocket port for agent data
+const WS_PORT = 8091;  // WebSocket port for agent data
 const RECONNECT_DELAY = 3000;
 
 // Initialize UI

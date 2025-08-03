@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 class VoyagerWebServer:
     """Web server for agent visualization."""
     
-    def __init__(self, host='0.0.0.0', http_port=8090, ws_port=8765):
+    def __init__(self, host='0.0.0.0', http_port=8090, ws_port=8091):
         self.host = host
         self.http_port = http_port
         self.ws_port = ws_port
@@ -34,6 +34,7 @@ class VoyagerWebServer:
                 "hp": 20,
                 "current_action": "Initializing..."
             },
+            "agent_position": {"x": 0, "y": 0, "z": 0},  # For 3D viewer compatibility
             "inventory": {},
             "nearby_blocks": [],
             "block_counts": {"wood": 0, "stone": 0, "ores": 0},
@@ -57,8 +58,13 @@ class VoyagerWebServer:
         async def index(request):
             return web.FileResponse(self.web_ui_path / 'index.html')
             
+        # Serve 3D viewer
+        async def viewer(request):
+            return web.FileResponse(self.web_ui_path / 'viewer.html')
+            
         # Serve other static files
         app.router.add_get('/', index)
+        app.router.add_get('/viewer', viewer)
         app.router.add_static('/', path=self.web_ui_path, name='static')
         
         runner = web.AppRunner(app)
@@ -117,7 +123,8 @@ class VoyagerWebServer:
         asyncio.create_task(self.update_state({
             "agent": {
                 "pos": {"x": x, "y": y, "z": z}
-            }
+            },
+            "agent_position": {"x": x, "y": y, "z": z}  # For 3D viewer compatibility
         }))
         
     def update_inventory(self, inventory):

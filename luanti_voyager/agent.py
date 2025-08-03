@@ -10,6 +10,7 @@ from typing import Dict, List, Optional, Any
 import logging
 from dataclasses import dataclass
 import random
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -32,7 +33,14 @@ class VoyagerAgent:
     
     def __init__(self, name: str = "VoyagerBot", world_path: str = None, web_server=None):
         self.name = name
-        self.world_path = Path(world_path) if world_path else Path.home() / ".minetest" / "worlds" / "world"
+        # Check environment variable first, then parameter, then default
+        env_world_path = os.getenv('WORLD_PATH')
+        if env_world_path:
+            self.world_path = Path(env_world_path)
+        elif world_path:
+            self.world_path = Path(world_path)
+        else:
+            self.world_path = Path.home() / ".minetest" / "worlds" / "world"
         self.command_file = self.world_path / "voyager_commands.txt"
         self.response_file = self.world_path / "voyager_responses.txt"
         
@@ -119,6 +127,10 @@ class VoyagerAgent:
                 ]
             )
             
+            # Debug logging for block detection
+            if self.state and self.state.nearby_blocks:
+                logger.info(f"At {self.state.pos}, found {len(self.state.nearby_blocks)} blocks: {[b['type'] for b in self.state.nearby_blocks[:5]]}")
+            
             # Update web UI if connected
             if self.web_server and self.state:
                 self.web_server.update_agent_position(
@@ -156,6 +168,26 @@ class VoyagerAgent:
         if not self.state:
             return None
             
+        # Check if we're stuck in ignore block void
+        ignore_blocks = [
+            block for block in self.state.nearby_blocks
+            if block["type"] == "ignore"
+        ]
+        
+        # If we're mostly in ignore blocks, do aggressive exploration
+        if len(ignore_blocks) > 80:  # 80+ ignore blocks means we're in void
+            logger.info(f"🚨 VOID DETECTED: {len(ignore_blocks)} ignore blocks - forcing major teleport!")
+            if self.state:
+                # Random spawn location - try to find actual terrain
+                new_x = random.uniform(-200, 200)
+                new_z = random.uniform(-200, 200)
+                new_y = random.uniform(1, 20)  # Ground level
+                return {
+                    "type": "teleport",
+                    "pos": {"x": new_x, "y": new_y, "z": new_z},
+                    "reason": "🚨 ESCAPING IGNORE BLOCK VOID!"
+                }
+            
         # Look for nearby wood blocks
         wood_blocks = [
             block for block in self.state.nearby_blocks
@@ -171,13 +203,38 @@ class VoyagerAgent:
                 "reason": "Found wood to collect"
             }
             
-        # Otherwise, explore randomly
+        # Enhanced exploration - much larger movements to see more world
         directions = ["forward", "left", "right", "back"]
+        
+        # Occasionally do a big exploration move
+        if random.random() < 0.2:
+            return {
+                "type": "move",
+                "direction": random.choice(directions),
+                "distance": random.uniform(15, 35),  # Very large distances
+                "reason": "Big exploration move"
+            }
+        
+        # Force dramatic exploration since we're in an "ignore" block void
+        if random.random() < 0.4:  # Much higher chance
+            # Use teleport for dramatic exploration
+            if self.state:
+                # Try much larger jumps to find real terrain
+                new_x = self.state.pos["x"] + random.uniform(-100, 100)
+                new_z = self.state.pos["z"] + random.uniform(-100, 100)
+                new_y = random.uniform(0, 50)  # Try ground level to high up
+                return {
+                    "type": "teleport",
+                    "pos": {"x": new_x, "y": new_y, "z": new_z},
+                    "reason": "WIDE exploration teleport to escape void"
+                }
+        
+        # Regular exploration moves - but make them huge to escape void
         return {
             "type": "move",
             "direction": random.choice(directions),
-            "distance": random.uniform(1, 3),
-            "reason": "Exploring"
+            "distance": random.uniform(20, 50),  # MASSIVE moves to find terrain
+            "reason": "Searching for real terrain"
         }
         
     async def _execute_action(self, action: Dict[str, Any]):
@@ -212,6 +269,21 @@ class VoyagerAgent:
             await self._send_command(
                 f"place {self.name} {pos['x']} {pos['y']} {pos['z']} {item}"
             )
+            
+        elif action["type"] == "teleport":
+            pos = action["pos"]
+            response = await self._send_command(
+                f"teleport {self.name} {pos['x']} {pos['y']} {pos['z']}"
+            )
+            if response and response.get("success"):
+                logger.info(f"Teleported to {pos['x']}, {pos['y']}, {pos['z']}!")
+            else:
+                logger.warning("Teleport failed, trying regular move instead")
+                # Fallback to regular movement
+                directions = ["forward", "left", "right", "back"]
+                await self._send_command(
+                    f"move {self.name} {random.choice(directions)} {random.uniform(8, 15)}"
+                )
             
     async def _learning_loop(self):
         """Learn from experiences (placeholder for now)."""

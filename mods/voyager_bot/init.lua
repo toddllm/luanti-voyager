@@ -192,6 +192,8 @@ minetest.register_globalstep(function(dtime)
                 local cmd = parts[1]
                 local bot_name = parts[2]
                 
+                minetest.log("action", "Voyager: Processing command: " .. line)
+                
                 local result = {success = false, error = "Unknown command"}
                 
                 if cmd == "spawn" and bot_name then
@@ -239,6 +241,9 @@ minetest.register_globalstep(function(dtime)
                 if resp_file then
                     resp_file:write(minetest.write_json(result) .. "\n")
                     resp_file:close()
+                    minetest.log("action", "Voyager: Wrote response for command: " .. cmd .. " " .. bot_name)
+                else
+                    minetest.log("error", "Voyager: Failed to open response file: " .. response_file)
                 end
             end
         end
