@@ -10,7 +10,7 @@ import time
 from dataclasses import dataclass
 from enum import IntEnum
 from typing import Dict, List, Optional, Any
-from queue import PriorityQueue
+import asyncio
 import json
 import logging
 
@@ -61,7 +61,7 @@ class AgentCommunication:
     def __init__(self, agent_name: str, team_id: Optional[str] = None):
         self.agent_name = agent_name
         self.team_id = team_id
-        self.message_queue = PriorityQueue()
+        self.message_queue = asyncio.PriorityQueue()
         self.message_history: List[Message] = []
         self.listeners = {}
         self.running = False

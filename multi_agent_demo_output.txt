@@ -1,0 +1,45 @@
+
+============================================================
+🤖 MULTI-AGENT PERSONALITY DEMO
+============================================================
+Showing how different personalities lead to different behaviors
+
+📋 Agent Profiles:
+  Scout: adventurous and excitable
+  Constructor: careful and methodical
+
+💎 Scenario 1: Major Discovery
+----------------------------------------
+Scout discovers: massive underground cave with glowing crystals
+  Scout's reaction: "WOW! This is AMAZING! We could build an underground crystal palace here!"
+  Constructor's response: "Interesting find. We should survey for stability before proceeding."
+
+  (Constructor received 1 message about the discovery)
+
+🚨 Scenario 2: Danger Approaching
+----------------------------------------
+Alert: Large monster approaching the base
+  Scout's reaction: "Let's fight it! I'll distract while you attack!"
+  Constructor's reaction: "Fall back to defensive positions. Activate base defenses."
+
+  Messages exchanged: 2
+
+🤝 Scenario 3: Task Assignment Based on Skills
+----------------------------------------
+Task assignments based on agent skills:
+  'Scout for new areas' → Scout (suitability: LOW)
+  'Design base layout' → Constructor (suitability: LOW)
+  'Explore dangerous cave' → Scout (suitability: LOW)
+  'Build defensive walls' → Constructor (suitability: LOW)
+
+============================================================
+✅ KEY INSIGHTS FROM DEMO:
+============================================================
+1. Agent personalities affect decision-making
+2. Different roles lead to complementary behaviors
+3. Skill-based task assignment improves efficiency
+4. Communication priority ensures critical info is shared
+
+This shows how Mindcraft's multi-agent concepts enhance
+Luanti Voyager with realistic team dynamics!
+

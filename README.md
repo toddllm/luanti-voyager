@@ -186,6 +186,66 @@ We're implementing these Mindcraft-inspired features for Luanti:
 
 The goal: Combine Mindcraft's multi-agent expertise with Luanti Voyager's open-ended learning for unprecedented AI capabilities in open-source voxel worlds!
 
+### 🧪 Multi-Agent System - Working Demo!
+
+We've successfully implemented multi-agent coordination inspired by Mindcraft. Here's proof it works:
+
+#### Quick Test
+```bash
+# Test basic communication between agents
+python test_multi_agent_simple.py
+
+# See personality-based behaviors  
+python test_multi_agent_mock_llm.py
+```
+
+#### Live Demo Output
+```
+🤖 MULTI-AGENT PERSONALITY DEMO
+====================================
+📋 Agent Profiles:
+  Scout: adventurous and excitable
+  Constructor: careful and methodical
+
+💎 Scenario 1: Major Discovery
+Scout discovers: massive underground cave with glowing crystals
+  Scout's reaction: "WOW! This is AMAZING! We could build an underground crystal palace here!"
+  Constructor's response: "Interesting find. We should survey for stability before proceeding."
+
+🚨 Scenario 2: Danger Approaching  
+Alert: Large monster approaching the base
+  Scout's reaction: "Let's fight it! I'll distract while you attack!"
+  Constructor's reaction: "Fall back to defensive positions. Activate base defenses."
+```
+
+[Full examples and demos →](examples/multi_agent_demo.py)
+
+#### Minimal Working Example
+```python
+# 20 lines of working multi-agent code!
+import asyncio
+from luanti_voyager.multi_agent import AgentCommunication
+
+async def minimal_multi_agent():
+    # Create two agents with different roles
+    builder = AgentCommunication("BuilderBot", "team_alpha")
+    explorer = AgentCommunication("ExplorerBot", "team_alpha") 
+    
+    # Connect them
+    builder.register_listener("ExplorerBot", explorer)
+    explorer.register_listener("BuilderBot", builder)
+    
+    # Explorer makes a discovery and shares it
+    await explorer.share_discovery("Found diamonds at coordinates (100, -58, 200)!", importance=9)
+    
+    # Builder receives and processes the message
+    messages = await builder.process_messages()
+    print(f"BuilderBot received: {messages[0].content}")
+    # Output: BuilderBot received: Discovery: Found diamonds at coordinates (100, -58, 200)!
+
+asyncio.run(minimal_multi_agent())
+```
+
 ### Eventually - Make It Amazing
 - [ ] Multi-agent societies
 - [ ] Agents that mod the game
