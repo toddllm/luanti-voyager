@@ -8,7 +8,7 @@
 |--------|-------|----------------|---------|------|
 | [Prompt 1](#prompt-1-neurosymbolic-skill-architecture) | Neurosymbolic Skill Architecture | [✅ Report](research_reports/neurosymbolic_skill_learning_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
 | [Prompt 2](#prompt-2-self-improving-code-generation) | Self-Improving Code Generation | [✅ Report](research_reports/self_improving_code_generation_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
-| [Prompt 3](#prompt-3-hierarchical-task-networks-for-voxel-worlds) | Hierarchical Task Networks | 🔄 Pending | - | - |
+| [Prompt 3](#prompt-3-hierarchical-task-networks-for-voxel-worlds) | Hierarchical Task Networks | [✅ Report](research_reports/hierarchical_task_networks_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
 | [Prompt 4](#prompt-4-emergent-goal-setting) | Emergent Goal Setting | 🔄 Pending | - | - |
 | [Prompt 5](#prompt-5-hybrid-memory-architecture) | Hybrid Memory Architecture | 🔄 Pending | - | - |
 | [Prompt 6](#prompt-6-knowledge-graph-evolution) | Knowledge Graph Evolution | 🔄 Pending | - | - |
