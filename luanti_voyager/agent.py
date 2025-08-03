@@ -12,6 +12,8 @@ from dataclasses import dataclass
 import random
 import os
 
+from .llm import VoyagerLLM
+
 logger = logging.getLogger(__name__)
 
 
@@ -31,7 +33,7 @@ class AgentState:
 class VoyagerAgent:
     """An autonomous agent that explores and learns in Luanti."""
     
-    def __init__(self, name: str = "VoyagerBot", world_path: str = None, web_server=None):
+    def __init__(self, name: str = "VoyagerBot", world_path: str = None, web_server=None, llm_provider: str = "none", **llm_kwargs):
         self.name = name
         # Check environment variable first, then parameter, then default
         env_world_path = os.getenv('WORLD_PATH')
@@ -46,6 +48,10 @@ class VoyagerAgent:
         
         # Agent state
         self.state: Optional[AgentState] = None
+        
+        # LLM integration
+        self.llm = VoyagerLLM(provider=llm_provider, **llm_kwargs)
+        logger.info(f"🧠 LLM provider: {llm_provider}")
         self.running = False
         self.spawn_pos = {"x": 0, "y": 10, "z": 0}
         
@@ -82,6 +88,11 @@ class VoyagerAgent:
     async def stop(self):
         """Stop the agent."""
         self.running = False
+        
+        # Close LLM connections
+        if self.llm:
+            await self.llm.close()
+            
         logger.info("Agent stopped")
         
     async def _send_command(self, command: str) -> Optional[Dict]:
@@ -164,7 +175,29 @@ class VoyagerAgent:
             await asyncio.sleep(1)  # One action per second
             
     async def _decide_action(self) -> Optional[Dict[str, Any]]:
-        """Decide what action to take (simple version for POC)."""
+        """Decide what action to take using LLM or fallback logic."""
+        if not self.state:
+            return None
+        
+        # First try LLM decision making
+        if self.llm and self.llm.llm:
+            world_state = {
+                "agent_position": self.state.pos,
+                "nearby_blocks": self.state.nearby_blocks,
+                "inventory": self.state.inventory,
+                "hp": self.state.hp
+            }
+            
+            llm_action = await self.llm.decide_action(world_state)
+            if llm_action:
+                logger.info(f"🧠 LLM Decision: {llm_action.get('reason', 'No reason given')}")
+                return llm_action
+        
+        # Fallback to basic exploration logic
+        return await self._basic_exploration_action()
+    
+    async def _basic_exploration_action(self) -> Optional[Dict[str, Any]]:
+        """Basic exploration logic when LLM is not available."""
         if not self.state:
             return None
             

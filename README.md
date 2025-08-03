@@ -103,8 +103,8 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 - [x] **Block detection** - Agent perceives nearby blocks and reports world state
 - [x] **Web interface** - Live agent monitoring and 3D visualization at localhost:8090
 - [x] **Screenshot workflow** - Paste interface for rapid documentation (paste → describe → save)
-- [ ] **Terrain generation** - Replace void world with actual Luanti terrain
-- [ ] **LLM integration** - Connect agent decisions to language model reasoning
+- [x] **LLM integration** - OpenAI/Anthropic/Ollama support with **[PROVEN real gameplay](PROOF_LLM_WORKING.md)** 🎯
+- [ ] **Terrain generation** - Replace void world with actual Luanti terrain ([GitHub Issues](https://github.com/toddllm/luanti-voyager/issues))
 - [ ] **Basic survival** - Agent learns to avoid death and basic world interaction
 - [ ] **Skill memory** - Save and reuse learned behaviors
 
@@ -125,6 +125,69 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 - [ ] Silly projects
 - [ ] Unexpected discoveries
 - [ ] Community first
+
+## 🚀 Usage
+
+### Basic Agent (No LLM)
+```bash
+# Start basic exploration agent
+python -m luanti_voyager --name MyBot
+
+# With test server on port 40000
+python -m luanti_voyager --name MyBot --port 40000
+```
+
+### LLM-Powered Agent
+
+#### Local Development (Recommended)
+
+**🎯 WORKING NOW - [Live Proof of LLM Gameplay](PROOF_LLM_WORKING.md)**
+
+**One-Command Start:**
+```bash
+# Auto-setup and run with Ollama (handles everything!)
+./quick_start_ollama.sh
+```
+
+**Manual Setup:**
+```bash
+# 1. Install Ollama: https://ollama.ai/
+# 2. Pull a model
+ollama pull llama3.1
+
+# 3. Start Ollama server
+ollama serve
+
+# 4. Run agent with local LLM (no API keys needed!)
+python -m luanti_voyager --llm ollama --name LocalBot
+```
+
+#### Cloud LLM Providers
+```bash
+# Set up API keys
+export OPENAI_API_KEY=your_key_here
+export ANTHROPIC_API_KEY=your_key_here
+
+# Run with OpenAI GPT
+python -m luanti_voyager --llm openai --name SmartBot
+
+# Run with Anthropic Claude
+python -m luanti_voyager --llm anthropic --name ClaudeBot
+```
+
+#### Test & Configuration
+```bash
+# Test all LLM integrations
+python test_llm_integration.py
+
+# Copy and configure environment
+cp .env.example .env
+# Edit .env with your preferences
+```
+
+### Web Interface
+- **3D Viewer**: http://localhost:8090/viewer
+- **Screenshot Paste**: http://localhost:8090/paste
 
 ## 🛠️ Build With Us
 

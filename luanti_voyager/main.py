@@ -78,23 +78,23 @@ async def run_agent(args):
             logger.info(f"🌐 Web UI: http://localhost:{args.web_port}")
             logger.info(f"🔌 WebSocket: ws://localhost:{args.web_port + 1}")
     
-    # Create agent
+    # Create agent with LLM support
     agent = VoyagerAgent(
         name=args.name,
         world_path=args.world_path,
-        web_server=web_server
+        web_server=web_server,
+        llm_provider=args.llm
     )
     
     # Note the port being used
     if args.port != 30000:
         logger.info(f"Using custom port: {args.port}")
     
-    # Check if LLM is configured
-    if args.llm:
-        logger.info(f"Using LLM: {args.llm}")
-        # TODO: Initialize LLM
+    # LLM configuration is handled by the agent
+    if args.llm != "none":
+        logger.info(f"🧠 LLM enabled: {args.llm}")
     else:
-        logger.info("Running in exploration mode (no LLM)")
+        logger.info("🤖 Running in basic exploration mode (no LLM)")
         
     try:
         await agent.start()
@@ -125,7 +125,7 @@ def main():
     
     parser.add_argument(
         "--llm",
-        choices=["openai", "anthropic", "local", "none"],
+        choices=["openai", "anthropic", "ollama", "none"],
         default="none",
         help="LLM to use for reasoning (default: none)"
     )
