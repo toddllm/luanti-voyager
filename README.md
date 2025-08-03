@@ -8,6 +8,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![LLM Agents Working](https://img.shields.io/badge/🤖%20LLM%20Agents-WORKING-brightgreen)](PROOF_LLM_WORKING.md)
+[![Features Complete](https://img.shields.io/badge/✅%20Core%20Features-8%2F8%20Working-success)](#-working-now---ready-to-test)
 [![Join the Adventure](https://img.shields.io/badge/Join-The%20Adventure-blue)](https://github.com/toddllm/luanti-voyager)
 
 </div>
@@ -108,16 +109,17 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 - [x] **Screenshot workflow** - Paste interface for rapid documentation (paste → describe → save)
 - [x] **LLM integration** - OpenAI/Anthropic/Ollama support with **[PROVEN real gameplay](PROOF_LLM_WORKING.md)** 🎯
 
-**🚧 Known Issues (help wanted!):**
-- [ ] **Terrain generation** - Replace void world with actual Luanti terrain ([GitHub Issues](https://github.com/toddllm/luanti-voyager/issues))
-- [ ] **Basic survival** - Agent learns to avoid death and basic world interaction
-- [ ] **Skill memory** - Save and reuse learned behaviors
+- [x] **Basic survival** - Health monitoring with emergency responses 🩸
+- [x] **Skill memory** - File-based learning system that remembers strategies 💭
 
-### Soon - Make It Smart
-- [ ] Better LLM integration
-- [ ] Skill sharing between agents
-- [ ] Learning from failure
-- [ ] Community challenges
+**🚧 Known Issues (help wanted!):**
+- [ ] **Terrain generation** - Replace void world with actual Luanti terrain ([Issues #1-3](https://github.com/toddllm/luanti-voyager/issues))
+
+### 🎯 Community Contributions Welcome
+- [ ] **Advanced LLM integration** - Multi-step reasoning and planning ([Issue #4](https://github.com/toddllm/luanti-voyager/issues/4))
+- [ ] **Skill sharing between agents** - Multi-agent collaboration ([Issue #5](https://github.com/toddllm/luanti-voyager/issues/5))
+- [ ] **Learning from failure** - Adaptive behavior improvement ([Issue #6](https://github.com/toddllm/luanti-voyager/issues/6))
+- [ ] **Community challenges** - Competitions and showcases ([Issue #7](https://github.com/toddllm/luanti-voyager/issues/7))
 
 ### Eventually - Make It Amazing
 - [ ] Multi-agent societies

@@ -13,6 +13,7 @@ import random
 import os
 
 from .llm import VoyagerLLM
+from .memory import SkillMemory
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +53,10 @@ class VoyagerAgent:
         # LLM integration
         self.llm = VoyagerLLM(provider=llm_provider, **llm_kwargs)
         logger.info(f"🧠 LLM provider: {llm_provider}")
+        
+        # Memory system
+        self.memory = SkillMemory(agent_name=name)
+        logger.info(self.memory.get_memory_summary())
         self.running = False
         self.spawn_pos = {"x": 0, "y": 10, "z": 0}
         
@@ -179,18 +184,33 @@ class VoyagerAgent:
         if not self.state:
             return None
         
-        # First try LLM decision making
+        # Check memory for suggestions first
+        world_state = {
+            "agent_position": self.state.pos,
+            "nearby_blocks": self.state.nearby_blocks,
+            "inventory": self.state.inventory,
+            "hp": self.state.hp
+        }
+        
+        memory_suggestion = self.memory.suggest_action_from_memory(world_state)
+        if memory_suggestion:
+            logger.info(f"💭 {memory_suggestion}")
+        
+        # Try LLM decision making
         if self.llm and self.llm.llm:
-            world_state = {
-                "agent_position": self.state.pos,
-                "nearby_blocks": self.state.nearby_blocks,
-                "inventory": self.state.inventory,
-                "hp": self.state.hp
-            }
-            
             llm_action = await self.llm.decide_action(world_state)
             if llm_action:
                 logger.info(f"🧠 LLM Decision: {llm_action.get('reason', 'No reason given')}")
+                
+                # Remember this strategy
+                situation = "general_exploration"
+                if self.state.hp <= 10:
+                    situation = "low_health"
+                elif len([b for b in self.state.nearby_blocks if b["type"] == "ignore"]) > 80:
+                    situation = "void_exploration"
+                    
+                self.memory.remember_strategy(situation, llm_action.get('reason', 'LLM decision'))
+                
                 return llm_action
         
         # Fallback to basic exploration logic
@@ -200,6 +220,18 @@ class VoyagerAgent:
         """Basic exploration logic when LLM is not available."""
         if not self.state:
             return None
+        
+        # SURVIVAL CHECK: Monitor health and take action if low
+        if self.state.hp <= 5:  # Critical health
+            logger.warning(f"🩸 CRITICAL HEALTH: {self.state.hp}/20 - seeking safety!")
+            # Try to find a safe spot (higher ground, away from danger)
+            return {
+                "type": "teleport",
+                "pos": {"x": self.state.pos["x"], "y": self.state.pos["y"] + 10, "z": self.state.pos["z"]},
+                "reason": "🩸 EMERGENCY: Low health, moving to safety!"
+            }
+        elif self.state.hp <= 10:  # Low health warning
+            logger.warning(f"⚠️ LOW HEALTH: {self.state.hp}/20 - being cautious")
             
         # Check if we're stuck in ignore block void
         ignore_blocks = [

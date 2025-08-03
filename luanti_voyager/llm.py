@@ -193,6 +193,7 @@ class VoyagerLLM:
 
 CURRENT SITUATION:
 - Position: x={agent_pos.get('x', 0):.1f}, y={agent_pos.get('y', 0):.1f}, z={agent_pos.get('z', 0):.1f}
+- Health: {state.get('hp', 20)}/20 HP
 - Nearby blocks: {', '.join(env_summary) if env_summary else 'mostly void/air'}
 - Total blocks visible: {len(nearby_blocks)}
 
@@ -205,9 +206,10 @@ AVAILABLE ACTIONS:
 6. wait - Stay in place
 
 EXPLORATION GOALS:
+- **SURVIVAL FIRST**: Monitor health - if low, prioritize safety over exploration
 - Find interesting terrain features (caves, structures, ores)
 - Collect valuable resources (wood, stone, ores) 
-- Avoid getting stuck in void areas
+- Avoid getting stuck in void areas or dangerous situations
 - Build simple structures for testing
 - Map the world systematically
 

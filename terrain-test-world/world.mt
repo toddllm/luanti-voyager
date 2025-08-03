@@ -1,0 +1,13 @@
+gameid = devtest
+world_name = Luanti Voyager Terrain Test
+backend = sqlite3
+player_backend = sqlite3
+readonly_backend = sqlite3
+auth_backend = sqlite3
+mod_storage_backend = sqlite3
+enable_damage = false
+creative_mode = true
+mg_name = v7
+mg_seed = 12345
+mg_flags = caves,dungeons,light,decorations,biomes,ores
+mgv7_spflags = mountains,ridges,nofloatlands
