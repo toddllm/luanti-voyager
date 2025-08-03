@@ -70,25 +70,26 @@ The real-time 3D viewer displays the agent's world view using structured data re
 
 ## 🚀 Jump In!
 
-### The Basics
+### Quick Start
 
 ```bash
-# Grab the code
+# Clone and run with one command!
 git clone --recursive https://github.com/toddllm/luanti-voyager.git
 cd luanti-voyager
-
-# Set up Python (however you like)
-python -m venv venv
-source venv/bin/activate
-
-# Install stuff
-pip install -r requirements.txt
-
-# Run your first agent!
-python -m luanti_voyager.main
+./quick_start_ollama.sh
 ```
 
-That's it! The agent will start exploring. Want to use GPT-4? Set your API key. Want to use a local model? Go for it. Want to try something completely different? Please do!
+### Detailed Installation
+
+📖 **[See INSTALL.md for complete setup instructions](INSTALL.md)**
+
+Includes:
+- ✅ Step-by-step guide for macOS
+- 🔄 Linux/Ubuntu instructions (community help needed!)
+- 🔄 Windows WSL instructions (community help needed!)
+- 🎮 Luanti server setup
+- 🤖 Agent configuration
+- 🧠 LLM integration options
 
 ### Make It Your Own
 
@@ -271,6 +272,8 @@ asyncio.run(minimal_multi_agent())
 # - Visit http://localhost:8090/viewer for 3D visualization
 # - Check logs for LLM decision making
 ```
+
+📖 **Need help? See [INSTALL.md](INSTALL.md) for detailed setup instructions**
 
 ### 🛠️ Advanced Usage
 
