@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Paste - Luanti Voyager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        
+        .paste-area {
+            border: 3px dashed #4CAF50;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background: #2a2a2a;
+            margin: 20px 0;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .paste-area.has-image {
+            border-color: #66BB6A;
+            background: #2e4a2e;
+        }
+        
+        .preview {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .preview img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: #333;
+            border: 1px solid #666;
+            color: #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        
+        button:hover {
+            background: #45a049;
+        }
+        
+        .output {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 1px solid #666;
+            white-space: pre-wrap;
+            font-family: monospace;
+            display: none;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+        
+        .success {
+            background: #2e5a2e;
+            color: #81C784;
+        }
+        
+        .error {
+            background: #5a2e2e;
+            color: #ff8a80;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Quick Screenshot Paste</h1>
+        
+        <div class="paste-area" id="pasteArea">
+            <div style="font-size: 48px;">📋</div>
+            <h2>Paste Screenshot Here</h2>
+            <p>Press Ctrl/Cmd+V anywhere on this page</p>
+        </div>
+        
+        <div id="preview" class="preview" style="display: none;">
+            <img id="previewImg" alt="Preview">
+        </div>
+        
+        <div id="form" style="display: none;">
+            <textarea id="description" placeholder="Describe the screenshot (e.g., '3D viewer showing agent exploring terrain')" rows="3"></textarea>
+            <input type="text" id="filename" placeholder="Filename (auto-generated if empty)">
+            <button onclick="generateMarkdown()">Generate Markdown</button>
+            <button onclick="saveAndGenerate()" style="background: #2196F3;">Save Image & Generate</button>
+        </div>
+        
+        <div id="status" class="status"></div>
+        <div id="output" class="output"></div>
+    </div>
+
+    <script>
+        let imageData = null;
+        
+        // Listen for paste anywhere on the page
+        document.addEventListener('paste', function(e) {
+            const items = e.clipboardData.items;
+            
+            for (let item of items) {
+                if (item.type.indexOf('image') !== -1) {
+                    const file = item.getAsFile();
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(event) {
+                        imageData = event.target.result;
+                        
+                        // Show preview
+                        document.getElementById('previewImg').src = imageData;
+                        document.getElementById('preview').style.display = 'block';
+                        document.getElementById('form').style.display = 'block';
+                        
+                        // Update paste area
+                        const pasteArea = document.getElementById('pasteArea');
+                        pasteArea.classList.add('has-image');
+                        pasteArea.innerHTML = '<div style="font-size: 48px;">✅</div><h2>Image Loaded!</h2><p>Add description below</p>';
+                        
+                        // Auto-generate filename
+                        const today = new Date().toISOString().slice(0, 10);
+                        document.getElementById('filename').value = `luanti-voyager-${today}`;
+                        
+                        showStatus('Image pasted successfully!', 'success');
+                    };
+                    
+                    reader.readAsDataURL(file);
+                    e.preventDefault();
+                    break;
+                }
+            }
+        });
+        
+        function generateMarkdown() {
+            const description = document.getElementById('description').value.trim();
+            const filename = document.getElementById('filename').value.trim() || 'screenshot';
+            
+            if (!description) {
+                showStatus('Please add a description', 'error');
+                return;
+            }
+            
+            const markdown = `## 🖼️ ${description}
+
+![${description}](docs/images/${filename}.png)
+
+*${description}*`;
+            
+            document.getElementById('output').textContent = markdown;
+            document.getElementById('output').style.display = 'block';
+            showStatus('Markdown generated! Copy it to your README.', 'success');
+        }
+        
+        function saveAndGenerate() {
+            const description = document.getElementById('description').value.trim();
+            let filename = document.getElementById('filename').value.trim() || 'screenshot';
+            
+            if (!description) {
+                showStatus('Please add a description', 'error');
+                return;
+            }
+            
+            if (!imageData) {
+                showStatus('No image to save', 'error');
+                return;
+            }
+            
+            // Add .png if not present
+            if (!filename.endsWith('.png')) {
+                filename += '.png';
+            }
+            
+            // Send to API
+            fetch('/api/save-screenshot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    filename: filename,
+                    description: description,
+                    image_data: imageData
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('output').textContent = data.markdown;
+                    document.getElementById('output').style.display = 'block';
+                    showStatus(`✅ Image saved as ${data.filename}! Markdown ready.`, 'success');
+                } else {
+                    showStatus(`Error: ${data.error}`, 'error');
+                }
+            })
+            .catch(error => {
+                showStatus(`Error: ${error.message}`, 'error');
+            });
+        }
+        
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    status.style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>

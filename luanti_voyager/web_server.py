@@ -11,6 +11,7 @@ from pathlib import Path
 import websockets
 from aiohttp import web
 import weakref
+import base64
 
 logger = logging.getLogger(__name__)
 
@@ -66,10 +67,59 @@ class VoyagerWebServer:
         async def screenshot_upload(request):
             return web.FileResponse(self.web_ui_path / 'screenshot_upload.html')
             
+        # Serve simple paste interface
+        async def paste(request):
+            return web.FileResponse(self.web_ui_path / 'simple-paste.html')
+            
+        # API endpoint to save screenshot
+        async def save_screenshot(request):
+            try:
+                data = await request.json()
+                filename = data.get('filename', 'screenshot.png')
+                description = data.get('description', 'Screenshot')
+                image_data = data.get('image_data', '')
+                
+                # Decode base64 image
+                if image_data.startswith('data:image'):
+                    image_data = image_data.split(',')[1]
+                
+                image_bytes = base64.b64decode(image_data)
+                
+                # Save to docs/images
+                docs_path = Path(__file__).parent.parent / 'docs' / 'images'
+                docs_path.mkdir(parents=True, exist_ok=True)
+                
+                image_path = docs_path / filename
+                with open(image_path, 'wb') as f:
+                    f.write(image_bytes)
+                
+                # Generate markdown
+                markdown = f"""## 🖼️ {description}
+
+![{description}](docs/images/{filename})
+
+*{description}*"""
+                
+                return web.json_response({
+                    'success': True,
+                    'filename': filename,
+                    'path': str(image_path),
+                    'markdown': markdown
+                })
+                
+            except Exception as e:
+                logger.error(f"Error saving screenshot: {e}")
+                return web.json_response({
+                    'success': False,
+                    'error': str(e)
+                }, status=500)
+            
         # Serve other static files
         app.router.add_get('/', index)
         app.router.add_get('/viewer', viewer)
         app.router.add_get('/screenshots', screenshot_upload)
+        app.router.add_get('/paste', paste)
+        app.router.add_post('/api/save-screenshot', save_screenshot)
         app.router.add_static('/', path=self.web_ui_path, name='static')
         
         runner = web.AppRunner(app)

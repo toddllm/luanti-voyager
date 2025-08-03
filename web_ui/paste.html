@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste Screenshot - Luanti Voyager</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .paste-box {
+            border: 4px solid #4CAF50;
+            border-radius: 16px;
+            padding: 60px 40px;
+            text-align: center;
+            background: #2a2a2a;
+            cursor: text;
+            transition: all 0.3s ease;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .paste-box:hover {
+            background: #333;
+            border-color: #66BB6A;
+        }
+        
+        .paste-box.has-image {
+            border-color: #81C784;
+            background: #2e4a2e;
+        }
+        
+        .paste-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        
+        .paste-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .paste-hint {
+            color: #aaa;
+            font-size: 16px;
+        }
+        
+        .preview-area {
+            display: none;
+            margin-top: 30px;
+        }
+        
+        .preview-image {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        
+        label {
+            color: #ccc;
+            font-weight: 500;
+        }
+        
+        input[type="text"], textarea {
+            padding: 10px 15px;
+            background: #1a1a1a;
+            border: 2px solid #444;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        
+        textarea {
+            height: 80px;
+            resize: vertical;
+            grid-column: 1 / -1;
+        }
+        
+        .button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .button:hover {
+            background: #45a049;
+        }
+        
+        .output-area {
+            background: #2a2a2a;
+            border: 2px solid #4CAF50;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            display: none;
+        }
+        
+        .output-title {
+            color: #4CAF50;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .output-content {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            color: #e0e0e0;
+            overflow-x: auto;
+        }
+        
+        .copy-button {
+            background: #333;
+            color: #fff;
+            border: 1px solid #666;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .copy-button:hover {
+            background: #555;
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: none;
+        }
+        
+        .status.success {
+            background: #2e5a2e;
+            color: #81C784;
+        }
+        
+        .status.error {
+            background: #5a2e2e;
+            color: #ff8a80;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Screenshot Paste</h1>
+        <div class="subtitle">Paste screenshots here for instant README generation</div>
+        
+        <div class="paste-box" id="pasteBox">
+            <div class="paste-icon">📋</div>
+            <div class="paste-text">Paste Screenshot Here</div>
+            <div class="paste-hint">Ctrl/Cmd+V or drag & drop</div>
+        </div>
+        
+        <div class="preview-area" id="previewArea">
+            <img id="previewImage" class="preview-image" alt="Pasted screenshot">
+            
+            <div class="form-row">
+                <textarea id="description" placeholder="Describe what this screenshot shows (e.g., '3D viewer displaying agent exploring grass terrain with tree')"></textarea>
+            </div>
+            
+            <div class="form-row">
+                <label for="filename">Filename:</label>
+                <input type="text" id="filename" placeholder="screenshot-name">
+            </div>
+            
+            <button class="button" onclick="generateMarkdown()">📝 Generate README Markdown</button>
+            <button class="button" onclick="saveAndProcess()" style="background: #2196F3; margin-top: 10px;">🚀 Save Image & Generate Markdown</button>
+        </div>
+        
+        <div class="output-area" id="outputArea">
+            <div class="output-title">✅ Ready for README!</div>
+            <div class="output-content" id="outputContent"></div>
+            <button class="copy-button" onclick="copyToClipboard()">📋 Copy Markdown</button>
+            <div class="status" id="status"></div>
+        </div>
+    </div>
+
+    <script>
+        const pasteBox = document.getElementById('pasteBox');
+        const previewArea = document.getElementById('previewArea');
+        const previewImage = document.getElementById('previewImage');
+        const outputArea = document.getElementById('outputArea');
+        const outputContent = document.getElementById('outputContent');
+        const status = document.getElementById('status');
+        
+        let currentImageData = null;
+        let generatedMarkdown = '';
+        
+        // Make the entire page listen for paste
+        document.addEventListener('paste', handlePaste);
+        
+        // Handle drag and drop on paste box
+        pasteBox.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            pasteBox.style.borderColor = '#81C784';
+            pasteBox.style.background = '#3a3a3a';
+        });
+        
+        pasteBox.addEventListener('dragleave', () => {
+            pasteBox.style.borderColor = '#4CAF50';
+            pasteBox.style.background = '#2a2a2a';
+        });
+        
+        pasteBox.addEventListener('drop', (e) => {
+            e.preventDefault();
+            pasteBox.style.borderColor = '#4CAF50';
+            pasteBox.style.background = '#2a2a2a';
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type.startsWith('image/')) {
+                handleFile(files[0]);
+            }
+        });
+        
+        function handlePaste(e) {
+            const items = e.clipboardData.items;
+            for (let item of items) {
+                if (item.type.indexOf('image') !== -1) {
+                    const file = item.getAsFile();
+                    handleFile(file);
+                    e.preventDefault();
+                    break;
+                }
+            }
+        }
+        
+        function handleFile(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                currentImageData = e.target.result;
+                previewImage.src = currentImageData;
+                previewArea.style.display = 'block';
+                
+                // Update paste box to show success
+                pasteBox.classList.add('has-image');
+                pasteBox.querySelector('.paste-icon').textContent = '✅';
+                pasteBox.querySelector('.paste-text').textContent = 'Screenshot Loaded!';
+                pasteBox.querySelector('.paste-hint').textContent = 'Add description below';
+                
+                // Auto-generate filename
+                const filenameInput = document.getElementById('filename');
+                if (!filenameInput.value) {
+                    const timestamp = new Date().toISOString().slice(0, 10);
+                    filenameInput.value = `luanti-voyager-${timestamp}`;
+                }
+                
+                // Scroll to form
+                previewArea.scrollIntoView({ behavior: 'smooth' });
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function generateMarkdown() {
+            const description = document.getElementById('description').value.trim();
+            const filename = document.getElementById('filename').value.trim() || 'screenshot';
+            
+            if (!currentImageData) {
+                showStatus('Please paste an image first.', 'error');
+                return;
+            }
+            
+            if (!description) {
+                showStatus('Please add a description.', 'error');
+                return;
+            }
+            
+            // Generate markdown
+            generatedMarkdown = `## 🖼️ ${description}
+
+![${description}](docs/images/${filename}.png)
+
+*${description}*`;
+            
+            outputContent.textContent = generatedMarkdown;
+            outputArea.style.display = 'block';
+            outputArea.scrollIntoView({ behavior: 'smooth' });
+            
+            showStatus('Markdown generated! Copy it to your README.', 'success');
+            
+            // Store for potential API call
+            localStorage.setItem('screenshotData', JSON.stringify({
+                filename: `${filename}.png`,
+                description: description,
+                data: currentImageData
+            }));
+        }
+        
+        function saveAndProcess() {
+            const description = document.getElementById('description').value.trim();
+            const filename = document.getElementById('filename').value.trim() || 'screenshot';
+            
+            if (!currentImageData) {
+                showStatus('Please paste an image first.', 'error');
+                return;
+            }
+            
+            if (!description) {
+                showStatus('Please add a description.', 'error');
+                return;
+            }
+            
+            // Add .png extension if not present
+            const finalFilename = filename.endsWith('.png') ? filename : filename + '.png';
+            
+            // Save via API
+            fetch('/api/save-screenshot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    filename: finalFilename,
+                    description: description,
+                    image_data: currentImageData
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    generatedMarkdown = data.markdown;
+                    outputContent.textContent = generatedMarkdown;
+                    outputArea.style.display = 'block';
+                    outputArea.scrollIntoView({ behavior: 'smooth' });
+                    showStatus(`✅ Image saved to ${data.filename}! Markdown ready for README.`, 'success');
+                } else {
+                    showStatus(`Error: ${data.error}`, 'error');
+                }
+            })
+            .catch(error => {
+                showStatus(`Network error: ${error.message}`, 'error');
+            });
+        }
+        
+        function copyToClipboard() {
+            navigator.clipboard.writeText(generatedMarkdown).then(() => {
+                showStatus('Copied to clipboard!', 'success');
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = generatedMarkdown;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showStatus('Copied to clipboard!', 'success');
+            });
+        }
+        
+        function showStatus(message, type) {
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    status.style.display = 'none';
+                }, 3000);
+            }
+        }
+        
+        // Focus hint
+        document.addEventListener('DOMContentLoaded', () => {
+            pasteBox.focus();
+        });
+    </script>
+</body>
+</html>

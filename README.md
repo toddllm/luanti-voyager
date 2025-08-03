@@ -58,6 +58,14 @@ The agent sees the world, thinks about what to do (using whatever LLM you want),
 🎮 **Actions** - Move, dig, place, craft, and whatever else we dream up
 💾 **Memory** - Save skills, share with others, build on previous work
 
+## 🖼️ 3D Viewer Interface
+
+![3D Viewer showing agent exploring terrain with static test blocks](docs/images/luanti-voyager-2025-08-03.png)
+
+*3D Viewer showing agent exploring terrain with static test blocks*
+
+The real-time 3D viewer displays the agent's world view using structured data re-rendering (similar to Mindcraft's approach). It shows blocks, agent position, and exploration in real-time without screen capture.
+
 ## 🚀 Jump In!
 
 ### The Basics
