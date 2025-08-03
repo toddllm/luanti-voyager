@@ -7,7 +7,8 @@
 *An open playground where language models learn to survive, build, and thrive in voxel worlds*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Join the Adventure](https://img.shields.io/badge/Join-The%20Adventure-brightgreen)](https://github.com/toddllm/luanti-voyager)
+[![LLM Agents Working](https://img.shields.io/badge/🤖%20LLM%20Agents-WORKING-brightgreen)](PROOF_LLM_WORKING.md)
+[![Join the Adventure](https://img.shields.io/badge/Join-The%20Adventure-blue)](https://github.com/toddllm/luanti-voyager)
 
 </div>
 
@@ -97,13 +98,17 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 
 ## 🗺️ Where We're Going
 
-### Right Now - Get It Working
+### ✅ WORKING NOW - Ready to Test!
+
+**🤖 LLM Agents:** Fully functional with [live proof of gameplay](PROOF_LLM_WORKING.md)
 - [x] **Real-time 3D viewer** - Working Three.js visualization with WebSocket streaming
 - [x] **Agent exploration** - Bot moves, teleports, and explores world via file-based commands  
 - [x] **Block detection** - Agent perceives nearby blocks and reports world state
 - [x] **Web interface** - Live agent monitoring and 3D visualization at localhost:8090
 - [x] **Screenshot workflow** - Paste interface for rapid documentation (paste → describe → save)
 - [x] **LLM integration** - OpenAI/Anthropic/Ollama support with **[PROVEN real gameplay](PROOF_LLM_WORKING.md)** 🎯
+
+**🚧 Known Issues (help wanted!):**
 - [ ] **Terrain generation** - Replace void world with actual Luanti terrain ([GitHub Issues](https://github.com/toddllm/luanti-voyager/issues))
 - [ ] **Basic survival** - Agent learns to avoid death and basic world interaction
 - [ ] **Skill memory** - Save and reuse learned behaviors
@@ -126,9 +131,23 @@ That's it! The agent will start exploring. Want to use GPT-4? Set your API key. 
 - [ ] Unexpected discoveries
 - [ ] Community first
 
-## 🚀 Usage
+## 🚀 Quick Test - Try It Now!
 
-### Basic Agent (No LLM)
+### 🤖 LLM Agent (Recommended)
+**Test the proven LLM integration in 2 steps:**
+
+```bash
+# 1. One-command setup and run (handles everything!)
+./quick_start_ollama.sh
+
+# 2. Watch your agent make intelligent decisions!
+# - Visit http://localhost:8090/viewer for 3D visualization
+# - Check logs for LLM decision making
+```
+
+### 🛠️ Advanced Usage
+
+#### Basic Agent (No LLM)
 ```bash
 # Start basic exploration agent
 python -m luanti_voyager --name MyBot
