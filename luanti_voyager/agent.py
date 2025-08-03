@@ -241,16 +241,14 @@ class VoyagerAgent:
         
         # If we're mostly in ignore blocks, do aggressive exploration
         if len(ignore_blocks) > 80:  # 80+ ignore blocks means we're in void
-            logger.info(f"🚨 VOID DETECTED: {len(ignore_blocks)} ignore blocks - forcing major teleport!")
+            logger.info(f"🚨 VOID DETECTED: {len(ignore_blocks)} ignore blocks - generating terrain!")
             if self.state:
-                # Random spawn location - try to find actual terrain
-                new_x = random.uniform(-200, 200)
-                new_z = random.uniform(-200, 200)
-                new_y = random.uniform(1, 20)  # Ground level
+                # First, try to generate terrain around our current position
                 return {
-                    "type": "teleport",
-                    "pos": {"x": new_x, "y": new_y, "z": new_z},
-                    "reason": "🚨 ESCAPING IGNORE BLOCK VOID!"
+                    "type": "generate",
+                    "bot_name": self.name,
+                    "radius": 20,
+                    "reason": "🌍 GENERATING TERRAIN to escape void!"
                 }
             
         # Look for nearby wood blocks
@@ -346,6 +344,19 @@ class VoyagerAgent:
                 logger.warning("Teleport failed, trying regular move instead")
                 # Fallback to regular movement
                 directions = ["forward", "left", "right", "back"]
+                
+        elif action["type"] == "generate":
+            # Generate terrain around the bot or specified position
+            bot_name = action.get("bot_name", self.name)
+            radius = action.get("radius", 20)
+            response = await self._send_command(
+                f"generate {bot_name} {radius}"
+            )
+            if response and response.get("success"):
+                blocks_placed = response.get("blocks_placed", 0)
+                logger.info(f"🌍 Generated terrain! Placed {blocks_placed} blocks in radius {radius}")
+            else:
+                logger.warning("Terrain generation failed")
                 await self._send_command(
                     f"move {self.name} {random.choice(directions)} {random.uniform(8, 15)}"
                 )
