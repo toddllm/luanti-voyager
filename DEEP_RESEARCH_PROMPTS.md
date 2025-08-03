@@ -10,7 +10,7 @@
 | [Prompt 2](#prompt-2-self-improving-code-generation) | Self-Improving Code Generation | [✅ Report](research_reports/self_improving_code_generation_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
 | [Prompt 3](#prompt-3-hierarchical-task-networks-for-voxel-worlds) | Hierarchical Task Networks | [✅ Report](research_reports/hierarchical_task_networks_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
 | [Prompt 4](#prompt-4-emergent-goal-setting) | Emergent Goal Setting | [✅ Report](research_reports/emergent_goal_setting_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
-| [Prompt 5](#prompt-5-hybrid-memory-architecture) | Hybrid Memory Architecture | 🔄 Pending | - | - |
+| [Prompt 5](#prompt-5-hybrid-memory-architecture) | Hybrid Memory Architecture | [✅ Report](research_reports/hybrid_memory_architecture_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
 | [Prompt 6](#prompt-6-knowledge-graph-evolution) | Knowledge Graph Evolution | 🔄 Pending | - | - |
 | [Prompt 7](#prompt-7-emergent-communication-protocols) | Emergent Communication Protocols | 🔄 Pending | - | - |
 | [Prompt 8](#prompt-8-distributed-skill-learning) | Distributed Skill Learning | 🔄 Pending | - | - |
