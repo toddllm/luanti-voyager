@@ -20,6 +20,8 @@ colorama>=0.4.6  # Colored terminal output
 
 # Development (optional)
 pytest>=7.0.0
+pytest-asyncio>=0.21.0
 black>=22.0.0
 ruff>=0.1.0
 ipython>=8.0.0
+
