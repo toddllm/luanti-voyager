@@ -2,6 +2,25 @@
 
 *Copy-paste ready prompts for exploring the frontiers of embodied AI*
 
+## 📊 Research Progress Tracker
+
+| Prompt | Title | Research Report | Source | Date |
+|--------|-------|----------------|---------|------|
+| [Prompt 1](#prompt-1-neurosymbolic-skill-architecture) | Neurosymbolic Skill Architecture | [✅ Report](research_reports/neurosymbolic_skill_learning_2025-08-03.md) | OpenAI Deep Research | 2025-08-03 |
+| [Prompt 2](#prompt-2-self-improving-code-generation) | Self-Improving Code Generation | 🔄 Pending | - | - |
+| [Prompt 3](#prompt-3-hierarchical-task-networks-for-voxel-worlds) | Hierarchical Task Networks | 🔄 Pending | - | - |
+| [Prompt 4](#prompt-4-emergent-goal-setting) | Emergent Goal Setting | 🔄 Pending | - | - |
+| [Prompt 5](#prompt-5-hybrid-memory-architecture) | Hybrid Memory Architecture | 🔄 Pending | - | - |
+| [Prompt 6](#prompt-6-knowledge-graph-evolution) | Knowledge Graph Evolution | 🔄 Pending | - | - |
+| [Prompt 7](#prompt-7-emergent-communication-protocols) | Emergent Communication Protocols | 🔄 Pending | - | - |
+| [Prompt 8](#prompt-8-distributed-skill-learning) | Distributed Skill Learning | 🔄 Pending | - | - |
+| [Prompt 9](#prompt-9-open-ended-evaluation-metrics) | Open-Ended Evaluation Metrics | 🔄 Pending | - | - |
+| [Prompt 10](#prompt-10-curriculum-generation) | Curriculum Generation | 🔄 Pending | - | - |
+| [Prompt 11](#prompt-11-consciousness-and-self-awareness) | Consciousness and Self-Awareness | 🔄 Pending | - | - |
+| [Prompt 12](#prompt-12-open-ended-evolution) | Open-Ended Evolution | 🔄 Pending | - | - |
+| [Prompt 13](#prompt-13-production-ready-architecture) | Production-Ready Architecture | 🔄 Pending | - | - |
+| [Prompt 14](#prompt-14-research-platform-features) | Research Platform Features | 🔄 Pending | - | - |
+
 ## 📋 How to Use These Prompts
 
 1. Copy the entire prompt including context
@@ -508,6 +527,22 @@ Design:
 5. **Turn insights into code and contributions**
 
 Remember: The goal is to push the boundaries of what's possible with embodied AI. Don't be afraid to propose wild ideas - that's how breakthroughs happen!
+
+---
+
+## 📝 Contributing Research Reports
+
+When you complete research on one of these prompts:
+
+1. **Save your report** in `research_reports/` with format: `topic_name_YYYY-MM-DD.md`
+2. **Include metadata** at the top: Source, Date, Link to original prompt
+3. **Update the tracker table** in this document with:
+   - ✅ Report link
+   - Your source/method (e.g., "Claude Deep Research", "GPT-4 Analysis")
+   - Date completed
+4. **Open a PR** with your research contribution
+
+Your research helps the entire community push forward!
 
 ---
 
