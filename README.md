@@ -237,6 +237,14 @@ cp .env.example .env
 
 ## 🛠️ Build With Us
 
+### 🔬 Deep Research Questions
+Check out our [**Deep Research Prompts**](DEEP_RESEARCH_PROMPTS.md) - copy-paste ready prompts for exploring:
+- Neurosymbolic skill learning
+- Emergent communication
+- Multi-agent coordination
+- Open-ended evaluation
+- And much more!
+
 ### Code Structure (Rough Sketch)
 
 ```
