@@ -1,0 +1,321 @@
+{
+  "strategy_weights": {
+    "day:(0, 0)": {
+      "explore": {
+        "weight": 1.1004566909190878,
+        "successes": 5,
+        "attempts": 11
+      },
+      "observe": {
+        "weight": 1.1004566909190878,
+        "successes": 5,
+        "attempts": 11
+      },
+      "interact": {
+        "weight": 1.1004566909190878,
+        "successes": 5,
+        "attempts": 11
+      }
+    },
+    "day:(-1, 0)": {
+      "explore": {
+        "weight": 1.180844039634792,
+        "successes": 1,
+        "attempts": 1
+      },
+      "observe": {
+        "weight": 1.180844039634792,
+        "successes": 1,
+        "attempts": 1
+      },
+      "interact": {
+        "weight": 1.180844039634792,
+        "successes": 1,
+        "attempts": 1
+      }
+    },
+    "day:(-1, 1)": {
+      "explore": {
+        "weight": 0.871627370686707,
+        "successes": 3,
+        "attempts": 8
+      },
+      "observe": {
+        "weight": 0.871627370686707,
+        "successes": 3,
+        "attempts": 8
+      },
+      "interact": {
+        "weight": 0.871627370686707,
+        "successes": 3,
+        "attempts": 8
+      }
+    },
+    "day:(-2, 1)": {
+      "explore": {
+        "weight": 1.1864825368669034,
+        "successes": 1,
+        "attempts": 1
+      },
+      "observe": {
+        "weight": 1.1864825368669034,
+        "successes": 1,
+        "attempts": 1
+      },
+      "interact": {
+        "weight": 1.1864825368669034,
+        "successes": 1,
+        "attempts": 1
+      }
+    },
+    "day:(-1, 2)": {
+      "explore": {
+        "weight": 1.3481888614506627,
+        "successes": 3,
+        "attempts": 3
+      },
+      "observe": {
+        "weight": 1.3481888614506627,
+        "successes": 3,
+        "attempts": 3
+      },
+      "interact": {
+        "weight": 1.3481888614506627,
+        "successes": 3,
+        "attempts": 3
+      }
+    },
+    "day:(0, 2)": {
+      "explore": {
+        "weight": 1.360415090356386,
+        "successes": 2,
+        "attempts": 2
+      },
+      "observe": {
+        "weight": 1.360415090356386,
+        "successes": 2,
+        "attempts": 2
+      },
+      "interact": {
+        "weight": 1.360415090356386,
+        "successes": 2,
+        "attempts": 2
+      }
+    },
+    "day:(0, 3)": {
+      "explore": {
+        "weight": 1.1538106218180983,
+        "successes": 2,
+        "attempts": 3
+      },
+      "observe": {
+        "weight": 1.1538106218180983,
+        "successes": 2,
+        "attempts": 3
+      },
+      "interact": {
+        "weight": 1.1538106218180983,
+        "successes": 2,
+        "attempts": 3
+      }
+    },
+    "day:(1, 3)": {
+      "explore": {
+        "weight": 1.3810000921849792,
+        "successes": 3,
+        "attempts": 4
+      },
+      "observe": {
+        "weight": 1.3810000921849792,
+        "successes": 3,
+        "attempts": 4
+      },
+      "interact": {
+        "weight": 1.3810000921849792,
+        "successes": 3,
+        "attempts": 4
+      }
+    },
+    "day:(2, 3)": {
+      "explore": {
+        "weight": 0.9983812012121951,
+        "successes": 1,
+        "attempts": 2
+      },
+      "observe": {
+        "weight": 0.9983812012121951,
+        "successes": 1,
+        "attempts": 2
+      },
+      "interact": {
+        "weight": 0.9983812012121951,
+        "successes": 1,
+        "attempts": 2
+      }
+    },
+    "day:(1, 4)": {
+      "explore": {
+        "weight": 1.1872520426919384,
+        "successes": 1,
+        "attempts": 1
+      },
+      "observe": {
+        "weight": 1.1872520426919384,
+        "successes": 1,
+        "attempts": 1
+      },
+      "interact": {
+        "weight": 1.1872520426919384,
+        "successes": 1,
+        "attempts": 1
+      }
+    },
+    "day:(2, 4)": {
+      "explore": {
+        "weight": 1.3987270015536502,
+        "successes": 3,
+        "attempts": 3
+      },
+      "observe": {
+        "weight": 1.3987270015536502,
+        "successes": 3,
+        "attempts": 3
+      },
+      "interact": {
+        "weight": 1.3987270015536502,
+        "successes": 3,
+        "attempts": 3
+      }
+    },
+    "day:(2, 5)": {
+      "explore": {
+        "weight": 1.1350861320319225,
+        "successes": 1,
+        "attempts": 1
+      },
+      "observe": {
+        "weight": 1.1350861320319225,
+        "successes": 1,
+        "attempts": 1
+      },
+      "interact": {
+        "weight": 1.1350861320319225,
+        "successes": 1,
+        "attempts": 1
+      }
+    },
+    "day:(2, 6)": {
+      "explore": {
+        "weight": 1.098144926272691,
+        "successes": 1,
+        "attempts": 1
+      },
+      "observe": {
+        "weight": 1.098144926272691,
+        "successes": 1,
+        "attempts": 1
+      },
+      "interact": {
+        "weight": 1.098144926272691,
+        "successes": 1,
+        "attempts": 1
+      }
+    },
+    "day:(2, 7)": {
+      "explore": {
+        "weight": 1.3322985563188825,
+        "successes": 3,
+        "attempts": 4
+      },
+      "observe": {
+        "weight": 1.3322985563188825,
+        "successes": 3,
+        "attempts": 4
+      },
+      "interact": {
+        "weight": 1.3322985563188825,
+        "successes": 3,
+        "attempts": 4
+      }
+    },
+    "day:(3, 7)": {
+      "explore": {
+        "weight": 0.8859458500948588,
+        "successes": 1,
+        "attempts": 3
+      },
+      "observe": {
+        "weight": 0.8859458500948588,
+        "successes": 1,
+        "attempts": 3
+      },
+      "interact": {
+        "weight": 0.8859458500948588,
+        "successes": 1,
+        "attempts": 3
+      }
+    },
+    "day:(4, 7)": {
+      "explore": {
+        "weight": 1.0171679157945395,
+        "successes": 1,
+        "attempts": 2
+      },
+      "observe": {
+        "weight": 1.0171679157945395,
+        "successes": 1,
+        "attempts": 2
+      },
+      "interact": {
+        "weight": 1.0171679157945395,
+        "successes": 1,
+        "attempts": 2
+      }
+    }
+  },
+  "error_patterns": {
+    "day:(0, 0):PATH_BLOCKED": 2,
+    "day:(0, 0):TARGET_NOT_FOUND": 3,
+    "day:(0, 0):OTHER": 1,
+    "day:(-1, 1):TARGET_NOT_FOUND": 4,
+    "day:(-1, 1):PATH_BLOCKED": 1,
+    "day:(0, 3):TARGET_NOT_FOUND": 1,
+    "day:(1, 3):TARGET_NOT_FOUND": 1,
+    "day:(2, 3):TARGET_NOT_FOUND": 1,
+    "day:(2, 7):OTHER": 1,
+    "day:(3, 7):TARGET_NOT_FOUND": 2,
+    "day:(4, 7):TARGET_NOT_FOUND": 1
+  },
+  "success_patterns": {
+    "day:(0, 0):success": 5,
+    "day:(-1, 0):success": 1,
+    "day:(-1, 1):success": 3,
+    "day:(-2, 1):success": 1,
+    "day:(-1, 2):success": 3,
+    "day:(0, 2):success": 2,
+    "day:(0, 3):success": 2,
+    "day:(1, 3):success": 3,
+    "day:(2, 3):success": 1,
+    "day:(1, 4):success": 1,
+    "day:(2, 4):success": 3,
+    "day:(2, 5):success": 1,
+    "day:(2, 6):success": 1,
+    "day:(2, 7):success": 3,
+    "day:(3, 7):success": 1,
+    "day:(4, 7):success": 1
+  },
+  "learning_stats": {
+    "total_attempts": 50,
+    "successful_attempts": 32,
+    "error_counts": {
+      "RESOURCE_UNAVAILABLE": 0,
+      "INVALID_ACTION": 0,
+      "PATH_BLOCKED": 3,
+      "TARGET_NOT_FOUND": 13,
+      "TOOL_FAILURE": 0,
+      "TIMEOUT": 0,
+      "OTHER": 2
+    },
+    "last_updated": "2025-08-02T21:33:57.888535"
+  }
+}
