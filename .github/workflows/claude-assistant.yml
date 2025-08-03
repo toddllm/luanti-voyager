@@ -1,0 +1,31 @@
+name: Claude Assistant
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+
+jobs:
+  claude-response:
+    if: contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Claude Code Response
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Custom model selection
+          model: claude-3-5-sonnet-20241022
+          # Optional: Custom instructions
+          system_prompt: |
+            You are reviewing a Luanti (Minetest) AI agent project that integrates multiple LLM providers.
+            Focus on code quality, error handling, and proper async patterns in Python.
+            Be helpful and constructive in your feedback.
