@@ -14,6 +14,7 @@ import os
 
 from .llm import VoyagerLLM
 from .memory import SkillMemory
+from .advanced_llm import AdvancedLLM
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +53,7 @@ class VoyagerAgent:
         
         # LLM integration
         self.llm = VoyagerLLM(provider=llm_provider, **llm_kwargs)
+        self.advanced_llm = AdvancedLLM(self.llm) if llm_provider != "none" else None
         logger.info(f"🧠 LLM provider: {llm_provider}")
         
         # Memory system
@@ -59,6 +61,9 @@ class VoyagerAgent:
         logger.info(self.memory.get_memory_summary())
         self.running = False
         self.spawn_pos = {"x": 0, "y": 10, "z": 0}
+        
+        # Goal tracking
+        self.current_goal = None
         
         # Learning components (to be expanded)
         self.skills = {}  # Learned skills
@@ -196,8 +201,37 @@ class VoyagerAgent:
         if memory_suggestion:
             logger.info(f"💭 {memory_suggestion}")
         
-        # Try LLM decision making
-        if self.llm and self.llm.llm:
+        # Try advanced LLM decision making first
+        if self.advanced_llm:
+            # Check if last action failed and reflect on it
+            if self.state.last_error:
+                reflection = await self.advanced_llm.reflect_on_failure(
+                    {"type": self.state.last_action, "error": self.state.last_error},
+                    world_state,
+                    self.state.last_error
+                )
+                if reflection.get("alternative_action"):
+                    logger.info(f"💭 Learning from failure: {reflection.get('lesson_learned', '')}")
+                    return reflection["alternative_action"]
+            
+            # Use context-aware decision making
+            llm_action = await self.advanced_llm.decide_with_context(world_state)
+            if llm_action:
+                logger.info(f"🧠 Advanced LLM Decision: {llm_action.get('reason', 'No reason given')}")
+                
+                # Remember this strategy
+                situation = "general_exploration"
+                if self.state.hp <= 10:
+                    situation = "low_health"
+                elif len([b for b in self.state.nearby_blocks if b["type"] == "ignore"]) > 80:
+                    situation = "void_exploration"
+                    
+                self.memory.remember_strategy(situation, llm_action.get('reason', 'Advanced LLM decision'))
+                
+                return llm_action
+        
+        # Fallback to basic LLM if advanced not available
+        elif self.llm and self.llm.llm:
             llm_action = await self.llm.decide_action(world_state)
             if llm_action:
                 logger.info(f"🧠 LLM Decision: {llm_action.get('reason', 'No reason given')}")
@@ -374,6 +408,74 @@ class VoyagerAgent:
         """Add a learned skill."""
         self.skills[name] = code
         logger.info(f"Learned new skill: {name}")
+    
+    async def set_goal(self, goal: str) -> bool:
+        """Set a high-level goal for the agent."""
+        if not self.advanced_llm:
+            logger.warning("Advanced LLM required for goal setting")
+            return False
+            
+        logger.info(f"🎯 Setting goal: {goal}")
+        
+        # Get current world state
+        world_state = {
+            "agent_position": self.state.pos if self.state else {"x": 0, "y": 0, "z": 0},
+            "nearby_blocks": self.state.nearby_blocks if self.state else [],
+            "inventory": self.state.inventory if self.state else {},
+            "hp": self.state.hp if self.state else 20
+        }
+        
+        # Decompose goal into sub-goals
+        goal_obj = await self.advanced_llm.decompose_goal(goal, world_state)
+        self.advanced_llm.goals.append(goal_obj)
+        self.current_goal = goal
+        
+        logger.info(f"📋 Goal decomposed into {len(goal_obj.steps)} sub-goals")
+        for i, step in enumerate(goal_obj.steps, 1):
+            logger.info(f"  {i}. {step}")
+            
+        return True
+    
+    async def create_plan(self, objective: str) -> bool:
+        """Create a detailed plan for a specific objective."""
+        if not self.advanced_llm:
+            logger.warning("Advanced LLM required for planning")
+            return False
+            
+        logger.info(f"📝 Creating plan for: {objective}")
+        
+        # Get current world state
+        world_state = {
+            "agent_position": self.state.pos if self.state else {"x": 0, "y": 0, "z": 0},
+            "nearby_blocks": self.state.nearby_blocks if self.state else [],
+            "inventory": self.state.inventory if self.state else {},
+            "hp": self.state.hp if self.state else 20
+        }
+        
+        # Create action plan
+        plan = await self.advanced_llm.plan_sequence(objective, world_state)
+        self.advanced_llm.current_plan = plan
+        
+        logger.info(f"🗺️ Plan created with {len(plan.steps)} steps")
+        for i, step in enumerate(plan.steps, 1):
+            logger.info(f"  {i}. {step.get('action', 'unknown')}: {step.get('purpose', 'no purpose')}")
+            
+        return True
+    
+    async def get_goal_progress(self) -> str:
+        """Get progress on current goals."""
+        if not self.advanced_llm:
+            return "No goals set (Advanced LLM required)"
+            
+        if not self.advanced_llm.goals:
+            return "No active goals"
+            
+        progress_lines = []
+        for goal in self.advanced_llm.goals:
+            if goal.status != "completed":
+                progress_lines.append(f"🎯 {goal.description}: {goal.progress():.0f}% complete")
+                
+        return "\n".join(progress_lines) if progress_lines else "All goals completed!"
         
 
 # Simple test agent
