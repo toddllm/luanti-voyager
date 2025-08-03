@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot Upload - Luanti Voyager</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .upload-area {
+            border: 3px dashed #4CAF50;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            background: #333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            background: #3a3a3a;
+            border-color: #66BB6A;
+        }
+        
+        .upload-area.dragover {
+            background: #404040;
+            border-color: #81C784;
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .upload-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .upload-subtext {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        #fileInput {
+            display: none;
+        }
+        
+        .preview-area {
+            margin-top: 30px;
+            display: none;
+        }
+        
+        .preview-image {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+            font-weight: 500;
+        }
+        
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            background: #1a1a1a;
+            border: 2px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .button:hover {
+            background: #45a049;
+        }
+        
+        .button:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+        }
+        
+        .status.success {
+            background: #2e5a2e;
+            border: 1px solid #4CAF50;
+            color: #81C784;
+        }
+        
+        .status.error {
+            background: #5a2e2e;
+            border: 1px solid #f44336;
+            color: #ff8a80;
+        }
+        
+        .instructions {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        
+        .instructions ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Screenshot Upload for Luanti Voyager</h1>
+        
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ul>
+                <li>Take a screenshot of the 3D viewer or any progress</li>
+                <li>Paste it directly here (Ctrl/Cmd+V) or drag & drop</li>
+                <li>Add a description of what the screenshot shows</li>
+                <li>Click "Process for README" to generate markdown</li>
+            </ul>
+        </div>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📸</div>
+            <div class="upload-text">Paste screenshot or drag & drop image</div>
+            <div class="upload-subtext">Supports PNG, JPG, GIF • Ctrl/Cmd+V to paste</div>
+        </div>
+        
+        <input type="file" id="fileInput" accept="image/*">
+        
+        <div class="preview-area" id="previewArea">
+            <img id="previewImage" class="preview-image" alt="Screenshot preview">
+            
+            <div class="form-group">
+                <label for="description">Screenshot Description:</label>
+                <textarea id="description" placeholder="Describe what this screenshot shows (e.g., '3D viewer displaying agent exploring grass terrain with tree')"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="filename">Filename (optional):</label>
+                <input type="text" id="filename" placeholder="e.g., viewer-3d-terrain-exploration">
+            </div>
+            
+            <button class="button" onclick="processScreenshot()">📝 Process for README</button>
+        </div>
+        
+        <div class="status" id="status"></div>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const previewArea = document.getElementById('previewArea');
+        const previewImage = document.getElementById('previewImage');
+        const status = document.getElementById('status');
+        
+        let currentImageData = null;
+        
+        // Handle paste events
+        document.addEventListener('paste', (e) => {
+            const items = e.clipboardData.items;
+            for (let item of items) {
+                if (item.type.indexOf('image') !== -1) {
+                    const file = item.getAsFile();
+                    handleFile(file);
+                    e.preventDefault();
+                }
+            }
+        });
+        
+        // Handle drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+        
+        // Handle click to select file
+        uploadArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+        
+        function handleFile(file) {
+            if (!file.type.startsWith('image/')) {
+                showStatus('Please select an image file.', 'error');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                currentImageData = e.target.result;
+                previewImage.src = currentImageData;
+                previewArea.style.display = 'block';
+                
+                // Auto-generate filename if empty
+                const filenameInput = document.getElementById('filename');
+                if (!filenameInput.value) {
+                    const timestamp = new Date().toISOString().split('T')[0];
+                    filenameInput.value = `luanti-voyager-${timestamp}`;
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function processScreenshot() {
+            const description = document.getElementById('description').value;
+            const filename = document.getElementById('filename').value || 'screenshot';
+            
+            if (!currentImageData) {
+                showStatus('Please upload an image first.', 'error');
+                return;
+            }
+            
+            if (!description.trim()) {
+                showStatus('Please add a description.', 'error');
+                return;
+            }
+            
+            // Generate the markdown and file info
+            const markdown = generateMarkdown(description, filename);
+            const imageInfo = {
+                filename: `${filename}.png`,
+                description: description,
+                data: currentImageData
+            };
+            
+            // Show the generated content
+            showStatus(`
+                <strong>Ready for README!</strong><br><br>
+                <strong>Image saved as:</strong> docs/images/${imageInfo.filename}<br><br>
+                <strong>Markdown to add:</strong><br>
+                <pre style="background: #1a1a1a; padding: 10px; border-radius: 4px; white-space: pre-wrap;">${markdown}</pre>
+                <br>
+                <strong>Next steps:</strong><br>
+                1. Save this image data<br>
+                2. Add the markdown to README.md<br>
+                3. Commit the changes
+            `, 'success');
+            
+            // Store in localStorage for Claude to access
+            localStorage.setItem('screenshotData', JSON.stringify(imageInfo));
+            localStorage.setItem('screenshotMarkdown', markdown);
+        }
+        
+        function generateMarkdown(description, filename) {
+            return `## 🖼️ ${description}
+
+![${description}](docs/images/${filename}.png)
+
+*${description}*`;
+        }
+        
+        function showStatus(message, type) {
+            status.innerHTML = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -62,9 +62,14 @@ class VoyagerWebServer:
         async def viewer(request):
             return web.FileResponse(self.web_ui_path / 'viewer.html')
             
+        # Serve screenshot upload interface
+        async def screenshot_upload(request):
+            return web.FileResponse(self.web_ui_path / 'screenshot_upload.html')
+            
         # Serve other static files
         app.router.add_get('/', index)
         app.router.add_get('/viewer', viewer)
+        app.router.add_get('/screenshots', screenshot_upload)
         app.router.add_static('/', path=self.web_ui_path, name='static')
         
         runner = web.AppRunner(app)
