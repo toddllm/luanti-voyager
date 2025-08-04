@@ -43,8 +43,8 @@ skills/*
 # Temporarily exclude the large Luanti fork
 luanti-source-voyager-fork/
 
-# Reference repositories (local copies for study/reference)
-mindcraft-ai-agent/
+# Reference repositories are managed as git submodules (see .gitmodules)
+# No need to ignore them - git handles submodules automatically
 
 # LLM API keys and credentials
 api_keys.json
