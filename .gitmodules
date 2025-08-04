@@ -1,0 +1,3 @@
+[submodule "reference/mindcraft-ai-agent"]
+	path = reference/mindcraft-ai-agent
+	url = https://github.com/kolbytn/mindcraft.git
