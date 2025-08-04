@@ -371,8 +371,8 @@ class UDPLuantiConnection:
             if len(data) >= 1:
                 reason_code = data[0]
                 logger.error(f"Reason code: {reason_code}")
-        except:
-            pass
+        except (IndexError, struct.error) as e:
+            logger.debug(f"Could not parse disconnect reason: {e}")
             
     async def _send_legacy_auth(self):
         """Send legacy password authentication"""
@@ -401,8 +401,8 @@ class UDPLuantiConnection:
             # Simple parsing - actual format is more complex
             message = data.decode('utf-8', errors='ignore')
             logger.info(f"Chat: {message}")
-        except:
-            pass
+        except (UnicodeDecodeError, AttributeError) as e:
+            logger.debug(f"Could not decode chat message: {e}")
             
     async def _send_ack(self, seqnum: int, channel: int):
         """Send acknowledgment for reliable packet"""
