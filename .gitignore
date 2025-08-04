@@ -46,9 +46,11 @@ luanti-source-voyager-fork/
 # Reference repositories (local copies for study/reference)
 mindcraft-ai-agent/
 
-# LLM API keys
+# LLM API keys and credentials
 api_keys.json
 credentials/
+*_credentials.txt
+*.credentials
 
 # Test server files
 test-server/test_world/
