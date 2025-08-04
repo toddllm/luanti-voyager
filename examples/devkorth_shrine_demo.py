@@ -17,12 +17,18 @@ from pathlib import Path
 # Add parent directory for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+# Since connection module is not exposed in the package API,
+# we need to import it directly
 try:
-    from luanti_voyager.connection import LuantiConnection
-    from luanti_voyager.agent import Agent
+    # First try the public API
+    from luanti_voyager import VoyagerAgent
+    # For network connection, we need to import directly from the module
+    import luanti_voyager.connection as connection_module
+    LuantiConnection = connection_module.LuantiConnection
 except ImportError:
     print("Error: Could not import luanti_voyager modules")
     print("Make sure you're running from the luanti-voyager directory")
+    print("Try: cd /home/tdeshane/luanti/luanti-voyager && python3 examples/devkorth_shrine_demo.py")
     sys.exit(1)
 
 # Configure logging
@@ -33,12 +39,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-class DevkorthShrineAgent(Agent):
+class DevkorthShrineAgent:
     """Extended agent for building Devkorth shrines"""
     
     def __init__(self, connection, username="ShrineBuilder"):
-        super().__init__(connection, username)
+        self.connection = connection
+        self.username = username
         self.shrine_center = (10, 10, 10)
+        self.connected = False
         
     def execute_command(self, command):
         """Execute a chat command"""
