@@ -20,8 +20,12 @@ jobs:
       - name: Claude Code Response
         uses: anthropics/claude-code-action@beta
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # IMPORTANT: Use 'tag' mode for @claude mentions
+          mode: tag
+          
           # Optional: Custom model selection
           model: claude-3-5-sonnet-20241022
           # Optional: Custom instructions
