@@ -451,6 +451,189 @@ class UDPLuantiConnection:
         await self._send_packet(PacketType.TOSERVER_CHAT_MESSAGE, packet_data)
         logger.info(f"Sent chat: {message}")
         
+    async def move_to(self, x: float, y: float, z: float, yaw: float = 0.0, pitch: float = 0.0):
+        """Move the bot to a specific position"""
+        if not self.connected:
+            raise RuntimeError("Not connected")
+            
+        # Update internal state
+        self.player_state.pos = {"x": x, "y": y, "z": z}
+        self.player_state.yaw = yaw
+        self.player_state.pitch = pitch
+        
+        # Build TOSERVER_PLAYERPOS packet
+        packet_data = bytearray()
+        
+        # Position * 1000 (fixed point)
+        packet_data.extend(struct.pack("!iii", 
+            int(x * 1000), 
+            int(y * 1000), 
+            int(z * 1000)
+        ))
+        
+        # Speed * 1000 (fixed point) - for now, 0
+        packet_data.extend(struct.pack("!iii", 0, 0, 0))
+        
+        # Pitch and yaw * 1000
+        packet_data.extend(struct.pack("!ii",
+            int(pitch * 1000),
+            int(yaw * 1000)
+        ))
+        
+        # Key states (32 bits) - for now, 0
+        packet_data.extend(struct.pack("!I", 0))
+        
+        # FOV (80) 
+        packet_data.append(80)
+        
+        # Wanted range (0 = default)
+        packet_data.append(0)
+        
+        await self._send_packet(PacketType.TOSERVER_PLAYERPOS, packet_data)
+        logger.debug(f"Sent position update: ({x}, {y}, {z})")
+        
+    async def look_at(self, x: float, y: float, z: float):
+        """Make the bot look at a specific position"""
+        if not self.connected:
+            raise RuntimeError("Not connected")
+            
+        # Calculate yaw and pitch to look at target
+        dx = x - self.player_state.pos["x"]
+        dy = y - self.player_state.pos["y"]
+        dz = z - self.player_state.pos["z"]
+        
+        import math
+        # Calculate yaw (horizontal angle)
+        yaw = math.atan2(dx, dz)
+        
+        # Calculate pitch (vertical angle)
+        horizontal_dist = math.sqrt(dx*dx + dz*dz)
+        pitch = -math.atan2(dy, horizontal_dist)
+        
+        # Update position with new look direction
+        await self.move_to(
+            self.player_state.pos["x"],
+            self.player_state.pos["y"], 
+            self.player_state.pos["z"],
+            yaw,
+            pitch
+        )
+        
+    async def jump(self):
+        """Make the bot jump"""
+        if not self.connected:
+            raise RuntimeError("Not connected")
+            
+        # Set jump key bit
+        key_states = 0x200  # Jump key
+        
+        # Send position with jump key pressed
+        packet_data = bytearray()
+        
+        # Current position * 1000
+        packet_data.extend(struct.pack("!iii", 
+            int(self.player_state.pos["x"] * 1000), 
+            int(self.player_state.pos["y"] * 1000), 
+            int(self.player_state.pos["z"] * 1000)
+        ))
+        
+        # Speed * 1000
+        packet_data.extend(struct.pack("!iii", 0, 0, 0))
+        
+        # Pitch and yaw * 1000
+        packet_data.extend(struct.pack("!ii",
+            int(self.player_state.pitch * 1000),
+            int(self.player_state.yaw * 1000)
+        ))
+        
+        # Key states with jump
+        packet_data.extend(struct.pack("!I", key_states))
+        
+        # FOV and range
+        packet_data.append(80)
+        packet_data.append(0)
+        
+        await self._send_packet(PacketType.TOSERVER_PLAYERPOS, packet_data)
+        
+        # Release jump key after short delay
+        await asyncio.sleep(0.1)
+        
+        # Send without jump key
+        packet_data[-6:-2] = struct.pack("!I", 0)
+        await self._send_packet(PacketType.TOSERVER_PLAYERPOS, packet_data)
+        
+        logger.debug("Jumped")
+        
+    async def dig_block(self, x: int, y: int, z: int) -> bool:
+        """Dig/break a block at the specified position"""
+        if not self.connected:
+            raise RuntimeError("Not connected")
+            
+        # Build TOSERVER_INTERACT packet for digging
+        packet_data = bytearray()
+        
+        # Action: 0 = start digging
+        packet_data.append(0)
+        
+        # Item index (0 = first item)
+        packet_data.extend(struct.pack("!H", 0))
+        
+        # Pointed thing type: 1 = node
+        packet_data.append(1)
+        
+        # Node position
+        packet_data.extend(struct.pack("!iii", x, y, z))
+        
+        # Face (0-5, we'll use top)
+        packet_data.append(1)
+        
+        await self._send_packet(PacketType.TOSERVER_INTERACT, packet_data)
+        logger.info(f"Started digging block at ({x}, {y}, {z})")
+        
+        # Send "digging completed" after a short delay
+        await asyncio.sleep(0.5)
+        
+        # Action: 2 = digging completed
+        packet_data = bytearray()
+        packet_data.append(2)
+        packet_data.extend(struct.pack("!H", 0))
+        packet_data.append(1)
+        packet_data.extend(struct.pack("!iii", x, y, z))
+        packet_data.append(1)
+        
+        await self._send_packet(PacketType.TOSERVER_INTERACT, packet_data)
+        logger.info(f"Completed digging block at ({x}, {y}, {z})")
+        
+        return True
+        
+    async def place_block(self, x: int, y: int, z: int, item_index: int = 0) -> bool:
+        """Place a block at the specified position"""
+        if not self.connected:
+            raise RuntimeError("Not connected")
+            
+        # Build TOSERVER_INTERACT packet for placing
+        packet_data = bytearray()
+        
+        # Action: 3 = place
+        packet_data.append(3)
+        
+        # Item index
+        packet_data.extend(struct.pack("!H", item_index))
+        
+        # Pointed thing type: 1 = node
+        packet_data.append(1)
+        
+        # Node position (place next to this)
+        packet_data.extend(struct.pack("!iii", x, y-1, z))
+        
+        # Face (1 = top)
+        packet_data.append(1)
+        
+        await self._send_packet(PacketType.TOSERVER_INTERACT, packet_data)
+        logger.info(f"Placed block at ({x}, {y}, {z})")
+        
+        return True
+        
     async def disconnect(self):
         """Disconnect from server"""
         if self.transport:

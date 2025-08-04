@@ -40,7 +40,9 @@ UDPLuantiConnection(
 
 ### Methods
 
-#### `async connect()`
+#### Connection Management
+
+##### `async connect()`
 Establishes connection to the server. Handles the full handshake including:
 - Initial connection establishment
 - Peer ID assignment
@@ -51,10 +53,12 @@ Establishes connection to the server. Handles the full handshake including:
 - `TimeoutError`: If connection times out
 - `RuntimeError`: If connection fails
 
-#### `async disconnect()`
+##### `async disconnect()`
 Cleanly disconnects from the server.
 
-#### `async send_chat_message(message: str)`
+#### Communication
+
+##### `async send_chat_message(message: str)`
 Sends a chat message to the server.
 
 **Parameters:**
@@ -62,6 +66,46 @@ Sends a chat message to the server.
 
 **Raises:**
 - `RuntimeError`: If not connected
+
+#### Movement
+
+##### `async move_to(x: float, y: float, z: float, yaw: float = 0.0, pitch: float = 0.0)`
+Move the bot to a specific position with optional view direction.
+
+**Parameters:**
+- `x`, `y`, `z`: Target coordinates
+- `yaw`: Horizontal rotation (radians, optional)
+- `pitch`: Vertical rotation (radians, optional)
+
+##### `async look_at(x: float, y: float, z: float)`
+Make the bot look at a specific position.
+
+**Parameters:**
+- `x`, `y`, `z`: Position to look at
+
+##### `async jump()`
+Make the bot jump once.
+
+#### World Interaction
+
+##### `async dig_block(x: int, y: int, z: int) -> bool`
+Dig/break a block at the specified position.
+
+**Parameters:**
+- `x`, `y`, `z`: Block coordinates
+
+**Returns:**
+- `bool`: True if successful
+
+##### `async place_block(x: int, y: int, z: int, item_index: int = 0) -> bool`
+Place a block at the specified position.
+
+**Parameters:**
+- `x`, `y`, `z`: Position to place block
+- `item_index`: Inventory slot to use (default: 0)
+
+**Returns:**
+- `bool`: True if successful
 
 ### Properties
 
