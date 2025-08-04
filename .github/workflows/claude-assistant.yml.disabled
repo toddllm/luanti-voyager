@@ -10,6 +10,11 @@ jobs:
   claude-response:
     if: contains(github.event.comment.body, '@claude')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
     
     steps:
       - name: Checkout code
@@ -28,8 +33,9 @@ jobs:
           
           # Optional: Custom model selection
           model: claude-3-5-sonnet-20241022
-          # Optional: Custom instructions
-          system_prompt: |
+          
+          # Use custom_instructions instead of system_prompt
+          custom_instructions: |
             You are reviewing a Luanti (Minetest) AI agent project that integrates multiple LLM providers.
             Focus on code quality, error handling, and proper async patterns in Python.
             Be helpful and constructive in your feedback.
