@@ -1,9 +1,0 @@
-{
-  "void_exploration": [
-    {
-      "strategy": "Teleport to random coordinates when stuck in void",
-      "success": true,
-      "used_at": "2025-08-02T21:05:08.302567"
-    }
-  ]
-}

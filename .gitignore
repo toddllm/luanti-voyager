@@ -33,6 +33,10 @@ voyager_commands.txt
 voyager_responses.txt
 skills/*
 !skills/.gitkeep
+agent_memory/
+*_demo_output.txt
+*_llm_output.txt
+worlds/test_world/
 
 # Logs
 *.log
