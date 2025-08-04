@@ -43,9 +43,11 @@ skills/*
 # Temporarily exclude the large Luanti fork
 luanti-source-voyager-fork/
 
-# LLM API keys
+# LLM API keys and credentials
 api_keys.json
 credentials/
+*_credentials.txt
+*.credentials
 
 # Test server files
 test-server/test_world/

@@ -137,24 +137,19 @@ class UDPLuantiConnection:
             self.protocol = protocol
             logger.info(f"UDP endpoint created for {self.host}:{self.port}")
             
-            # Send initial packet to establish connection
-            # This is a control PING packet with peer_id 0
-            ping_packet = bytearray()
-            ping_packet.extend(struct.pack("!I", 0x4f457403))  # Protocol ID
-            ping_packet.extend(struct.pack("!H", 0))  # Peer ID 0
-            ping_packet.append(0)  # Channel 0
-            ping_packet.append(0x00)  # TYPE_CONTROL
-            ping_packet.append(PacketType.CONTROLTYPE_PING)  # PING
-            
-            self.transport.sendto(ping_packet)
-            logger.debug("Sent initial PING to establish connection")
+            # Send initial INIT packet to start handshake
+            await self._send_init()
+            logger.debug("Sent initial INIT packet")
             
             # Wait for connection and authentication
-            for _ in range(50):  # 5 seconds timeout
+            for i in range(100):  # 10 seconds timeout
                 if self.auth_complete:
                     break
+                if i % 10 == 0:
+                    logger.debug(f"Waiting for auth... connected={self.connected}, auth={self.auth_complete}, peer_id={self.peer_id}")
                 await asyncio.sleep(0.1)
             else:
+                logger.error(f"Timeout: connected={self.connected}, auth={self.auth_complete}, peer_id={self.peer_id}")
                 raise TimeoutError("Connection timeout")
                 
             logger.info("Connected successfully!")
@@ -194,7 +189,8 @@ class UDPLuantiConnection:
         # Client version info
         packet_data.extend(struct.pack("!HHH", 5, 8, 0))  # Version 5.8.0
         
-        await self._send_packet(PacketType.TOSERVER_INIT, packet_data)
+        # Use unreliable for initial INIT (peer_id will be 0)
+        await self._send_packet(PacketType.TOSERVER_INIT, packet_data, reliable=False)
         
     async def _send_packet(self, packet_type: int, data: bytes, reliable: bool = True, channel: int = 0):
         """Send a packet to the server"""
@@ -300,7 +296,7 @@ class UDPLuantiConnection:
             logger.warning(f"Unknown packet type indicator: {type_indicator:#x}")
             return
         
-        logger.debug(f"Received packet type {packet_type:#x}, reliable={is_reliable}, seq={seqnum}")
+        logger.debug(f"Received packet type {packet_type:#x}, reliable={is_reliable}, seq={seqnum}, data_len={len(packet_data)}")
         
         # If reliable packet, queue acknowledgment
         if is_reliable:
@@ -316,9 +312,10 @@ class UDPLuantiConnection:
         # Handle packet
         handler = self.handlers.get(packet_type)
         if handler:
+            logger.debug(f"Calling handler for packet type {packet_type:#x}")
             handler(packet_data)
         else:
-            logger.debug(f"Unhandled packet type: {packet_type:#x}")
+            logger.warning(f"Unhandled packet type: {packet_type:#x} - this might be important!")
             
     def _handle_control_packet(self, control_type: int, data: bytes, channel: int):
         """Handle control packets"""
@@ -339,18 +336,15 @@ class UDPLuantiConnection:
         if len(data) >= 2:
             self.peer_id = struct.unpack("!H", data[:2])[0]
             logger.info(f"Assigned peer_id: {self.peer_id}")
-            # After getting peer ID, send INIT packet
-            asyncio.create_task(self._send_init())
+            # Don't send INIT here - it's already been sent
+            # The server should send HELLO next
             
     def _handle_hello(self, data: bytes):
         """Handle TOCLIENT_HELLO packet"""
         logger.info("Received HELLO from server")
         
-        # Parse peer_id
-        if len(data) >= 2:
-            self.peer_id = struct.unpack("!H", data[:2])[0]
-            logger.info(f"Assigned peer_id: {self.peer_id}")
-            
+        # HELLO packet format varies by protocol version
+        # For now, just mark as connected and send INIT2
         self.connected = True
         
         # Send INIT2
@@ -377,8 +371,8 @@ class UDPLuantiConnection:
             if len(data) >= 1:
                 reason_code = data[0]
                 logger.error(f"Reason code: {reason_code}")
-        except:
-            pass
+        except (IndexError, struct.error) as e:
+            logger.debug(f"Could not parse disconnect reason: {e}")
             
     async def _send_legacy_auth(self):
         """Send legacy password authentication"""
@@ -407,8 +401,8 @@ class UDPLuantiConnection:
             # Simple parsing - actual format is more complex
             message = data.decode('utf-8', errors='ignore')
             logger.info(f"Chat: {message}")
-        except:
-            pass
+        except (UnicodeDecodeError, AttributeError) as e:
+            logger.debug(f"Could not decode chat message: {e}")
             
     async def _send_ack(self, seqnum: int, channel: int):
         """Send acknowledgment for reliable packet"""
@@ -643,32 +637,65 @@ class UDPLuantiConnection:
         logger.info("Disconnected")
 
 
-# Quick test
-if __name__ == "__main__":
+async def test_with_simple_auth():
+    """Test connection with simple authentication flow"""
     logging.basicConfig(level=logging.DEBUG)
     
-    async def test():
-        conn = UDPLuantiConnection(port=50000, username="UDPTestBot")
+    conn = UDPLuantiConnection(
+        host="localhost",
+        port=50000, 
+        username="TestBot",
+        password=""
+    )
+    
+    try:
+        # Just establish UDP endpoint first
+        loop = asyncio.get_event_loop()
+        transport, protocol = await loop.create_datagram_endpoint(
+            lambda: MineTestUDPProtocol(conn),
+            remote_addr=(conn.host, conn.port)
+        )
         
-        try:
-            await conn.connect()
-            
-            if conn.connected:
-                logger.info("Successfully connected via UDP!")
-                
-                # Try to send a chat message
-                await conn.send_chat_message("Hello from UDP bot!")
-                
-                # Wait a bit to see responses
-                await asyncio.sleep(10)
-            else:
-                logger.error("Failed to establish connection")
-            
-        except Exception as e:
-            logger.error(f"Test failed: {e}")
-            import traceback
-            traceback.print_exc()
-        finally:
-            await conn.disconnect()
-            
-    asyncio.run(test())
+        conn.protocol = protocol
+        logger.info("UDP endpoint created")
+        
+        # Send simple INIT without peer ID first
+        packet = bytearray()
+        packet.extend(struct.pack("!I", 0x4f457403))  # Protocol ID
+        packet.extend(struct.pack("!H", 0))  # Peer ID 0
+        packet.append(0)  # Channel 0
+        packet.append(0x01)  # TYPE_ORIGINAL (unreliable)
+        packet.extend(struct.pack("!H", PacketType.TOSERVER_INIT))  # Packet type
+        
+        # Protocol version
+        packet.append(42)  # MAX_PROTOCOL_VERSION
+        
+        # Player name (wide string)
+        name_bytes = conn.username.encode('utf-16-be')
+        packet.extend(struct.pack("!H", len(conn.username)))
+        packet.extend(name_bytes)
+        
+        # Password (empty)
+        packet.extend(struct.pack("!H", 0))
+        
+        # Client version
+        packet.extend(struct.pack("!HHH", 5, 8, 0))
+        
+        transport.sendto(packet)
+        logger.info("Sent INIT packet")
+        
+        # Wait for responses
+        await asyncio.sleep(5)
+        
+    except Exception as e:
+        logger.error(f"Test failed: {e}")
+        import traceback
+        traceback.print_exc()
+    finally:
+        if transport:
+            transport.close()
+
+
+# Quick test
+if __name__ == "__main__":
+    asyncio.run(test_with_simple_auth())

@@ -25,8 +25,8 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           
-          # Add mode explicitly (new requirement?)
-          mode: review
+          # Use agent mode for automated PR reviews
+          mode: agent
           
           # Add github_token explicitly
           github_token: ${{ secrets.GITHUB_TOKEN }}
