@@ -451,6 +451,30 @@ open http://localhost:8090/viewer
 
 *Watch your agent explore in real-time 3D while staying symbol-first for efficiency.*
 
+## 📚 Documentation
+
+### Network API
+Luanti Voyager now includes a native UDP connection implementation for direct server communication:
+
+```python
+from luanti_voyager import UDPLuantiConnection
+import asyncio
+
+async def connect():
+    conn = UDPLuantiConnection(host="localhost", port=30000)
+    await conn.connect()
+    await conn.send_chat_message("Hello from AI!")
+    await conn.disconnect()
+
+asyncio.run(connect())
+```
+
+See [Network API Documentation](docs/network_api.md) for complete details.
+
+### Examples
+- [UDP Connection Example](examples/udp_connection_example.py) - Basic connection and chat
+- More examples coming soon!
+
 ## 📄 The Legal Stuff
 
 MIT License - basically do whatever you want! See [LICENSE](LICENSE) for the formal version.

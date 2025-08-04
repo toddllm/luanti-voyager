@@ -8,5 +8,6 @@ __version__ = "0.0.1"
 __author__ = "Luanti Voyager Community"
 
 from .agent import VoyagerAgent
+from .udp_connection import UDPLuantiConnection
 
-__all__ = ["VoyagerAgent"]
+__all__ = ["VoyagerAgent", "UDPLuantiConnection"]
