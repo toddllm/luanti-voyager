@@ -1,0 +1,50 @@
+name: Test Claude Action
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  test-minimal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          
+      - name: Echo Test
+        run: |
+          echo "Checkout successful"
+          git status
+          echo "Git version:"
+          git --version
+          
+  test-claude-action:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+      
+    steps:
+      - name: Checkout with Token
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Test Claude Action
+        id: test-claude
+        uses: anthropics/claude-code-action@beta
+        continue-on-error: true
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Try with minimal configuration
+          direct_prompt: "Just say hello"
+          
+      - name: Check Result
+        if: always()
+        run: |
+          echo "Claude action result: ${{ steps.test-claude.outcome }}"
+          echo "Error (if any): ${{ steps.test-claude.outputs.error }}"
