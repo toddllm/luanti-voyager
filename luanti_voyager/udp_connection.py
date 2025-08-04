@@ -9,7 +9,7 @@ import asyncio
 import struct
 import time
 import logging
-from typing import Optional, Dict, Any, Callable, Tuple
+from typing import Optional, Dict, Any, Callable, Tuple, Set, List
 from dataclasses import dataclass
 from enum import IntEnum
 
@@ -18,6 +18,12 @@ logger = logging.getLogger(__name__)
 
 class PacketType(IntEnum):
     """Minetest packet types we need"""
+    # Control types
+    CONTROLTYPE_ACK = 0x00
+    CONTROLTYPE_SET_PEER_ID = 0x01
+    CONTROLTYPE_PING = 0x02
+    CONTROLTYPE_DISCO = 0x03
+    
     # Client to server
     TOSERVER_INIT = 0x02
     TOSERVER_INIT2 = 0x11
@@ -98,6 +104,10 @@ class UDPLuantiConnection:
         # Sequence numbers
         self.seqnum = self.SEQNUM_INITIAL
         
+        # Reliability tracking
+        self.received_reliable: Set[int] = set()  # Track received reliable packets
+        self.ack_queue: List[Tuple[int, int]] = []  # (seqnum, channel) to acknowledge
+        
         # Player state
         self.player_state = PlayerState(
             pos={"x": 0.0, "y": 0.0, "z": 0.0}
@@ -105,8 +115,11 @@ class UDPLuantiConnection:
         
         # Packet handlers
         self.handlers: Dict[int, Callable] = {
+            0x01: self._handle_set_peer_id,  # TOCLIENT_SET_PEER_ID
             PacketType.TOCLIENT_HELLO: self._handle_hello,
             PacketType.TOCLIENT_AUTH_ACCEPT: self._handle_auth_accept,
+            0x04: self._handle_auth_mechanism,  # TOCLIENT_AUTH_MECHANISM
+            0x0a: self._handle_access_denied,  # TOCLIENT_ACCESS_DENIED  
             PacketType.TOCLIENT_INIT_LEGACY: self._handle_init_legacy,
             PacketType.TOCLIENT_CHAT_MESSAGE: self._handle_chat_message,
         }
@@ -124,12 +137,21 @@ class UDPLuantiConnection:
             self.protocol = protocol
             logger.info(f"UDP endpoint created for {self.host}:{self.port}")
             
-            # Send initial handshake
-            await self._send_init()
+            # Send initial packet to establish connection
+            # This is a control PING packet with peer_id 0
+            ping_packet = bytearray()
+            ping_packet.extend(struct.pack("!I", 0x4f457403))  # Protocol ID
+            ping_packet.extend(struct.pack("!H", 0))  # Peer ID 0
+            ping_packet.append(0)  # Channel 0
+            ping_packet.append(0x00)  # TYPE_CONTROL
+            ping_packet.append(PacketType.CONTROLTYPE_PING)  # PING
             
-            # Wait for connection
+            self.transport.sendto(ping_packet)
+            logger.debug("Sent initial PING to establish connection")
+            
+            # Wait for connection and authentication
             for _ in range(50):  # 5 seconds timeout
-                if self.connected:
+                if self.auth_complete:
                     break
                 await asyncio.sleep(0.1)
             else:
@@ -174,7 +196,7 @@ class UDPLuantiConnection:
         
         await self._send_packet(PacketType.TOSERVER_INIT, packet_data)
         
-    async def _send_packet(self, packet_type: int, data: bytes, reliable: bool = True):
+    async def _send_packet(self, packet_type: int, data: bytes, reliable: bool = True, channel: int = 0):
         """Send a packet to the server"""
         if not self.transport:
             raise RuntimeError("Not connected")
@@ -188,26 +210,32 @@ class UDPLuantiConnection:
         # Peer ID (2 bytes) 
         packet.extend(struct.pack("!H", self.peer_id))
         
-        # Channel (1 byte) - 0 for main channel
-        packet.append(0)
+        # Channel (1 byte)
+        packet.append(channel)
         
-        # Packet type (1 byte) and reliable flag
         if reliable:
-            packet.append(packet_type | 0x80)  # Set reliable bit
-        else:
-            packet.append(packet_type)
+            # Reliable packet type indicator
+            packet.append(0x03)  # TYPE_RELIABLE
             
-        # Sequence number (2 bytes) for reliable packets
-        if reliable:
+            # Sequence number (2 bytes)
             packet.extend(struct.pack("!H", self.seqnum))
             self.seqnum = (self.seqnum + 1) % 65536
+            
+            # Actual packet type (2 bytes)
+            packet.extend(struct.pack("!H", packet_type))
+        else:
+            # Unreliable (TYPE_ORIGINAL)
+            packet.append(0x01)
+            
+            # Packet type (2 bytes)
+            packet.extend(struct.pack("!H", packet_type))
         
         # Add data
         packet.extend(data)
         
         # Send
         self.transport.sendto(packet)
-        logger.debug(f"Sent packet type {packet_type:#x}, size {len(packet)}")
+        logger.debug(f"Sent packet type {packet_type:#x}, reliable={reliable}, size {len(packet)}")
         
     def _handle_packet(self, data: bytes):
         """Handle incoming packet"""
@@ -234,22 +262,56 @@ class UDPLuantiConnection:
         channel = data[pos]
         pos += 1
         
-        # Packet type (1 byte) - mask off reliable bit
-        packet_type_byte = data[pos]
-        is_reliable = (packet_type_byte & 0x80) != 0
-        packet_type = packet_type_byte & 0x7F
+        # Packet type indicator (1 byte)
+        type_indicator = data[pos]
         pos += 1
         
-        # Sequence number for reliable packets
-        if is_reliable and len(data) >= pos + 2:
+        is_reliable = False
+        seqnum = 0
+        packet_type = 0
+        
+        if type_indicator == 0x00:  # TYPE_CONTROL
+            # Control packet - packet type is 1 byte
+            control_type = data[pos]
+            pos += 1
+            packet_data = data[pos:]
+            # Handle control packets specially
+            self._handle_control_packet(control_type, packet_data, channel)
+            return
+        elif type_indicator == 0x01:  # TYPE_ORIGINAL (unreliable)
+            # Packet type is 2 bytes
+            packet_type = struct.unpack("!H", data[pos:pos+2])[0]
+            pos += 2
+            packet_data = data[pos:]
+        elif type_indicator == 0x02:  # TYPE_SPLIT
+            # Split packet - not implemented yet
+            logger.warning("Split packets not implemented")
+            return
+        elif type_indicator == 0x03:  # TYPE_RELIABLE
+            is_reliable = True
+            # Sequence number (2 bytes)
             seqnum = struct.unpack("!H", data[pos:pos+2])[0]
             pos += 2
+            # Packet type (2 bytes)
+            packet_type = struct.unpack("!H", data[pos:pos+2])[0]
+            pos += 2
+            packet_data = data[pos:]
         else:
-            seqnum = 0
-            
-        packet_data = data[pos:]
+            logger.warning(f"Unknown packet type indicator: {type_indicator:#x}")
+            return
         
         logger.debug(f"Received packet type {packet_type:#x}, reliable={is_reliable}, seq={seqnum}")
+        
+        # If reliable packet, queue acknowledgment
+        if is_reliable:
+            # Check if we've already seen this packet
+            if seqnum not in self.received_reliable:
+                self.received_reliable.add(seqnum)
+                # Send acknowledgment immediately
+                asyncio.create_task(self._send_ack(seqnum, channel))
+            else:
+                logger.debug(f"Duplicate reliable packet {seqnum}, ignoring")
+                return
         
         # Handle packet
         handler = self.handlers.get(packet_type)
@@ -257,6 +319,28 @@ class UDPLuantiConnection:
             handler(packet_data)
         else:
             logger.debug(f"Unhandled packet type: {packet_type:#x}")
+            
+    def _handle_control_packet(self, control_type: int, data: bytes, channel: int):
+        """Handle control packets"""
+        logger.debug(f"Received control packet type {control_type:#x}")
+        
+        if control_type == PacketType.CONTROLTYPE_ACK:
+            # Server acknowledging our packet
+            if len(data) >= 2:
+                acked_seqnum = struct.unpack("!H", data[:2])[0]
+                logger.debug(f"Server acknowledged seqnum {acked_seqnum}")
+        elif control_type == PacketType.CONTROLTYPE_PING:
+            # Server ping - we should pong back
+            logger.debug("Received PING from server")
+            # TODO: Send PONG response
+            
+    def _handle_set_peer_id(self, data: bytes):
+        """Handle TOCLIENT_SET_PEER_ID packet"""
+        if len(data) >= 2:
+            self.peer_id = struct.unpack("!H", data[:2])[0]
+            logger.info(f"Assigned peer_id: {self.peer_id}")
+            # After getting peer ID, send INIT packet
+            asyncio.create_task(self._send_init())
             
     def _handle_hello(self, data: bytes):
         """Handle TOCLIENT_HELLO packet"""
@@ -278,15 +362,39 @@ class UDPLuantiConnection:
         self.auth_complete = True
         self.connected = True  # Mark as connected when auth is accepted
         
+    def _handle_auth_mechanism(self, data: bytes):
+        """Handle auth mechanism packet"""
+        logger.info("Received AUTH_MECHANISM from server")
+        # For now, we'll just respond with legacy password auth
+        # In the future, we could implement SRP
+        asyncio.create_task(self._send_legacy_auth())
+        
+    def _handle_access_denied(self, data: bytes):
+        """Handle access denied packet"""
+        logger.error("Access denied by server!")
+        # Try to parse reason
+        try:
+            if len(data) >= 1:
+                reason_code = data[0]
+                logger.error(f"Reason code: {reason_code}")
+        except:
+            pass
+            
+    async def _send_legacy_auth(self):
+        """Send legacy password authentication"""
+        # For servers that don't require auth, sending empty response
+        packet_data = bytearray()
+        
+        # Legacy password (empty)
+        packet_data.extend(struct.pack("!H", 0))  # Empty password
+        
+        await self._send_packet(0x54, packet_data)  # TOSERVER_LEGACY_PASSWORD
+        logger.debug("Sent legacy auth response")
+        
     async def _send_init2(self):
         """Send TOSERVER_INIT2 packet"""
         # Empty packet for now
         await self._send_packet(PacketType.TOSERVER_INIT2, b'')
-        
-    def _handle_auth_accept(self, data: bytes):
-        """Handle authentication acceptance"""
-        logger.info("Authentication accepted!")
-        self.auth_complete = True
         
     def _handle_init_legacy(self, data: bytes):
         """Handle init legacy packet"""
@@ -301,6 +409,35 @@ class UDPLuantiConnection:
             logger.info(f"Chat: {message}")
         except:
             pass
+            
+    async def _send_ack(self, seqnum: int, channel: int):
+        """Send acknowledgment for reliable packet"""
+        logger.debug(f"Sending ACK for seqnum {seqnum} on channel {channel}")
+        
+        # Build control packet for ACK
+        packet = bytearray()
+        
+        # Protocol ID (4 bytes)
+        packet.extend(struct.pack("!I", 0x4f457403))
+        
+        # Peer ID (2 bytes) 
+        packet.extend(struct.pack("!H", self.peer_id))
+        
+        # Channel (1 byte)
+        packet.append(channel)
+        
+        # Control packet type indicator
+        packet.append(0x00)  # TYPE_CONTROL
+        
+        # Control type (1 byte)
+        packet.append(PacketType.CONTROLTYPE_ACK)
+        
+        # Sequence number being acknowledged (2 bytes)
+        packet.extend(struct.pack("!H", seqnum))
+        
+        # Send
+        if self.transport:
+            self.transport.sendto(packet)
             
     async def send_chat_message(self, message: str):
         """Send a chat message"""
@@ -340,7 +477,7 @@ if __name__ == "__main__":
                 await conn.send_chat_message("Hello from UDP bot!")
                 
                 # Wait a bit to see responses
-                await asyncio.sleep(3)
+                await asyncio.sleep(10)
             else:
                 logger.error("Failed to establish connection")
             
