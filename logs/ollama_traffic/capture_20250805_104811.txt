@@ -1,0 +1,1370 @@
+10:48:14.018835 IP localhost.11434 > localhost.62659: Flags [P.], seq 3023546071:3023546298, ack 2102607121, win 6339, options [nop,nop,TS val 583083061 ecr 2434134161], length 227
+E.....@.@...........,....7..}S=............
+".$5....HTTP/1.1 200 OK
+Content-Type: application/x-ndjson
+Date: Tue, 05 Aug 2025 14:48:14 GMT
+Transfer-Encoding: chunked
+
+65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.018811Z","response":"#","done":false}
+
+
+10:48:14.018862 IP localhost.62659 > localhost.11434: Flags [.], ack 227, win 5147, options [nop,nop,TS val 2434137089 ecr 583083061], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".$5
+10:48:14.084003 IP localhost.11434 > localhost.62659: Flags [P.], seq 227:347, ack 1, win 6339, options [nop,nop,TS val 583083126 ecr 2434137089], length 120
+E.....@.@...........,....7..}S=............
+".$v....72
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.08398Z","response":" Implementation","done":false}
+
+
+10:48:14.084025 IP localhost.62659 > localhost.11434: Flags [.], ack 347, win 5146, options [nop,nop,TS val 2434137154 ecr 583083126], length 0
+E..4..@.@.............,.}S=..7.2.....(.....
+...B".$v
+10:48:14.148155 IP localhost.11434 > localhost.62659: Flags [P.], seq 347:458, ack 1, win 6339, options [nop,nop,TS val 583083191 ecr 2434137154], length 111
+E.....@.@...........,....7.2}S=............
+".$....B69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.14813Z","response":" Guide","done":false}
+
+
+10:48:14.148177 IP localhost.62659 > localhost.11434: Flags [.], ack 458, win 5145, options [nop,nop,TS val 2434137219 ecr 583083191], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".$.
+10:48:14.212181 IP localhost.11434 > localhost.62659: Flags [P.], seq 458:568, ack 1, win 6339, options [nop,nop,TS val 583083255 ecr 2434137219], length 110
+E.....@.@...........,....7..}S=............
+".$.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.212161Z","response":" for","done":false}
+
+
+10:48:14.212203 IP localhost.62659 > localhost.11434: Flags [.], ack 568, win 5144, options [nop,nop,TS val 2434137283 ecr 583083255], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".$.
+10:48:14.275724 IP localhost.11434 > localhost.62659: Flags [P.], seq 568:681, ack 1, win 6339, options [nop,nop,TS val 583083318 ecr 2434137283], length 113
+E.....@.@...........,....7..}S=............
+".%6....6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.275705Z","response":" Integr","done":false}
+
+
+10:48:14.275745 IP localhost.62659 > localhost.11434: Flags [.], ack 681, win 5143, options [nop,nop,TS val 2434137346 ecr 583083318], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".%6
+10:48:14.339894 IP localhost.11434 > localhost.62659: Flags [P.], seq 681:792, ack 1, win 6339, options [nop,nop,TS val 583083382 ecr 2434137346], length 111
+E.....@.@...........,....7..}S=............
+".%v....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.339872Z","response":"ating","done":false}
+
+
+10:48:14.339915 IP localhost.62659 > localhost.11434: Flags [.], ack 792, win 5142, options [nop,nop,TS val 2434137410 ecr 583083382], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...B".%v
+10:48:14.403604 IP localhost.11434 > localhost.62659: Flags [P.], seq 792:909, ack 1, win 6339, options [nop,nop,TS val 583083446 ecr 2434137410], length 117
+E.....@.@...........,....7..}S=............
+".%....B6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.403584Z","response":" Production","done":false}
+
+
+10:48:14.403632 IP localhost.62659 > localhost.11434: Flags [.], ack 909, win 5141, options [nop,nop,TS val 2434137474 ecr 583083446], length 0
+E..4..@.@.............,.}S=..7.d.....(.....
+....".%.
+10:48:14.467592 IP localhost.11434 > localhost.62659: Flags [P.], seq 909:1016, ack 1, win 6339, options [nop,nop,TS val 583083510 ecr 2434137474], length 107
+E.....@.@...........,....7.d}S=............
+".%.....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.46757Z","response":" R","done":false}
+
+
+10:48:14.467638 IP localhost.62659 > localhost.11434: Flags [.], ack 1016, win 5140, options [nop,nop,TS val 2434137538 ecr 583083510], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".%.
+10:48:14.531267 IP localhost.11434 > localhost.62659: Flags [P.], seq 1016:1124, ack 1, win 6339, options [nop,nop,TS val 583083574 ecr 2434137538], length 108
+E.....@.@...........,....7..}S=............
+".&6....66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.531242Z","response":"AG","done":false}
+
+
+10:48:14.531325 IP localhost.62659 > localhost.11434: Flags [.], ack 1124, win 5139, options [nop,nop,TS val 2434137602 ecr 583083574], length 0
+E..4..@.@.............,.}S=..7.;.....(.....
+....".&6
+10:48:14.595821 IP localhost.11434 > localhost.62659: Flags [P.], seq 1124:1235, ack 1, win 6339, options [nop,nop,TS val 583083638 ecr 2434137602], length 111
+E.....@.@...........,....7.;}S=............
+".&v....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.595798Z","response":" into","done":false}
+
+
+10:48:14.595898 IP localhost.62659 > localhost.11434: Flags [.], ack 1235, win 5138, options [nop,nop,TS val 2434137666 ecr 583083638], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...B".&v
+10:48:14.660205 IP localhost.11434 > localhost.62659: Flags [P.], seq 1235:1344, ack 1, win 6339, options [nop,nop,TS val 583083703 ecr 2434137666], length 109
+E.....@.@...........,....7..}S=............
+".&....B67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.660184Z","response":" Lu","done":false}
+
+
+10:48:14.660240 IP localhost.62659 > localhost.11434: Flags [.], ack 1344, win 5137, options [nop,nop,TS val 2434137731 ecr 583083703], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".&.
+10:48:14.724506 IP localhost.11434 > localhost.62659: Flags [P.], seq 1344:1454, ack 1, win 6339, options [nop,nop,TS val 583083767 ecr 2434137731], length 110
+E.....@.@...........,....7..}S=............
+".&.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.724479Z","response":"anti","done":false}
+
+
+10:48:14.724554 IP localhost.62659 > localhost.11434: Flags [.], ack 1454, win 5136, options [nop,nop,TS val 2434137795 ecr 583083767], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".&.
+10:48:14.788604 IP localhost.11434 > localhost.62659: Flags [P.], seq 1454:1568, ack 1, win 6339, options [nop,nop,TS val 583083831 ecr 2434137795], length 114
+E.....@.@...........,....7..}S=............
+".'7....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.788579Z","response":" Voyager","done":false}
+
+
+10:48:14.788663 IP localhost.62659 > localhost.11434: Flags [.], ack 1568, win 5135, options [nop,nop,TS val 2434137859 ecr 583083831], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".'7
+10:48:14.854606 IP localhost.11434 > localhost.62659: Flags [P.], seq 1568:1678, ack 1, win 6339, options [nop,nop,TS val 583083897 ecr 2434137859], length 110
+E.....@.@...........,....7..}S=............
+".'y....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.854583Z","response":"\n\n","done":false}
+
+
+10:48:14.854658 IP localhost.62659 > localhost.11434: Flags [.], ack 1678, win 5134, options [nop,nop,TS val 2434137925 ecr 583083897], length 0
+E..4..@.@.............,.}S=..7.e.....(.....
+...E".'y
+10:48:14.920251 IP localhost.11434 > localhost.62659: Flags [P.], seq 1678:1786, ack 1, win 6339, options [nop,nop,TS val 583083963 ecr 2434137925], length 108
+E.....@.@...........,....7.e}S=............
+".'....E66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.920229Z","response":"##","done":false}
+
+
+10:48:14.920302 IP localhost.62659 > localhost.11434: Flags [.], ack 1786, win 5133, options [nop,nop,TS val 2434137991 ecr 583083963], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".'.
+10:48:14.987274 IP localhost.11434 > localhost.62659: Flags [P.], seq 1786:1902, ack 1, win 6339, options [nop,nop,TS val 583084030 ecr 2434137991], length 116
+E.....@.@...........,....7..}S=............
+".'.....6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:14.987249Z","response":" Executive","done":false}
+
+
+10:48:14.987321 IP localhost.62659 > localhost.11434: Flags [.], ack 1902, win 5132, options [nop,nop,TS val 2434138058 ecr 583084030], length 0
+E..4..@.@.............,.}S=..7.E.....(.....
+....".'.
+10:48:15.054184 IP localhost.11434 > localhost.62659: Flags [P.], seq 1902:2015, ack 1, win 6339, options [nop,nop,TS val 583084097 ecr 2434138058], length 113
+E.....@.@...........,....7.E}S=............
+".(A....6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.05416Z","response":" Summary","done":false}
+
+
+10:48:15.054248 IP localhost.62659 > localhost.11434: Flags [.], ack 2015, win 5131, options [nop,nop,TS val 2434138125 ecr 583084097], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".(A
+10:48:15.122200 IP localhost.11434 > localhost.62659: Flags [P.], seq 2015:2125, ack 1, win 6339, options [nop,nop,TS val 583084165 ecr 2434138125], length 110
+E.....@.@...........,....7..}S=............
+".(.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.122172Z","response":"\n\n","done":false}
+
+
+10:48:15.122290 IP localhost.62659 > localhost.11434: Flags [.], ack 2125, win 5130, options [nop,nop,TS val 2434138193 ecr 583084165], length 0
+E..4..@.@.............,.}S=..7.$...
+.(.....
+...Q".(.
+10:48:15.192487 IP localhost.11434 > localhost.62659: Flags [P.], seq 2125:2234, ack 1, win 6339, options [nop,nop,TS val 583084235 ecr 2434138193], length 109
+E.....@.@...........,....7.$}S=............
+".(....Q67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.192386Z","response":"Int","done":false}
+
+
+10:48:15.192575 IP localhost.62659 > localhost.11434: Flags [.], ack 2234, win 5129, options [nop,nop,TS val 2434138263 ecr 583084235], length 0
+E..4..@.@.............,.}S=..7.....	.(.....
+....".(.
+10:48:15.264149 IP localhost.11434 > localhost.62659: Flags [P.], seq 2234:2343, ack 1, win 6339, options [nop,nop,TS val 583084307 ecr 2434138263], length 109
+E.....@.@...........,....7..}S=............
+".).....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.264121Z","response":"egr","done":false}
+
+
+10:48:15.264205 IP localhost.62659 > localhost.11434: Flags [.], ack 2343, win 5128, options [nop,nop,TS val 2434138335 ecr 583084307], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".).
+10:48:15.337932 IP localhost.11434 > localhost.62659: Flags [P.], seq 2343:2454, ack 1, win 6339, options [nop,nop,TS val 583084380 ecr 2434138335], length 111
+E.....@.@...........,....7..}S=............
+".)\....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.337902Z","response":"ating","done":false}
+
+
+10:48:15.337997 IP localhost.62659 > localhost.11434: Flags [.], ack 2454, win 5127, options [nop,nop,TS val 2434138408 ecr 583084380], length 0
+E..4..@.@.............,.}S=..7.m.....(.....
+...(".)\
+10:48:15.409117 IP localhost.11434 > localhost.62659: Flags [P.], seq 2454:2567, ack 1, win 6339, options [nop,nop,TS val 583084451 ecr 2434138408], length 113
+E.....@.@...........,....7.m}S=............
+".)....(6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.409095Z","response":" Retrie","done":false}
+
+
+10:48:15.409204 IP localhost.62659 > localhost.11434: Flags [.], ack 2567, win 5126, options [nop,nop,TS val 2434138479 ecr 583084451], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...o".).
+10:48:15.480923 IP localhost.11434 > localhost.62659: Flags [P.], seq 2567:2676, ack 1, win 6339, options [nop,nop,TS val 583084523 ecr 2434138479], length 109
+E.....@.@...........,....7..}S=............
+".)....o67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.480897Z","response":"val","done":false}
+
+
+10:48:15.480978 IP localhost.62659 > localhost.11434: Flags [.], ack 2676, win 5125, options [nop,nop,TS val 2434138551 ecr 583084523], length 0
+E..4..@.@.............,.}S=..7.K.....(.....
+....".).
+10:48:15.553966 IP localhost.11434 > localhost.62659: Flags [P.], seq 2676:2786, ack 1, win 6339, options [nop,nop,TS val 583084596 ecr 2434138551], length 110
+E.....@.@...........,....7.K}S=............
+".*4....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.553943Z","response":"-Aug","done":false}
+
+
+10:48:15.554057 IP localhost.62659 > localhost.11434: Flags [.], ack 2786, win 5124, options [nop,nop,TS val 2434138624 ecr 583084596], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".*4
+10:48:15.626300 IP localhost.11434 > localhost.62659: Flags [P.], seq 2786:2898, ack 1, win 6339, options [nop,nop,TS val 583084669 ecr 2434138624], length 112
+E.....@.@...........,....7..}S=............
+".*}....6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.626268Z","response":"mented","done":false}
+
+
+10:48:15.626355 IP localhost.62659 > localhost.11434: Flags [.], ack 2898, win 5123, options [nop,nop,TS val 2434138697 ecr 583084669], length 0
+E..4..@.@.............,.}S=..7.).....(.....
+...I".*}
+10:48:15.699446 IP localhost.11434 > localhost.62659: Flags [P.], seq 2898:3015, ack 1, win 6339, options [nop,nop,TS val 583084742 ecr 2434138697], length 117
+E.....@.@...........,....7.)}S=............
+".*....I6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.699416Z","response":" Generation","done":false}
+
+
+10:48:15.699494 IP localhost.62659 > localhost.11434: Flags [.], ack 3015, win 5122, options [nop,nop,TS val 2434138770 ecr 583084742], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".*.
+10:48:15.770994 IP localhost.11434 > localhost.62659: Flags [P.], seq 3015:3123, ack 1, win 6339, options [nop,nop,TS val 583084813 ecr 2434138770], length 108
+E.....@.@...........,....7..}S=............
+".+.....66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.770971Z","response":" (","done":false}
+
+
+10:48:15.771122 IP localhost.62659 > localhost.11434: Flags [.], ack 3123, win 5121, options [nop,nop,TS val 2434138841 ecr 583084813], length 0
+E..4..@.@.............,.}S=..7.
+.....(.....
+....".+
+10:48:15.843239 IP localhost.11434 > localhost.62659: Flags [P.], seq 3123:3230, ack 1, win 6339, options [nop,nop,TS val 583084886 ecr 2434138841], length 107
+E.....@.@...........,....7.
+}S=............
+".+V....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.843213Z","response":"R","done":false}
+
+
+10:48:15.843288 IP localhost.62659 > localhost.11434: Flags [.], ack 3230, win 5120, options [nop,nop,TS val 2434138914 ecr 583084886], length 0
+E..4..@.@.............,.}S=..7.u.....(.....
+..."".+V
+10:48:15.914774 IP localhost.11434 > localhost.62659: Flags [P.], seq 3230:3338, ack 1, win 6339, options [nop,nop,TS val 583084957 ecr 2434138914], length 108
+E.....@.@...........,....7.u}S=............
+".+...."66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.914756Z","response":"AG","done":false}
+
+
+10:48:15.914840 IP localhost.62659 > localhost.11434: Flags [.], ack 3338, win 5119, options [nop,nop,TS val 2434138985 ecr 583084957], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...i".+.
+10:48:15.986689 IP localhost.11434 > localhost.62659: Flags [P.], seq 3338:3445, ack 1, win 6339, options [nop,nop,TS val 583085029 ecr 2434138985], length 107
+E.....@.@...........,....7..}S=............
+".+....i65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:15.986667Z","response":")","done":false}
+
+
+10:48:15.986779 IP localhost.62659 > localhost.11434: Flags [.], ack 3445, win 5118, options [nop,nop,TS val 2434139057 ecr 583085029], length 0
+E..4..@.@.............,.}S=..7.L.....(.....
+....".+.
+10:48:16.058813 IP localhost.11434 > localhost.62659: Flags [P.], seq 3445:3556, ack 1, win 6339, options [nop,nop,TS val 583085101 ecr 2434139057], length 111
+E.....@.@...........,....7.L}S=............
+".,-....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.058791Z","response":" into","done":false}
+
+
+10:48:16.058864 IP localhost.62659 > localhost.11434: Flags [.], ack 3556, win 5117, options [nop,nop,TS val 2434139129 ecr 583085101], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".,-
+10:48:16.128830 IP localhost.11434 > localhost.62659: Flags [P.], seq 3556:3665, ack 1, win 6339, options [nop,nop,TS val 583085171 ecr 2434139129], length 109
+E.....@.@...........,....7..}S=............
+".,s....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.128809Z","response":" Lu","done":false}
+
+
+10:48:16.128873 IP localhost.62659 > localhost.11434: Flags [.], ack 3665, win 5116, options [nop,nop,TS val 2434139199 ecr 583085171], length 0
+E..4..@.@.............,.}S=..7.(.....(.....
+...?".,s
+10:48:16.199401 IP localhost.11434 > localhost.62659: Flags [P.], seq 3665:3775, ack 1, win 6339, options [nop,nop,TS val 583085242 ecr 2434139199], length 110
+E.....@.@...........,....7.(}S=............
+".,....?68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.199378Z","response":"anti","done":false}
+
+
+10:48:16.199480 IP localhost.62659 > localhost.11434: Flags [.], ack 3775, win 5115, options [nop,nop,TS val 2434139270 ecr 583085242], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".,.
+10:48:16.270118 IP localhost.11434 > localhost.62659: Flags [P.], seq 3775:3889, ack 1, win 6339, options [nop,nop,TS val 583085313 ecr 2434139270], length 114
+E.....@.@...........,....7..}S=............
+".-.....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.270096Z","response":" Voyager","done":false}
+
+
+10:48:16.270170 IP localhost.62659 > localhost.11434: Flags [.], ack 3889, win 5114, options [nop,nop,TS val 2434139341 ecr 583085313], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".-.
+10:48:16.340531 IP localhost.11434 > localhost.62659: Flags [P.], seq 3889:4004, ack 1, win 6339, options [nop,nop,TS val 583085383 ecr 2434139341], length 115
+E.....@.@...........,....7..}S=............
+".-G....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.340509Z","response":" enhances","done":false}
+
+
+10:48:16.340584 IP localhost.62659 > localhost.11434: Flags [.], ack 4004, win 5113, options [nop,nop,TS val 2434139411 ecr 583085383], length 0
+E..4..@.@.............,.}S=..7.{.....(.....
+....".-G
+10:48:16.411434 IP localhost.11434 > localhost.62659: Flags [P.], seq 4004:4113, ack 1, win 6339, options [nop,nop,TS val 583085454 ecr 2434139411], length 109
+E.....@.@...........,....7.{}S=............
+".-.....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.411413Z","response":" AI","done":false}
+
+
+10:48:16.411482 IP localhost.62659 > localhost.11434: Flags [.], ack 4113, win 5112, options [nop,nop,TS val 2434139482 ecr 583085454], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...Z".-.
+10:48:16.481661 IP localhost.11434 > localhost.62659: Flags [P.], seq 4113:4226, ack 1, win 6339, options [nop,nop,TS val 583085524 ecr 2434139482], length 113
+E.....@.@...........,....7..}S=............
+".-....Z6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.481635Z","response":" agents","done":false}
+
+
+10:48:16.481727 IP localhost.62659 > localhost.11434: Flags [.], ack 4226, win 5111, options [nop,nop,TS val 2434139552 ecr 583085524], length 0
+E..4..@.@.............,.}S=..7.Y.....(.....
+....".-.
+10:48:16.552711 IP localhost.11434 > localhost.62659: Flags [P.], seq 4226:4332, ack 1, win 6339, options [nop,nop,TS val 583085595 ecr 2434139552], length 106
+E.....@.@...........,....7.Y}S=............
+".......64
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.55269Z","response":"'","done":false}
+
+
+10:48:16.552762 IP localhost.62659 > localhost.11434: Flags [.], ack 4332, win 5110, options [nop,nop,TS val 2434139623 ecr 583085595], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...."...
+10:48:16.622137 IP localhost.11434 > localhost.62659: Flags [P.], seq 4332:4446, ack 1, win 6339, options [nop,nop,TS val 583085665 ecr 2434139623], length 114
+E.....@.@...........,....7..}S=............
+"..a....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.622114Z","response":" ability","done":false}
+
+
+10:48:16.622190 IP localhost.62659 > localhost.11434: Flags [.], ack 4446, win 5109, options [nop,nop,TS val 2434139693 ecr 583085665], length 0
+E..4..@.@.............,.}S=..7.5.....(.....
+...-"..a
+10:48:16.693789 IP localhost.11434 > localhost.62659: Flags [P.], seq 4446:4555, ack 1, win 6339, options [nop,nop,TS val 583085736 ecr 2434139693], length 109
+E.....@.@...........,....7.5}S=............
+"......-67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.693761Z","response":" to","done":false}
+
+
+10:48:16.693830 IP localhost.62659 > localhost.11434: Flags [.], ack 4555, win 5108, options [nop,nop,TS val 2434139764 ecr 583085736], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...t"...
+10:48:16.763444 IP localhost.11434 > localhost.62659: Flags [P.], seq 4555:4666, ack 1, win 6339, options [nop,nop,TS val 583085806 ecr 2434139764], length 111
+E.....@.@...........,....7..}S=............
+"......t69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.763422Z","response":" make","done":false}
+
+
+10:48:16.763486 IP localhost.62659 > localhost.11434: Flags [.], ack 4666, win 5107, options [nop,nop,TS val 2434139834 ecr 583085806], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...."...
+10:48:16.829832 IP localhost.11434 > localhost.62659: Flags [P.], seq 4666:4781, ack 1, win 6339, options [nop,nop,TS val 583085872 ecr 2434139834], length 115
+E.....@.@...........,....7..}S=............
+"./0....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.829809Z","response":" informed","done":false}
+
+
+10:48:16.829890 IP localhost.62659 > localhost.11434: Flags [.], ack 4781, win 5106, options [nop,nop,TS val 2434139900 ecr 583085872], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...."./0
+10:48:16.893959 IP localhost.11434 > localhost.62659: Flags [P.], seq 4781:4897, ack 1, win 6339, options [nop,nop,TS val 583085936 ecr 2434139900], length 116
+E.....@.@...........,....7..}S=............
+"./p....6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.893922Z","response":" decisions","done":false}
+
+
+10:48:16.894012 IP localhost.62659 > localhost.11434: Flags [.], ack 4897, win 5105, options [nop,nop,TS val 2434139964 ecr 583085936], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...<"./p
+10:48:16.958879 IP localhost.11434 > localhost.62659: Flags [P.], seq 4897:5007, ack 1, win 6339, options [nop,nop,TS val 583086001 ecr 2434139964], length 110
+E.....@.@...........,....7..}S=............
+"./....<68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:16.958853Z","response":" and","done":false}
+
+
+10:48:16.958936 IP localhost.62659 > localhost.11434: Flags [.], ack 5007, win 5104, options [nop,nop,TS val 2434140029 ecr 583086001], length 0
+E..4..@.@.............,.}S=..7.f.....(.....
+...}"./.
+10:48:17.024465 IP localhost.11434 > localhost.62659: Flags [P.], seq 5007:5121, ack 1, win 6339, options [nop,nop,TS val 583086067 ecr 2434140029], length 114
+E.....@.@...........,....7.f}S=............
+"./....}6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.024442Z","response":" provide","done":false}
+
+
+10:48:17.024517 IP localhost.62659 > localhost.11434: Flags [.], ack 5121, win 5103, options [nop,nop,TS val 2434140095 ecr 583086067], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...."./.
+10:48:17.088676 IP localhost.11434 > localhost.62659: Flags [P.], seq 5121:5235, ack 1, win 6339, options [nop,nop,TS val 583086131 ecr 2434140095], length 114
+E.....@.@...........,....7..}S=............
+".03....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.088655Z","response":" context","done":false}
+
+
+10:48:17.088727 IP localhost.62659 > localhost.11434: Flags [.], ack 5235, win 5102, options [nop,nop,TS val 2434140159 ecr 583086131], length 0
+E..4..@.@.............,.}S=..7.J.....(.....
+....".03
+10:48:17.154747 IP localhost.11434 > localhost.62659: Flags [P.], seq 5235:5346, ack 1, win 6339, options [nop,nop,TS val 583086197 ecr 2434140159], length 111
+E.....@.@...........,....7.J}S=............
+".0u....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.154722Z","response":"ually","done":false}
+
+
+10:48:17.154794 IP localhost.62659 > localhost.11434: Flags [.], ack 5346, win 5101, options [nop,nop,TS val 2434140225 ecr 583086197], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...A".0u
+10:48:17.222660 IP localhost.11434 > localhost.62659: Flags [P.], seq 5346:5461, ack 1, win 6339, options [nop,nop,TS val 583086265 ecr 2434140225], length 115
+E.....@.@...........,....7..}S=............
+".0....A6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.222633Z","response":" relevant","done":false}
+
+
+10:48:17.222714 IP localhost.62659 > localhost.11434: Flags [.], ack 5461, win 5100, options [nop,nop,TS val 2434140293 ecr 583086265], length 0
+E..4..@.@.............,.}S=..7.,.....(.....
+....".0.
+10:48:17.290962 IP localhost.11434 > localhost.62659: Flags [P.], seq 5461:5577, ack 1, win 6339, options [nop,nop,TS val 583086333 ecr 2434140293], length 116
+E.....@.@...........,....7.,}S=............
+".0.....6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.290933Z","response":" responses","done":false}
+
+
+10:48:17.291044 IP localhost.62659 > localhost.11434: Flags [.], ack 5577, win 5099, options [nop,nop,TS val 2434140361 ecr 583086333], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".0.
+10:48:17.360036 IP localhost.11434 > localhost.62659: Flags [P.], seq 5577:5690, ack 1, win 6339, options [nop,nop,TS val 583086403 ecr 2434140361], length 113
+E.....@.@...........,....7..}S=............
+".1C....6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.360013Z","response":" within","done":false}
+
+
+10:48:17.360086 IP localhost.62659 > localhost.11434: Flags [.], ack 5690, win 5098, options [nop,nop,TS val 2434140431 ecr 583086403], length 0
+E..4..@.@.............,.}S=..7.......(.....
+..	.".1C
+10:48:17.428498 IP localhost.11434 > localhost.62659: Flags [P.], seq 5690:5798, ack 1, win 6339, options [nop,nop,TS val 583086471 ecr 2434140431], length 108
+E.....@.@...........,....7..}S=............
+".1...	.66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.428476Z","response":" a","done":false}
+
+
+10:48:17.428550 IP localhost.62659 > localhost.11434: Flags [.], ack 5798, win 5097, options [nop,nop,TS val 2434140499 ecr 583086471], length 0
+E..4..@.@.............,.}S=..7.}.....(.....
+..	S".1.
+10:48:17.498350 IP localhost.11434 > localhost.62659: Flags [P.], seq 5798:5912, ack 1, win 6339, options [nop,nop,TS val 583086541 ecr 2434140499], length 114
+E.....@.@...........,....7.}}S=............
+".1...	S6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.498329Z","response":" dynamic","done":false}
+
+
+10:48:17.498447 IP localhost.62659 > localhost.11434: Flags [.], ack 5912, win 5096, options [nop,nop,TS val 2434140569 ecr 583086541], length 0
+E..4..@.@.............,.}S=..7.......(.....
+..	.".1.
+10:48:17.566955 IP localhost.11434 > localhost.62659: Flags [P.], seq 5912:6028, ack 1, win 6339, options [nop,nop,TS val 583086609 ecr 2434140569], length 116
+E.....@.@...........,....7..}S=............
+".2...	.6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.566933Z","response":" Minecraft","done":false}
+
+
+10:48:17.567007 IP localhost.62659 > localhost.11434: Flags [.], ack 6028, win 5095, options [nop,nop,TS val 2434140637 ecr 583086609], length 0
+E..4..@.@.............,.}S=..7.c.....(.....
+..	.".2.
+10:48:17.635270 IP localhost.11434 > localhost.62659: Flags [P.], seq 6028:6139, ack 1, win 6339, options [nop,nop,TS val 583086678 ecr 2434140637], length 111
+E.....@.@...........,....7.c}S=............
+".2V..	.69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.635239Z","response":"-like","done":false}
+
+
+10:48:17.635326 IP localhost.62659 > localhost.11434: Flags [.], ack 6139, win 5094, options [nop,nop,TS val 2434140706 ecr 583086678], length 0
+E..4..@.@.............,.}S=..7.......(.....
+..
+"".2V
+10:48:17.703223 IP localhost.11434 > localhost.62659: Flags [P.], seq 6139:6257, ack 1, win 6339, options [nop,nop,TS val 583086746 ecr 2434140706], length 118
+E.....@.@...........,....7..}S=............
+".2...
+"70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.703196Z","response":" environment","done":false}
+
+
+10:48:17.703389 IP localhost.62659 > localhost.11434: Flags [.], ack 6257, win 5093, options [nop,nop,TS val 2434140774 ecr 583086746], length 0
+E..4..@.@.............,.}S=..7.H.....(.....
+..
+f".2.
+10:48:17.771427 IP localhost.11434 > localhost.62659: Flags [P.], seq 6257:6364, ack 1, win 6339, options [nop,nop,TS val 583086814 ecr 2434140774], length 107
+E.....@.@...........,....7.H}S=............
+".2...
+f65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.771403Z","response":".","done":false}
+
+
+10:48:17.771502 IP localhost.62659 > localhost.11434: Flags [.], ack 6364, win 5092, options [nop,nop,TS val 2434140842 ecr 583086814], length 0
+E..4..@.@.............,.}S=..7.......(.....
+..
+.".2.
+10:48:17.838374 IP localhost.11434 > localhost.62659: Flags [P.], seq 6364:6473, ack 1, win 6339, options [nop,nop,TS val 583086881 ecr 2434140842], length 109
+E.....@.@...........,....7..}S=............
+".3!..
+.67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.838353Z","response":" By","done":false}
+
+
+10:48:17.838423 IP localhost.62659 > localhost.11434: Flags [.], ack 6473, win 5091, options [nop,nop,TS val 2434140909 ecr 583086881], length 0
+E..4..@.@.............,.}S=..7. .....(.....
+..
+.".3!
+10:48:17.904976 IP localhost.11434 > localhost.62659: Flags [P.], seq 6473:6590, ack 1, win 6339, options [nop,nop,TS val 583086947 ecr 2434140909], length 117
+E.....@.@...........,....7. }S=............
+".3c..
+.6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.904951Z","response":" leveraging","done":false}
+
+
+10:48:17.905030 IP localhost.62659 > localhost.11434: Flags [.], ack 6590, win 5090, options [nop,nop,TS val 2434140975 ecr 583086947], length 0
+E..4..@.@.............,.}S=..7.......(.....
+.../".3c
+10:48:17.973574 IP localhost.11434 > localhost.62659: Flags [P.], seq 6590:6698, ack 1, win 6339, options [nop,nop,TS val 583087016 ecr 2434140975], length 108
+E.....@.@...........,....7..}S=............
+".3..../66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:17.973552Z","response":" R","done":false}
+
+
+10:48:17.973632 IP localhost.62659 > localhost.11434: Flags [.], ack 6698, win 5089, options [nop,nop,TS val 2434141044 ecr 583087016], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...t".3.
+10:48:18.043505 IP localhost.11434 > localhost.62659: Flags [P.], seq 6698:6806, ack 1, win 6339, options [nop,nop,TS val 583087086 ecr 2434141044], length 108
+E.....@.@...........,....7..}S=............
+".3....t66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.043481Z","response":"AG","done":false}
+
+
+10:48:18.043556 IP localhost.62659 > localhost.11434: Flags [.], ack 6806, win 5088, options [nop,nop,TS val 2434141114 ecr 583087086], length 0
+E..4..@.@.............,.}S=..7.m.....(.....
+....".3.
+10:48:18.111944 IP localhost.11434 > localhost.62659: Flags [P.], seq 6806:6913, ack 1, win 6339, options [nop,nop,TS val 583087154 ecr 2434141114], length 107
+E.....@.@...........,....7.m}S=............
+".42....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.111923Z","response":",","done":false}
+
+
+10:48:18.111989 IP localhost.62659 > localhost.11434: Flags [.], ack 6913, win 5087, options [nop,nop,TS val 2434141182 ecr 583087154], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".42
+10:48:18.179383 IP localhost.11434 > localhost.62659: Flags [P.], seq 6913:7023, ack 1, win 6339, options [nop,nop,TS val 583087222 ecr 2434141182], length 110
+E.....@.@...........,....7..}S=............
+".4v....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.179361Z","response":" the","done":false}
+
+
+10:48:18.179430 IP localhost.62659 > localhost.11434: Flags [.], ack 7023, win 5086, options [nop,nop,TS val 2434141250 ecr 583087222], length 0
+E..4..@.@.............,.}S=..7.F.....(.....
+...B".4v
+10:48:18.248778 IP localhost.11434 > localhost.62659: Flags [P.], seq 7023:7134, ack 1, win 6339, options [nop,nop,TS val 583087291 ecr 2434141250], length 111
+E.....@.@...........,....7.F}S=............
+".4....B69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.248753Z","response":" game","done":false}
+
+
+10:48:18.248832 IP localhost.62659 > localhost.11434: Flags [.], ack 7134, win 5085, options [nop,nop,TS val 2434141319 ecr 583087291], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".4.
+10:48:18.317080 IP localhost.11434 > localhost.62659: Flags [P.], seq 7134:7244, ack 1, win 6339, options [nop,nop,TS val 583087360 ecr 2434141319], length 110
+E.....@.@...........,....7..}S=............
+".5.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.317059Z","response":" can","done":false}
+
+
+10:48:18.317130 IP localhost.62659 > localhost.11434: Flags [.], ack 7244, win 5084, options [nop,nop,TS val 2434141388 ecr 583087360], length 0
+E..4..@.@.............,.}S=..7.#.....(.....
+....".5.
+10:48:18.387220 IP localhost.11434 > localhost.62659: Flags [P.], seq 7244:7357, ack 1, win 6339, options [nop,nop,TS val 583087430 ecr 2434141388], length 113
+E.....@.@...........,....7.#}S=............
+".5F....6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.3872Z","response":" simulate","done":false}
+
+
+10:48:18.387274 IP localhost.62659 > localhost.11434: Flags [.], ack 7357, win 5083, options [nop,nop,TS val 2434141458 ecr 583087430], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".5F
+10:48:18.456821 IP localhost.11434 > localhost.62659: Flags [P.], seq 7357:7468, ack 1, win 6339, options [nop,nop,TS val 583087499 ecr 2434141458], length 111
+E.....@.@...........,....7..}S=............
+".5.....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.456799Z","response":" more","done":false}
+
+
+10:48:18.456874 IP localhost.62659 > localhost.11434: Flags [.], ack 7468, win 5082, options [nop,nop,TS val 2434141527 ecr 583087499], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...W".5.
+10:48:18.524941 IP localhost.11434 > localhost.62659: Flags [P.], seq 7468:7586, ack 1, win 6339, options [nop,nop,TS val 583087567 ecr 2434141527], length 118
+E.....@.@...........,....7..}S=............
+".5....W70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.524921Z","response":" intelligent","done":false}
+
+
+10:48:18.525005 IP localhost.62659 > localhost.11434: Flags [.], ack 7586, win 5081, options [nop,nop,TS val 2434141595 ecr 583087567], length 0
+E..4..@.@.............,.}S=..7.y.....(.....
+....".5.
+10:48:18.573141 IP localhost.11434 > localhost.52928: Flags [.], ack 1045469091, win 6379, length 0
+E..(....@...........,.......>P..P.......
+10:48:18.573178 IP localhost.52928 > localhost.11434: Flags [.], ack 1, win 6380, options [nop,nop,TS val 1262260822 ecr 782160779], length 0
+E..4..@.@.............,.>P...........(.....
+K<.V....
+--
+E.....@.@...........,....7.y}S=............
+".6.....6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.592763Z","response":" behaviors","done":false}
+
+
+10:48:18.592827 IP localhost.62659 > localhost.11434: Flags [.], ack 7702, win 5080, options [nop,nop,TS val 2434141663 ecr 583087635], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".6.
+10:48:18.659412 IP localhost.11434 > localhost.62659: Flags [P.], seq 7702:7809, ack 1, win 6339, options [nop,nop,TS val 583087701 ecr 2434141663], length 107
+E.....@.@...........,....7..}S=............
+".6U....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.659389Z","response":",","done":false}
+
+
+10:48:18.659462 IP localhost.62659 > localhost.11434: Flags [.], ack 7809, win 5079, options [nop,nop,TS val 2434141729 ecr 583087701], length 0
+E..4..@.@.............,.}S=..7.X.....(.....
+...!".6U
+10:48:18.727246 IP localhost.11434 > localhost.62659: Flags [P.], seq 7809:7920, ack 1, win 6339, options [nop,nop,TS val 583087770 ecr 2434141729], length 111
+E.....@.@...........,....7.X}S=............
+".6....!69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.727221Z","response":" such","done":false}
+
+
+10:48:18.727302 IP localhost.62659 > localhost.11434: Flags [.], ack 7920, win 5078, options [nop,nop,TS val 2434141798 ecr 583087770], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...f".6.
+10:48:18.795557 IP localhost.11434 > localhost.62659: Flags [P.], seq 7920:8028, ack 1, win 6339, options [nop,nop,TS val 583087838 ecr 2434141798], length 108
+E.....@.@...........,....7..}S=............
+".6....f66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.79554Z","response":" as","done":false}
+
+
+10:48:18.795599 IP localhost.62659 > localhost.11434: Flags [.], ack 8028, win 5077, options [nop,nop,TS val 2434141866 ecr 583087838], length 0
+E..4..@.@.............,.}S=..7.3.....(.....
+....".6.
+10:48:18.864192 IP localhost.11434 > localhost.62659: Flags [P.], seq 8028:8142, ack 1, win 6339, options [nop,nop,TS val 583087907 ecr 2434141866], length 114
+E.....@.@...........,....7.3}S=............
+".7#....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.864171Z","response":" natural","done":false}
+
+
+10:48:18.864253 IP localhost.62659 > localhost.11434: Flags [.], ack 8142, win 5076, options [nop,nop,TS val 2434141935 ecr 583087907], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".7#
+10:48:18.933100 IP localhost.11434 > localhost.62659: Flags [P.], seq 8142:8261, ack 1, win 6339, options [nop,nop,TS val 583087975 ecr 2434141935], length 119
+E.....@.@...........,....7..}S=............
+".7g....71
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:18.933071Z","response":" conversation","done":false}
+
+
+10:48:18.933153 IP localhost.62659 > localhost.11434: Flags [.], ack 8261, win 5075, options [nop,nop,TS val 2434142003 ecr 583087975], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...3".7g
+10:48:19.005567 IP localhost.11434 > localhost.62659: Flags [P.], seq 8261:8372, ack 1, win 6339, options [nop,nop,TS val 583088048 ecr 2434142003], length 111
+E.....@.@...........,....7..}S=............
+".7....369
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.005543Z","response":" with","done":false}
+
+
+10:48:19.005625 IP localhost.62659 > localhost.11434: Flags [.], ack 8372, win 5074, options [nop,nop,TS val 2434142076 ecr 583088048], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...|".7.
+10:48:19.076466 IP localhost.11434 > localhost.62659: Flags [P.], seq 8372:8486, ack 1, win 6339, options [nop,nop,TS val 583088119 ecr 2434142076], length 114
+E.....@.@...........,....7..}S=............
+".7....|6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.076445Z","response":" players","done":false}
+
+
+10:48:19.076518 IP localhost.62659 > localhost.11434: Flags [.], ack 8486, win 5073, options [nop,nop,TS val 2434142147 ecr 583088119], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".7.
+10:48:19.144895 IP localhost.11434 > localhost.62659: Flags [P.], seq 8486:8593, ack 1, win 6339, options [nop,nop,TS val 583088187 ecr 2434142147], length 107
+E.....@.@...........,....7..}S=............
+".8;....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.144876Z","response":",","done":false}
+
+
+10:48:19.145368 IP localhost.62659 > localhost.11434: Flags [.], ack 8593, win 5072, options [nop,nop,TS val 2434142215 ecr 583088187], length 0
+E..4..@.@.............,.}S=..7.h.....(.....
+....".8;
+10:48:19.213429 IP localhost.11434 > localhost.62659: Flags [P.], seq 8593:8708, ack 1, win 6339, options [nop,nop,TS val 583088256 ecr 2434142215], length 115
+E.....@.@...........,....7.h}S=............
+".8.....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.213409Z","response":" adaptive","done":false}
+
+
+10:48:19.213508 IP localhost.62659 > localhost.11434: Flags [.], ack 8708, win 5071, options [nop,nop,TS val 2434142284 ecr 583088256], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...L".8.
+10:48:19.280318 IP localhost.11434 > localhost.62659: Flags [P.], seq 8708:8818, ack 1, win 6339, options [nop,nop,TS val 583088323 ecr 2434142284], length 110
+E.....@.@...........,....7..}S=............
+".8....L68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.280293Z","response":" NPC","done":false}
+
+
+10:48:19.280377 IP localhost.62659 > localhost.11434: Flags [.], ack 8818, win 5070, options [nop,nop,TS val 2434142351 ecr 583088323], length 0
+E..4..@.@.............,.}S=..7.I.....(.....
+....".8.
+10:48:19.347793 IP localhost.11434 > localhost.62659: Flags [P.], seq 8818:8937, ack 1, win 6339, options [nop,nop,TS val 583088390 ecr 2434142351], length 119
+E.....@.@...........,....7.I}S=............
+".9.....71
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.347773Z","response":" interactions","done":false}
+
+
+10:48:19.347844 IP localhost.62659 > localhost.11434: Flags [.], ack 8937, win 5069, options [nop,nop,TS val 2434142418 ecr 583088390], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".9.
+10:48:19.414233 IP localhost.11434 > localhost.62659: Flags [P.], seq 8937:9043, ack 1, win 6339, options [nop,nop,TS val 583088457 ecr 2434142418], length 106
+E.....@.@...........,....7..}S=............
+".9I....64
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.41421Z","response":",","done":false}
+
+
+10:48:19.414287 IP localhost.62659 > localhost.11434: Flags [.], ack 9043, win 5068, options [nop,nop,TS val 2434142485 ecr 583088457], length 0
+E..4..@.@.............,.}S=..7.*.....(.....
+....".9I
+10:48:19.481698 IP localhost.11434 > localhost.62659: Flags [P.], seq 9043:9153, ack 1, win 6339, options [nop,nop,TS val 583088524 ecr 2434142485], length 110
+E.....@.@...........,....7.*}S=............
+".9.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.481678Z","response":" and","done":false}
+
+
+10:48:19.481771 IP localhost.62659 > localhost.11434: Flags [.], ack 9153, win 5067, options [nop,nop,TS val 2434142552 ecr 583088524], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...X".9.
+10:48:19.548934 IP localhost.11434 > localhost.62659: Flags [P.], seq 9153:9273, ack 1, win 6339, options [nop,nop,TS val 583088591 ecr 2434142552], length 120
+E.....@.@...........,....7..}S=............
+".9....X72
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.548908Z","response":" sophisticated","done":false}
+
+
+10:48:19.548991 IP localhost.62659 > localhost.11434: Flags [.], ack 9273, win 5066, options [nop,nop,TS val 2434142619 ecr 583088591], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".9.
+10:48:19.616455 IP localhost.11434 > localhost.62659: Flags [P.], seq 9273:9385, ack 1, win 6339, options [nop,nop,TS val 583088659 ecr 2434142619], length 112
+E.....@.@...........,....7..}S=............
+".:.....6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.616431Z","response":" world","done":false}
+
+
+10:48:19.616502 IP localhost.62659 > localhost.11434: Flags [.], ack 9385, win 5065, options [nop,nop,TS val 2434142687 ecr 583088659], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".:.
+10:48:19.684882 IP localhost.11434 > localhost.62659: Flags [P.], seq 9385:9502, ack 1, win 6339, options [nop,nop,TS val 583088727 ecr 2434142687], length 117
+E.....@.@...........,....7..}S=............
+".:W....6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.684861Z","response":" generation","done":false}
+
+
+10:48:19.684968 IP localhost.62659 > localhost.11434: Flags [.], ack 9502, win 5064, options [nop,nop,TS val 2434142755 ecr 583088727], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...#".:W
+10:48:19.755246 IP localhost.11434 > localhost.62659: Flags [P.], seq 9502:9614, ack 1, win 6339, options [nop,nop,TS val 583088798 ecr 2434142755], length 112
+E.....@.@...........,....7..}S=............
+".:....#6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.755223Z","response":" based","done":false}
+
+
+10:48:19.755294 IP localhost.62659 > localhost.11434: Flags [.], ack 9614, win 5063, options [nop,nop,TS val 2434142826 ecr 583088798], length 0
+E..4..@.@.............,.}S=..7.e.....(.....
+...j".:.
+10:48:19.827481 IP localhost.11434 > localhost.62659: Flags [P.], seq 9614:9723, ack 1, win 6339, options [nop,nop,TS val 583088870 ecr 2434142826], length 109
+E.....@.@...........,....7.e}S=............
+".:....j67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.827464Z","response":" on","done":false}
+
+
+10:48:19.827530 IP localhost.62659 > localhost.11434: Flags [.], ack 9723, win 5062, options [nop,nop,TS val 2434142898 ecr 583088870], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".:.
+10:48:19.902565 IP localhost.11434 > localhost.62659: Flags [P.], seq 9723:9834, ack 1, win 6339, options [nop,nop,TS val 583088945 ecr 2434142898], length 111
+E.....@.@...........,....7..}S=............
+".;1....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.902542Z","response":" lore","done":false}
+
+
+10:48:19.902612 IP localhost.62659 > localhost.11434: Flags [.], ack 9834, win 5061, options [nop,nop,TS val 2434142973 ecr 583088945], length 0
+E..4..@.@.............,.}S=..7.A.....(.....
+....".;1
+10:48:19.982239 IP localhost.11434 > localhost.62659: Flags [P.], seq 9834:9944, ack 1, win 6339, options [nop,nop,TS val 583089025 ecr 2434142973], length 110
+E.....@.@...........,....7.A}S=............
+".;.....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:19.982216Z","response":" and","done":false}
+
+
+10:48:19.982296 IP localhost.62659 > localhost.11434: Flags [.], ack 9944, win 5060, options [nop,nop,TS val 2434143053 ecr 583089025], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...M".;.
+10:48:20.061269 IP localhost.11434 > localhost.62659: Flags [P.], seq 9944:10060, ack 1, win 6339, options [nop,nop,TS val 583089104 ecr 2434143053], length 116
+E.....@.@...........,....7..}S=............
+".;....M6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.06125Z","response":" historical","done":false}
+
+
+10:48:20.061347 IP localhost.62659 > localhost.11434: Flags [.], ack 10060, win 5059, options [nop,nop,TS val 2434143132 ecr 583089104], length 0
+E..4..@.@.............,.}S=..7.#.....(.....
+....".;.
+10:48:20.138100 IP localhost.11434 > localhost.62659: Flags [P.], seq 10060:10171, ack 1, win 6339, options [nop,nop,TS val 583089181 ecr 2434143132], length 111
+E.....@.@...........,....7.#}S=............
+".<.....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.138075Z","response":" data","done":false}
+
+
+10:48:20.138150 IP localhost.62659 > localhost.11434: Flags [.], ack 10171, win 5058, options [nop,nop,TS val 2434143209 ecr 583089181], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".<.
+10:48:20.214507 IP localhost.11434 > localhost.62659: Flags [P.], seq 10171:10278, ack 1, win 6339, options [nop,nop,TS val 583089257 ecr 2434143209], length 107
+E.....@.@...........,....7..}S=............
+".<i....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.214482Z","response":".","done":false}
+
+
+10:48:20.214570 IP localhost.62659 > localhost.11434: Flags [.], ack 10278, win 5057, options [nop,nop,TS val 2434143285 ecr 583089257], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...5".<i
+10:48:20.288761 IP localhost.11434 > localhost.62659: Flags [P.], seq 10278:10389, ack 1, win 6339, options [nop,nop,TS val 583089331 ecr 2434143285], length 111
+E.....@.@...........,....7..}S=............
+".<....569
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.288732Z","response":" This","done":false}
+
+
+10:48:20.288824 IP localhost.62659 > localhost.11434: Flags [.], ack 10389, win 5056, options [nop,nop,TS val 2434143359 ecr 583089331], length 0
+E..4..@.@.............,.}S=..7.l.....(.....
+....".<.
+10:48:20.361437 IP localhost.11434 > localhost.62659: Flags [P.], seq 10389:10507, ack 1, win 6339, options [nop,nop,TS val 583089404 ecr 2434143359], length 118
+E.....@.@...........,....7.l}S=............
+".<.....70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.361414Z","response":" integration","done":false}
+
+
+10:48:20.361491 IP localhost.62659 > localhost.11434: Flags [.], ack 10507, win 5055, options [nop,nop,TS val 2434143432 ecr 583089404], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".<.
+10:48:20.433122 IP localhost.11434 > localhost.62659: Flags [P.], seq 10507:10617, ack 1, win 6339, options [nop,nop,TS val 583089476 ecr 2434143432], length 110
+E.....@.@...........,....7..}S=............
+".=D....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.433095Z","response":" not","done":false}
+
+
+10:48:20.433177 IP localhost.62659 > localhost.11434: Flags [.], ack 10617, win 5054, options [nop,nop,TS val 2434143504 ecr 583089476], length 0
+E..4..@.@.............,.}S=..7.P.....(.....
+....".=D
+10:48:20.503512 IP localhost.11434 > localhost.62659: Flags [P.], seq 10617:10728, ack 1, win 6339, options [nop,nop,TS val 583089546 ecr 2434143504], length 111
+E.....@.@...........,....7.P}S=............
+".=.....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.503486Z","response":" only","done":false}
+
+
+10:48:20.503566 IP localhost.62659 > localhost.11434: Flags [.], ack 10728, win 5053, options [nop,nop,TS val 2434143574 ecr 583089546], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...V".=.
+10:48:20.575026 IP localhost.11434 > localhost.62659: Flags [P.], seq 10728:10841, ack 1, win 6339, options [nop,nop,TS val 583089618 ecr 2434143574], length 113
+E.....@.@...........,....7..}S=............
+".=....V6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.575003Z","response":" enrich","done":false}
+
+
+10:48:20.575081 IP localhost.62659 > localhost.11434: Flags [.], ack 10841, win 5052, options [nop,nop,TS val 2434143646 ecr 583089618], length 0
+E..4..@.@.............,.}S=..7.0.....(.....
+....".=.
+10:48:20.645550 IP localhost.11434 > localhost.62659: Flags [P.], seq 10841:10949, ack 1, win 6339, options [nop,nop,TS val 583089688 ecr 2434143646], length 108
+E.....@.@...........,....7.0}S=............
+".>.....66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.645527Z","response":"es","done":false}
+
+
+10:48:20.645593 IP localhost.62659 > localhost.11434: Flags [.], ack 10949, win 5051, options [nop,nop,TS val 2434143716 ecr 583089688], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".>.
+10:48:20.715158 IP localhost.11434 > localhost.62659: Flags [P.], seq 10949:11064, ack 1, win 6339, options [nop,nop,TS val 583089758 ecr 2434143716], length 115
+E.....@.@...........,....7..}S=............
+".>^....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.715131Z","response":" gameplay","done":false}
+
+
+10:48:20.715206 IP localhost.62659 > localhost.11434: Flags [.], ack 11064, win 5050, options [nop,nop,TS val 2434143786 ecr 583089758], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...*".>^
+10:48:20.785262 IP localhost.11434 > localhost.62659: Flags [P.], seq 11064:11174, ack 1, win 6339, options [nop,nop,TS val 583089828 ecr 2434143786], length 110
+E.....@.@...........,....7..}S=............
+".>....*68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.785239Z","response":" but","done":false}
+
+
+10:48:20.785314 IP localhost.62659 > localhost.11434: Flags [.], ack 11174, win 5049, options [nop,nop,TS val 2434143856 ecr 583089828], length 0
+E..4..@.@.............,.}S=..7.}.....(.....
+...p".>.
+10:48:20.852668 IP localhost.11434 > localhost.62659: Flags [P.], seq 11174:11285, ack 1, win 6339, options [nop,nop,TS val 583089895 ecr 2434143856], length 111
+E.....@.@...........,....7.}}S=............
+".>....p69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.852645Z","response":" also","done":false}
+
+
+10:48:20.852720 IP localhost.62659 > localhost.11434: Flags [.], ack 11285, win 5048, options [nop,nop,TS val 2434143923 ecr 583089895], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".>.
+10:48:20.918441 IP localhost.11434 > localhost.62659: Flags [P.], seq 11285:11396, ack 1, win 6339, options [nop,nop,TS val 583089961 ecr 2434143923], length 111
+E.....@.@...........,....7..}S=............
+".?)....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.918419Z","response":" sets","done":false}
+
+
+10:48:20.918658 IP localhost.62659 > localhost.11434: Flags [.], ack 11396, win 5047, options [nop,nop,TS val 2434143989 ecr 583089961], length 0
+E..4..@.@.............,.}S=..7.[.....(.....
+....".?)
+10:48:20.985982 IP localhost.11434 > localhost.62659: Flags [P.], seq 11396:11504, ack 1, win 6339, options [nop,nop,TS val 583090028 ecr 2434143989], length 108
+E.....@.@...........,....7.[}S=............
+".?l....66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:20.985961Z","response":" a","done":false}
+
+
+10:48:20.986036 IP localhost.62659 > localhost.11434: Flags [.], ack 11504, win 5046, options [nop,nop,TS val 2434144056 ecr 583090028], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...8".?l
+10:48:21.053757 IP localhost.11434 > localhost.62659: Flags [P.], seq 11504:11614, ack 1, win 6339, options [nop,nop,TS val 583090096 ecr 2434144056], length 110
+E.....@.@...........,....7..}S=............
+".?....868
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.053734Z","response":" new","done":false}
+
+
+10:48:21.053808 IP localhost.62659 > localhost.11434: Flags [.], ack 11614, win 5045, options [nop,nop,TS val 2434144124 ecr 583090096], length 0
+E..4..@.@.............,.}S=..7.5.....(.....
+...|".?.
+10:48:21.122997 IP localhost.11434 > localhost.62659: Flags [P.], seq 11614:11729, ack 1, win 6339, options [nop,nop,TS val 583090165 ecr 2434144124], length 115
+E.....@.@...........,....7.5}S=............
+".?....|6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.122974Z","response":" standard","done":false}
+
+
+10:48:21.123047 IP localhost.62659 > localhost.11434: Flags [.], ack 11729, win 5044, options [nop,nop,TS val 2434144193 ecr 583090165], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".?.
+10:48:21.193065 IP localhost.11434 > localhost.62659: Flags [P.], seq 11729:11839, ack 1, win 6339, options [nop,nop,TS val 583090236 ecr 2434144193], length 110
+E.....@.@...........,....7..}S=............
+".@<....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.193042Z","response":" for","done":false}
+
+
+10:48:21.193107 IP localhost.62659 > localhost.11434: Flags [.], ack 11839, win 5043, options [nop,nop,TS val 2434144264 ecr 583090236], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".@<
+10:48:21.261457 IP localhost.11434 > localhost.62659: Flags [P.], seq 11839:11948, ack 1, win 6339, options [nop,nop,TS val 583090303 ecr 2434144264], length 109
+E.....@.@...........,....7..}S=............
+".@.....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.261435Z","response":" AI","done":false}
+
+
+10:48:21.261509 IP localhost.62659 > localhost.11434: Flags [.], ack 11948, win 5042, options [nop,nop,TS val 2434144331 ecr 583090303], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...K".@.
+10:48:21.327413 IP localhost.11434 > localhost.62659: Flags [P.], seq 11948:12060, ack 1, win 6339, options [nop,nop,TS val 583090370 ecr 2434144331], length 112
+E.....@.@...........,....7..}S=............
+".@....K6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.32739Z","response":"-driven","done":false}
+
+
+10:48:21.327461 IP localhost.62659 > localhost.11434: Flags [.], ack 12060, win 5041, options [nop,nop,TS val 2434144398 ecr 583090370], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".@.
+10:48:21.393651 IP localhost.11434 > localhost.62659: Flags [P.], seq 12060:12173, ack 1, win 6339, options [nop,nop,TS val 583090436 ecr 2434144398], length 113
+E.....@.@...........,....7..}S=............
+".A.....6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.39362Z","response":" content","done":false}
+
+
+10:48:21.393721 IP localhost.62659 > localhost.11434: Flags [.], ack 12173, win 5040, options [nop,nop,TS val 2434144464 ecr 583090436], length 0
+E..4..@.@.............,.}S=..7.d.....(.....
+....".A.
+10:48:21.458391 IP localhost.11434 > localhost.62659: Flags [P.], seq 12173:12282, ack 1, win 6339, options [nop,nop,TS val 583090501 ecr 2434144464], length 109
+E.....@.@...........,....7.d}S=............
+".AE....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.458369Z","response":" in","done":false}
+
+
+10:48:21.458482 IP localhost.62659 > localhost.11434: Flags [.], ack 12282, win 5039, options [nop,nop,TS val 2434144529 ecr 583090501], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".AE
+10:48:21.524847 IP localhost.11434 > localhost.62659: Flags [P.], seq 12282:12393, ack 1, win 6339, options [nop,nop,TS val 583090567 ecr 2434144529], length 111
+E.....@.@...........,....7..}S=............
+".A.....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.524823Z","response":" open","done":false}
+
+
+10:48:21.524930 IP localhost.62659 > localhost.11434: Flags [.], ack 12393, win 5038, options [nop,nop,TS val 2434144595 ecr 583090567], length 0
+E..4..@.@.............,.}S=..7.@.....(.....
+...S".A.
+10:48:21.590791 IP localhost.11434 > localhost.62659: Flags [P.], seq 12393:12505, ack 1, win 6339, options [nop,nop,TS val 583090633 ecr 2434144595], length 112
+E.....@.@...........,....7.@}S=............
+".A....S6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.590776Z","response":"-world","done":false}
+
+
+10:48:21.590846 IP localhost.62659 > localhost.11434: Flags [.], ack 12505, win 5037, options [nop,nop,TS val 2434144661 ecr 583090633], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".A.
+10:48:21.658526 IP localhost.11434 > localhost.62659: Flags [P.], seq 12505:12617, ack 1, win 6339, options [nop,nop,TS val 583090701 ecr 2434144661], length 112
+E.....@.@...........,....7..}S=............
+".B.....6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.658504Z","response":" games","done":false}
+
+
+10:48:21.658579 IP localhost.62659 > localhost.11434: Flags [.], ack 12617, win 5036, options [nop,nop,TS val 2434144729 ecr 583090701], length 0
+E..4..@.@.............,.}S=..7. .....(.....
+....".B
+10:48:21.727542 IP localhost.11434 > localhost.62659: Flags [P.], seq 12617:12728, ack 1, win 6339, options [nop,nop,TS val 583090770 ecr 2434144729], length 111
+E.....@.@...........,....7. }S=............
+".BR....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.727521Z","response":".\n\n","done":false}
+
+
+10:48:21.727596 IP localhost.62659 > localhost.11434: Flags [.], ack 12728, win 5035, options [nop,nop,TS val 2434144798 ecr 583090770], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".BR
+10:48:21.797029 IP localhost.11434 > localhost.62659: Flags [P.], seq 12728:12836, ack 1, win 6339, options [nop,nop,TS val 583090839 ecr 2434144798], length 108
+E.....@.@...........,....7..}S=............
+".B.....66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.797007Z","response":"##","done":false}
+
+
+10:48:21.797103 IP localhost.62659 > localhost.11434: Flags [.], ack 12836, win 5034, options [nop,nop,TS val 2434144867 ecr 583090839], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...c".B.
+10:48:21.867957 IP localhost.11434 > localhost.62659: Flags [P.], seq 12836:12947, ack 1, win 6339, options [nop,nop,TS val 583090910 ecr 2434144867], length 111
+E.....@.@...........,....7..}S=............
+".B....c69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.867931Z","response":" Core","done":false}
+
+
+10:48:21.868004 IP localhost.62659 > localhost.11434: Flags [.], ack 12947, win 5033, options [nop,nop,TS val 2434144938 ecr 583090910], length 0
+E..4..@.@.............,.}S=..7.j.....(.....
+....".B.
+10:48:21.941104 IP localhost.11434 > localhost.62659: Flags [P.], seq 12947:13066, ack 1, win 6339, options [nop,nop,TS val 583090984 ecr 2434144938], length 119
+E.....@.@...........,....7.j}S=............
+".C(....71
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:21.941077Z","response":" Architecture","done":false}
+
+
+10:48:21.941153 IP localhost.62659 > localhost.11434: Flags [.], ack 13066, win 5032, options [nop,nop,TS val 2434145012 ecr 583090984], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".C(
+10:48:22.016183 IP localhost.11434 > localhost.62659: Flags [P.], seq 13066:13176, ack 1, win 6339, options [nop,nop,TS val 583091059 ecr 2434145012], length 110
+E.....@.@...........,....7..}S=............
+".Cs....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.016164Z","response":"\n\n","done":false}
+
+
+10:48:22.016260 IP localhost.62659 > localhost.11434: Flags [.], ack 13176, win 5031, options [nop,nop,TS val 2434145087 ecr 583091059], length 0
+E..4..@.@.............,.}S=..7.O.....(.....
+...?".Cs
+10:48:22.089994 IP localhost.11434 > localhost.62659: Flags [P.], seq 13176:13284, ack 1, win 6339, options [nop,nop,TS val 583091132 ecr 2434145087], length 108
+E.....@.@...........,....7.O}S=............
+".C....?66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.089969Z","response":"To","done":false}
+
+
+10:48:22.090053 IP localhost.62659 > localhost.11434: Flags [.], ack 13284, win 5030, options [nop,nop,TS val 2434145160 ecr 583091132], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".C.
+10:48:22.164901 IP localhost.11434 > localhost.62659: Flags [P.], seq 13284:13396, ack 1, win 6339, options [nop,nop,TS val 583091207 ecr 2434145160], length 112
+E.....@.@...........,....7..}S=............
+".D.....6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.164879Z","response":" adapt","done":false}
+
+
+10:48:22.164993 IP localhost.62659 > localhost.11434: Flags [.], ack 13396, win 5029, options [nop,nop,TS val 2434145235 ecr 583091207], length 0
+E..4..@.@.............,.}S=..7.+.....(.....
+....".D.
+10:48:22.237704 IP localhost.11434 > localhost.62659: Flags [P.], seq 13396:13506, ack 1, win 6339, options [nop,nop,TS val 583091280 ecr 2434145235], length 110
+E.....@.@...........,....7.+}S=............
+".DP....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.237679Z","response":" the","done":false}
+
+
+10:48:22.237768 IP localhost.62659 > localhost.11434: Flags [.], ack 13506, win 5028, options [nop,nop,TS val 2434145308 ecr 583091280], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".DP
+10:48:22.309229 IP localhost.11434 > localhost.62659: Flags [P.], seq 13506:13621, ack 1, win 6339, options [nop,nop,TS val 583091352 ecr 2434145308], length 115
+E.....@.@...........,....7..}S=............
+".D.....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.309203Z","response":" notebook","done":false}
+
+
+10:48:22.309289 IP localhost.62659 > localhost.11434: Flags [.], ack 13621, win 5027, options [nop,nop,TS val 2434145380 ecr 583091352], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...d".D.
+10:48:22.381193 IP localhost.11434 > localhost.62659: Flags [P.], seq 13621:13729, ack 1, win 6339, options [nop,nop,TS val 583091424 ecr 2434145380], length 108
+E.....@.@...........,....7..}S=............
+".D....d66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.381165Z","response":"'s","done":false}
+
+
+10:48:22.381245 IP localhost.62659 > localhost.11434: Flags [.], ack 13729, win 5026, options [nop,nop,TS val 2434145452 ecr 583091424], length 0
+E..4..@.@.............,.}S=..7.x.....(.....
+....".D.
+10:48:22.451099 IP localhost.11434 > localhost.62659: Flags [P.], seq 13729:13844, ack 1, win 6339, options [nop,nop,TS val 583091494 ecr 2434145452], length 115
+E.....@.@...........,....7.x}S=............
+".E&....6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.451071Z","response":" approach","done":false}
+
+
+10:48:22.451146 IP localhost.62659 > localhost.11434: Flags [.], ack 13844, win 5025, options [nop,nop,TS val 2434145522 ecr 583091494], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".E&
+10:48:22.521102 IP localhost.11434 > localhost.62659: Flags [P.], seq 13844:13953, ack 1, win 6339, options [nop,nop,TS val 583091564 ecr 2434145522], length 109
+E.....@.@...........,....7..}S=............
+".El....67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.521072Z","response":" to","done":false}
+
+
+10:48:22.521151 IP localhost.62659 > localhost.11434: Flags [.], ack 13953, win 5024, options [nop,nop,TS val 2434145592 ecr 583091564], length 0
+E..4..@.@.............,.}S=..7.X.....(.....
+...8".El
+10:48:22.586430 IP localhost.11434 > localhost.62659: Flags [P.], seq 13953:14062, ack 1, win 6339, options [nop,nop,TS val 583091629 ecr 2434145592], length 109
+E.....@.@...........,....7.X}S=............
+".E....867
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.586412Z","response":" Lu","done":false}
+
+
+10:48:22.586486 IP localhost.62659 > localhost.11434: Flags [.], ack 14062, win 5023, options [nop,nop,TS val 2434145657 ecr 583091629], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...y".E.
+10:48:22.651466 IP localhost.11434 > localhost.62659: Flags [P.], seq 14062:14172, ack 1, win 6339, options [nop,nop,TS val 583091694 ecr 2434145657], length 110
+E.....@.@...........,....7..}S=............
+".E....y68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.651448Z","response":"anti","done":false}
+
+
+10:48:22.651515 IP localhost.62659 > localhost.11434: Flags [.], ack 14172, win 5022, options [nop,nop,TS val 2434145722 ecr 583091694], length 0
+E..4..@.@.............,.}S=..7.3.....(.....
+....".E.
+10:48:22.715921 IP localhost.11434 > localhost.62659: Flags [P.], seq 14172:14286, ack 1, win 6339, options [nop,nop,TS val 583091758 ecr 2434145722], length 114
+E.....@.@...........,....7.3}S=............
+".F.....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.715895Z","response":" Voyager","done":false}
+
+
+10:48:22.715981 IP localhost.62659 > localhost.11434: Flags [.], ack 14286, win 5021, options [nop,nop,TS val 2434145786 ecr 583091758], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".F.
+10:48:22.780625 IP localhost.11434 > localhost.62659: Flags [P.], seq 14286:14393, ack 1, win 6339, options [nop,nop,TS val 583091823 ecr 2434145786], length 107
+E.....@.@...........,....7..}S=............
+".Fo....65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.780596Z","response":",","done":false}
+
+
+10:48:22.780681 IP localhost.62659 > localhost.11434: Flags [.], ack 14393, win 5020, options [nop,nop,TS val 2434145851 ecr 583091823], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...;".Fo
+10:48:22.846654 IP localhost.11434 > localhost.62659: Flags [P.], seq 14393:14502, ack 1, win 6339, options [nop,nop,TS val 583091889 ecr 2434145851], length 109
+E.....@.@...........,....7..}S=............
+".F....;67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.846629Z","response":" we","done":false}
+
+
+10:48:22.846695 IP localhost.62659 > localhost.11434: Flags [.], ack 14502, win 5019, options [nop,nop,TS val 2434145917 ecr 583091889], length 0
+E..4..@.@.............,.}S=..7.}.....(.....
+...}".F.
+10:48:22.913715 IP localhost.11434 > localhost.62659: Flags [P.], seq 14502:14612, ack 1, win 6339, options [nop,nop,TS val 583091956 ecr 2434145917], length 110
+E.....@.@...........,....7.}}S=............
+".F....}68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.91369Z","response":" will","done":false}
+
+
+10:48:22.913753 IP localhost.62659 > localhost.11434: Flags [.], ack 14612, win 5018, options [nop,nop,TS val 2434145984 ecr 583091956], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".F.
+10:48:22.980810 IP localhost.11434 > localhost.62659: Flags [P.], seq 14612:14726, ack 1, win 6339, options [nop,nop,TS val 583092023 ecr 2434145984], length 114
+E.....@.@...........,....7..}S=............
+".G7....6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:22.980784Z","response":" utilize","done":false}
+
+
+10:48:22.980859 IP localhost.62659 > localhost.11434: Flags [.], ack 14726, win 5017, options [nop,nop,TS val 2434146051 ecr 583092023], length 0
+E..4..@.@.............,.}S=..7.].....(.....
+....".G7
+10:48:23.047895 IP localhost.11434 > localhost.62659: Flags [P.], seq 14726:14836, ack 1, win 6339, options [nop,nop,TS val 583092090 ecr 2434146051], length 110
+E.....@.@...........,....7.]}S=............
+".Gz....68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:23.047872Z","response":" the","done":false}
+
+
+10:48:23.047957 IP localhost.62659 > localhost.11434: Flags [.], ack 14836, win 5016, options [nop,nop,TS val 2434146118 ecr 583092090], length 0
+E..4..@.@.............,.}S=..7.......(.....
+...F".Gz
+10:48:23.116710 IP localhost.11434 > localhost.62659: Flags [P.], seq 14836:14947, ack 1, win 6339, options [nop,nop,TS val 583092159 ecr 2434146118], length 111
+E.....@.@...........,....7..}S=............
+".G....F69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:23.116687Z","response":" Lang","done":false}
+
+
+10:48:23.116837 IP localhost.62659 > localhost.11434: Flags [.], ack 14947, win 5015, options [nop,nop,TS val 2434146187 ecr 583092159], length 0
+E..4..@.@.............,.}S=..7.:.....(.....
+....".G.
+10:48:23.185086 IP localhost.11434 > localhost.62659: Flags [P.], seq 14947:15058, ack 1, win 6339, options [nop,nop,TS val 583092228 ecr 2434146187], length 111
+E.....@.@...........,....7.:}S=............
+".H.....69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:23.185063Z","response":"Chain","done":false}
+
+
+10:48:23.185503 IP localhost.62659 > localhost.11434: Flags [.], ack 15058, win 5014, options [nop,nop,TS val 2434146256 ecr 583092228], length 0
+E..4..@.@.............,.}S=..7.......(.....
+....".H.
+10:48:23.255218 IP localhost.11434 > localhost.62659: Flags [P.], seq 15058:15174, ack 1, win 6339, options [nop,nop,TS val 583092298 ecr 2434146256], length 116
+E.....@.@...........,....7..}S=............
+".HJ....6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:23.255197Z","response":" framework","done":false}
+
+
+10:48:23.255256 IP localhost.62659 > localhost.11434: Flags [.], ack 15174, win 5013, options [nop,nop,TS val 2434146326 ecr 583092298], length 0
+E..4..@.@.............,.}S=..7.......(.....
+.. .".HJ
+10:48:23.327580 IP localhost.11434 > localhost.62659: Flags [P.], seq 15174:15283, ack 1, win 6339, options [nop,nop,TS val 583092370 ecr 2434146326], length 109
+E.....@.@...........,....7..}S=............
+".H... .67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:23.327559Z","response":" to","done":false}
+
+
+10:48:23.327617 IP localhost.62659 > localhost.11434: Flags [.], ack 15283, win 5012, options [nop,nop,TS val 2434146398 ecr 583092370], length 0
+E..4..@.@.............,.}S=..7.......(.....
+.. ^".H.
+10:48:23.385114 IP localhost.62659 > localhost.11434: Flags [F.], seq 1, ack 15283, win 5012, options [nop,nop,TS val 2434146456 ecr 583092370], length 0
+E..4..@.@.............,.}S=..7.......(.....
+.. .".H.
+10:48:23.385158 IP localhost.11434 > localhost.62659: Flags [.], ack 2, win 6339, options [nop,nop,TS val 583092428 ecr 2434146456], length 0
+E..4..@.@...........,....7..}S=......(.....
+--
+E..s..@.@...........,....7..}S=......g.....
+".H... .39
+{"error":"error reading llm response: context canceled"}
+
+
+10:48:23.385318 IP localhost.62659 > localhost.11434: Flags [R], seq 2102607122, win 0, length 0
+E..(..@.@.............,.}S=.....P.......
+10:48:30.225436 IP localhost.62768 > localhost.11434: Flags [S], seq 360585902, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 2463637541 ecr 0,sackOK,eol], length 0
+E..@..@.@............0,..~...........4....?........
+.. %........
+10:48:30.225525 IP localhost.11434 > localhost.62768: Flags [S.], seq 1161953140, ack 360585903, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 2301170875 ecr 2463637541,sackOK,eol], length 0
+E..@..@.@...........,..0EA.t.~.......4....?........
+.).... %....
+--
+10:48:30.225639 IP localhost.62768 > localhost.11434: Flags [P.], seq 1:154, ack 1, win 6380, options [nop,nop,TS val 2463637541 ecr 2301170875], length 153
+E.....@.@............0,..~..EA.u...........
+.. %.)..HEAD / HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Accept: application/json
+Content-Type: application/json
+
+
+10:48:30.225659 IP localhost.11434 > localhost.62768: Flags [.], ack 154, win 6378, options [nop,nop,TS val 2301170875 ecr 2463637541], length 0
+E..4..@.@...........,..0EA.u.~.H.....(.....
+.).... %
+10:48:30.225896 IP localhost.11434 > localhost.62768: Flags [P.], seq 1:118, ack 154, win 6378, options [nop,nop,TS val 2301170875 ecr 2463637541], length 117
+E.....@.@...........,..0EA.u.~.H...........
+.).... %HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 05 Aug 2025 14:48:30 GMT
+Content-Length: 17
+
+
+10:48:30.225914 IP localhost.62768 > localhost.11434: Flags [.], ack 118, win 6379, options [nop,nop,TS val 2463637541 ecr 2301170875], length 0
+E..4..@.@............0,..~.HEA.......(.....
+.. %.)..
+10:48:30.226038 IP localhost.62768 > localhost.11434: Flags [P.], seq 154:454, ack 118, win 6379, options [nop,nop,TS val 2463637541 ecr 2301170875], length 300
+E..`..@.@............0,..~.HEA.......T.....
+.. %.)..POST /api/show HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Content-Length: 96
+Accept: application/json
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"model":"","system":"","template":"","verbose":false,"options":null,"name":"qwen2.5-coder:32b"}
+10:48:30.226062 IP localhost.11434 > localhost.62768: Flags [.], ack 454, win 6374, options [nop,nop,TS val 2301170875 ecr 2463637541], length 0
+E..4..@.@...........,..0EA...~.t.....(.....
+.).... %
+10:48:30.263057 IP localhost.11434 > localhost.62768: Flags [P.], seq 118:4214, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 4096
+E..4..@.@...........,..0EA...~.t.....).....
+.).... %HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Tue, 05 Aug 2025 14:48:30 GMT
+Transfer-Encoding: chunked
+
+132ee
+{"license":"\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distrib
+10:48:30.263070 IP localhost.11434 > localhost.62768: Flags [.], seq 4214:20546, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 16332
+E.@...@.@...........,..0EB...~.t....=......
+.).... %ute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright 2024 Alibaba Cloud\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.","modelfile":"# Modelfile generated by \"ollama show\"\n# To build a new Modelfile based on this, replace FROM with:\n# FROM qwen2.5-coder:32b\n\nFROM /Users/tdeshane/.ollama/models/blobs/sha256-ac3d1ba8aa77755dab3806d9024e9c385ea0d5b412d6bdf9157f8a4a7e9fc0d9\nTEMPLATE \"\"\"{{- if .Suffix }}\u003c|fim_prefix|\u003e{{ .Prompt }}\u003c|fim_suffix|\u003e{{ .Suffix }}\u003c|fim_middle|\u003e\n{{- else if .Messages }}\n{{- if or .System .Tools }}\u003c|im_start|\u003esystem\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within \u003ctools\u003e\u003c/tools\u003e XML tags:\n\u003ctools\u003e\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n\u003c/tools\u003e\n\nFor each function call, return a json object with function name and arguments within \u003ctool_call\u003e\u003c/tool_call\u003e XML tags:\n\u003ctool_call\u003e\n{\"name\": \u003cfunction-name\u003e, \"arguments\": \u003cargs-json-object\u003e}\n\u003c/tool_call\u003e\n{{- end }}\u003c|im_end|\u003e\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}\u003c|im_start|\u003euser\n{{ .Content }}\u003c|im_end|\u003e\n{{ else if eq .Role \"assistant\" }}\u003c|im_start|\u003eassistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}\u003ctool_call\u003e\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}\u003c/tool_call\u003e\n{{- end }}{{ if not $last }}\u003c|im_end|\u003e\n{{ end }}\n{{- else if eq .Role \"tool\" }}\u003c|im_start|\u003euser\n\u003ctool_response\u003e\n{{ .Content }}\n\u003c/tool_response\u003e\u003c|im_end|\u003e\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}\u003c|im_start|\u003eassistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}\u003c|im_start|\u003esystem\n{{ .System }}\u003c|im_end|\u003e\n{{ end }}{{ if .Prompt }}\u003c|im_start|\u003euser\n{{ .Prompt }}\u003c|im_end|\u003e\n{{ end }}\u003c|im_start|\u003eassistant\n{{ end }}{{ .Response }}{{ if .Response }}\u003c|im_end|\u003e{{ end }}\"\"\"\nSYSTEM You are Qwen, created by Alibaba Cloud. You are a helpful assistant.\nLICENSE \"\"\"\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivati
+10:48:30.263071 IP localhost.11434 > localhost.62768: Flags [.], seq 20546:36878, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 16332
+E.@...@.@...........,..0EBO..~.t....=......
+.).... %ve Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright 2024 Alibaba Cloud\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\"\"\"\n","template":"{{- if .Suffix }}\u003c|fim_prefix|\u003e{{ .Prompt }}\u003c|fim_suffix|\u003e{{ .Suffix }}\u003c|fim_middle|\u003e\n{{- else if .Messages }}\n{{- if or .System .Tools }}\u003c|im_start|\u003esystem\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within \u003ctools\u003e\u003c/tools\u003e XML tags:\n\u003ctools\u003e\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n\u003c/tools\u003e\n\nFor each function call, return a json object with function name and arguments within \u003ctool_call\u003e\u003c/tool_call\u003e XML tags:\n\u003ctool_call\u003e\n{\"name\": \u003cfunction-name\u003e, \"arguments\": \u003cargs-json-object\u003e}\n\u003c/tool_call\u003e\n{{- end }}\u003c|im_end|\u003e\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}\u003c|im_start|\u003euser\n{{ .Content }}\u003c|im_end|\u003e\n{{ else if eq .Role \"assistant\" }}\u003c|im_start|\u003eassistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}\u003ctool_call\u003e\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}\u003c/tool_call\u003e\n{{- end }}{{ if not $last }}\u003c|im_end|\u003e\n{{ end }}\n{{- else if eq .Role \"tool\" }}\u003c|im_start|\u003euser\n\u003ctool_response\u003e\n{{ .Content }}\n\u003c/tool_response\u003e\u003c|im_end|\u003e\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}\u003c|im_start|\u003eassistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}\u003c|im_start|\u003esystem\n{{ .System }}\u003c|im_end|\u003e\n{{ end }}{{ if .Prompt }}\u003c|im_start|\u003euser\n{{ .Prompt }}\u003c|im_end|\u003e\n{{ end }}\u003c|im_start|\u003eassistant\n{{ end }}{{ .Response }}{{ if .Response }}\u003c|im_end|\u003e{{ end }}","system":"You are Qwen, created by Alibaba Cloud. You are a helpful assistant.","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"32.8B","quantization_level":"Q4_K_M"},"model_info":{"general.architecture":"qwen2","general.base_model.0.name":"Qwen2.5 Coder 32B","general.base_model.0.organization":"Qwen","general.base_model.0.repo_url":"https://huggingface.co/Qwen/Qwen2.5-Coder-32B","general.base_model.count":1,"general.basename":"Qwen2.5-Coder","general.file_type":15,"general.finetune":"Instruct","general.languages":null,"general.license":"apache-2.0","general.license.link":"https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/blob/main/LICENSE","general.parameter_count":32763876352,"general.quantization_version":2,"general.size_label":"32B","general.tags":null,"general.type":"model","qwen2.attention.head_count":40,"qwen2.attention.head_count_kv":8,"qwen2.attention.layer_norm_rms_epsilon":0.000001,"qwen2.block_count":64,"qwen2.context_length":32768,"qwen2.embedding_length":5120,"qwen2.feed_forward_length":27648,"qwen2.rope.freq_base":1000000,"tokenizer.ggml.add_bos_token":false,"tokenizer.ggml.bos_token_id":151643,"tokenizer.ggml.eos_token_id":151645,"tokenizer.ggml.merges":null,"tokenizer.ggml.model":"gpt2","tokenizer.ggml.padding_token_id":151643,"tokenizer.ggml.pre":"qwen2","tokenizer.ggml.token_type":null,"tokenizer.ggml.tokens":null},"tensors":[{"name":"token_embd.weight","type":"Q4_K","shape":[5120,152064]},{"name":"blk.0.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.0.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.0.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.0.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.0.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.0.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.0.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.0.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.0.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.0.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.0.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.0.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.1.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.1.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.1.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.1.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.1.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.1.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.1.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.1.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.1.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.1.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.1.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.1.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.2.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.2.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.2.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.2.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.2.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.2.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.2.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.2.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.2.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.2.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.2.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.2.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.3.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.3.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.3.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.3.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.3.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.3.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.3.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.3.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.3.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.3.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.3.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.3.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.4.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.4.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.4.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.4.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.4.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.4.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.4.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.4.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.4.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.4.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.4.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.4.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.5.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.5.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.5.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.5.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.5.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.5.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.5.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.5.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.5.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.5.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.5.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.5.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.6.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.6.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.6.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.6.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.6.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.6.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.6.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.6.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.6.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.6.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.6.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.6.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.7.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.7.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.7.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.7.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.7.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.7.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.7.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.7.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.7.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.7.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.7.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.7.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.8.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.8.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.8.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.8.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.8.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.8.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.8.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.8.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.10.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.10.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.10.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.10.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.10.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.10.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.10.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.10.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.10.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.10.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.10.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.10.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.11.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.11.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.11.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.11.ffn_up.weight","type":"Q4_K","shape":
+10:48:30.263071 IP localhost.11434 > localhost.62768: Flags [.], seq 36878:53210, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 16332
+E.@...@.@...........,..0EB...~.t....=......
+.).... %[5120,27648]},{"name":"blk.11.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.11.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.11.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.11.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.11.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.11.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.11.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.11.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.12.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.12.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.12.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.12.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.12.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.12.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.12.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.12.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.12.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.12.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.12.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.12.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.13.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.13.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.13.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.13.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.13.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.13.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.13.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.13.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.8.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.8.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.8.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.8.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.9.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.9.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.9.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.9.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.9.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.9.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.9.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.9.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.9.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.9.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.9.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.9.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.13.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.13.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.13.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.13.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.14.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.14.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.14.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.14.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.14.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.14.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.14.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.14.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.14.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.14.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.14.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.14.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.15.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.15.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.15.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.15.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.15.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.15.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.15.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.15.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.15.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.15.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.15.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.15.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.16.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.16.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.16.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.16.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.16.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.16.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.16.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.16.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.16.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.16.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.16.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.16.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.17.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.17.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.17.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.17.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.17.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.17.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.17.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.17.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.17.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.17.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.17.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.17.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.18.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.18.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.18.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.18.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.18.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.18.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.18.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.18.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.18.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.18.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.18.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.18.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.19.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.19.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.19.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.19.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.19.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.19.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.19.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.19.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.19.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.19.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.19.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.19.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.20.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.20.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.20.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.20.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.20.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.20.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.20.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.20.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.20.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.20.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.20.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.20.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.21.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.21.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.21.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.21.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.21.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.21.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.21.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.21.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.21.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.21.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.21.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.21.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.22.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.22.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.22.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.22.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.22.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.22.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.22.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.22.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.22.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.22.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.22.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.22.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.23.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.23.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.23.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.23.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.23.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.23.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.23.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.23.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.23.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.23.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.23.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.23.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.24.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.24.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.24.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.24.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.24.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.24.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.24.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.24.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.24.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.24.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.24.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.24.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.25.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.25.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.25.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.25.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.25.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.25.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.25.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.25.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.25.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.25.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.25.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.25.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.26.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.26.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.26.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.26.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.26.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.26.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.26.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.26.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.26.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.26.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.26.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.26.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.27.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.27.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.27.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.27.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.27.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.27.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.27.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.27.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.27.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.27.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.27.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.27.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.28.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.28.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.28.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.28.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.28.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.28.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.28.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.28.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.28.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.28.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.28.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.28.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.29.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.29.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.29.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.29.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.29.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.29.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.29.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.29.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.29.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.29.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.29.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.29.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.30.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.30.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.30.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.30.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.30.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.30.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.30.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.30.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.30.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.30.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.30.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.30.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.31.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.31.ffn_down.weight","type":"Q6_K
+10:48:30.263072 IP localhost.11434 > localhost.62768: Flags [.], seq 53210:69542, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 16332
+E.@...@.@...........,..0EB.N.~.t....=......
+.).... %","shape":[27648,5120]},{"name":"blk.31.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.31.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.31.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.31.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.31.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.31.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.31.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.31.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.31.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.31.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.32.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.32.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.32.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.32.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.32.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.32.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.32.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.32.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.32.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.32.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.32.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.32.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.33.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.33.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.33.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.33.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.33.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.33.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.33.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.33.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.33.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.33.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.33.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.33.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.34.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.34.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.34.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.34.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.34.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.34.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.34.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.34.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.34.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.34.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.34.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.34.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.35.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.35.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.35.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.35.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.35.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.35.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.35.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.35.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.35.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.35.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.35.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.35.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.36.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.36.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.36.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.36.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.36.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.36.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.36.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.36.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.36.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.36.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.36.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.36.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.37.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.37.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.37.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.37.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.37.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.37.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.37.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.37.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.37.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.37.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.37.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.37.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.38.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.38.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.38.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.38.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.38.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.38.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.38.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.38.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.38.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.38.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.38.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.38.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.39.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.39.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.39.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.39.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.39.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.39.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.39.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.39.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.39.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.39.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.39.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.39.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.40.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.40.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.40.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.40.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.40.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.40.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.40.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.40.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.40.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.40.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.40.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.40.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.41.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.41.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.41.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.41.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.41.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.41.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.41.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.41.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.41.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.41.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.41.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.41.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.42.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.42.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.42.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.42.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.42.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.42.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.42.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.42.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.42.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.42.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.42.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.42.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.43.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.43.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.43.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.43.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.43.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.43.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.43.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.43.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.43.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.43.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.43.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.43.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.44.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.44.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.44.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.44.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.44.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.44.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.44.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.44.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.44.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.44.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.44.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.44.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.45.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.45.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.45.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.45.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.45.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.45.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.45.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.45.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.45.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.45.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.45.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.45.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.46.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.46.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.46.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.46.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.46.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.46.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.46.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.46.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.46.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.46.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.46.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.46.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.47.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.47.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.47.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.47.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.47.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.47.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.47.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.47.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.47.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.47.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.47.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.47.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.48.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.48.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.48.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.48.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.48.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.48.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.48.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.48.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.48.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.48.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.48.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.48.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.49.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.49.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.49.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.49.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.49.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.49.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.49.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.49.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.49.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.49.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.49.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.49.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.50.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.50.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.50.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.50.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.50.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.50.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.50.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.50.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.50.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.50.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.50.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.50.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.51.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.51.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.51.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.51.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.51.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.51.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.51.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.51.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.51.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.51.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.51.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.51.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.52.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.52.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.52.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name
+10:48:30.263076 IP localhost.11434 > localhost.62768: Flags [P.], seq 69542:78830, ack 454, win 6374, options [nop,nop,TS val 2301170913 ecr 2463637541], length 9288
+E.$|..@.@...........,..0EC...~.t...."q.....
+.).... %":"blk.52.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.52.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.52.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.52.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.52.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.52.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.52.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.52.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.52.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.53.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.53.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.53.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.53.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.53.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.53.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.53.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.53.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.53.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.53.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.53.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.53.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.54.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.54.ffn_down.weight","type":"Q4_K","shape":[27648,5120]},{"name":"blk.54.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.54.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.54.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.54.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.54.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.54.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.54.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.54.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.54.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.54.attn_v.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.55.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.55.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.55.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.55.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.55.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.55.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.55.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.55.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.55.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.55.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.55.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.55.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.56.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.56.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.56.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.56.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.56.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.56.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.56.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.56.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.56.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.56.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.56.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.56.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.57.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.57.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.57.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.57.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.57.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.57.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.57.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.57.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.57.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.57.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.57.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.57.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.58.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.58.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.58.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.58.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.58.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.58.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.58.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.58.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.58.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.58.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.58.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.58.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.59.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.59.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.59.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.59.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.59.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.59.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.59.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.59.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.59.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.59.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.59.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.59.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.60.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.60.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.60.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.60.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.60.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.60.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.60.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.60.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.60.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.60.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.60.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.60.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.61.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.61.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.61.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.61.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.61.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.61.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.61.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.61.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.61.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.61.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.61.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.61.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.62.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.62.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.62.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.62.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.62.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.62.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.62.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.62.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.62.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.62.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.62.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.62.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"blk.63.ffn_gate.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.63.attn_k.bias","type":"F32","shape":[1024]},{"name":"blk.63.attn_k.weight","type":"Q4_K","shape":[5120,1024]},{"name":"blk.63.attn_output.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.63.attn_q.bias","type":"F32","shape":[5120]},{"name":"blk.63.attn_q.weight","type":"Q4_K","shape":[5120,5120]},{"name":"blk.63.attn_v.bias","type":"F32","shape":[1024]},{"name":"blk.63.attn_v.weight","type":"Q6_K","shape":[5120,1024]},{"name":"output.weight","type":"Q6_K","shape":[5120,152064]},{"name":"blk.63.attn_norm.weight","type":"F32","shape":[5120]},{"name":"blk.63.ffn_down.weight","type":"Q6_K","shape":[27648,5120]},{"name":"blk.63.ffn_up.weight","type":"Q4_K","shape":[5120,27648]},{"name":"blk.63.ffn_norm.weight","type":"F32","shape":[5120]},{"name":"output_norm.weight","type":"F32","shape":[5120]}],"capabilities":["completion","tools","insert"],"modified_at":"2024-11-11T23:35:00.043211358-05:00"}
+10:48:30.263099 IP localhost.62768 > localhost.11434: Flags [.], ack 4214, win 6315, options [nop,nop,TS val 2463637579 ecr 2301170913], length 0
+--
+10:48:30.264277 IP localhost.62768 > localhost.11434: Flags [P.], seq 454:777, ack 78837, win 5150, options [nop,nop,TS val 2463637580 ecr 2301170913], length 323
+E..w..@.@............0,..~.tEC3i.....k.....
+.. L.)..POST /api/generate HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Content-Length: 110
+Accept: application/x-ndjson
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"model":"qwen2.5-coder:32b","prompt":"test\n Just say OK","suffix":"","system":"","template":"","options":{}}
+10:48:30.264309 IP localhost.11434 > localhost.62768: Flags [.], ack 777, win 6369, options [nop,nop,TS val 2301170914 ecr 2463637580], length 0
+E..4..@.@...........,..0EC3i.~.......(.....
+.).... L
+10:48:31.070807 IP localhost.11434 > localhost.62768: Flags [P.], seq 78837:79065, ack 777, win 6369, options [nop,nop,TS val 2301171720 ecr 2463637580], length 228
+E.....@.@...........,..0EC3i.~.............
+.).... LHTTP/1.1 200 OK
+Content-Type: application/x-ndjson
+Date: Tue, 05 Aug 2025 14:48:31 GMT
+Transfer-Encoding: chunked
+
+66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:31.070732Z","response":"OK","done":false}
+
+
+10:48:31.070842 IP localhost.62768 > localhost.11434: Flags [.], ack 79065, win 5147, options [nop,nop,TS val 2463638386 ecr 2301171720], length 0
+E..4..@.@............0,..~..EC4M.....(.....
+..#r.)..
+10:48:31.132796 IP localhost.11434 > localhost.62768: Flags [P.], seq 79065:79527, ack 777, win 6369, options [nop,nop,TS val 2301171782 ecr 2463638386], length 462
+E.....@.@...........,..0EC4M.~.............
+.).F..#r1c7
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:48:31.132547Z","response":"","done":true,"done_reason":"stop","context":[151644,8948,198,2610,525,1207,16948,11,3465,553,54364,14817,13,1446,525,264,10950,17847,13,151645,198,151644,872,198,1944,198,4599,1977,10402,151645,198,151644,77091,198,3925],"total_duration":868137709,"load_duration":20247000,"prompt_eval_count":34,"prompt_eval_duration":785060541,"eval_count":2,"eval_duration":62359250}
+
+
+10:48:31.132814 IP localhost.62768 > localhost.11434: Flags [.], ack 79527, win 5140, options [nop,nop,TS val 2463638448 ecr 2301171782], length 0
+E..4..@.@............0,..~..EC6......(.....
+..#..).F
+10:48:31.132867 IP localhost.11434 > localhost.62768: Flags [P.], seq 79527:79532, ack 777, win 6369, options [nop,nop,TS val 2301171782 ecr 2463638448], length 5
+E..9..@.@...........,..0EC6..~.......-.....
+.).F..#.0
+
+

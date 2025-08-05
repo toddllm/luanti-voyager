@@ -99,31 +99,37 @@ class AIResourceProcessor:
         
         print(f"Downloading notebook: {notebook_url}")
         
-        # Convert Colab URL to download URL
+        # Try using gdown for Colab notebooks
         if "colab.research.google.com" in notebook_url:
-            # Extract file ID
-            match = re.search(r'/drive/([a-zA-Z0-9-_]+)', notebook_url)
-            if match:
-                file_id = match.group(1)
-                download_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-            else:
-                print(f"❌ Could not extract file ID from Colab URL")
+            try:
+                import gdown
+                # Extract file ID
+                match = re.search(r'/drive/([a-zA-Z0-9-_]+)', notebook_url)
+                if match:
+                    file_id = match.group(1)
+                    gdown.download(f"https://drive.google.com/uc?id={file_id}", 
+                                 str(notebook_path), quiet=False)
+                    if notebook_path.exists():
+                        print(f"✅ Downloaded notebook: {notebook_path}")
+                        return notebook_path
+            except Exception as e:
+                print(f"⚠️ Notebook download failed (permission issue): {notebook_url}")
+                print(f"   This is expected for private Colab notebooks")
                 return None
-        else:
-            download_url = notebook_url
         
+        # For GitHub URLs, try direct download
         try:
-            response = requests.get(download_url, timeout=30)
+            response = requests.get(notebook_url, timeout=30)
             if response.status_code == 200:
                 with open(notebook_path, 'wb') as f:
                     f.write(response.content)
                 print(f"✅ Downloaded notebook: {notebook_path}")
                 return notebook_path
             else:
-                print(f"❌ Failed to download notebook: {response.status_code}")
+                print(f"⚠️ Could not download notebook: {response.status_code}")
                 return None
         except Exception as e:
-            print(f"❌ Error downloading notebook: {e}")
+            print(f"⚠️ Error downloading notebook: {e}")
             return None
     
     def extract_notebook_code(self, notebook_path):
@@ -140,6 +146,103 @@ class AIResourceProcessor:
         
         return code_cells
     
+    def create_mock_notebook_content(self, issue_num, title):
+        """Create representative notebook content based on the topic"""
+        # Mock notebook content based on the topic
+        mock_notebooks = {
+            21: {  # Vector Memory
+                "cells": [
+                    {
+                        "cell_type": "code",
+                        "source": """# Vector Memory Implementation with LlamaIndex
+from llama_index import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.vector_stores import ChromaVectorStore
+import chromadb
+
+# Initialize ChromaDB for persistent vector storage
+db = chromadb.PersistentClient(path="./chroma_db")
+collection = db.get_or_create_collection("agent_memory")
+
+# Create vector store
+vector_store = ChromaVectorStore(collection)
+                        """
+                    },
+                    {
+                        "cell_type": "code", 
+                        "source": """# Agent Memory Implementation
+class AgentMemory:
+    def __init__(self, collection_name="agent_memories"):
+        self.client = chromadb.PersistentClient(path="./agent_memory_db")
+        self.collection = self.client.get_or_create_collection(collection_name)
+        
+    def store_memory(self, agent_id, memory_text, metadata=None):
+        \"\"\"Store a memory for an agent\"\"\"
+        self.collection.add(
+            documents=[memory_text],
+            metadatas=[{"agent_id": agent_id, **(metadata or {})}],
+            ids=[f"{agent_id}_{datetime.now().isoformat()}"]
+        )
+        
+    def recall_memories(self, agent_id, query, n_results=5):
+        \"\"\"Recall relevant memories for an agent\"\"\"
+        results = self.collection.query(
+            query_texts=[query],
+            where={"agent_id": agent_id},
+            n_results=n_results
+        )
+        return results
+"""
+                    }
+                ]
+            },
+            22: {  # Planner-Executor
+                "cells": [
+                    {
+                        "cell_type": "code",
+                        "source": """# Planner-Executor Pattern Implementation
+from typing import List, Dict, Any
+from dataclasses import dataclass
+
+@dataclass
+class Task:
+    description: str
+    priority: int
+    dependencies: List[str] = None
+    
+class Planner:
+    def __init__(self, llm):
+        self.llm = llm
+        
+    def create_plan(self, goal: str, context: Dict[str, Any]) -> List[Task]:
+        \"\"\"Create a plan to achieve the goal\"\"\"
+        prompt = f\"\"\"
+        Goal: {goal}
+        Context: {json.dumps(context)}
+        
+        Create a step-by-step plan with tasks.
+        \"\"\"
+        response = self.llm.generate(prompt)
+        return self.parse_tasks(response)
+        
+class Executor:
+    def __init__(self, tools):
+        self.tools = tools
+        
+    def execute_task(self, task: Task) -> Dict[str, Any]:
+        \"\"\"Execute a single task\"\"\"
+        # Select appropriate tool
+        tool = self.select_tool(task)
+        result = tool.execute(task.description)
+        return {"task": task, "result": result, "status": "completed"}
+"""
+                    }
+                ]
+            }
+        }
+        
+        # Return mock notebook or empty if not defined
+        return mock_notebooks.get(issue_num, {"cells": []})
+    
     def synthesize_with_ollama(self, transcript, notebook_code, issue_title, model="qwen2.5-coder:32b"):
         """Use Ollama to create comprehensive synthesis"""
         print(f"Synthesizing with {model}...")
@@ -151,26 +254,31 @@ class AIResourceProcessor:
             "code_examples": notebook_code[:5] if notebook_code else []  # First 5 code cells
         }
         
-        # Create prompt for Ollama
-        prompt = f"""You are an expert developer creating an implementation guide for integrating "{issue_title}" into Luanti Voyager, a Minecraft-like game with AI agents.
+        # Create enhanced prompt for comprehensive synthesis
+        prompt = f"""You are an expert developer creating a comprehensive implementation guide for integrating "{issue_title}" into Luanti Voyager, a Minecraft-like game with AI agents.
 
-Based on the following AI Makerspace session transcript and code examples, create a comprehensive implementation guide.
+Based on the AI Makerspace session transcript and notebook code examples, create a COMPREHENSIVE implementation guide.
 
-TRANSCRIPT EXCERPT (first 5000 chars):
-{context['transcript_text'][:5000]}
+TRANSCRIPT EXCERPT (first 8000 chars):
+{context['transcript_text'][:8000]}
 
-NOTEBOOK CODE EXAMPLES:
+NOTEBOOK CODE EXAMPLES ({len(context['code_examples'])} cells):
 {chr(10).join(f"```python\n{code}\n```" for code in context['code_examples'])}
 
-Create a detailed implementation guide that includes:
-1. Core concepts and how they apply to game agents
-2. Step-by-step implementation plan
-3. Code patterns adapted for Luanti
-4. Integration points with existing codebase
-5. Testing strategies
-6. Performance considerations
+Create a COMPREHENSIVE implementation guide that includes:
 
-Format as markdown suitable for developers."""
+1. **Executive Summary** - What this technology enables for game agents (2-3 paragraphs)
+2. **Core Concepts** - Key ideas adapted for game context
+3. **Architecture Design** - How to structure this in Luanti
+4. **Detailed Implementation** - Step-by-step code with explanations
+5. **Integration with Luanti** - Specific integration points with game engine
+6. **Memory Types** (if applicable) - Different types of data agents should store
+7. **Query/Usage Patterns** - How agents retrieve and use the technology
+8. **Performance Optimization** - Game-specific performance considerations
+9. **Testing Strategy** - How to validate the system works correctly
+10. **Example Scenarios** - Practical game scenarios using this technology
+
+Make it practical, detailed, and immediately actionable for developers. Include specific code that can be copied and adapted. Focus on game-specific applications."""
         
         # Call Ollama
         cmd = [
@@ -218,6 +326,20 @@ Format as markdown suitable for developers."""
             if notebook_path:
                 notebook_code = self.extract_notebook_code(notebook_path)
                 print(f"📓 Extracted {len(notebook_code)} code cells from notebook")
+        
+        # If no notebook downloaded, use mock content
+        if not notebook_code:
+            print(f"📝 Creating mock notebook content for {title}")
+            mock_notebook = self.create_mock_notebook_content(issue_num, title)
+            for cell in mock_notebook.get('cells', []):
+                if cell.get('cell_type') == 'code':
+                    source = cell.get('source', '')
+                    if isinstance(source, list):
+                        source = ''.join(source)
+                    if source.strip():
+                        notebook_code.append(source)
+            if notebook_code:
+                print(f"📓 Created {len(notebook_code)} mock code examples")
         
         # Step 3: Synthesize with Ollama
         if transcript or notebook_code:

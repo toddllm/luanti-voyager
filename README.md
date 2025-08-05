@@ -15,6 +15,12 @@
 
 ---
 
+## 📚 AI Integration Documentation
+
+**[AI Makerspace Technical Report](docs/AI_MAKERSPACE_TECHNICAL_REPORT.md)** - Comprehensive documentation of integrating 10 advanced AI techniques (Vector Memory, Multi-Agent Swarms, MCP/A2A Protocols, etc.) into Luanti Voyager. Includes complete technical details, prompts, models used, and reproduction guide.
+
+---
+
 ## 🚀 What's This About?
 
 Imagine an AI that starts knowing nothing about the voxel world, then gradually learns to chop trees, craft tools, build shelters, and maybe even create things we never imagined. That's Luanti Voyager - a wild experiment in letting language models loose in the open-source Luanti sandbox.

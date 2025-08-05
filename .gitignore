@@ -60,3 +60,4 @@ credentials/
 test-server/test_world/
 test-server/test-server.log
 test-server/test-server-output.log
+docs/ai-makerspace-resources/audio/*.mp3
