@@ -200,10 +200,10 @@ We've successfully implemented multi-agent coordination inspired by Mindcraft. H
 #### Quick Test
 ```bash
 # Test basic communication between agents
-python test_multi_agent_simple.py
+python tests/test_multi_agent_simple.py
 
 # See personality-based behaviors  
-python test_multi_agent_mock_llm.py
+python tests/test_multi_agent_mock_llm.py
 ```
 
 #### Live Demo Output
@@ -333,7 +333,7 @@ python -m luanti_voyager --llm anthropic --name ClaudeBot
 #### Test & Configuration
 ```bash
 # Test all LLM integrations
-python test_llm_integration.py
+python tests/test_llm_integration.py
 
 # Copy and configure environment
 cp .env.example .env
