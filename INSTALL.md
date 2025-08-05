@@ -19,7 +19,7 @@ git clone --recursive https://github.com/toddllm/luanti-voyager.git
 cd luanti-voyager
 
 # Run the automated setup (includes Ollama)
-./quick_start_ollama.sh
+./tools/quick_start_ollama.sh
 ```
 
 This will handle everything automatically and start your first agent!

@@ -7,7 +7,7 @@
 *An open playground where language models learn to survive, build, and thrive in voxel worlds*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![LLM Agents Working](https://img.shields.io/badge/🤖%20LLM%20Agents-WORKING-brightgreen)](PROOF_LLM_WORKING.md)
+[![LLM Agents Working](https://img.shields.io/badge/🤖%20LLM%20Agents-WORKING-brightgreen)](docs/PROOF_LLM_WORKING.md)
 [![Features Complete](https://img.shields.io/badge/✅%20Core%20Features-8%2F8%20Working-success)](#-working-now---ready-to-test)
 [![Join the Adventure](https://img.shields.io/badge/Join-The%20Adventure-blue)](https://github.com/toddllm/luanti-voyager)
 
@@ -82,7 +82,7 @@ The real-time 3D viewer displays the agent's world view using structured data re
 # Clone and run with one command!
 git clone --recursive https://github.com/toddllm/luanti-voyager.git
 cd luanti-voyager
-./quick_start_ollama.sh
+./tools/quick_start_ollama.sh
 ```
 
 ### Detailed Installation
@@ -108,13 +108,13 @@ Includes:
 
 ### ✅ WORKING NOW - Ready to Test!
 
-**🤖 LLM Agents:** Fully functional with [live proof of gameplay](PROOF_LLM_WORKING.md)
+**🤖 LLM Agents:** Fully functional with [live proof of gameplay](docs/PROOF_LLM_WORKING.md)
 - [x] **Real-time 3D viewer** - Working Three.js visualization with WebSocket streaming
 - [x] **Agent exploration** - Bot moves, teleports, and explores world via file-based commands  
 - [x] **Block detection** - Agent perceives nearby blocks and reports world state
 - [x] **Web interface** - Live agent monitoring and 3D visualization at localhost:8090
 - [x] **Screenshot workflow** - Paste interface for rapid documentation (paste → describe → save)
-- [x] **LLM integration** - OpenAI/Anthropic/Ollama support with **[PROVEN real gameplay](PROOF_LLM_WORKING.md)** 🎯
+- [x] **LLM integration** - OpenAI/Anthropic/Ollama support with **[PROVEN real gameplay](docs/PROOF_LLM_WORKING.md)** 🎯
 
 - [x] **Basic survival** - Health monitoring with emergency responses 🩸
 - [x] **Skill memory** - File-based learning system that remembers strategies 💭
@@ -200,10 +200,10 @@ We've successfully implemented multi-agent coordination inspired by Mindcraft. H
 #### Quick Test
 ```bash
 # Test basic communication between agents
-python test_multi_agent_simple.py
+python tests/test_multi_agent_simple.py
 
 # See personality-based behaviors  
-python test_multi_agent_mock_llm.py
+python tests/test_multi_agent_mock_llm.py
 ```
 
 #### Live Demo Output
@@ -272,7 +272,7 @@ asyncio.run(minimal_multi_agent())
 
 ```bash
 # 1. One-command setup and run (handles everything!)
-./quick_start_ollama.sh
+./tools/quick_start_ollama.sh
 
 # 2. Watch your agent make intelligent decisions!
 # - Visit http://localhost:8090/viewer for 3D visualization
@@ -296,12 +296,12 @@ python -m luanti_voyager --name MyBot --port 40000
 
 #### Local Development (Recommended)
 
-**🎯 WORKING NOW - [Live Proof of LLM Gameplay](PROOF_LLM_WORKING.md)**
+**🎯 WORKING NOW - [Live Proof of LLM Gameplay](docs/PROOF_LLM_WORKING.md)**
 
 **One-Command Start:**
 ```bash
 # Auto-setup and run with Ollama (handles everything!)
-./quick_start_ollama.sh
+./tools/quick_start_ollama.sh
 ```
 
 **Manual Setup:**
@@ -333,7 +333,7 @@ python -m luanti_voyager --llm anthropic --name ClaudeBot
 #### Test & Configuration
 ```bash
 # Test all LLM integrations
-python test_llm_integration.py
+python tests/test_llm_integration.py
 
 # Copy and configure environment
 cp .env.example .env
@@ -347,7 +347,7 @@ cp .env.example .env
 ## 🛠️ Build With Us
 
 ### 🔬 Deep Research Questions
-Check out our [**Deep Research Prompts**](DEEP_RESEARCH_PROMPTS.md) - copy-paste ready prompts for exploring:
+Check out our [**Deep Research Prompts**](docs/DEEP_RESEARCH_PROMPTS.md) - copy-paste ready prompts for exploring:
 - Neurosymbolic skill learning
 - Emergent communication
 - Multi-agent coordination
