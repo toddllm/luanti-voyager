@@ -1,0 +1,3164 @@
+E.....@.@...........,.......j..k...........
+d...)..s68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:41.868222Z","response":"init","done":false}
+
+
+10:40:41.868290 IP localhost.59041 > localhost.11434: Flags [.], ack 110, win 4135, options [nop,nop,TS val 701924544 ecr 1689984764], length 0
+E..4..@.@.............,.j..k...S...'.(.....
+)...d...
+10:40:41.943977 IP localhost.11434 > localhost.59041: Flags [P.], seq 110:219, ack 1, win 6318, options [nop,nop,TS val 1689984840 ecr 701924544], length 109
+E.....@.@...........,......Sj..k...........
+d..H)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:41.943952Z","response":"__(","done":false}
+
+
+10:40:41.944020 IP localhost.59041 > localhost.11434: Flags [.], ack 219, win 4134, options [nop,nop,TS val 701924620 ecr 1689984840], length 0
+E..4..@.@.............,.j..k.......&.(.....
+)...d..H
+10:40:42.019113 IP localhost.11434 > localhost.59041: Flags [P.], seq 219:329, ack 1, win 6318, options [nop,nop,TS val 1689984915 ecr 701924620], length 110
+E.....@.@...........,.......j..k...........
+d...)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.019089Z","response":"self","done":false}
+
+
+10:40:42.019169 IP localhost.59041 > localhost.11434: Flags [.], ack 329, win 4133, options [nop,nop,TS val 701924695 ecr 1689984915], length 0
+E..4..@.@.............,.j..k.......%.(.....
+)..Wd...
+10:40:42.094722 IP localhost.11434 > localhost.59041: Flags [P.], seq 329:434, ack 1, win 6318, options [nop,nop,TS val 1689984990 ecr 701924695], length 105
+E.....@.@...........,.......j..k...........
+d...)..W63
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.0947Z","response":",","done":false}
+
+
+10:40:42.094775 IP localhost.59041 > localhost.11434: Flags [.], ack 434, win 4132, options [nop,nop,TS val 701924770 ecr 1689984990], length 0
+E..4..@.@.............,.j..k.......$.(.....
+)...d...
+10:40:42.169609 IP localhost.11434 > localhost.59041: Flags [P.], seq 434:548, ack 1, win 6318, options [nop,nop,TS val 1689985065 ecr 701924770], length 114
+E.....@.@...........,.......j..k...........
+d. ))...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.169586Z","response":" project","done":false}
+
+
+10:40:42.169665 IP localhost.59041 > localhost.11434: Flags [.], ack 548, win 4131, options [nop,nop,TS val 701924845 ecr 1689985065], length 0
+E..4..@.@.............,.j..k...	...#.(.....
+)...d. )
+10:40:42.246631 IP localhost.11434 > localhost.59041: Flags [P.], seq 548:658, ack 1, win 6318, options [nop,nop,TS val 1689985142 ecr 701924845], length 110
+E.....@.@...........,......	j..k...........
+d. v)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.246606Z","response":"):\n","done":false}
+
+
+10:40:42.246691 IP localhost.59041 > localhost.11434: Flags [.], ack 658, win 4130, options [nop,nop,TS val 701924922 ecr 1689985142], length 0
+E..4..@.@.............,.j..k...w...".(.....
+)..:d. v
+10:40:42.323471 IP localhost.11434 > localhost.59041: Flags [P.], seq 658:771, ack 1, win 6318, options [nop,nop,TS val 1689985219 ecr 701924922], length 113
+E.....@.@...........,......wj..k...........
+d. .)..:6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.323449Z","response":"       ","done":false}
+
+
+10:40:42.323556 IP localhost.59041 > localhost.11434: Flags [.], ack 771, win 4129, options [nop,nop,TS val 701924999 ecr 1689985219], length 0
+E..4..@.@.............,.j..k.......!.(.....
+)...d. .
+10:40:42.401525 IP localhost.11434 > localhost.59041: Flags [P.], seq 771:882, ack 1, win 6318, options [nop,nop,TS val 1689985297 ecr 701924999], length 111
+E.....@.@...........,.......j..k...........
+d.!.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.401503Z","response":" self","done":false}
+
+
+10:40:42.401584 IP localhost.59041 > localhost.11434: Flags [.], ack 882, win 4128, options [nop,nop,TS val 701925077 ecr 1689985297], length 0
+E..4..@.@.............,.j..k...W... .(.....
+)...d.!.
+10:40:42.479480 IP localhost.11434 > localhost.59041: Flags [P.], seq 882:996, ack 1, win 6318, options [nop,nop,TS val 1689985375 ecr 701925077], length 114
+E.....@.@...........,......Wj..k...........
+d.!_)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.479459Z","response":".project","done":false}
+
+
+10:40:42.479527 IP localhost.59041 > localhost.11434: Flags [.], ack 996, win 4127, options [nop,nop,TS val 701925155 ecr 1689985375], length 0
+E..4..@.@.............,.j..k.........(.....
+)..#d.!_
+10:40:42.557868 IP localhost.11434 > localhost.59041: Flags [P.], seq 996:1104, ack 1, win 6318, options [nop,nop,TS val 1689985454 ecr 701925155], length 108
+E.....@.@...........,.......j..k...........
+d.!.)..#66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.557846Z","response":" =","done":false}
+
+
+10:40:42.557944 IP localhost.59041 > localhost.11434: Flags [.], ack 1104, win 4126, options [nop,nop,TS val 701925234 ecr 1689985454], length 0
+E..4..@.@.............,.j..k...5.....(.....
+)..rd.!.
+10:40:42.634397 IP localhost.11434 > localhost.59041: Flags [P.], seq 1104:1218, ack 1, win 6318, options [nop,nop,TS val 1689985530 ecr 701925234], length 114
+E.....@.@...........,......5j..k...........
+d.!.)..r6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.634372Z","response":" project","done":false}
+
+
+10:40:42.634443 IP localhost.59041 > localhost.11434: Flags [.], ack 1218, win 4125, options [nop,nop,TS val 701925310 ecr 1689985530], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.!.
+10:40:42.708935 IP localhost.11434 > localhost.59041: Flags [P.], seq 1218:1332, ack 1, win 6318, options [nop,nop,TS val 1689985605 ecr 701925310], length 114
+E.....@.@...........,.......j..k...........
+d."E)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.708913Z","response":"\n    \n","done":false}
+
+
+10:40:42.708984 IP localhost.59041 > localhost.11434: Flags [.], ack 1332, win 4124, options [nop,nop,TS val 701925385 ecr 1689985605], length 0
+E..4..@.@.............,.j..k.........(.....
+)..	d."E
+10:40:42.784695 IP localhost.11434 > localhost.59041: Flags [P.], seq 1332:1441, ack 1, win 6318, options [nop,nop,TS val 1689985680 ecr 701925385], length 109
+E.....@.@...........,.......j..k...........
+d.".)..	67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.784675Z","response":"   ","done":false}
+
+
+10:40:42.784743 IP localhost.59041 > localhost.11434: Flags [.], ack 1441, win 4123, options [nop,nop,TS val 701925460 ecr 1689985680], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Td.".
+10:40:42.857897 IP localhost.11434 > localhost.59041: Flags [P.], seq 1441:1550, ack 1, win 6318, options [nop,nop,TS val 1689985754 ecr 701925460], length 109
+E.....@.@...........,.......j..k...........
+d.".)..T67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.85787Z","response":" def","done":false}
+
+
+10:40:42.857973 IP localhost.59041 > localhost.11434: Flags [.], ack 1550, win 4122, options [nop,nop,TS val 701925534 ecr 1689985754], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.".
+10:40:42.931670 IP localhost.11434 > localhost.59041: Flags [P.], seq 1550:1660, ack 1, win 6318, options [nop,nop,TS val 1689985827 ecr 701925534], length 110
+E.....@.@...........,.......j..k...........
+d.##)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:42.931648Z","response":" act","done":false}
+
+
+10:40:42.931720 IP localhost.59041 > localhost.11434: Flags [.], ack 1660, win 4121, options [nop,nop,TS val 701925607 ecr 1689985827], length 0
+E..4..@.@.............,.j..k...a.....(.....
+)...d.##
+10:40:43.007025 IP localhost.11434 > localhost.59041: Flags [P.], seq 1660:1771, ack 1, win 6318, options [nop,nop,TS val 1689985903 ecr 701925607], length 111
+E.....@.@...........,......aj..k...........
+d.#o)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.006997Z","response":"(self","done":false}
+
+
+10:40:43.007087 IP localhost.59041 > localhost.11434: Flags [.], ack 1771, win 4120, options [nop,nop,TS val 701925683 ecr 1689985903], length 0
+E..4..@.@.............,.j..k.........(.....
+)..3d.#o
+10:40:43.084244 IP localhost.11434 > localhost.59041: Flags [P.], seq 1771:1881, ack 1, win 6318, options [nop,nop,TS val 1689985980 ecr 701925683], length 110
+E.....@.@...........,.......j..k...........
+d.#.)..368
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.084221Z","response":"):\n","done":false}
+
+
+10:40:43.084294 IP localhost.59041 > localhost.11434: Flags [.], ack 1881, win 4119, options [nop,nop,TS val 701925760 ecr 1689985980], length 0
+E..4..@.@.............,.j..k...>.....(.....
+)...d.#.
+10:40:43.161635 IP localhost.11434 > localhost.59041: Flags [P.], seq 1881:1994, ack 1, win 6318, options [nop,nop,TS val 1689986057 ecr 701925760], length 113
+E.....@.@...........,......>j..k...........
+d.$	)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.161611Z","response":"       ","done":false}
+
+
+10:40:43.161736 IP localhost.59041 > localhost.11434: Flags [.], ack 1994, win 4118, options [nop,nop,TS val 701925837 ecr 1689986057], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.$	
+10:40:43.237395 IP localhost.11434 > localhost.59041: Flags [P.], seq 1994:2105, ack 1, win 6318, options [nop,nop,TS val 1689986133 ecr 701925837], length 111
+E.....@.@...........,.......j..k...........
+d.$U)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.237365Z","response":" task","done":false}
+
+
+10:40:43.240325 IP localhost.59041 > localhost.11434: Flags [.], ack 2105, win 4117, options [nop,nop,TS val 701925916 ecr 1689986133], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.$U
+10:40:43.316310 IP localhost.11434 > localhost.59041: Flags [P.], seq 2105:2213, ack 1, win 6318, options [nop,nop,TS val 1689986212 ecr 701925916], length 108
+E.....@.@...........,.......j..k...........
+d.$.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.316287Z","response":" =","done":false}
+
+
+10:40:43.316356 IP localhost.59041 > localhost.11434: Flags [.], ack 2213, win 4116, options [nop,nop,TS val 701925992 ecr 1689986212], length 0
+E..4..@.@.............,.j..k.........(.....
+)..hd.$.
+10:40:43.395434 IP localhost.11434 > localhost.59041: Flags [P.], seq 2213:2324, ack 1, win 6318, options [nop,nop,TS val 1689986291 ecr 701925992], length 111
+E.....@.@...........,.......j..k...........
+d.$.)..h69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.395402Z","response":" task","done":false}
+
+
+10:40:43.396215 IP localhost.59041 > localhost.11434: Flags [.], ack 2324, win 4115, options [nop,nop,TS val 701926071 ecr 1689986291], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.$.
+10:40:43.470577 IP localhost.11434 > localhost.59041: Flags [P.], seq 2324:2440, ack 1, win 6318, options [nop,nop,TS val 1689986366 ecr 701926071], length 116
+E.....@.@...........,.......j..k...........
+d.%>)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.470549Z","response":"_allocator","done":false}
+
+
+10:40:43.470628 IP localhost.59041 > localhost.11434: Flags [.], ack 2440, win 4114, options [nop,nop,TS val 701926146 ecr 1689986366], length 0
+E..4..@.@.............,.j..k...m.....(.....
+)...d.%>
+10:40:43.546469 IP localhost.11434 > localhost.59041: Flags [P.], seq 2440:2553, ack 1, win 6318, options [nop,nop,TS val 1689986442 ecr 701926146], length 113
+E.....@.@...........,......mj..k...........
+d.%.)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.546445Z","response":".assign","done":false}
+
+
+10:40:43.546526 IP localhost.59041 > localhost.11434: Flags [.], ack 2553, win 4113, options [nop,nop,TS val 701926222 ecr 1689986442], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Nd.%.
+10:40:43.624378 IP localhost.11434 > localhost.59041: Flags [P.], seq 2553:2664, ack 1, win 6318, options [nop,nop,TS val 1689986520 ecr 701926222], length 111
+E.....@.@...........,.......j..k...........
+d.%.)..N69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.624351Z","response":"_task","done":false}
+
+
+10:40:43.624419 IP localhost.59041 > localhost.11434: Flags [.], ack 2664, win 4112, options [nop,nop,TS val 701926300 ecr 1689986520], length 0
+E..4..@.@.............,.j..k...M.....(.....
+)...d.%.
+10:40:43.704632 IP localhost.11434 > localhost.59041: Flags [P.], seq 2664:2775, ack 1, win 6318, options [nop,nop,TS val 1689986600 ecr 701926300], length 111
+E.....@.@...........,......Mj..k...........
+d.&()...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.704607Z","response":"(self","done":false}
+
+
+10:40:43.704704 IP localhost.59041 > localhost.11434: Flags [.], ack 2775, win 4111, options [nop,nop,TS val 701926380 ecr 1689986600], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.&(
+10:40:43.786550 IP localhost.11434 > localhost.59041: Flags [P.], seq 2775:2884, ack 1, win 6318, options [nop,nop,TS val 1689986682 ecr 701926380], length 109
+E.....@.@...........,.......j..k...........
+d.&z)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.786525Z","response":".id","done":false}
+
+
+10:40:43.786607 IP localhost.59041 > localhost.11434: Flags [.], ack 2884, win 4110, options [nop,nop,TS val 701926462 ecr 1689986682], length 0
+E..4..@.@.............,.j..k...).....(.....
+)..>d.&z
+10:40:43.870173 IP localhost.11434 > localhost.59041: Flags [P.], seq 2884:2993, ack 1, win 6318, options [nop,nop,TS val 1689986766 ecr 701926462], length 109
+E.....@.@...........,......)j..k...........
+d.&.)..>67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.870139Z","response":")\n","done":false}
+
+
+10:40:43.870221 IP localhost.59041 > localhost.11434: Flags [.], ack 2993, win 4109, options [nop,nop,TS val 701926546 ecr 1689986766], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.&.
+10:40:43.951475 IP localhost.11434 > localhost.59041: Flags [P.], seq 2993:3106, ack 1, win 6318, options [nop,nop,TS val 1689986847 ecr 701926546], length 113
+E.....@.@...........,.......j..k...........
+d.'.)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:43.951452Z","response":"       ","done":false}
+
+
+10:40:43.951533 IP localhost.59041 > localhost.11434: Flags [.], ack 3106, win 4108, options [nop,nop,TS val 701926627 ecr 1689986847], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.'.
+10:40:44.033594 IP localhost.11434 > localhost.59041: Flags [P.], seq 3106:3215, ack 1, win 6318, options [nop,nop,TS val 1689986929 ecr 701926627], length 109
+E.....@.@...........,.......j..k...........
+d.'q)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.033572Z","response":" if","done":false}
+
+
+10:40:44.033678 IP localhost.59041 > localhost.11434: Flags [.], ack 3215, win 4107, options [nop,nop,TS val 701926709 ecr 1689986929], length 0
+E..4..@.@.............,.j..k...t.....(.....
+)..5d.'q
+10:40:44.113959 IP localhost.11434 > localhost.59041: Flags [P.], seq 3215:3326, ack 1, win 6318, options [nop,nop,TS val 1689987010 ecr 701926709], length 111
+E.....@.@...........,......tj..k...........
+d.'.)..569
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.113931Z","response":" task","done":false}
+
+
+10:40:44.114010 IP localhost.59041 > localhost.11434: Flags [.], ack 3326, win 4106, options [nop,nop,TS val 701926790 ecr 1689987010], length 0
+E..4..@.@.............,.j..k.......
+.(.....
+)...d.'.
+10:40:44.193912 IP localhost.11434 > localhost.59041: Flags [P.], seq 3326:3435, ack 1, win 6318, options [nop,nop,TS val 1689987090 ecr 701926790], length 109
+E.....@.@...........,.......j..k...........
+d.(.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.193882Z","response":":\n","done":false}
+
+
+10:40:44.193969 IP localhost.59041 > localhost.11434: Flags [.], ack 3435, win 4105, options [nop,nop,TS val 701926870 ecr 1689987090], length 0
+E..4..@.@.............,.j..k...P...	.(.....
+)...d.(.
+10:40:44.274837 IP localhost.11434 > localhost.59041: Flags [P.], seq 3435:3552, ack 1, win 6318, options [nop,nop,TS val 1689987171 ecr 701926870], length 117
+E.....@.@...........,......Pj..k...........
+d.(c)...6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.274798Z","response":"           ","done":false}
+
+
+10:40:44.274897 IP localhost.59041 > localhost.11434: Flags [.], ack 3552, win 4104, options [nop,nop,TS val 701926951 ecr 1689987171], length 0
+E..4..@.@.............,.j..k.........(.....
+)..'d.(c
+10:40:44.355386 IP localhost.11434 > localhost.59041: Flags [P.], seq 3552:3663, ack 1, win 6318, options [nop,nop,TS val 1689987251 ecr 701926951], length 111
+E.....@.@...........,.......j..k...........
+d.(.)..'69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.355363Z","response":" task","done":false}
+
+
+10:40:44.355452 IP localhost.59041 > localhost.11434: Flags [.], ack 3663, win 4103, options [nop,nop,TS val 701927031 ecr 1689987251], length 0
+E..4..@.@.............,.j..k...4.....(.....
+)..wd.(.
+10:40:44.435522 IP localhost.11434 > localhost.59041: Flags [P.], seq 3663:3777, ack 1, win 6318, options [nop,nop,TS val 1689987331 ecr 701927031], length 114
+E.....@.@...........,......4j..k...........
+d.).)..w6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.435489Z","response":".execute","done":false}
+
+
+10:40:44.435598 IP localhost.59041 > localhost.11434: Flags [.], ack 3777, win 4102, options [nop,nop,TS val 701927111 ecr 1689987331], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.).
+10:40:44.516006 IP localhost.11434 > localhost.59041: Flags [P.], seq 3777:3887, ack 1, win 6318, options [nop,nop,TS val 1689987412 ecr 701927111], length 110
+E.....@.@...........,.......j..k...........
+d.)T)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.515983Z","response":"()\n","done":false}
+
+
+10:40:44.516085 IP localhost.59041 > localhost.11434: Flags [.], ack 3887, win 4101, options [nop,nop,TS val 701927192 ecr 1689987412], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.)T
+10:40:44.596097 IP localhost.11434 > localhost.59041: Flags [P.], seq 3887:3995, ack 1, win 6318, options [nop,nop,TS val 1689987492 ecr 701927192], length 108
+E.....@.@...........,.......j..k...........
+d.).)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.596072Z","response":"``","done":false}
+
+
+10:40:44.596148 IP localhost.59041 > localhost.11434: Flags [.], ack 3995, win 4100, options [nop,nop,TS val 701927272 ecr 1689987492], length 0
+E..4..@.@.............,.j..k.........(.....
+)..hd.).
+10:40:44.675095 IP localhost.11434 > localhost.59041: Flags [P.], seq 3995:4106, ack 1, win 6318, options [nop,nop,TS val 1689987571 ecr 701927272], length 111
+E.....@.@...........,.......j..k...........
+d.).)..h69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.675069Z","response":"`\n\n","done":false}
+
+
+10:40:44.675173 IP localhost.59041 > localhost.11434: Flags [.], ack 4106, win 4099, options [nop,nop,TS val 701927351 ecr 1689987571], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.).
+10:40:44.754213 IP localhost.11434 > localhost.59041: Flags [P.], seq 4106:4215, ack 1, win 6318, options [nop,nop,TS val 1689987650 ecr 701927351], length 109
+E.....@.@...........,.......j..k...........
+d.*B)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.754185Z","response":"###","done":false}
+
+
+10:40:44.754277 IP localhost.59041 > localhost.11434: Flags [.], ack 4215, win 4098, options [nop,nop,TS val 701927430 ecr 1689987650], length 0
+E..4..@.@.............,.j..k...\.....(.....
+)...d.*B
+10:40:44.834098 IP localhost.11434 > localhost.59041: Flags [P.], seq 4215:4330, ack 1, win 6318, options [nop,nop,TS val 1689987730 ecr 701927430], length 115
+E.....@.@...........,......\j..k...........
+d.*.)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.834076Z","response":" Resource","done":false}
+
+
+10:40:44.834151 IP localhost.59041 > localhost.11434: Flags [.], ack 4330, win 4097, options [nop,nop,TS val 701927510 ecr 1689987730], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Vd.*.
+10:40:44.912870 IP localhost.11434 > localhost.59041: Flags [P.], seq 4330:4446, ack 1, win 6318, options [nop,nop,TS val 1689987809 ecr 701927510], length 116
+E.....@.@...........,.......j..k...........
+d.*.)..V6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.912848Z","response":" Gathering","done":false}
+
+
+10:40:44.912921 IP localhost.59041 > localhost.11434: Flags [.], ack 4446, win 4096, options [nop,nop,TS val 701927589 ecr 1689987809], length 0
+E..4..@.@.............,.j..k...C.....(.....
+)...d.*.
+10:40:44.991280 IP localhost.11434 > localhost.59041: Flags [P.], seq 4446:4558, ack 1, win 6318, options [nop,nop,TS val 1689987887 ecr 701927589], length 112
+E.....@.@...........,......Cj..k...........
+d.+/)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:44.991254Z","response":" Teams","done":false}
+
+
+10:40:44.991317 IP localhost.59041 > localhost.11434: Flags [.], ack 4558, win 4095, options [nop,nop,TS val 701927667 ecr 1689987887], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.+/
+10:40:45.064869 IP localhost.11434 > localhost.59041: Flags [P.], seq 4558:4666, ack 1, win 6318, options [nop,nop,TS val 1689987961 ecr 701927667], length 108
+E.....@.@...........,.......j..k...........
+d.+y)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.064844Z","response":"\n","done":false}
+
+
+10:40:45.064912 IP localhost.59041 > localhost.11434: Flags [.], ack 4666, win 4094, options [nop,nop,TS val 701927741 ecr 1689987961], length 0
+E..4..@.@.............,.j..k.........(.....
+)..=d.+y
+10:40:45.138187 IP localhost.11434 > localhost.59041: Flags [P.], seq 4666:4773, ack 1, win 6318, options [nop,nop,TS val 1689988034 ecr 701927741], length 107
+E.....@.@...........,.......j..k...........
+d.+.)..=65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.138159Z","response":"-","done":false}
+
+
+10:40:45.138243 IP localhost.59041 > localhost.11434: Flags [.], ack 4773, win 4093, options [nop,nop,TS val 701927814 ecr 1689988034], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.+.
+10:40:45.209991 IP localhost.11434 > localhost.59041: Flags [P.], seq 4773:4882, ack 1, win 6318, options [nop,nop,TS val 1689988105 ecr 701927814], length 109
+E.....@.@...........,.......j..k...........
+d.,	)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.209969Z","response":" **","done":false}
+
+
+10:40:45.210047 IP localhost.59041 > localhost.11434: Flags [.], ack 4882, win 4092, options [nop,nop,TS val 701927885 ecr 1689988105], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.,	
+10:40:45.283339 IP localhost.11434 > localhost.59041: Flags [P.], seq 4882:4994, ack 1, win 6318, options [nop,nop,TS val 1689988179 ecr 701927885], length 112
+E.....@.@...........,.......j..k...........
+d.,S)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.283315Z","response":"Before","done":false}
+
+
+10:40:45.283483 IP localhost.59041 > localhost.11434: Flags [.], ack 4994, win 4091, options [nop,nop,TS val 701927959 ecr 1689988179], length 0
+E..4..@.@.............,.j..k...g.....(.....
+)...d.,S
+10:40:45.358588 IP localhost.11434 > localhost.59041: Flags [P.], seq 4994:5103, ack 1, win 6318, options [nop,nop,TS val 1689988254 ecr 701927959], length 109
+E.....@.@...........,......gj..k...........
+d.,.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.358563Z","response":"**:","done":false}
+
+
+10:40:45.358642 IP localhost.59041 > localhost.11434: Flags [.], ack 5103, win 4090, options [nop,nop,TS val 701928034 ecr 1689988254], length 0
+E..4..@.@.............,.j..k.........(.....
+)..bd.,.
+10:40:45.434274 IP localhost.11434 > localhost.59041: Flags [P.], seq 5103:5216, ack 1, win 6318, options [nop,nop,TS val 1689988329 ecr 701928034], length 113
+E.....@.@...........,.......j..k...........
+d.,.)..b6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.434253Z","response":" Random","done":false}
+
+
+10:40:45.434389 IP localhost.59041 > localhost.11434: Flags [.], ack 5216, win 4089, options [nop,nop,TS val 701928109 ecr 1689988329], length 0
+E..4..@.@.............,.j..k...E.....(.....
+)...d.,.
+10:40:45.510702 IP localhost.11434 > localhost.59041: Flags [P.], seq 5216:5331, ack 1, win 6318, options [nop,nop,TS val 1689988406 ecr 701928109], length 115
+E.....@.@...........,......Ej..k...........
+d.-6)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.510679Z","response":" resource","done":false}
+
+
+10:40:45.510757 IP localhost.59041 > localhost.11434: Flags [.], ack 5331, win 4088, options [nop,nop,TS val 701928186 ecr 1689988406], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.-6
+10:40:45.587754 IP localhost.11434 > localhost.59041: Flags [P.], seq 5331:5447, ack 1, win 6318, options [nop,nop,TS val 1689988484 ecr 701928186], length 116
+E.....@.@...........,.......j..k...........
+d.-.)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.587729Z","response":" gathering","done":false}
+
+
+10:40:45.587806 IP localhost.59041 > localhost.11434: Flags [.], ack 5447, win 4087, options [nop,nop,TS val 701928264 ecr 1689988484], length 0
+E..4..@.@.............,.j..k...,.....(.....
+)..Hd.-.
+10:40:45.665833 IP localhost.11434 > localhost.59041: Flags [P.], seq 5447:5555, ack 1, win 6318, options [nop,nop,TS val 1689988562 ecr 701928264], length 108
+E.....@.@...........,......,j..k...........
+d.-.)..H66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.66581Z","response":".\n","done":false}
+
+
+10:40:45.665893 IP localhost.59041 > localhost.11434: Flags [.], ack 5555, win 4086, options [nop,nop,TS val 701928342 ecr 1689988562], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.-.
+10:40:45.743986 IP localhost.11434 > localhost.59041: Flags [P.], seq 5555:5662, ack 1, win 6318, options [nop,nop,TS val 1689988640 ecr 701928342], length 107
+E.....@.@...........,.......j..k...........
+d.. )...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.743958Z","response":"-","done":false}
+
+
+10:40:45.744063 IP localhost.59041 > localhost.11434: Flags [.], ack 5662, win 4085, options [nop,nop,TS val 701928420 ecr 1689988640], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.. 
+10:40:45.823356 IP localhost.11434 > localhost.59041: Flags [P.], seq 5662:5771, ack 1, win 6318, options [nop,nop,TS val 1689988719 ecr 701928420], length 109
+E.....@.@...........,.......j..k...........
+d..o)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.823333Z","response":" **","done":false}
+
+
+10:40:45.823377 IP localhost.59041 > localhost.11434: Flags [.], ack 5771, win 8166, options [nop,nop,TS val 701928499 ecr 1689988719], length 0
+E..4..@.@.............,.j..k...p.....(.....
+)..3d..o
+10:40:45.902244 IP localhost.11434 > localhost.59041: Flags [P.], seq 5771:5882, ack 1, win 6318, options [nop,nop,TS val 1689988798 ecr 701928499], length 111
+E.....@.@...........,......pj..k...........
+d...)..369
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.902225Z","response":"After","done":false}
+
+
+10:40:45.902295 IP localhost.59041 > localhost.11434: Flags [.], ack 5882, win 8165, options [nop,nop,TS val 701928578 ecr 1689988798], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d...
+10:40:45.979919 IP localhost.11434 > localhost.59041: Flags [P.], seq 5882:5991, ack 1, win 6318, options [nop,nop,TS val 1689988876 ecr 701928578], length 109
+E.....@.@...........,.......j..k...........
+d./.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:45.979898Z","response":"**:","done":false}
+
+
+10:40:45.979989 IP localhost.59041 > localhost.11434: Flags [.], ack 5991, win 8164, options [nop,nop,TS val 701928656 ecr 1689988876], length 0
+E..4..@.@.............,.j..k...L.....(.....
+)...d./.
+10:40:46.057658 IP localhost.11434 > localhost.59041: Flags [P.], seq 5991:6107, ack 1, win 6318, options [nop,nop,TS val 1689988953 ecr 701928656], length 116
+E.....@.@...........,......Lj..k...........
+d./Y)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.057637Z","response":" Efficient","done":false}
+
+
+10:40:46.057711 IP localhost.59041 > localhost.11434: Flags [.], ack 6107, win 8163, options [nop,nop,TS val 701928733 ecr 1689988953], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d./Y
+10:40:46.137229 IP localhost.11434 > localhost.59041: Flags [P.], seq 6107:6218, ack 1, win 6318, options [nop,nop,TS val 1689989033 ecr 701928733], length 111
+E.....@.@...........,.......j..k...........
+d./.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.137205Z","response":" team","done":false}
+
+
+10:40:46.137287 IP localhost.59041 > localhost.11434: Flags [.], ack 6218, win 8162, options [nop,nop,TS val 701928813 ecr 1689989033], length 0
+E..4..@.@.............,.j..k.../.....(.....
+)..md./.
+10:40:46.213589 IP localhost.11434 > localhost.59041: Flags [P.], seq 6218:6329, ack 1, win 6318, options [nop,nop,TS val 1689989109 ecr 701928813], length 111
+E.....@.@...........,....../j..k...........
+d./.)..m69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.21357Z","response":"-based","done":false}
+
+
+10:40:46.213638 IP localhost.59041 > localhost.11434: Flags [.], ack 6329, win 8161, options [nop,nop,TS val 701928889 ecr 1689989109], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d./.
+10:40:46.288691 IP localhost.11434 > localhost.59041: Flags [P.], seq 6329:6444, ack 1, win 6318, options [nop,nop,TS val 1689989184 ecr 701928889], length 115
+E.....@.@...........,.......j..k...........
+d.0@)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.288669Z","response":" resource","done":false}
+
+
+10:40:46.288781 IP localhost.59041 > localhost.11434: Flags [.], ack 6444, win 8160, options [nop,nop,TS val 701928964 ecr 1689989184], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.0@
+10:40:46.364235 IP localhost.11434 > localhost.59041: Flags [P.], seq 6444:6561, ack 1, win 6318, options [nop,nop,TS val 1689989259 ecr 701928964], length 117
+E.....@.@...........,.......j..k...........
+d.0.)...6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.364205Z","response":" collection","done":false}
+
+
+10:40:46.364314 IP localhost.59041 > localhost.11434: Flags [.], ack 6561, win 8159, options [nop,nop,TS val 701929040 ecr 1689989259], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Pd.0.
+10:40:46.439879 IP localhost.11434 > localhost.59041: Flags [P.], seq 6561:6672, ack 1, win 6318, options [nop,nop,TS val 1689989336 ecr 701929040], length 111
+E.....@.@...........,.......j..k...........
+d.0.)..P69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.439858Z","response":".\n\n","done":false}
+
+
+10:40:46.439956 IP localhost.59041 > localhost.11434: Flags [.], ack 6672, win 8158, options [nop,nop,TS val 701929116 ecr 1689989336], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.0.
+10:40:46.515331 IP localhost.11434 > localhost.59041: Flags [P.], seq 6672:6781, ack 1, win 6318, options [nop,nop,TS val 1689989411 ecr 701929116], length 109
+E.....@.@...........,.......j..k...........
+d.1#)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.515296Z","response":"```","done":false}
+
+
+10:40:46.515414 IP localhost.59041 > localhost.11434: Flags [.], ack 6781, win 8157, options [nop,nop,TS val 701929191 ecr 1689989411], length 0
+E..4..@.@.............,.j..k...b.....(.....
+)...d.1#
+10:40:46.590180 IP localhost.11434 > localhost.59041: Flags [P.], seq 6781:6893, ack 1, win 6318, options [nop,nop,TS val 1689989486 ecr 701929191], length 112
+E.....@.@...........,......bj..k...........
+d.1n)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.590155Z","response":"python","done":false}
+
+
+10:40:46.590242 IP localhost.59041 > localhost.11434: Flags [.], ack 6893, win 8156, options [nop,nop,TS val 701929266 ecr 1689989486], length 0
+E..4..@.@.............,.j..k.........(.....
+)..2d.1n
+10:40:46.663878 IP localhost.11434 > localhost.59041: Flags [P.], seq 6893:7001, ack 1, win 6318, options [nop,nop,TS val 1689989560 ecr 701929266], length 108
+E.....@.@...........,.......j..k...........
+d.1.)..266
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.663858Z","response":"\n","done":false}
+
+
+10:40:46.663994 IP localhost.59041 > localhost.11434: Flags [.], ack 7001, win 8155, options [nop,nop,TS val 701929340 ecr 1689989560], length 0
+E..4..@.@.............,.j..k...>.....(.....
+)..|d.1.
+10:40:46.740062 IP localhost.11434 > localhost.59041: Flags [P.], seq 7001:7112, ack 1, win 6318, options [nop,nop,TS val 1689989636 ecr 701929340], length 111
+E.....@.@...........,......>j..k...........
+d.2.)..|69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.740033Z","response":"class","done":false}
+
+
+10:40:46.740122 IP localhost.59041 > localhost.11434: Flags [.], ack 7112, win 8154, options [nop,nop,TS val 701929416 ecr 1689989636], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.2.
+10:40:46.824858 IP localhost.11434 > localhost.59041: Flags [P.], seq 7112:7225, ack 1, win 6318, options [nop,nop,TS val 1689989721 ecr 701929416], length 113
+E.....@.@...........,.......j..k...........
+d.2Y)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.824831Z","response":" Gather","done":false}
+
+
+10:40:46.824931 IP localhost.59041 > localhost.11434: Flags [.], ack 7225, win 8153, options [nop,nop,TS val 701929501 ecr 1689989721], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.2Y
+10:40:46.904925 IP localhost.11434 > localhost.59041: Flags [P.], seq 7225:7333, ack 1, win 6318, options [nop,nop,TS val 1689989801 ecr 701929501], length 108
+E.....@.@...........,.......j..k...........
+d.2.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.904903Z","response":"er","done":false}
+
+
+10:40:46.905002 IP localhost.59041 > localhost.11434: Flags [.], ack 7333, win 8152, options [nop,nop,TS val 701929581 ecr 1689989801], length 0
+E..4..@.@.............,.j..k.........(.....
+)..md.2.
+10:40:46.987394 IP localhost.11434 > localhost.59041: Flags [P.], seq 7333:7443, ack 1, win 6318, options [nop,nop,TS val 1689989883 ecr 701929581], length 110
+E.....@.@...........,.......j..k...........
+d.2.)..m68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:46.98737Z","response":"Agent","done":false}
+
+
+10:40:46.987436 IP localhost.59041 > localhost.11434: Flags [.], ack 7443, win 8151, options [nop,nop,TS val 701929663 ecr 1689989883], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.2.
+10:40:47.071538 IP localhost.11434 > localhost.59041: Flags [P.], seq 7443:7552, ack 1, win 6318, options [nop,nop,TS val 1689989967 ecr 701929663], length 109
+E.....@.@...........,.......j..k...........
+d.3O)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.071508Z","response":":\n","done":false}
+
+
+10:40:47.071608 IP localhost.59041 > localhost.11434: Flags [.], ack 7552, win 8150, options [nop,nop,TS val 701929747 ecr 1689989967], length 0
+E..4..@.@.............,.j..k...e.....(.....
+)...d.3O
+10:40:47.155664 IP localhost.11434 > localhost.59041: Flags [P.], seq 7552:7661, ack 1, win 6318, options [nop,nop,TS val 1689990051 ecr 701929747], length 109
+E.....@.@...........,......ej..k...........
+d.3.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.155621Z","response":"   ","done":false}
+
+
+10:40:47.155730 IP localhost.59041 > localhost.11434: Flags [.], ack 7661, win 8149, options [nop,nop,TS val 701929831 ecr 1689990051], length 0
+E..4..@.@.............,.j..k.........(.....
+)..gd.3.
+10:40:47.239650 IP localhost.11434 > localhost.59041: Flags [P.], seq 7661:7771, ack 1, win 6318, options [nop,nop,TS val 1689990135 ecr 701929831], length 110
+E.....@.@...........,.......j..k...........
+d.3.)..g68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.239625Z","response":" def","done":false}
+
+
+10:40:47.239715 IP localhost.59041 > localhost.11434: Flags [.], ack 7771, win 8148, options [nop,nop,TS val 701929915 ecr 1689990135], length 0
+E..4..@.@.............,.j..k...@.....(.....
+)...d.3.
+10:40:47.323061 IP localhost.11434 > localhost.59041: Flags [P.], seq 7771:7880, ack 1, win 6318, options [nop,nop,TS val 1689990219 ecr 701929915], length 109
+E.....@.@...........,......@j..k...........
+d.4K)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.323032Z","response":" __","done":false}
+
+
+10:40:47.323139 IP localhost.59041 > localhost.11434: Flags [.], ack 7880, win 8147, options [nop,nop,TS val 701929999 ecr 1689990219], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.4K
+10:40:47.406796 IP localhost.11434 > localhost.59041: Flags [P.], seq 7880:7990, ack 1, win 6318, options [nop,nop,TS val 1689990303 ecr 701929999], length 110
+E.....@.@...........,.......j..k...........
+d.4.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.406771Z","response":"init","done":false}
+
+
+10:40:47.406876 IP localhost.59041 > localhost.11434: Flags [.], ack 7990, win 8146, options [nop,nop,TS val 701930083 ecr 1689990303], length 0
+E..4..@.@.............,.j..k.........(.....
+)..cd.4.
+10:40:47.488945 IP localhost.11434 > localhost.59041: Flags [P.], seq 7990:8098, ack 1, win 6318, options [nop,nop,TS val 1689990385 ecr 701930083], length 108
+E.....@.@...........,.......j..k...........
+d.4.)..c66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.48892Z","response":"__(","done":false}
+
+
+10:40:47.489016 IP localhost.59041 > localhost.11434: Flags [.], ack 8098, win 8145, options [nop,nop,TS val 701930165 ecr 1689990385], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.4.
+10:40:47.571687 IP localhost.11434 > localhost.59041: Flags [P.], seq 8098:8208, ack 1, win 6318, options [nop,nop,TS val 1689990467 ecr 701930165], length 110
+E.....@.@...........,.......j..k...........
+d.5C)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.571664Z","response":"self","done":false}
+
+
+10:40:47.571751 IP localhost.59041 > localhost.11434: Flags [.], ack 8208, win 8144, options [nop,nop,TS val 701930247 ecr 1689990467], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.5C
+10:40:47.651999 IP localhost.11434 > localhost.59041: Flags [P.], seq 8208:8315, ack 1, win 6318, options [nop,nop,TS val 1689990548 ecr 701930247], length 107
+E.....@.@...........,.......j..k...........
+d.5.)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.651975Z","response":",","done":false}
+
+
+10:40:47.652089 IP localhost.59041 > localhost.11434: Flags [.], ack 8315, win 8143, options [nop,nop,TS val 701930328 ecr 1689990548], length 0
+E..4..@.@.............,.j..k...`.....(.....
+)..Xd.5.
+10:40:47.731902 IP localhost.11434 > localhost.59041: Flags [P.], seq 8315:8428, ack 1, win 6318, options [nop,nop,TS val 1689990628 ecr 701930328], length 113
+E.....@.@...........,......`j..k...........
+d.5.)..X6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.731877Z","response":" target","done":false}
+
+
+10:40:47.731960 IP localhost.59041 > localhost.11434: Flags [.], ack 8428, win 8142, options [nop,nop,TS val 701930408 ecr 1689990628], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.5.
+10:40:47.812296 IP localhost.11434 > localhost.59041: Flags [P.], seq 8428:8543, ack 1, win 6318, options [nop,nop,TS val 1689990708 ecr 701930408], length 115
+E.....@.@...........,.......j..k...........
+d.64)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.812268Z","response":"_resource","done":false}
+
+
+10:40:47.812383 IP localhost.59041 > localhost.11434: Flags [.], ack 8543, win 8141, options [nop,nop,TS val 701930488 ecr 1689990708], length 0
+E..4..@.@.............,.j..k...D.....(.....
+)...d.64
+10:40:47.893751 IP localhost.11434 > localhost.59041: Flags [P.], seq 8543:8653, ack 1, win 6318, options [nop,nop,TS val 1689990789 ecr 701930488], length 110
+E.....@.@...........,......Dj..k...........
+d.6.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.893729Z","response":"):\n","done":false}
+
+
+10:40:47.893804 IP localhost.59041 > localhost.11434: Flags [.], ack 8653, win 8140, options [nop,nop,TS val 701930569 ecr 1689990789], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Id.6.
+10:40:47.975032 IP localhost.11434 > localhost.59041: Flags [P.], seq 8653:8766, ack 1, win 6318, options [nop,nop,TS val 1689990871 ecr 701930569], length 113
+E.....@.@...........,.......j..k...........
+d.6.)..I6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:47.975012Z","response":"       ","done":false}
+
+
+10:40:47.975083 IP localhost.59041 > localhost.11434: Flags [.], ack 8766, win 8139, options [nop,nop,TS val 701930651 ecr 1689990871], length 0
+E..4..@.@.............,.j..k...#.....(.....
+)...d.6.
+10:40:48.055545 IP localhost.11434 > localhost.59041: Flags [P.], seq 8766:8877, ack 1, win 6318, options [nop,nop,TS val 1689990951 ecr 701930651], length 111
+E.....@.@...........,......#j..k...........
+d.7')...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.055522Z","response":" self","done":false}
+
+
+10:40:48.055592 IP localhost.59041 > localhost.11434: Flags [.], ack 8877, win 8138, options [nop,nop,TS val 701930731 ecr 1689990951], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.7'
+10:40:48.136213 IP localhost.11434 > localhost.59041: Flags [P.], seq 8877:8990, ack 1, win 6318, options [nop,nop,TS val 1689991032 ecr 701930731], length 113
+E.....@.@...........,.......j..k...........
+d.7x)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.136188Z","response":".target","done":false}
+
+
+10:40:48.136269 IP localhost.59041 > localhost.11434: Flags [.], ack 8990, win 8137, options [nop,nop,TS val 701930812 ecr 1689991032], length 0
+E..4..@.@.............,.j..k.........(.....
+)..<d.7x
+10:40:48.216921 IP localhost.11434 > localhost.59041: Flags [P.], seq 8990:9105, ack 1, win 6318, options [nop,nop,TS val 1689991113 ecr 701930812], length 115
+E.....@.@...........,.......j..k...........
+d.7.)..<6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.216893Z","response":"_resource","done":false}
+
+
+10:40:48.216979 IP localhost.59041 > localhost.11434: Flags [.], ack 9105, win 8136, options [nop,nop,TS val 701930893 ecr 1689991113], length 0
+E..4..@.@.............,.j..k...v.....(.....
+)...d.7.
+10:40:48.296462 IP localhost.11434 > localhost.59041: Flags [P.], seq 9105:9213, ack 1, win 6318, options [nop,nop,TS val 1689991192 ecr 701930893], length 108
+E.....@.@...........,......vj..k...........
+d.8.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.296439Z","response":" =","done":false}
+
+
+10:40:48.296551 IP localhost.59041 > localhost.11434: Flags [.], ack 9213, win 8135, options [nop,nop,TS val 701930972 ecr 1689991192], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.8.
+10:40:48.377074 IP localhost.11434 > localhost.59041: Flags [P.], seq 9213:9326, ack 1, win 6318, options [nop,nop,TS val 1689991273 ecr 701930972], length 113
+E.....@.@...........,.......j..k...........
+d.8i)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.377046Z","response":" target","done":false}
+
+
+10:40:48.377158 IP localhost.59041 > localhost.11434: Flags [.], ack 9326, win 8134, options [nop,nop,TS val 701931053 ecr 1689991273], length 0
+E..4..@.@.............,.j..k...S.....(.....
+)..-d.8i
+10:40:48.458838 IP localhost.11434 > localhost.59041: Flags [P.], seq 9326:9441, ack 1, win 6318, options [nop,nop,TS val 1689991355 ecr 701931053], length 115
+E.....@.@...........,......Sj..k...........
+d.8.)..-6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.458817Z","response":"_resource","done":false}
+
+
+10:40:48.458886 IP localhost.59041 > localhost.11434: Flags [.], ack 9441, win 8133, options [nop,nop,TS val 701931135 ecr 1689991355], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.8.
+10:40:48.538539 IP localhost.11434 > localhost.59041: Flags [P.], seq 9441:9555, ack 1, win 6318, options [nop,nop,TS val 1689991434 ecr 701931135], length 114
+E.....@.@...........,.......j..k...........
+d.9
+)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.538514Z","response":"\n    \n","done":false}
+
+
+10:40:48.538592 IP localhost.59041 > localhost.11434: Flags [.], ack 9555, win 8132, options [nop,nop,TS val 701931214 ecr 1689991434], length 0
+E..4..@.@.............,.j..k...8.....(.....
+)...d.9
+
+10:40:48.548002 IP localhost.11434 > localhost.52928: Flags [.], ack 1045469091, win 6379, length 0
+E..(....@...........,.......>P..P.......
+10:40:48.548051 IP localhost.52928 > localhost.11434: Flags [.], ack 1, win 6380, options [nop,nop,TS val 1261810798 ecr 782160779], length 0
+E..4..@.@.............,.>P...........(.....
+--
+E.....@.@...........,......8j..k...........
+d.9Z)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.618413Z","response":"   ","done":false}
+
+
+10:40:48.618491 IP localhost.59041 > localhost.11434: Flags [.], ack 9664, win 8131, options [nop,nop,TS val 701931294 ecr 1689991514], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.9Z
+10:40:48.700101 IP localhost.11434 > localhost.59041: Flags [P.], seq 9664:9774, ack 1, win 6318, options [nop,nop,TS val 1689991596 ecr 701931294], length 110
+E.....@.@...........,.......j..k...........
+d.9.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.700076Z","response":" def","done":false}
+
+
+10:40:48.700142 IP localhost.59041 > localhost.11434: Flags [.], ack 9774, win 8130, options [nop,nop,TS val 701931376 ecr 1689991596], length 0
+E..4..@.@.............,.j..k.........(.....
+)..pd.9.
+10:40:48.781611 IP localhost.11434 > localhost.59041: Flags [P.], seq 9774:9884, ack 1, win 6318, options [nop,nop,TS val 1689991677 ecr 701931376], length 110
+E.....@.@...........,.......j..k...........
+d.9.)..p68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.781585Z","response":" act","done":false}
+
+
+10:40:48.781679 IP localhost.59041 > localhost.11434: Flags [.], ack 9884, win 8129, options [nop,nop,TS val 701931457 ecr 1689991677], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.9.
+10:40:48.863826 IP localhost.11434 > localhost.59041: Flags [P.], seq 9884:9995, ack 1, win 6318, options [nop,nop,TS val 1689991760 ecr 701931457], length 111
+E.....@.@...........,.......j..k...........
+d.:P)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.863798Z","response":"(self","done":false}
+
+
+10:40:48.863879 IP localhost.59041 > localhost.11434: Flags [.], ack 9995, win 8128, options [nop,nop,TS val 701931540 ecr 1689991760], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.:P
+10:40:48.947438 IP localhost.11434 > localhost.59041: Flags [P.], seq 9995:10105, ack 1, win 6318, options [nop,nop,TS val 1689991843 ecr 701931540], length 110
+E.....@.@...........,.......j..k...........
+d.:.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:48.947409Z","response":"):\n","done":false}
+
+
+10:40:48.947510 IP localhost.59041 > localhost.11434: Flags [.], ack 10105, win 8127, options [nop,nop,TS val 701931623 ecr 1689991843], length 0
+E..4..@.@.............,.j..k...^.....(.....
+)..gd.:.
+10:40:49.031949 IP localhost.11434 > localhost.59041: Flags [P.], seq 10105:10218, ack 1, win 6318, options [nop,nop,TS val 1689991928 ecr 701931623], length 113
+E.....@.@...........,......^j..k...........
+d.:.)..g6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.031924Z","response":"       ","done":false}
+
+
+10:40:49.031995 IP localhost.59041 > localhost.11434: Flags [.], ack 10218, win 8126, options [nop,nop,TS val 701931708 ecr 1689991928], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.:.
+10:40:49.115766 IP localhost.11434 > localhost.59041: Flags [P.], seq 10218:10334, ack 1, win 6318, options [nop,nop,TS val 1689992012 ecr 701931708], length 116
+E.....@.@...........,.......j..k...........
+d.;L)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.115743Z","response":" resources","done":false}
+
+
+10:40:49.115812 IP localhost.59041 > localhost.11434: Flags [.], ack 10334, win 8125, options [nop,nop,TS val 701931792 ecr 1689992012], length 0
+E..4..@.@.............,.j..k...C.....(.....
+)...d.;L
+10:40:49.199299 IP localhost.11434 > localhost.59041: Flags [P.], seq 10334:10442, ack 1, win 6318, options [nop,nop,TS val 1689992095 ecr 701931792], length 108
+E.....@.@...........,......Cj..k...........
+d.;.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.199277Z","response":" =","done":false}
+
+
+10:40:49.199351 IP localhost.59041 > localhost.11434: Flags [.], ack 10442, win 8124, options [nop,nop,TS val 701931875 ecr 1689992095], length 0
+E..4..@.@.............,.j..k.........(.....
+)..cd.;.
+10:40:49.282028 IP localhost.11434 > localhost.59041: Flags [P.], seq 10442:10553, ack 1, win 6318, options [nop,nop,TS val 1689992178 ecr 701931875], length 111
+E.....@.@...........,.......j..k...........
+d.;.)..c69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.281994Z","response":" find","done":false}
+
+
+10:40:49.282113 IP localhost.59041 > localhost.11434: Flags [.], ack 10553, win 8123, options [nop,nop,TS val 701931958 ecr 1689992178], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.;.
+10:40:49.366186 IP localhost.11434 > localhost.59041: Flags [P.], seq 10553:10669, ack 1, win 6318, options [nop,nop,TS val 1689992262 ecr 701931958], length 116
+E.....@.@...........,.......j..k...........
+d.<F)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.366159Z","response":"_resources","done":false}
+
+
+10:40:49.366291 IP localhost.59041 > localhost.11434: Flags [.], ack 10669, win 8122, options [nop,nop,TS val 701932042 ecr 1689992262], length 0
+E..4..@.@.............,.j..k.........(.....
+)..
+d.<F
+10:40:49.450221 IP localhost.11434 > localhost.59041: Flags [P.], seq 10669:10780, ack 1, win 6318, options [nop,nop,TS val 1689992346 ecr 701932042], length 111
+E.....@.@...........,.......j..k...........
+d.<.)..
+69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.450198Z","response":"(self","done":false}
+
+
+10:40:49.450279 IP localhost.59041 > localhost.11434: Flags [.], ack 10780, win 8121, options [nop,nop,TS val 701932126 ecr 1689992346], length 0
+E..4..@.@.............,.j..k.........(.....
+)..^d.<.
+10:40:49.530529 IP localhost.11434 > localhost.59041: Flags [P.], seq 10780:10893, ack 1, win 6318, options [nop,nop,TS val 1689992426 ecr 701932126], length 113
+E.....@.@...........,.......j..k...........
+d.<.)..^6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.530504Z","response":".target","done":false}
+
+
+10:40:49.530581 IP localhost.59041 > localhost.11434: Flags [.], ack 10893, win 8120, options [nop,nop,TS val 701932206 ecr 1689992426], length 0
+E..4..@.@.............,.j..k...r.....(.....
+)...d.<.
+10:40:49.611027 IP localhost.11434 > localhost.59041: Flags [P.], seq 10893:11008, ack 1, win 6318, options [nop,nop,TS val 1689992507 ecr 701932206], length 115
+E.....@.@...........,......rj..k...........
+d.=;)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.611002Z","response":"_resource","done":false}
+
+
+10:40:49.611077 IP localhost.59041 > localhost.11434: Flags [.], ack 11008, win 8119, options [nop,nop,TS val 701932287 ecr 1689992507], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.=;
+10:40:49.689063 IP localhost.11434 > localhost.59041: Flags [P.], seq 11008:11117, ack 1, win 6318, options [nop,nop,TS val 1689992585 ecr 701932287], length 109
+E.....@.@...........,.......j..k...........
+d.=.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.689041Z","response":")\n","done":false}
+
+
+10:40:49.689116 IP localhost.59041 > localhost.11434: Flags [.], ack 11117, win 8118, options [nop,nop,TS val 701932365 ecr 1689992585], length 0
+E..4..@.@.............,.j..k...R.....(.....
+)..Md.=.
+10:40:49.766179 IP localhost.11434 > localhost.59041: Flags [P.], seq 11117:11230, ack 1, win 6318, options [nop,nop,TS val 1689992662 ecr 701932365], length 113
+E.....@.@...........,......Rj..k...........
+d.=.)..M6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.766157Z","response":"       ","done":false}
+
+
+10:40:49.766250 IP localhost.59041 > localhost.11434: Flags [.], ack 11230, win 8117, options [nop,nop,TS val 701932442 ecr 1689992662], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.=.
+10:40:49.845804 IP localhost.11434 > localhost.59041: Flags [P.], seq 11230:11339, ack 1, win 6318, options [nop,nop,TS val 1689992742 ecr 701932442], length 109
+E.....@.@...........,.......j..k...........
+d.>&)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.845768Z","response":" if","done":false}
+
+
+10:40:49.845872 IP localhost.59041 > localhost.11434: Flags [.], ack 11339, win 8116, options [nop,nop,TS val 701932522 ecr 1689992742], length 0
+E..4..@.@.............,.j..k...0.....(.....
+)...d.>&
+10:40:49.923490 IP localhost.11434 > localhost.59041: Flags [P.], seq 11339:11455, ack 1, win 6318, options [nop,nop,TS val 1689992819 ecr 701932522], length 116
+E.....@.@...........,......0j..k...........
+d.>s)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:49.923466Z","response":" resources","done":false}
+
+
+10:40:49.923571 IP localhost.59041 > localhost.11434: Flags [.], ack 11455, win 8115, options [nop,nop,TS val 701932599 ecr 1689992819], length 0
+E..4..@.@.............,.j..k.........(.....
+)..7d.>s
+10:40:50.001968 IP localhost.11434 > localhost.59041: Flags [P.], seq 11455:11564, ack 1, win 6318, options [nop,nop,TS val 1689992898 ecr 701932599], length 109
+E.....@.@...........,.......j..k...........
+d.>.)..767
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.001935Z","response":":\n","done":false}
+
+
+10:40:50.002022 IP localhost.59041 > localhost.11434: Flags [.], ack 11564, win 8114, options [nop,nop,TS val 701932678 ecr 1689992898], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.>.
+10:40:50.078833 IP localhost.11434 > localhost.59041: Flags [P.], seq 11564:11681, ack 1, win 6318, options [nop,nop,TS val 1689992975 ecr 701932678], length 117
+E.....@.@...........,.......j..k...........
+d.?.)...6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.078811Z","response":"           ","done":false}
+
+
+10:40:50.078880 IP localhost.59041 > localhost.11434: Flags [.], ack 11681, win 8113, options [nop,nop,TS val 701932755 ecr 1689992975], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.?.
+10:40:50.155922 IP localhost.11434 > localhost.59041: Flags [P.], seq 11681:11794, ack 1, win 6318, options [nop,nop,TS val 1689993052 ecr 701932755], length 113
+E.....@.@...........,.......j..k...........
+d.?\)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.155899Z","response":" gather","done":false}
+
+
+10:40:50.155964 IP localhost.59041 > localhost.11434: Flags [.], ack 11794, win 8112, options [nop,nop,TS val 701932832 ecr 1689993052], length 0
+E..4..@.@.............,.j..k.........(.....
+).. d.?\
+10:40:50.230311 IP localhost.11434 > localhost.59041: Flags [P.], seq 11794:11910, ack 1, win 6318, options [nop,nop,TS val 1689993126 ecr 701932832], length 116
+E.....@.@...........,.......j..k...........
+d.?.).. 6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.230282Z","response":"(resources","done":false}
+
+
+10:40:50.230364 IP localhost.59041 > localhost.11434: Flags [.], ack 11910, win 8111, options [nop,nop,TS val 701932906 ecr 1689993126], length 0
+E..4..@.@.............,.j..k...k.....(.....
+)..jd.?.
+10:40:50.306818 IP localhost.11434 > localhost.59041: Flags [P.], seq 11910:12019, ack 1, win 6318, options [nop,nop,TS val 1689993203 ecr 701932906], length 109
+E.....@.@...........,......kj..k...........
+d.?.)..j67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.306792Z","response":")\n","done":false}
+
+
+10:40:50.306894 IP localhost.59041 > localhost.11434: Flags [.], ack 12019, win 8110, options [nop,nop,TS val 701932983 ecr 1689993203], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.?.
+10:40:50.383036 IP localhost.11434 > localhost.59041: Flags [P.], seq 12019:12127, ack 1, win 6318, options [nop,nop,TS val 1689993279 ecr 701932983], length 108
+E.....@.@...........,.......j..k...........
+d.@?)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.383004Z","response":"``","done":false}
+
+
+10:40:50.383079 IP localhost.59041 > localhost.11434: Flags [.], ack 12127, win 8109, options [nop,nop,TS val 701933059 ecr 1689993279], length 0
+E..4..@.@.............,.j..k...D.....(.....
+)...d.@?
+10:40:50.460377 IP localhost.11434 > localhost.59041: Flags [P.], seq 12127:12238, ack 1, win 6318, options [nop,nop,TS val 1689993356 ecr 701933059], length 111
+E.....@.@...........,......Dj..k...........
+d.@.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.460354Z","response":"`\n\n","done":false}
+
+
+10:40:50.460431 IP localhost.59041 > localhost.11434: Flags [.], ack 12238, win 8108, options [nop,nop,TS val 701933136 ecr 1689993356], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Pd.@.
+10:40:50.539453 IP localhost.11434 > localhost.59041: Flags [P.], seq 12238:12347, ack 1, win 6318, options [nop,nop,TS val 1689993435 ecr 701933136], length 109
+E.....@.@...........,.......j..k...........
+d.@.)..P67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.539427Z","response":"###","done":false}
+
+
+10:40:50.539509 IP localhost.59041 > localhost.11434: Flags [.], ack 12347, win 8107, options [nop,nop,TS val 701933215 ecr 1689993435], length 0
+E..4..@.@.............,.j..k... .....(.....
+)...d.@.
+10:40:50.619528 IP localhost.11434 > localhost.59041: Flags [P.], seq 12347:12461, ack 1, win 6318, options [nop,nop,TS val 1689993515 ecr 701933215], length 114
+E.....@.@...........,...... j..k...........
+d.A+)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.619503Z","response":" Defense","done":false}
+
+
+10:40:50.619594 IP localhost.59041 > localhost.11434: Flags [.], ack 12461, win 8106, options [nop,nop,TS val 701933295 ecr 1689993515], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.A+
+10:40:50.697934 IP localhost.11434 > localhost.59041: Flags [P.], seq 12461:12572, ack 1, win 6318, options [nop,nop,TS val 1689993594 ecr 701933295], length 111
+E.....@.@...........,.......j..k...........
+d.Az)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.697912Z","response":" Form","done":false}
+
+
+10:40:50.697991 IP localhost.59041 > localhost.11434: Flags [.], ack 12572, win 8105, options [nop,nop,TS val 701933374 ecr 1689993594], length 0
+E..4..@.@.............,.j..k.........(.....
+)..>d.Az
+10:40:50.776337 IP localhost.11434 > localhost.59041: Flags [P.], seq 12572:12684, ack 1, win 6318, options [nop,nop,TS val 1689993672 ecr 701933374], length 112
+E.....@.@...........,.......j..k...........
+d.A.)..>6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.776314Z","response":"ations","done":false}
+
+
+10:40:50.776416 IP localhost.59041 > localhost.11434: Flags [.], ack 12684, win 8104, options [nop,nop,TS val 701933452 ecr 1689993672], length 0
+E..4..@.@.............,.j..k...q.....(.....
+)...d.A.
+10:40:50.852555 IP localhost.11434 > localhost.59041: Flags [P.], seq 12684:12792, ack 1, win 6318, options [nop,nop,TS val 1689993748 ecr 701933452], length 108
+E.....@.@...........,......qj..k...........
+d.B.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.852531Z","response":"\n","done":false}
+
+
+10:40:50.852608 IP localhost.59041 > localhost.11434: Flags [.], ack 12792, win 8103, options [nop,nop,TS val 701933528 ecr 1689993748], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.B.
+10:40:50.928918 IP localhost.11434 > localhost.59041: Flags [P.], seq 12792:12899, ack 1, win 6318, options [nop,nop,TS val 1689993825 ecr 701933528], length 107
+E.....@.@...........,.......j..k...........
+d.Ba)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:50.928895Z","response":"-","done":false}
+
+
+10:40:50.928971 IP localhost.59041 > localhost.11434: Flags [.], ack 12899, win 8102, options [nop,nop,TS val 701933605 ecr 1689993825], length 0
+E..4..@.@.............,.j..k...H.....(.....
+)..%d.Ba
+10:40:51.006358 IP localhost.11434 > localhost.59041: Flags [P.], seq 12899:13008, ack 1, win 6318, options [nop,nop,TS val 1689993902 ecr 701933605], length 109
+E.....@.@...........,......Hj..k...........
+d.B.)..%67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.006324Z","response":" **","done":false}
+
+
+10:40:51.006404 IP localhost.59041 > localhost.11434: Flags [.], ack 13008, win 8101, options [nop,nop,TS val 701933682 ecr 1689993902], length 0
+E..4..@.@.............,.j..k.........(.....
+)..rd.B.
+10:40:51.085410 IP localhost.11434 > localhost.59041: Flags [P.], seq 13008:13120, ack 1, win 6318, options [nop,nop,TS val 1689993981 ecr 701933682], length 112
+E.....@.@...........,.......j..k...........
+d.B.)..r6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.085388Z","response":"Before","done":false}
+
+
+10:40:51.085459 IP localhost.59041 > localhost.11434: Flags [.], ack 13120, win 8100, options [nop,nop,TS val 701933761 ecr 1689993981], length 0
+E..4..@.@.............,.j..k...%.....(.....
+)...d.B.
+10:40:51.163985 IP localhost.11434 > localhost.59041: Flags [P.], seq 13120:13229, ack 1, win 6318, options [nop,nop,TS val 1689994060 ecr 701933761], length 109
+E.....@.@...........,......%j..k...........
+d.CL)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.163963Z","response":"**:","done":false}
+
+
+10:40:51.164032 IP localhost.59041 > localhost.11434: Flags [.], ack 13229, win 8099, options [nop,nop,TS val 701933840 ecr 1689994060], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.CL
+10:40:51.243210 IP localhost.11434 > localhost.59041: Flags [P.], seq 13229:13339, ack 1, win 6318, options [nop,nop,TS val 1689994139 ecr 701933840], length 110
+E.....@.@...........,.......j..k...........
+d.C.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.243187Z","response":" Dis","done":false}
+
+
+10:40:51.243290 IP localhost.59041 > localhost.11434: Flags [.], ack 13339, win 8098, options [nop,nop,TS val 701933919 ecr 1689994139], length 0
+E..4..@.@.............,.j..k.........(.....
+).._d.C.
+10:40:51.322537 IP localhost.11434 > localhost.59041: Flags [P.], seq 13339:13454, ack 1, win 6318, options [nop,nop,TS val 1689994218 ecr 701933919], length 115
+E.....@.@...........,.......j..k...........
+d.C.).._6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.322515Z","response":"organized","done":false}
+
+
+10:40:51.322588 IP localhost.59041 > localhost.11434: Flags [.], ack 13454, win 8097, options [nop,nop,TS val 701933998 ecr 1689994218], length 0
+E..4..@.@.............,.j..k...s.....(.....
+)...d.C.
+10:40:51.403165 IP localhost.11434 > localhost.59041: Flags [P.], seq 13454:13567, ack 1, win 6318, options [nop,nop,TS val 1689994299 ecr 701933998], length 113
+E.....@.@...........,......sj..k...........
+d.D;)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.40314Z","response":" defense","done":false}
+
+
+10:40:51.403239 IP localhost.59041 > localhost.11434: Flags [.], ack 13567, win 8096, options [nop,nop,TS val 701934079 ecr 1689994299], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.D;
+10:40:51.482323 IP localhost.11434 > localhost.59041: Flags [P.], seq 13567:13676, ack 1, win 6318, options [nop,nop,TS val 1689994378 ecr 701934079], length 109
+E.....@.@...........,.......j..k...........
+d.D.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.482302Z","response":".\n","done":false}
+
+
+10:40:51.482372 IP localhost.59041 > localhost.11434: Flags [.], ack 13676, win 8095, options [nop,nop,TS val 701934158 ecr 1689994378], length 0
+E..4..@.@.............,.j..k...Q.....(.....
+)..Nd.D.
+10:40:51.562450 IP localhost.11434 > localhost.59041: Flags [P.], seq 13676:13783, ack 1, win 6318, options [nop,nop,TS val 1689994458 ecr 701934158], length 107
+E.....@.@...........,......Qj..k...........
+d.D.)..N65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.562427Z","response":"-","done":false}
+
+
+10:40:51.562505 IP localhost.59041 > localhost.11434: Flags [.], ack 13783, win 8094, options [nop,nop,TS val 701934238 ecr 1689994458], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.D.
+10:40:51.639297 IP localhost.11434 > localhost.59041: Flags [P.], seq 13783:13892, ack 1, win 6318, options [nop,nop,TS val 1689994535 ecr 701934238], length 109
+E.....@.@...........,.......j..k...........
+d.E')...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.639264Z","response":" **","done":false}
+
+
+10:40:51.639358 IP localhost.59041 > localhost.11434: Flags [.], ack 13892, win 8093, options [nop,nop,TS val 701934315 ecr 1689994535], length 0
+E..4..@.@.............,.j..k...).....(.....
+)...d.E'
+10:40:51.720086 IP localhost.11434 > localhost.59041: Flags [P.], seq 13892:14003, ack 1, win 6318, options [nop,nop,TS val 1689994616 ecr 701934315], length 111
+E.....@.@...........,......)j..k...........
+d.Ex)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.720058Z","response":"After","done":false}
+
+
+10:40:51.720165 IP localhost.59041 > localhost.11434: Flags [.], ack 14003, win 8092, options [nop,nop,TS val 701934396 ecr 1689994616], length 0
+E..4..@.@.............,.j..k.........(.....
+)..<d.Ex
+10:40:51.800105 IP localhost.11434 > localhost.59041: Flags [P.], seq 14003:14112, ack 1, win 6318, options [nop,nop,TS val 1689994696 ecr 701934396], length 109
+E.....@.@...........,.......j..k...........
+d.E.)..<67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.800083Z","response":"**:","done":false}
+
+
+10:40:51.800296 IP localhost.59041 > localhost.11434: Flags [.], ack 14112, win 8091, options [nop,nop,TS val 701934476 ecr 1689994696], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.E.
+10:40:51.880941 IP localhost.11434 > localhost.59041: Flags [P.], seq 14112:14221, ack 1, win 6318, options [nop,nop,TS val 1689994777 ecr 701934476], length 109
+E.....@.@...........,.......j..k...........
+d.F.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.880917Z","response":" Co","done":false}
+
+
+10:40:51.881026 IP localhost.59041 > localhost.11434: Flags [.], ack 14221, win 8090, options [nop,nop,TS val 701934557 ecr 1689994777], length 0
+E..4..@.@.............,.j..k...r.....(.....
+)...d.F.
+10:40:51.959438 IP localhost.11434 > localhost.59041: Flags [P.], seq 14221:14336, ack 1, win 6318, options [nop,nop,TS val 1689994855 ecr 701934557], length 115
+E.....@.@...........,......rj..k...........
+d.Fg)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:51.959415Z","response":"ordinated","done":false}
+
+
+10:40:51.959489 IP localhost.59041 > localhost.11434: Flags [.], ack 14336, win 8089, options [nop,nop,TS val 701934635 ecr 1689994855], length 0
+E..4..@.@.............,.j..k.........(.....
+)..+d.Fg
+10:40:52.035421 IP localhost.11434 > localhost.59041: Flags [P.], seq 14336:14452, ack 1, win 6318, options [nop,nop,TS val 1689994931 ecr 701934635], length 116
+E.....@.@...........,.......j..k...........
+d.F.)..+6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.035398Z","response":" defensive","done":false}
+
+
+10:40:52.035503 IP localhost.59041 > localhost.11434: Flags [.], ack 14452, win 8088, options [nop,nop,TS val 701934711 ecr 1689994931], length 0
+E..4..@.@.............,.j..k...Y.....(.....
+)..wd.F.
+10:40:52.110919 IP localhost.11434 > localhost.59041: Flags [P.], seq 14452:14567, ack 1, win 6318, options [nop,nop,TS val 1689995007 ecr 701934711], length 115
+E.....@.@...........,......Yj..k...........
+d.F.)..w6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.1109Z","response":" formations","done":false}
+
+
+10:40:52.110971 IP localhost.59041 > localhost.11434: Flags [.], ack 14567, win 8087, options [nop,nop,TS val 701934787 ecr 1689995007], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.F.
+10:40:52.185787 IP localhost.11434 > localhost.59041: Flags [P.], seq 14567:14678, ack 1, win 6318, options [nop,nop,TS val 1689995082 ecr 701934787], length 111
+E.....@.@...........,.......j..k...........
+d.GJ)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.185763Z","response":".\n\n","done":false}
+
+
+10:40:52.185845 IP localhost.59041 > localhost.11434: Flags [.], ack 14678, win 8086, options [nop,nop,TS val 701934862 ecr 1689995082], length 0
+E..4..@.@.............,.j..k...;.....(.....
+)...d.GJ
+10:40:52.263672 IP localhost.11434 > localhost.59041: Flags [P.], seq 14678:14787, ack 1, win 6318, options [nop,nop,TS val 1689995159 ecr 701934862], length 109
+E.....@.@...........,......;j..k...........
+d.G.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.263649Z","response":"```","done":false}
+
+
+10:40:52.263719 IP localhost.59041 > localhost.11434: Flags [.], ack 14787, win 8085, options [nop,nop,TS val 701934939 ecr 1689995159], length 0
+E..4..@.@.............,.j..k.........(.....
+)..[d.G.
+10:40:52.344902 IP localhost.11434 > localhost.59041: Flags [P.], seq 14787:14898, ack 1, win 6318, options [nop,nop,TS val 1689995241 ecr 701934939], length 111
+E.....@.@...........,.......j..k...........
+d.G.)..[69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.34488Z","response":"python","done":false}
+
+
+10:40:52.345017 IP localhost.59041 > localhost.11434: Flags [.], ack 14898, win 8084, options [nop,nop,TS val 701935021 ecr 1689995241], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.G.
+10:40:52.427888 IP localhost.11434 > localhost.59041: Flags [P.], seq 14898:15006, ack 1, win 6318, options [nop,nop,TS val 1689995324 ecr 701935021], length 108
+E.....@.@...........,.......j..k...........
+d.H<)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.427863Z","response":"\n","done":false}
+
+
+10:40:52.427979 IP localhost.59041 > localhost.11434: Flags [.], ack 15006, win 8083, options [nop,nop,TS val 701935104 ecr 1689995324], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.H<
+10:40:52.511337 IP localhost.11434 > localhost.59041: Flags [P.], seq 15006:15117, ack 1, win 6318, options [nop,nop,TS val 1689995407 ecr 701935104], length 111
+E.....@.@...........,.......j..k...........
+d.H.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.511312Z","response":"class","done":false}
+
+
+10:40:52.511382 IP localhost.59041 > localhost.11434: Flags [.], ack 15117, win 8082, options [nop,nop,TS val 701935187 ecr 1689995407], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Sd.H.
+10:40:52.591853 IP localhost.11434 > localhost.59041: Flags [P.], seq 15117:15231, ack 1, win 6318, options [nop,nop,TS val 1689995488 ecr 701935187], length 114
+E.....@.@...........,.......j..k...........
+d.H.)..S6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.59183Z","response":" Defender","done":false}
+
+
+10:40:52.591919 IP localhost.59041 > localhost.11434: Flags [.], ack 15231, win 8081, options [nop,nop,TS val 701935268 ecr 1689995488], length 0
+E..4..@.@.............,.j..k...d.....(.....
+)...d.H.
+10:40:52.672150 IP localhost.11434 > localhost.59041: Flags [P.], seq 15231:15342, ack 1, win 6318, options [nop,nop,TS val 1689995568 ecr 701935268], length 111
+E.....@.@...........,......dj..k...........
+d.I0)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.672116Z","response":"Agent","done":false}
+
+
+10:40:52.672204 IP localhost.59041 > localhost.11434: Flags [.], ack 15342, win 8080, options [nop,nop,TS val 701935348 ecr 1689995568], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.I0
+10:40:52.751369 IP localhost.11434 > localhost.59041: Flags [P.], seq 15342:15451, ack 1, win 6318, options [nop,nop,TS val 1689995647 ecr 701935348], length 109
+E.....@.@...........,.......j..k...........
+d.I.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.751344Z","response":":\n","done":false}
+
+
+10:40:52.751424 IP localhost.59041 > localhost.11434: Flags [.], ack 15451, win 8079, options [nop,nop,TS val 701935427 ecr 1689995647], length 0
+E..4..@.@.............,.j..k...@.....(.....
+)..Cd.I.
+10:40:52.828841 IP localhost.11434 > localhost.59041: Flags [P.], seq 15451:15559, ack 1, win 6318, options [nop,nop,TS val 1689995725 ecr 701935427], length 108
+E.....@.@...........,......@j..k...........
+d.I.)..C66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.82882Z","response":"   ","done":false}
+
+
+10:40:52.828891 IP localhost.59041 > localhost.11434: Flags [.], ack 15559, win 8078, options [nop,nop,TS val 701935505 ecr 1689995725], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.I.
+10:40:52.905276 IP localhost.11434 > localhost.59041: Flags [P.], seq 15559:15669, ack 1, win 6318, options [nop,nop,TS val 1689995801 ecr 701935505], length 110
+E.....@.@...........,.......j..k...........
+d.J.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.905255Z","response":" def","done":false}
+
+
+10:40:52.905403 IP localhost.59041 > localhost.11434: Flags [.], ack 15669, win 8077, options [nop,nop,TS val 701935581 ecr 1689995801], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.J.
+10:40:52.983703 IP localhost.11434 > localhost.59041: Flags [P.], seq 15669:15777, ack 1, win 6318, options [nop,nop,TS val 1689995879 ecr 701935581], length 108
+E.....@.@...........,.......j..k...........
+d.Jg)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:52.98368Z","response":" __","done":false}
+
+
+10:40:52.983753 IP localhost.59041 > localhost.11434: Flags [.], ack 15777, win 8076, options [nop,nop,TS val 701935659 ecr 1689995879], length 0
+E..4..@.@.............,.j..k.........(.....
+)..+d.Jg
+10:40:53.061571 IP localhost.11434 > localhost.59041: Flags [P.], seq 15777:15887, ack 1, win 6318, options [nop,nop,TS val 1689995957 ecr 701935659], length 110
+E.....@.@...........,.......j..k...........
+d.J.)..+68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.061547Z","response":"init","done":false}
+
+
+10:40:53.061617 IP localhost.59041 > localhost.11434: Flags [.], ack 15887, win 8075, options [nop,nop,TS val 701935737 ecr 1689995957], length 0
+E..4..@.@.............,.j..k.........(.....
+)..yd.J.
+10:40:53.140084 IP localhost.11434 > localhost.59041: Flags [P.], seq 15887:15996, ack 1, win 6318, options [nop,nop,TS val 1689996036 ecr 701935737], length 109
+E.....@.@...........,.......j..k...........
+d.K.)..y67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.140059Z","response":"__(","done":false}
+
+
+10:40:53.140128 IP localhost.59041 > localhost.11434: Flags [.], ack 15996, win 8074, options [nop,nop,TS val 701935816 ecr 1689996036], length 0
+E..4..@.@.............,.j..k...a.....(.....
+)...d.K.
+10:40:53.217624 IP localhost.11434 > localhost.59041: Flags [P.], seq 15996:16106, ack 1, win 6318, options [nop,nop,TS val 1689996113 ecr 701935816], length 110
+E.....@.@...........,......aj..k...........
+d.KQ)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.217606Z","response":"self","done":false}
+
+
+10:40:53.217690 IP localhost.59041 > localhost.11434: Flags [.], ack 16106, win 8073, options [nop,nop,TS val 701935893 ecr 1689996113], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.KQ
+10:40:53.295886 IP localhost.11434 > localhost.59041: Flags [P.], seq 16106:16213, ack 1, win 6318, options [nop,nop,TS val 1689996192 ecr 701935893], length 107
+E.....@.@...........,.......j..k...........
+d.K.)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.295863Z","response":",","done":false}
+
+
+10:40:53.295962 IP localhost.59041 > localhost.11434: Flags [.], ack 16213, win 8072, options [nop,nop,TS val 701935972 ecr 1689996192], length 0
+E..4..@.@.............,.j..k...:.....(.....
+)..dd.K.
+10:40:53.377630 IP localhost.11434 > localhost.59041: Flags [P.], seq 16213:16328, ack 1, win 6318, options [nop,nop,TS val 1689996273 ecr 701935972], length 115
+E.....@.@...........,......:j..k...........
+d.K.)..d6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.377606Z","response":" position","done":false}
+
+
+10:40:53.377688 IP localhost.59041 > localhost.11434: Flags [.], ack 16328, win 8071, options [nop,nop,TS val 701936053 ecr 1689996273], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.K.
+10:40:53.461877 IP localhost.11434 > localhost.59041: Flags [P.], seq 16328:16438, ack 1, win 6318, options [nop,nop,TS val 1689996358 ecr 701936053], length 110
+E.....@.@...........,.......j..k...........
+d.LF)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.461855Z","response":"):\n","done":false}
+
+
+10:40:53.461931 IP localhost.59041 > localhost.11434: Flags [.], ack 16438, win 8070, options [nop,nop,TS val 701936138 ecr 1689996358], length 0
+E..4..@.@.............,.j..k.........(.....
+)..
+d.LF
+10:40:53.547285 IP localhost.11434 > localhost.59041: Flags [P.], seq 16438:16551, ack 1, win 6318, options [nop,nop,TS val 1689996443 ecr 701936138], length 113
+E.....@.@...........,.......j..k...........
+d.L.)..
+6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.547263Z","response":"       ","done":false}
+
+
+10:40:53.547490 IP localhost.59041 > localhost.11434: Flags [.], ack 16551, win 8069, options [nop,nop,TS val 701936223 ecr 1689996443], length 0
+E..4..@.@.............,.j..k.........(.....
+).._d.L.
+10:40:53.631005 IP localhost.11434 > localhost.59041: Flags [P.], seq 16551:16661, ack 1, win 6318, options [nop,nop,TS val 1689996527 ecr 701936223], length 110
+E.....@.@...........,.......j..k...........
+d.L.).._68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.63098Z","response":" self","done":false}
+
+
+10:40:53.631062 IP localhost.59041 > localhost.11434: Flags [.], ack 16661, win 8068, options [nop,nop,TS val 701936307 ecr 1689996527], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.L.
+10:40:53.709899 IP localhost.11434 > localhost.59041: Flags [P.], seq 16661:16776, ack 1, win 6318, options [nop,nop,TS val 1689996605 ecr 701936307], length 115
+E.....@.@...........,.......j..k...........
+d.M=)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.709859Z","response":".position","done":false}
+
+
+10:40:53.709986 IP localhost.59041 > localhost.11434: Flags [.], ack 16776, win 8067, options [nop,nop,TS val 701936385 ecr 1689996605], length 0
+E..4..@.@.............,.j..k...m.....(.....
+)...d.M=
+10:40:53.793357 IP localhost.11434 > localhost.59041: Flags [P.], seq 16776:16884, ack 1, win 6318, options [nop,nop,TS val 1689996689 ecr 701936385], length 108
+E.....@.@...........,......mj..k...........
+d.M.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.793333Z","response":" =","done":false}
+
+
+10:40:53.793430 IP localhost.59041 > localhost.11434: Flags [.], ack 16884, win 8066, options [nop,nop,TS val 701936469 ecr 1689996689], length 0
+E..4..@.@.............,.j..k.........(.....
+)..Ud.M.
+10:40:53.879594 IP localhost.11434 > localhost.59041: Flags [P.], seq 16884:16999, ack 1, win 6318, options [nop,nop,TS val 1689996775 ecr 701936469], length 115
+E.....@.@...........,.......j..k...........
+d.M.)..U6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.879553Z","response":" position","done":false}
+
+
+10:40:53.879638 IP localhost.59041 > localhost.11434: Flags [.], ack 16999, win 8065, options [nop,nop,TS val 701936555 ecr 1689996775], length 0
+E..4..@.@.............,.j..k...L.....(.....
+)...d.M.
+10:40:53.968336 IP localhost.11434 > localhost.59041: Flags [P.], seq 16999:17113, ack 1, win 6318, options [nop,nop,TS val 1689996864 ecr 701936555], length 114
+E.....@.@...........,......Lj..k...........
+d.N@)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:53.968301Z","response":"\n    \n","done":false}
+
+
+10:40:53.968394 IP localhost.59041 > localhost.11434: Flags [.], ack 17113, win 8064, options [nop,nop,TS val 701936644 ecr 1689996864], length 0
+E..4..@.@.............,.j..k.........(.....
+)...d.N@
+10:40:54.060971 IP localhost.11434 > localhost.59041: Flags [P.], seq 17113:17222, ack 1, win 6318, options [nop,nop,TS val 1689996957 ecr 701936644], length 109
+E.....@.@...........,.......j..k...........
+d.N.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.060935Z","response":"   ","done":false}
+
+
+10:40:54.061018 IP localhost.59041 > localhost.11434: Flags [.], ack 17222, win 8063, options [nop,nop,TS val 701936737 ecr 1689996957], length 0
+E..4..@.@.............,.j..k...+.....(.....
+)..ad.N.
+10:40:54.153635 IP localhost.11434 > localhost.59041: Flags [P.], seq 17222:17332, ack 1, win 6318, options [nop,nop,TS val 1689997049 ecr 701936737], length 110
+E.....@.@...........,......+j..k...........
+d.N.)..a68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.153611Z","response":" def","done":false}
+
+
+10:40:54.153745 IP localhost.59041 > localhost.11434: Flags [.], ack 17332, win 8062, options [nop,nop,TS val 701936829 ecr 1689997049], length 0
+E..4..@.@.............,.j..k.......~.(.....
+)...d.N.
+10:40:54.241441 IP localhost.11434 > localhost.59041: Flags [P.], seq 17332:17441, ack 1, win 6318, options [nop,nop,TS val 1689997137 ecr 701936829], length 109
+E.....@.@...........,.......j..k...........
+d.OQ)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.24142Z","response":" act","done":false}
+
+
+10:40:54.241521 IP localhost.59041 > localhost.11434: Flags [.], ack 17441, win 8061, options [nop,nop,TS val 701936917 ecr 1689997137], length 0
+E..4..@.@.............,.j..k..	....}.(.....
+)...d.OQ
+10:40:54.327210 IP localhost.11434 > localhost.59041: Flags [P.], seq 17441:17552, ack 1, win 6318, options [nop,nop,TS val 1689997223 ecr 701936917], length 111
+E.....@.@...........,.....	.j..k...........
+d.O.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.327181Z","response":"(self","done":false}
+
+
+10:40:54.327260 IP localhost.59041 > localhost.11434: Flags [.], ack 17552, win 8060, options [nop,nop,TS val 701937003 ecr 1689997223], length 0
+E..4..@.@.............,.j..k..	u...|.(.....
+)..kd.O.
+10:40:54.413309 IP localhost.11434 > localhost.59041: Flags [P.], seq 17552:17662, ack 1, win 6318, options [nop,nop,TS val 1689997309 ecr 701937003], length 110
+E.....@.@...........,.....	uj..k...........
+d.O.)..k68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.413284Z","response":"):\n","done":false}
+
+
+10:40:54.413357 IP localhost.59041 > localhost.11434: Flags [.], ack 17662, win 8059, options [nop,nop,TS val 701937089 ecr 1689997309], length 0
+E..4..@.@.............,.j..k..	....{.(.....
+)...d.O.
+10:40:54.497359 IP localhost.11434 > localhost.59041: Flags [P.], seq 17662:17775, ack 1, win 6318, options [nop,nop,TS val 1689997393 ecr 701937089], length 113
+E.....@.@...........,.....	.j..k...........
+d.PQ)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.497328Z","response":"       ","done":false}
+
+
+10:40:54.497428 IP localhost.59041 > localhost.11434: Flags [.], ack 17775, win 8058, options [nop,nop,TS val 701937173 ecr 1689997393], length 0
+E..4..@.@.............,.j..k..
+T...z.(.....
+)...d.PQ
+10:40:54.582515 IP localhost.11434 > localhost.59041: Flags [P.], seq 17775:17888, ack 1, win 6318, options [nop,nop,TS val 1689997478 ecr 701937173], length 113
+E.....@.@...........,.....
+Tj..k...........
+d.P.)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.58249Z","response":" enemies","done":false}
+
+
+10:40:54.582567 IP localhost.59041 > localhost.11434: Flags [.], ack 17888, win 8057, options [nop,nop,TS val 701937258 ecr 1689997478], length 0
+E..4..@.@.............,.j..k..
+....y.(.....
+)..jd.P.
+10:40:54.664625 IP localhost.11434 > localhost.59041: Flags [P.], seq 17888:17996, ack 1, win 6318, options [nop,nop,TS val 1689997560 ecr 701937258], length 108
+E.....@.@...........,.....
+.j..k...........
+d.P.)..j66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.664601Z","response":" =","done":false}
+
+
+10:40:54.664709 IP localhost.59041 > localhost.11434: Flags [.], ack 17996, win 8056, options [nop,nop,TS val 701937340 ecr 1689997560], length 0
+E..4..@.@.............,.j..k...1...x.(.....
+)...d.P.
+10:40:54.747438 IP localhost.11434 > localhost.59041: Flags [P.], seq 17996:18109, ack 1, win 6318, options [nop,nop,TS val 1689997643 ecr 701937340], length 113
+E.....@.@...........,......1j..k...........
+d.QK)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.747415Z","response":" detect","done":false}
+
+
+10:40:54.747495 IP localhost.59041 > localhost.11434: Flags [.], ack 18109, win 8055, options [nop,nop,TS val 701937423 ecr 1689997643], length 0
+E..4..@.@.............,.j..k.......w.(.....
+)...d.QK
+10:40:54.830545 IP localhost.11434 > localhost.59041: Flags [P.], seq 18109:18218, ack 1, win 6318, options [nop,nop,TS val 1689997726 ecr 701937423], length 109
+E.....@.@...........,.......j..k...........
+d.Q.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.830523Z","response":"_en","done":false}
+
+
+10:40:54.830605 IP localhost.59041 > localhost.11434: Flags [.], ack 18218, win 8054, options [nop,nop,TS val 701937506 ecr 1689997726], length 0
+E..4..@.@.............,.j..k.......v.(.....
+)..bd.Q.
+10:40:54.912776 IP localhost.11434 > localhost.59041: Flags [P.], seq 18218:18329, ack 1, win 6318, options [nop,nop,TS val 1689997809 ecr 701937506], length 111
+E.....@.@...........,.......j..k...........
+d.Q.)..b69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.912752Z","response":"emies","done":false}
+
+
+10:40:54.912829 IP localhost.59041 > localhost.11434: Flags [.], ack 18329, win 8053, options [nop,nop,TS val 701937589 ecr 1689997809], length 0
+E..4..@.@.............,.j..k...~...u.(.....
+)...d.Q.
+10:40:54.995673 IP localhost.11434 > localhost.59041: Flags [P.], seq 18329:18439, ack 1, win 6318, options [nop,nop,TS val 1689997891 ecr 701937589], length 110
+E.....@.@...........,......~j..k...........
+d.RC)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:54.995646Z","response":"()\n","done":false}
+
+
+10:40:54.995721 IP localhost.59041 > localhost.11434: Flags [.], ack 18439, win 8052, options [nop,nop,TS val 701937671 ecr 1689997891], length 0
+E..4..@.@.............,.j..k.......t.(.....
+)...d.RC
+10:40:55.078025 IP localhost.11434 > localhost.59041: Flags [P.], seq 18439:18552, ack 1, win 6318, options [nop,nop,TS val 1689997974 ecr 701937671], length 113
+E.....@.@...........,.......j..k...........
+d.R.)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.077971Z","response":"       ","done":false}
+
+
+10:40:55.078078 IP localhost.59041 > localhost.11434: Flags [.], ack 18552, win 8051, options [nop,nop,TS val 701937754 ecr 1689997974], length 0
+E..4..@.@.............,.j..k...]...s.(.....
+)..Zd.R.
+10:40:55.160478 IP localhost.11434 > localhost.59041: Flags [P.], seq 18552:18660, ack 1, win 6318, options [nop,nop,TS val 1689998056 ecr 701937754], length 108
+E.....@.@...........,......]j..k...........
+d.R.)..Z66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.16045Z","response":" if","done":false}
+
+
+10:40:55.160529 IP localhost.59041 > localhost.11434: Flags [.], ack 18660, win 8050, options [nop,nop,TS val 701937836 ecr 1689998056], length 0
+E..4..@.@.............,.j..k.......r.(.....
+)...d.R.
+10:40:55.244181 IP localhost.11434 > localhost.59041: Flags [P.], seq 18660:18774, ack 1, win 6318, options [nop,nop,TS val 1689998140 ecr 701937836], length 114
+E.....@.@...........,.......j..k...........
+d.S<)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.244161Z","response":" enemies","done":false}
+
+
+10:40:55.244249 IP localhost.59041 > localhost.11434: Flags [.], ack 18774, win 8049, options [nop,nop,TS val 701937920 ecr 1689998140], length 0
+E..4..@.@.............,.j..k...;...q.(.....
+)...d.S<
+10:40:55.327675 IP localhost.11434 > localhost.59041: Flags [P.], seq 18774:18882, ack 1, win 6318, options [nop,nop,TS val 1689998223 ecr 701937920], length 108
+E.....@.@...........,......;j..k...........
+d.S.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.32765Z","response":":\n","done":false}
+
+
+10:40:55.327749 IP localhost.59041 > localhost.11434: Flags [.], ack 18882, win 8048, options [nop,nop,TS val 701938003 ecr 1689998223], length 0
+E..4..@.@.............,.j..k.......p.(.....
+)..Sd.S.
+10:40:55.412269 IP localhost.11434 > localhost.59041: Flags [P.], seq 18882:18999, ack 1, win 6318, options [nop,nop,TS val 1689998308 ecr 701938003], length 117
+E.....@.@...........,.......j..k...........
+d.S.)..S6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.412243Z","response":"           ","done":false}
+
+
+10:40:55.412338 IP localhost.59041 > localhost.11434: Flags [.], ack 18999, win 8047, options [nop,nop,TS val 701938088 ecr 1689998308], length 0
+E..4..@.@.............,.j..k.......o.(.....
+)...d.S.
+10:40:55.495506 IP localhost.11434 > localhost.59041: Flags [P.], seq 18999:19110, ack 1, win 6318, options [nop,nop,TS val 1689998391 ecr 701938088], length 111
+E.....@.@...........,.......j..k...........
+d.T7)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.495481Z","response":" form","done":false}
+
+
+10:40:55.495554 IP localhost.59041 > localhost.11434: Flags [.], ack 19110, win 8046, options [nop,nop,TS val 701938171 ecr 1689998391], length 0
+E..4..@.@.............,.j..k.......n.(.....
+)...d.T7
+10:40:55.578559 IP localhost.11434 > localhost.59041: Flags [P.], seq 19110:19220, ack 1, win 6318, options [nop,nop,TS val 1689998474 ecr 701938171], length 110
+E.....@.@...........,.......j..k...........
+d.T.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.578539Z","response":"_def","done":false}
+
+
+10:40:55.578610 IP localhost.59041 > localhost.11434: Flags [.], ack 19220, win 8045, options [nop,nop,TS val 701938254 ecr 1689998474], length 0
+E..4..@.@.............,.j..k.......m.(.....
+)..Nd.T.
+10:40:55.660321 IP localhost.11434 > localhost.59041: Flags [P.], seq 19220:19332, ack 1, win 6318, options [nop,nop,TS val 1689998556 ecr 701938254], length 112
+E.....@.@...........,.......j..k...........
+d.T.)..N6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.660299Z","response":"ensive","done":false}
+
+
+10:40:55.660389 IP localhost.59041 > localhost.11434: Flags [.], ack 19332, win 8044, options [nop,nop,TS val 701938336 ecr 1689998556], length 0
+E..4..@.@.............,.j..k...i...l.(.....
+)...d.T.
+10:40:55.743851 IP localhost.11434 > localhost.59041: Flags [P.], seq 19332:19439, ack 1, win 6318, options [nop,nop,TS val 1689998640 ecr 701938336], length 107
+E.....@.@...........,......ij..k...........
+d.U0)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.743824Z","response":"_","done":false}
+
+
+10:40:55.743901 IP localhost.59041 > localhost.11434: Flags [.], ack 19439, win 8043, options [nop,nop,TS val 701938420 ecr 1689998640], length 0
+E..4..@.@.............,.j..k.......k.(.....
+)...d.U0
+10:40:55.827199 IP localhost.11434 > localhost.59041: Flags [P.], seq 19439:19554, ack 1, win 6318, options [nop,nop,TS val 1689998723 ecr 701938420], length 115
+E.....@.@...........,.......j..k...........
+d.U.)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.827173Z","response":"formation","done":false}
+
+
+10:40:55.827244 IP localhost.59041 > localhost.11434: Flags [.], ack 19554, win 8042, options [nop,nop,TS val 701938503 ecr 1689998723], length 0
+E..4..@.@.............,.j..k...G...j.(.....
+)..Gd.U.
+10:40:55.910887 IP localhost.11434 > localhost.59041: Flags [P.], seq 19554:19662, ack 1, win 6318, options [nop,nop,TS val 1689998807 ecr 701938503], length 108
+E.....@.@...........,......Gj..k...........
+d.U.)..G66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.91086Z","response":"(en","done":false}
+
+
+10:40:55.910985 IP localhost.59041 > localhost.11434: Flags [.], ack 19662, win 8041, options [nop,nop,TS val 701938587 ecr 1689998807], length 0
+E..4..@.@.............,.j..k.......i.(.....
+)...d.U.
+10:40:55.993919 IP localhost.11434 > localhost.59041: Flags [P.], seq 19662:19773, ack 1, win 6318, options [nop,nop,TS val 1689998890 ecr 701938587], length 111
+E.....@.@...........,.......j..k...........
+d.V*)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:55.993892Z","response":"emies","done":false}
+
+
+10:40:55.993962 IP localhost.59041 > localhost.11434: Flags [.], ack 19773, win 8040, options [nop,nop,TS val 701938670 ecr 1689998890], length 0
+E..4..@.@.............,.j..k..."...h.(.....
+)...d.V*
+10:40:56.078148 IP localhost.11434 > localhost.59041: Flags [P.], seq 19773:19881, ack 1, win 6318, options [nop,nop,TS val 1689998974 ecr 701938670], length 108
+E.....@.@...........,......"j..k...........
+d.V~)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.07812Z","response":")\n","done":false}
+
+
+10:40:56.078228 IP localhost.59041 > localhost.11434: Flags [.], ack 19881, win 8039, options [nop,nop,TS val 701938754 ecr 1689998974], length 0
+E..4..@.@.............,.j..k.......g.(.....
+)..Bd.V~
+10:40:56.161221 IP localhost.11434 > localhost.59041: Flags [P.], seq 19881:19989, ack 1, win 6318, options [nop,nop,TS val 1689999057 ecr 701938754], length 108
+E.....@.@...........,.......j..k...........
+d.V.)..B66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.161174Z","response":"``","done":false}
+
+
+10:40:56.161469 IP localhost.59041 > localhost.11434: Flags [.], ack 19989, win 8038, options [nop,nop,TS val 701938837 ecr 1689999057], length 0
+E..4..@.@.............,.j..k.......f.(.....
+)...d.V.
+10:40:56.245015 IP localhost.11434 > localhost.59041: Flags [P.], seq 19989:20100, ack 1, win 6318, options [nop,nop,TS val 1689999141 ecr 701938837], length 111
+E.....@.@...........,.......j..k...........
+d.W%)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.244992Z","response":"`\n\n","done":false}
+
+
+10:40:56.245075 IP localhost.59041 > localhost.11434: Flags [.], ack 20100, win 8037, options [nop,nop,TS val 701938921 ecr 1689999141], length 0
+E..4..@.@.............,.j..k...i...e.(.....
+)...d.W%
+10:40:56.329204 IP localhost.11434 > localhost.59041: Flags [P.], seq 20100:20208, ack 1, win 6318, options [nop,nop,TS val 1689999225 ecr 701938921], length 108
+E.....@.@...........,......ij..k...........
+d.Wy)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.329181Z","response":"##","done":false}
+
+
+10:40:56.329271 IP localhost.59041 > localhost.11434: Flags [.], ack 20208, win 8036, options [nop,nop,TS val 701939005 ecr 1689999225], length 0
+E..4..@.@.............,.j..k.......d.(.....
+)..=d.Wy
+10:40:56.412951 IP localhost.11434 > localhost.59041: Flags [P.], seq 20208:20322, ack 1, win 6318, options [nop,nop,TS val 1689999309 ecr 701939005], length 114
+E.....@.@...........,.......j..k...........
+d.W.)..=6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.412919Z","response":" Testing","done":false}
+
+
+10:40:56.413008 IP localhost.59041 > localhost.11434: Flags [.], ack 20322, win 8035, options [nop,nop,TS val 701939089 ecr 1689999309], length 0
+E..4..@.@.............,.j..k...G...c.(.....
+)...d.W.
+10:40:56.496899 IP localhost.11434 > localhost.59041: Flags [P.], seq 20322:20437, ack 1, win 6318, options [nop,nop,TS val 1689999393 ecr 701939089], length 115
+E.....@.@...........,......Gj..k...........
+d.X!)...6d
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.496871Z","response":" Strategy","done":false}
+
+
+10:40:56.496980 IP localhost.59041 > localhost.11434: Flags [.], ack 20437, win 8034, options [nop,nop,TS val 701939173 ecr 1689999393], length 0
+E..4..@.@.............,.j..k.......b.(.....
+)...d.X!
+10:40:56.581070 IP localhost.11434 > localhost.59041: Flags [P.], seq 20437:20547, ack 1, win 6318, options [nop,nop,TS val 1689999477 ecr 701939173], length 110
+E.....@.@...........,.......j..k...........
+d.Xu)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.581043Z","response":"\n\n","done":false}
+
+
+10:40:56.581115 IP localhost.59041 > localhost.11434: Flags [.], ack 20547, win 8033, options [nop,nop,TS val 701939257 ecr 1689999477], length 0
+E..4..@.@.............,.j..k...(...a.(.....
+)..9d.Xu
+10:40:56.665402 IP localhost.11434 > localhost.59041: Flags [P.], seq 20547:20656, ack 1, win 6318, options [nop,nop,TS val 1689999561 ecr 701939257], length 109
+E.....@.@...........,......(j..k...........
+d.X.)..967
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.665376Z","response":"###","done":false}
+
+
+10:40:56.665533 IP localhost.59041 > localhost.11434: Flags [.], ack 20656, win 8032, options [nop,nop,TS val 701939341 ecr 1689999561], length 0
+E..4..@.@.............,.j..k.......`.(.....
+)...d.X.
+10:40:56.747033 IP localhost.11434 > localhost.59041: Flags [P.], seq 20656:20766, ack 1, win 6318, options [nop,nop,TS val 1689999643 ecr 701939341], length 110
+E.....@.@...........,.......j..k...........
+d.Y.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.74701Z","response":" Unit","done":false}
+
+
+10:40:56.747088 IP localhost.59041 > localhost.11434: Flags [.], ack 20766, win 8031, options [nop,nop,TS val 701939423 ecr 1689999643], length 0
+E..4..@.@.............,.j..k......._.(.....
+)...d.Y.
+10:40:56.829325 IP localhost.11434 > localhost.59041: Flags [P.], seq 20766:20878, ack 1, win 6318, options [nop,nop,TS val 1689999725 ecr 701939423], length 112
+E.....@.@...........,.......j..k...........
+d.Ym)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.829297Z","response":" Tests","done":false}
+
+
+10:40:56.829377 IP localhost.59041 > localhost.11434: Flags [.], ack 20878, win 8030, options [nop,nop,TS val 701939505 ecr 1689999725], length 0
+E..4..@.@.............,.j..k...s...^.(.....
+)..1d.Ym
+10:40:56.913780 IP localhost.11434 > localhost.59041: Flags [P.], seq 20878:20988, ack 1, win 6318, options [nop,nop,TS val 1689999810 ecr 701939505], length 110
+E.....@.@...........,......sj..k...........
+d.Y.)..168
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.913759Z","response":" for","done":false}
+
+
+10:40:56.913858 IP localhost.59041 > localhost.11434: Flags [.], ack 20988, win 8029, options [nop,nop,TS val 701939590 ecr 1689999810], length 0
+E..4..@.@.............,.j..k.......].(.....
+)...d.Y.
+10:40:56.995794 IP localhost.11434 > localhost.59041: Flags [P.], seq 20988:21099, ack 1, win 6318, options [nop,nop,TS val 1689999892 ecr 701939590], length 111
+E.....@.@...........,.......j..k...........
+d.Z.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:56.995771Z","response":" Core","done":false}
+
+
+10:40:56.995874 IP localhost.59041 > localhost.11434: Flags [.], ack 21099, win 8028, options [nop,nop,TS val 701939672 ecr 1689999892], length 0
+E..4..@.@.............,.j..k...P...\.(.....
+)...d.Z.
+10:40:57.078076 IP localhost.11434 > localhost.59041: Flags [P.], seq 21099:21216, ack 1, win 6318, options [nop,nop,TS val 1689999974 ecr 701939672], length 117
+E.....@.@...........,......Pj..k...........
+d.Zf)...6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.078049Z","response":" Components","done":false}
+
+
+10:40:57.078139 IP localhost.59041 > localhost.11434: Flags [.], ack 21216, win 8027, options [nop,nop,TS val 701939754 ecr 1689999974], length 0
+E..4..@.@.............,.j..k.......[.(.....
+)..*d.Zf
+10:40:57.162876 IP localhost.11434 > localhost.59041: Flags [P.], seq 21216:21324, ack 1, win 6318, options [nop,nop,TS val 1690000059 ecr 701939754], length 108
+E.....@.@...........,.......j..k...........
+d.Z.)..*66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.162841Z","response":"\n","done":false}
+
+
+10:40:57.162930 IP localhost.59041 > localhost.11434: Flags [.], ack 21324, win 8026, options [nop,nop,TS val 701939839 ecr 1690000059], length 0
+E..4..@.@.............,.j..k...1...Z.(.....
+)...d.Z.
+10:40:57.248343 IP localhost.11434 > localhost.59041: Flags [P.], seq 21324:21431, ack 1, win 6318, options [nop,nop,TS val 1690000144 ecr 701939839], length 107
+E.....@.@...........,......1j..k...........
+d.[.)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.248317Z","response":"-","done":false}
+
+
+10:40:57.248390 IP localhost.59041 > localhost.11434: Flags [.], ack 21431, win 8025, options [nop,nop,TS val 701939924 ecr 1690000144], length 0
+E..4..@.@.............,.j..k.......Y.(.....
+)...d.[.
+10:40:57.336979 IP localhost.11434 > localhost.59041: Flags [P.], seq 21431:21542, ack 1, win 6318, options [nop,nop,TS val 1690000233 ecr 701939924], length 111
+E.....@.@...........,.......j..k...........
+d.[i)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.336955Z","response":" Test","done":false}
+
+
+10:40:57.337061 IP localhost.59041 > localhost.11434: Flags [.], ack 21542, win 8024, options [nop,nop,TS val 701940013 ecr 1690000233], length 0
+E..4..@.@.............,.j..k.......X.(.....
+)..-d.[i
+10:40:57.429790 IP localhost.11434 > localhost.59041: Flags [P.], seq 21542:21654, ack 1, win 6318, options [nop,nop,TS val 1690000326 ecr 701940013], length 112
+E.....@.@...........,.......j..k...........
+d.[.)..-6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.429765Z","response":" agent","done":false}
+
+
+10:40:57.429840 IP localhost.59041 > localhost.11434: Flags [.], ack 21654, win 8023, options [nop,nop,TS val 701940106 ecr 1690000326], length 0
+E..4..@.@.............,.j..k...{...W.(.....
+)...d.[.
+10:40:57.521962 IP localhost.11434 > localhost.59041: Flags [P.], seq 21654:21770, ack 1, win 6318, options [nop,nop,TS val 1690000418 ecr 701940106], length 116
+E.....@.@...........,......{j..k...........
+d.\")...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.521932Z","response":" lifecycle","done":false}
+
+
+10:40:57.522017 IP localhost.59041 > localhost.11434: Flags [.], ack 21770, win 8022, options [nop,nop,TS val 701940198 ecr 1690000418], length 0
+E..4..@.@.............,.j..k.......V.(.....
+)...d.\"
+10:40:57.611628 IP localhost.11434 > localhost.59041: Flags [P.], seq 21770:21887, ack 1, win 6318, options [nop,nop,TS val 1690000507 ecr 701940198], length 117
+E.....@.@...........,.......j..k...........
+d.\{)...6f
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.611595Z","response":" management","done":false}
+
+
+10:40:57.611761 IP localhost.59041 > localhost.11434: Flags [.], ack 21887, win 8021, options [nop,nop,TS val 701940287 ecr 1690000507], length 0
+E..4..@.@.............,.j..k...d...U.(.....
+)..?d.\{
+10:40:57.700424 IP localhost.11434 > localhost.59041: Flags [P.], seq 21887:21996, ack 1, win 6318, options [nop,nop,TS val 1690000596 ecr 701940287], length 109
+E.....@.@...........,......dj..k...........
+d.\.)..?67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.700383Z","response":".\n","done":false}
+
+
+10:40:57.700509 IP localhost.59041 > localhost.11434: Flags [.], ack 21996, win 8020, options [nop,nop,TS val 701940376 ecr 1690000596], length 0
+E..4..@.@.............,.j..k.......T.(.....
+)...d.\.
+10:40:57.788253 IP localhost.11434 > localhost.59041: Flags [P.], seq 21996:22103, ack 1, win 6318, options [nop,nop,TS val 1690000684 ecr 701940376], length 107
+E.....@.@...........,.......j..k...........
+d.],)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.788223Z","response":"-","done":false}
+
+
+10:40:57.788322 IP localhost.59041 > localhost.11434: Flags [.], ack 22103, win 8019, options [nop,nop,TS val 701940464 ecr 1690000684], length 0
+E..4..@.@.............,.j..k...<...S.(.....
+)...d.],
+10:40:57.874818 IP localhost.11434 > localhost.59041: Flags [P.], seq 22103:22214, ack 1, win 6318, options [nop,nop,TS val 1690000771 ecr 701940464], length 111
+E.....@.@...........,......<j..k...........
+d.].)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.874794Z","response":" Test","done":false}
+
+
+10:40:57.874865 IP localhost.59041 > localhost.11434: Flags [.], ack 22214, win 8018, options [nop,nop,TS val 701940551 ecr 1690000771], length 0
+E..4..@.@.............,.j..k.......R.(.....
+)..Gd.].
+10:40:57.959795 IP localhost.11434 > localhost.59041: Flags [P.], seq 22214:22333, ack 1, win 6318, options [nop,nop,TS val 1690000856 ecr 701940551], length 119
+E.....@.@...........,.......j..k...........
+d.].)..G71
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:57.95977Z","response":" communication","done":false}
+
+
+10:40:57.959843 IP localhost.59041 > localhost.11434: Flags [.], ack 22333, win 8017, options [nop,nop,TS val 701940636 ecr 1690000856], length 0
+E..4..@.@.............,.j..k..."...Q.(.....
+)...d.].
+10:40:58.043936 IP localhost.11434 > localhost.59041: Flags [P.], seq 22333:22446, ack 1, win 6318, options [nop,nop,TS val 1690000940 ecr 701940636], length 113
+E.....@.@...........,......"j..k...........
+d.^,)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.043912Z","response":" module","done":false}
+
+
+10:40:58.043990 IP localhost.59041 > localhost.11434: Flags [.], ack 22446, win 8016, options [nop,nop,TS val 701940720 ecr 1690000940], length 0
+E..4..@.@.............,.j..k.......P.(.....
+)...d.^,
+10:40:58.129479 IP localhost.11434 > localhost.59041: Flags [P.], seq 22446:22566, ack 1, win 6318, options [nop,nop,TS val 1690001024 ecr 701940720], length 120
+E.....@.@...........,.......j..k...........
+d.^.)...72
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.129457Z","response":" functionality","done":false}
+
+
+10:40:58.129535 IP localhost.59041 > localhost.11434: Flags [.], ack 22566, win 8015, options [nop,nop,TS val 701940805 ecr 1690001024], length 0
+E..4..@.@.............,.j..k.......O.(.....
+)..Ed.^.
+10:40:58.213145 IP localhost.11434 > localhost.59041: Flags [P.], seq 22566:22677, ack 1, win 6318, options [nop,nop,TS val 1690001109 ecr 701940805], length 111
+E.....@.@...........,.......j..k...........
+d.^.)..E69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.213119Z","response":".\n\n","done":false}
+
+
+10:40:58.213192 IP localhost.59041 > localhost.11434: Flags [.], ack 22677, win 8014, options [nop,nop,TS val 701940889 ecr 1690001109], length 0
+E..4..@.@.............,.j..k...z...N.(.....
+)...d.^.
+10:40:58.297126 IP localhost.11434 > localhost.59041: Flags [P.], seq 22677:22786, ack 1, win 6318, options [nop,nop,TS val 1690001193 ecr 701940889], length 109
+E.....@.@...........,......zj..k...........
+d._))...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.297089Z","response":"```","done":false}
+
+
+10:40:58.297198 IP localhost.59041 > localhost.11434: Flags [.], ack 22786, win 8013, options [nop,nop,TS val 701940973 ecr 1690001193], length 0
+E..4..@.@.............,.j..k.......M.(.....
+)...d._)
+10:40:58.383422 IP localhost.11434 > localhost.59041: Flags [P.], seq 22786:22898, ack 1, win 6318, options [nop,nop,TS val 1690001279 ecr 701940973], length 112
+E.....@.@...........,.......j..k...........
+d._.)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.383394Z","response":"python","done":false}
+
+
+10:40:58.383462 IP localhost.59041 > localhost.11434: Flags [.], ack 22898, win 8012, options [nop,nop,TS val 701941059 ecr 1690001279], length 0
+E..4..@.@.............,.j..k...W...L.(.....
+)..Cd._.
+10:40:58.469118 IP localhost.11434 > localhost.59041: Flags [P.], seq 22898:23005, ack 1, win 6318, options [nop,nop,TS val 1690001365 ecr 701941059], length 107
+E.....@.@...........,......Wj..k...........
+d._.)..C65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.46909Z","response":"\n","done":false}
+
+
+10:40:58.469175 IP localhost.59041 > localhost.11434: Flags [.], ack 23005, win 8011, options [nop,nop,TS val 701941145 ecr 1690001365], length 0
+E..4..@.@.............,.j..k.......K.(.....
+)...d._.
+10:40:58.555194 IP localhost.11434 > localhost.59041: Flags [P.], seq 23005:23114, ack 1, win 6318, options [nop,nop,TS val 1690001451 ecr 701941145], length 109
+E.....@.@...........,.......j..k...........
+d.`+)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.555171Z","response":"def","done":false}
+
+
+10:40:58.555245 IP localhost.59041 > localhost.11434: Flags [.], ack 23114, win 8010, options [nop,nop,TS val 701941231 ecr 1690001451], length 0
+E..4..@.@.............,.j..k.../...J.(.....
+)...d.`+
+10:40:58.640788 IP localhost.11434 > localhost.59041: Flags [P.], seq 23114:23225, ack 1, win 6318, options [nop,nop,TS val 1690001536 ecr 701941231], length 111
+E.....@.@...........,....../j..k...........
+d.`.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.640762Z","response":" test","done":false}
+
+
+10:40:58.640853 IP localhost.59041 > localhost.11434: Flags [.], ack 23225, win 8009, options [nop,nop,TS val 701941316 ecr 1690001536], length 0
+E..4..@.@.............,.j..k.......I.(.....
+)..Dd.`.
+10:40:58.728276 IP localhost.11434 > localhost.59041: Flags [P.], seq 23225:23337, ack 1, win 6318, options [nop,nop,TS val 1690001624 ecr 701941316], length 112
+E.....@.@...........,.......j..k...........
+d.`.)..D6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.728249Z","response":"_agent","done":false}
+
+
+10:40:58.728323 IP localhost.59041 > localhost.11434: Flags [.], ack 23337, win 8008, options [nop,nop,TS val 701941404 ecr 1690001624], length 0
+E..4..@.@.............,.j..k.. ....H.(.....
+)...d.`.
+10:40:58.812868 IP localhost.11434 > localhost.59041: Flags [P.], seq 23337:23445, ack 1, win 6318, options [nop,nop,TS val 1690001709 ecr 701941404], length 108
+E.....@.@...........,..... .j..k...........
+d.a-)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.812842Z","response":"_l","done":false}
+
+
+10:40:58.812913 IP localhost.59041 > localhost.11434: Flags [.], ack 23445, win 8007, options [nop,nop,TS val 701941489 ecr 1690001709], length 0
+E..4..@.@.............,.j..k.. z...G.(.....
+)...d.a-
+10:40:58.898833 IP localhost.11434 > localhost.59041: Flags [P.], seq 23445:23559, ack 1, win 6318, options [nop,nop,TS val 1690001795 ecr 701941489], length 114
+E.....@.@...........,..... zj..k...........
+d.a.)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.898788Z","response":"ifecycle","done":false}
+
+
+10:40:58.898889 IP localhost.59041 > localhost.11434: Flags [.], ack 23559, win 8006, options [nop,nop,TS val 701941575 ecr 1690001795], length 0
+E..4..@.@.............,.j..k.. ....F.(.....
+)..Gd.a.
+10:40:58.985447 IP localhost.11434 > localhost.59041: Flags [P.], seq 23559:23670, ack 1, win 6318, options [nop,nop,TS val 1690001881 ecr 701941575], length 111
+E.....@.@...........,..... .j..k...........
+d.a.)..G69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:58.985419Z","response":"():\n","done":false}
+
+
+10:40:58.985508 IP localhost.59041 > localhost.11434: Flags [.], ack 23670, win 8005, options [nop,nop,TS val 701941661 ecr 1690001881], length 0
+E..4..@.@.............,.j..k..![...E.(.....
+)...d.a.
+10:40:59.073477 IP localhost.11434 > localhost.59041: Flags [P.], seq 23670:23779, ack 1, win 6318, options [nop,nop,TS val 1690001969 ecr 701941661], length 109
+E.....@.@...........,.....![j..k...........
+d.b1)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.073455Z","response":"   ","done":false}
+
+
+10:40:59.073533 IP localhost.59041 > localhost.11434: Flags [.], ack 23779, win 8004, options [nop,nop,TS val 701941749 ecr 1690001969], length 0
+E..4..@.@.............,.j..k..!....D.(.....
+)...d.b1
+10:40:59.159124 IP localhost.11434 > localhost.59041: Flags [P.], seq 23779:23891, ack 1, win 6318, options [nop,nop,TS val 1690002055 ecr 701941749], length 112
+E.....@.@...........,.....!.j..k...........
+d.b.)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.159099Z","response":" agent","done":false}
+
+
+10:40:59.159183 IP localhost.59041 > localhost.11434: Flags [.], ack 23891, win 8003, options [nop,nop,TS val 701941835 ecr 1690002055], length 0
+E..4..@.@.............,.j..k.."8...C.(.....
+)..Kd.b.
+10:40:59.246094 IP localhost.11434 > localhost.59041: Flags [P.], seq 23891:24005, ack 1, win 6318, options [nop,nop,TS val 1690002142 ecr 701941835], length 114
+E.....@.@...........,....."8j..k...........
+d.b.)..K6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.246071Z","response":"_manager","done":false}
+
+
+10:40:59.246171 IP localhost.59041 > localhost.11434: Flags [.], ack 24005, win 8002, options [nop,nop,TS val 701941922 ecr 1690002142], length 0
+E..4..@.@.............,.j..k.."....B.(.....
+)...d.b.
+10:40:59.333437 IP localhost.11434 > localhost.59041: Flags [P.], seq 24005:24118, ack 1, win 6318, options [nop,nop,TS val 1690002229 ecr 701941922], length 113
+E.....@.@...........,.....".j..k...........
+d.c5)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.333412Z","response":".create","done":false}
+
+
+10:40:59.333489 IP localhost.59041 > localhost.11434: Flags [.], ack 24118, win 8001, options [nop,nop,TS val 701942009 ecr 1690002229], length 0
+E..4..@.@.............,.j..k..#....A.(.....
+)...d.c5
+10:40:59.423624 IP localhost.11434 > localhost.59041: Flags [P.], seq 24118:24230, ack 1, win 6318, options [nop,nop,TS val 1690002319 ecr 701942009], length 112
+E.....@.@...........,.....#.j..k...........
+d.c.)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.423595Z","response":"_agent","done":false}
+
+
+10:40:59.423698 IP localhost.59041 > localhost.11434: Flags [.], ack 24230, win 8000, options [nop,nop,TS val 701942099 ecr 1690002319], length 0
+E..4..@.@.............,.j..k..#....@.(.....
+)..Sd.c.
+10:40:59.511012 IP localhost.11434 > localhost.59041: Flags [P.], seq 24230:24339, ack 1, win 6318, options [nop,nop,TS val 1690002407 ecr 701942099], length 109
+E.....@.@...........,.....#.j..k...........
+d.c.)..S67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.510986Z","response":"(\"","done":false}
+
+
+10:40:59.511083 IP localhost.59041 > localhost.11434: Flags [.], ack 24339, win 7999, options [nop,nop,TS val 701942187 ecr 1690002407], length 0
+E..4..@.@.............,.j..k..#....?.(.....
+)...d.c.
+10:40:59.596710 IP localhost.11434 > localhost.59041: Flags [P.], seq 24339:24448, ack 1, win 6318, options [nop,nop,TS val 1690002492 ecr 701942187], length 109
+E.....@.@...........,.....#.j..k...........
+d.d<)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.596687Z","response":"far","done":false}
+
+
+10:40:59.596762 IP localhost.59041 > localhost.11434: Flags [.], ack 24448, win 7998, options [nop,nop,TS val 701942272 ecr 1690002492], length 0
+E..4..@.@.............,.j..k..$e...>.(.....
+)...d.d<
+10:40:59.682342 IP localhost.11434 > localhost.59041: Flags [P.], seq 24448:24557, ack 1, win 6318, options [nop,nop,TS val 1690002578 ecr 701942272], length 109
+E.....@.@...........,.....$ej..k...........
+d.d.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.682317Z","response":"mer","done":false}
+
+
+10:40:59.682393 IP localhost.59041 > localhost.11434: Flags [.], ack 24557, win 7997, options [nop,nop,TS val 701942358 ecr 1690002578], length 0
+E..4..@.@.............,.j..k..$....=.(.....
+)..Vd.d.
+10:40:59.766478 IP localhost.11434 > localhost.59041: Flags [P.], seq 24557:24668, ack 1, win 6318, options [nop,nop,TS val 1690002662 ecr 701942358], length 111
+E.....@.@...........,.....$.j..k...........
+d.d.)..V69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.766458Z","response":"\")\n","done":false}
+
+
+10:40:59.766529 IP localhost.59041 > localhost.11434: Flags [.], ack 24668, win 7996, options [nop,nop,TS val 701942442 ecr 1690002662], length 0
+E..4..@.@.............,.j..k..%A...<.(.....
+)...d.d.
+10:40:59.849178 IP localhost.11434 > localhost.59041: Flags [P.], seq 24668:24777, ack 1, win 6318, options [nop,nop,TS val 1690002745 ecr 701942442], length 109
+E.....@.@...........,.....%Aj..k...........
+d.e9)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.849153Z","response":"   ","done":false}
+
+
+10:40:59.849233 IP localhost.59041 > localhost.11434: Flags [.], ack 24777, win 7995, options [nop,nop,TS val 701942525 ecr 1690002745], length 0
+E..4..@.@.............,.j..k..%....;.(.....
+)...d.e9
+10:40:59.928028 IP localhost.11434 > localhost.59041: Flags [P.], seq 24777:24890, ack 1, win 6318, options [nop,nop,TS val 1690002824 ecr 701942525], length 113
+E.....@.@...........,.....%.j..k...........
+d.e.)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:40:59.928005Z","response":" assert","done":false}
+
+
+10:40:59.928070 IP localhost.59041 > localhost.11434: Flags [.], ack 24890, win 7994, options [nop,nop,TS val 701942604 ecr 1690002824], length 0
+E..4..@.@.............,.j..k..&....:.(.....
+)..Ld.e.
+10:41:00.007240 IP localhost.11434 > localhost.59041: Flags [P.], seq 24890:24999, ack 1, win 6318, options [nop,nop,TS val 1690002903 ecr 701942604], length 109
+E.....@.@...........,.....&.j..k...........
+d.e.)..L67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.00713Z","response":" len","done":false}
+
+
+10:41:00.007295 IP localhost.59041 > localhost.11434: Flags [.], ack 24999, win 7993, options [nop,nop,TS val 701942683 ecr 1690002903], length 0
+E..4..@.@.............,.j..k..&....9.(.....
+)...d.e.
+10:41:00.090053 IP localhost.11434 > localhost.59041: Flags [P.], seq 24999:25111, ack 1, win 6318, options [nop,nop,TS val 1690002986 ecr 701942683], length 112
+E.....@.@...........,.....&.j..k...........
+d.f*)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.090029Z","response":"(agent","done":false}
+
+
+10:41:00.090108 IP localhost.59041 > localhost.11434: Flags [.], ack 25111, win 7992, options [nop,nop,TS val 701942766 ecr 1690002986], length 0
+E..4..@.@.............,.j..k..&....8.(.....
+)...d.f*
+10:41:00.173837 IP localhost.11434 > localhost.59041: Flags [P.], seq 25111:25225, ack 1, win 6318, options [nop,nop,TS val 1690003070 ecr 701942766], length 114
+E.....@.@...........,.....&.j..k...........
+d.f~)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.173808Z","response":"_manager","done":false}
+
+
+10:41:00.173891 IP localhost.59041 > localhost.11434: Flags [.], ack 25225, win 7991, options [nop,nop,TS val 701942850 ecr 1690003070], length 0
+E..4..@.@.............,.j..k..'n...7.(.....
+)..Bd.f~
+10:41:00.254868 IP localhost.11434 > localhost.59041: Flags [P.], seq 25225:25334, ack 1, win 6318, options [nop,nop,TS val 1690003151 ecr 701942850], length 109
+E.....@.@...........,.....'nj..k...........
+d.f.)..B67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.254846Z","response":".ag","done":false}
+
+
+10:41:00.254929 IP localhost.59041 > localhost.11434: Flags [.], ack 25334, win 7990, options [nop,nop,TS val 701942931 ecr 1690003151], length 0
+E..4..@.@.............,.j..k..'....6.(.....
+)...d.f.
+10:41:00.332896 IP localhost.11434 > localhost.59041: Flags [P.], seq 25334:25444, ack 1, win 6318, options [nop,nop,TS val 1690003228 ecr 701942931], length 110
+E.....@.@...........,.....'.j..k...........
+d.g.)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.332874Z","response":"ents","done":false}
+
+
+10:41:00.332938 IP localhost.59041 > localhost.11434: Flags [.], ack 25444, win 7989, options [nop,nop,TS val 701943008 ecr 1690003228], length 0
+E..4..@.@.............,.j..k..(I...5.(.....
+)...d.g.
+10:41:00.411611 IP localhost.11434 > localhost.59041: Flags [P.], seq 25444:25550, ack 1, win 6318, options [nop,nop,TS val 1690003307 ecr 701943008], length 106
+E.....@.@...........,.....(Ij..k...........
+d.gk)...64
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.41159Z","response":")","done":false}
+
+
+10:41:00.411685 IP localhost.59041 > localhost.11434: Flags [.], ack 25550, win 7988, options [nop,nop,TS val 701943087 ecr 1690003307], length 0
+E..4..@.@.............,.j..k..(....4.(.....
+)../d.gk
+10:41:00.490972 IP localhost.11434 > localhost.59041: Flags [P.], seq 25550:25659, ack 1, win 6318, options [nop,nop,TS val 1690003387 ecr 701943087], length 109
+E.....@.@...........,.....(.j..k...........
+d.g.)../67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.490945Z","response":" ==","done":false}
+
+
+10:41:00.491019 IP localhost.59041 > localhost.11434: Flags [.], ack 25659, win 7987, options [nop,nop,TS val 701943167 ecr 1690003387], length 0
+E..4..@.@.............,.j..k..) ...3.(.....
+)...d.g.
+10:41:00.570639 IP localhost.11434 > localhost.59041: Flags [P.], seq 25659:25766, ack 1, win 6318, options [nop,nop,TS val 1690003466 ecr 701943167], length 107
+E.....@.@...........,.....) j..k...........
+d.h
+)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.570615Z","response":" ","done":false}
+
+
+10:41:00.570719 IP localhost.59041 > localhost.11434: Flags [.], ack 25766, win 7986, options [nop,nop,TS val 701943246 ecr 1690003466], length 0
+E..4..@.@.............,.j..k..)....2.(.....
+)...d.h
+
+10:41:00.649209 IP localhost.11434 > localhost.59041: Flags [P.], seq 25766:25873, ack 1, win 6318, options [nop,nop,TS val 1690003545 ecr 701943246], length 107
+E.....@.@...........,.....).j..k...........
+d.hY)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.649185Z","response":"1","done":false}
+
+
+10:41:00.649260 IP localhost.59041 > localhost.11434: Flags [.], ack 25873, win 7985, options [nop,nop,TS val 701943325 ecr 1690003545], length 0
+E..4..@.@.............,.j..k..)....1.(.....
+)...d.hY
+10:41:00.730709 IP localhost.11434 > localhost.59041: Flags [P.], seq 25873:25981, ack 1, win 6318, options [nop,nop,TS val 1690003626 ecr 701943325], length 108
+E.....@.@...........,.....).j..k...........
+d.h.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.730675Z","response":"\n","done":false}
+
+
+10:41:00.730763 IP localhost.59041 > localhost.11434: Flags [.], ack 25981, win 7984, options [nop,nop,TS val 701943406 ecr 1690003626], length 0
+E..4..@.@.............,.j..k..*b...0.(.....
+)..nd.h.
+10:41:00.811970 IP localhost.11434 > localhost.59041: Flags [P.], seq 25981:26090, ack 1, win 6318, options [nop,nop,TS val 1690003708 ecr 701943406], length 109
+E.....@.@...........,.....*bj..k...........
+d.h.)..n67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.811947Z","response":"   ","done":false}
+
+
+10:41:00.812033 IP localhost.59041 > localhost.11434: Flags [.], ack 26090, win 7983, options [nop,nop,TS val 701943488 ecr 1690003708], length 0
+E..4..@.@.............,.j..k..*..../.(.....
+)...d.h.
+10:41:00.892677 IP localhost.11434 > localhost.59041: Flags [P.], seq 26090:26202, ack 1, win 6318, options [nop,nop,TS val 1690003788 ecr 701943488], length 112
+E.....@.@...........,.....*.j..k...........
+d.iL)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.892652Z","response":" agent","done":false}
+
+
+10:41:00.892718 IP localhost.59041 > localhost.11434: Flags [.], ack 26202, win 7982, options [nop,nop,TS val 701943568 ecr 1690003788], length 0
+E..4..@.@.............,.j..k..+?.....(.....
+)...d.iL
+10:41:00.974071 IP localhost.11434 > localhost.59041: Flags [P.], seq 26202:26316, ack 1, win 6318, options [nop,nop,TS val 1690003870 ecr 701943568], length 114
+E.....@.@...........,.....+?j..k...........
+d.i.)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:00.974051Z","response":"_manager","done":false}
+
+
+10:41:00.974135 IP localhost.59041 > localhost.11434: Flags [.], ack 26316, win 7981, options [nop,nop,TS val 701943650 ecr 1690003870], length 0
+E..4..@.@.............,.j..k..+....-.(.....
+)..bd.i.
+10:41:01.056461 IP localhost.11434 > localhost.59041: Flags [P.], seq 26316:26429, ack 1, win 6318, options [nop,nop,TS val 1690003952 ecr 701943650], length 113
+E.....@.@...........,.....+.j..k...........
+d.i.)..b6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.056438Z","response":".delete","done":false}
+
+
+10:41:01.056512 IP localhost.59041 > localhost.11434: Flags [.], ack 26429, win 7980, options [nop,nop,TS val 701943732 ecr 1690003952], length 0
+E..4..@.@.............,.j..k..,"...,.(.....
+)...d.i.
+10:41:01.138692 IP localhost.11434 > localhost.59041: Flags [P.], seq 26429:26541, ack 1, win 6318, options [nop,nop,TS val 1690004034 ecr 701943732], length 112
+E.....@.@...........,.....,"j..k...........
+d.jB)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.138664Z","response":"_agent","done":false}
+
+
+10:41:01.138731 IP localhost.59041 > localhost.11434: Flags [.], ack 26541, win 7979, options [nop,nop,TS val 701943814 ecr 1690004034], length 0
+E..4..@.@.............,.j..k..,....+.(.....
+)...d.jB
+10:41:01.221096 IP localhost.11434 > localhost.59041: Flags [P.], seq 26541:26650, ack 1, win 6318, options [nop,nop,TS val 1690004117 ecr 701943814], length 109
+E.....@.@...........,.....,.j..k...........
+d.j.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.221075Z","response":"(\"","done":false}
+
+
+10:41:01.221135 IP localhost.59041 > localhost.11434: Flags [.], ack 26650, win 7978, options [nop,nop,TS val 701943897 ecr 1690004117], length 0
+E..4..@.@.............,.j..k..,....*.(.....
+)..Yd.j.
+10:41:01.303664 IP localhost.11434 > localhost.59041: Flags [P.], seq 26650:26759, ack 1, win 6318, options [nop,nop,TS val 1690004199 ecr 701943897], length 109
+E.....@.@...........,.....,.j..k...........
+d.j.)..Y67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.303642Z","response":"far","done":false}
+
+
+10:41:01.303716 IP localhost.59041 > localhost.11434: Flags [.], ack 26759, win 7977, options [nop,nop,TS val 701943979 ecr 1690004199], length 0
+E..4..@.@.............,.j..k..-l...).(.....
+)...d.j.
+10:41:01.384383 IP localhost.11434 > localhost.59041: Flags [P.], seq 26759:26867, ack 1, win 6318, options [nop,nop,TS val 1690004280 ecr 701943979], length 108
+E.....@.@...........,.....-lj..k...........
+d.k8)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.38436Z","response":"mer","done":false}
+
+
+10:41:01.384443 IP localhost.59041 > localhost.11434: Flags [.], ack 26867, win 7976, options [nop,nop,TS val 701944060 ecr 1690004280], length 0
+E..4..@.@.............,.j..k..-....(.(.....
+)...d.k8
+10:41:01.463053 IP localhost.11434 > localhost.59041: Flags [P.], seq 26867:26978, ack 1, win 6318, options [nop,nop,TS val 1690004359 ecr 701944060], length 111
+E.....@.@...........,.....-.j..k...........
+d.k.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.463031Z","response":"\")\n","done":false}
+
+
+10:41:01.463112 IP localhost.59041 > localhost.11434: Flags [.], ack 26978, win 7975, options [nop,nop,TS val 701944139 ecr 1690004359], length 0
+E..4..@.@.............,.j..k...G...'.(.....
+)..Kd.k.
+10:41:01.542343 IP localhost.11434 > localhost.59041: Flags [P.], seq 26978:27087, ack 1, win 6318, options [nop,nop,TS val 1690004438 ecr 701944139], length 109
+E.....@.@...........,......Gj..k...........
+d.k.)..K67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.542324Z","response":"   ","done":false}
+
+
+10:41:01.542423 IP localhost.59041 > localhost.11434: Flags [.], ack 27087, win 7974, options [nop,nop,TS val 701944218 ecr 1690004438], length 0
+E..4..@.@.............,.j..k.......&.(.....
+)...d.k.
+10:41:01.622813 IP localhost.11434 > localhost.59041: Flags [P.], seq 27087:27200, ack 1, win 6318, options [nop,nop,TS val 1690004519 ecr 701944218], length 113
+E.....@.@...........,.......j..k...........
+d.l')...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.622791Z","response":" assert","done":false}
+
+
+10:41:01.622862 IP localhost.59041 > localhost.11434: Flags [.], ack 27200, win 7973, options [nop,nop,TS val 701944299 ecr 1690004519], length 0
+E..4..@.@.............,.j..k../%...%.(.....
+)...d.l'
+10:41:01.704337 IP localhost.11434 > localhost.59041: Flags [P.], seq 27200:27310, ack 1, win 6318, options [nop,nop,TS val 1690004600 ecr 701944299], length 110
+E.....@.@...........,...../%j..k...........
+d.lx)...68
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.704315Z","response":" len","done":false}
+
+
+10:41:01.704401 IP localhost.59041 > localhost.11434: Flags [.], ack 27310, win 7972, options [nop,nop,TS val 701944380 ecr 1690004600], length 0
+E..4..@.@.............,.j..k../....$.(.....
+)..<d.lx
+10:41:01.785126 IP localhost.11434 > localhost.59041: Flags [P.], seq 27310:27422, ack 1, win 6318, options [nop,nop,TS val 1690004681 ecr 701944380], length 112
+E.....@.@...........,...../.j..k...........
+d.l.)..<6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.785101Z","response":"(agent","done":false}
+
+
+10:41:01.785180 IP localhost.59041 > localhost.11434: Flags [.], ack 27422, win 7971, options [nop,nop,TS val 701944461 ecr 1690004681], length 0
+E..4..@.@.............,.j..k..0....#.(.....
+)...d.l.
+10:41:01.868261 IP localhost.11434 > localhost.59041: Flags [P.], seq 27422:27536, ack 1, win 6318, options [nop,nop,TS val 1690004764 ecr 701944461], length 114
+E.....@.@...........,.....0.j..k...........
+d.m.)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.868238Z","response":"_manager","done":false}
+
+
+10:41:01.868342 IP localhost.59041 > localhost.11434: Flags [.], ack 27536, win 7970, options [nop,nop,TS val 701944544 ecr 1690004764], length 0
+E..4..@.@.............,.j..k..0u...".(.....
+)...d.m.
+10:41:01.954597 IP localhost.11434 > localhost.59041: Flags [P.], seq 27536:27645, ack 1, win 6318, options [nop,nop,TS val 1690004850 ecr 701944544], length 109
+E.....@.@...........,.....0uj..k...........
+d.mr)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:01.954576Z","response":".ag","done":false}
+
+
+10:41:01.954652 IP localhost.59041 > localhost.11434: Flags [.], ack 27645, win 7969, options [nop,nop,TS val 701944630 ecr 1690004850], length 0
+E..4..@.@.............,.j..k..0....!.(.....
+)..6d.mr
+10:41:02.041240 IP localhost.11434 > localhost.59041: Flags [P.], seq 27645:27755, ack 1, win 6318, options [nop,nop,TS val 1690004937 ecr 701944630], length 110
+E.....@.@...........,.....0.j..k...........
+d.m.)..668
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.041219Z","response":"ents","done":false}
+
+
+10:41:02.041292 IP localhost.59041 > localhost.11434: Flags [.], ack 27755, win 7968, options [nop,nop,TS val 701944717 ecr 1690004937], length 0
+E..4..@.@.............,.j..k..1P... .(.....
+)...d.m.
+10:41:02.122280 IP localhost.11434 > localhost.59041: Flags [P.], seq 27755:27862, ack 1, win 6318, options [nop,nop,TS val 1690005017 ecr 701944717], length 107
+E.....@.@...........,.....1Pj..k...........
+d.n.)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.122258Z","response":")","done":false}
+
+
+10:41:02.122328 IP localhost.59041 > localhost.11434: Flags [.], ack 27862, win 7967, options [nop,nop,TS val 701944797 ecr 1690005017], length 0
+E..4..@.@.............,.j..k..1......(.....
+)...d.n.
+10:41:02.202085 IP localhost.11434 > localhost.59041: Flags [P.], seq 27862:27971, ack 1, win 6318, options [nop,nop,TS val 1690005098 ecr 701944797], length 109
+E.....@.@...........,.....1.j..k...........
+d.nj)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.202063Z","response":" ==","done":false}
+
+
+10:41:02.202152 IP localhost.59041 > localhost.11434: Flags [.], ack 27971, win 7966, options [nop,nop,TS val 701944878 ecr 1690005098], length 0
+E..4..@.@.............,.j..k..2(.....(.....
+)...d.nj
+10:41:02.283072 IP localhost.11434 > localhost.59041: Flags [P.], seq 27971:28077, ack 1, win 6318, options [nop,nop,TS val 1690005179 ecr 701944878], length 106
+E.....@.@...........,.....2(j..k...........
+d.n.)...64
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.28305Z","response":" ","done":false}
+
+
+10:41:02.283142 IP localhost.59041 > localhost.11434: Flags [.], ack 28077, win 7965, options [nop,nop,TS val 701944959 ecr 1690005179], length 0
+E..4..@.@.............,.j..k..2......(.....
+)...d.n.
+10:41:02.363824 IP localhost.11434 > localhost.59041: Flags [P.], seq 28077:28182, ack 1, win 6318, options [nop,nop,TS val 1690005260 ecr 701944959], length 105
+E.....@.@...........,.....2.j..k...........
+d.o.)...63
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.3638Z","response":"0","done":false}
+
+
+10:41:02.363904 IP localhost.59041 > localhost.11434: Flags [.], ack 28182, win 7964, options [nop,nop,TS val 701945040 ecr 1690005260], length 0
+E..4..@.@.............,.j..k..2......(.....
+)...d.o.
+10:41:02.444428 IP localhost.11434 > localhost.59041: Flags [P.], seq 28182:28290, ack 1, win 6318, options [nop,nop,TS val 1690005340 ecr 701945040], length 108
+E.....@.@...........,.....2.j..k...........
+d.o\)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.444406Z","response":"\n","done":false}
+
+
+10:41:02.444486 IP localhost.59041 > localhost.11434: Flags [.], ack 28290, win 7963, options [nop,nop,TS val 701945120 ecr 1690005340], length 0
+E..4..@.@.............,.j..k..3g.....(.....
+).. d.o\
+10:41:02.524659 IP localhost.11434 > localhost.59041: Flags [P.], seq 28290:28398, ack 1, win 6318, options [nop,nop,TS val 1690005420 ecr 701945120], length 108
+E.....@.@...........,.....3gj..k...........
+d.o.).. 66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.524637Z","response":"``","done":false}
+
+
+10:41:02.524713 IP localhost.59041 > localhost.11434: Flags [.], ack 28398, win 7962, options [nop,nop,TS val 701945200 ecr 1690005420], length 0
+E..4..@.@.............,.j..k..3......(.....
+)..pd.o.
+10:41:02.607045 IP localhost.11434 > localhost.59041: Flags [P.], seq 28398:28509, ack 1, win 6318, options [nop,nop,TS val 1690005503 ecr 701945200], length 111
+E.....@.@...........,.....3.j..k...........
+d.o.)..p69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.607022Z","response":"`\n\n","done":false}
+
+
+10:41:02.607101 IP localhost.59041 > localhost.11434: Flags [.], ack 28509, win 7961, options [nop,nop,TS val 701945283 ecr 1690005503], length 0
+E..4..@.@.............,.j..k..4B.....(.....
+)...d.o.
+10:41:02.687746 IP localhost.11434 > localhost.59041: Flags [P.], seq 28509:28618, ack 1, win 6318, options [nop,nop,TS val 1690005583 ecr 701945283], length 109
+E.....@.@...........,.....4Bj..k...........
+d.pO)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.687724Z","response":"###","done":false}
+
+
+10:41:02.687805 IP localhost.59041 > localhost.11434: Flags [.], ack 28618, win 7960, options [nop,nop,TS val 701945363 ecr 1690005583], length 0
+E..4..@.@.............,.j..k..4......(.....
+)...d.pO
+10:41:02.772438 IP localhost.11434 > localhost.59041: Flags [P.], seq 28618:28736, ack 1, win 6318, options [nop,nop,TS val 1690005668 ecr 701945363], length 118
+E.....@.@...........,.....4.j..k...........
+d.p.)...70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.772416Z","response":" Integration","done":false}
+
+
+10:41:02.772487 IP localhost.59041 > localhost.11434: Flags [.], ack 28736, win 7959, options [nop,nop,TS val 701945448 ecr 1690005668], length 0
+E..4..@.@.............,.j..k..5%.....(.....
+)..hd.p.
+10:41:02.855639 IP localhost.11434 > localhost.59041: Flags [P.], seq 28736:28848, ack 1, win 6318, options [nop,nop,TS val 1690005751 ecr 701945448], length 112
+E.....@.@...........,.....5%j..k...........
+d.p.)..h6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.855589Z","response":" Tests","done":false}
+
+
+10:41:02.855691 IP localhost.59041 > localhost.11434: Flags [.], ack 28848, win 7958, options [nop,nop,TS val 701945531 ecr 1690005751], length 0
+E..4..@.@.............,.j..k..5......(.....
+)...d.p.
+10:41:02.943152 IP localhost.11434 > localhost.59041: Flags [P.], seq 28848:28959, ack 1, win 6318, options [nop,nop,TS val 1690005839 ecr 701945531], length 111
+E.....@.@...........,.....5.j..k...........
+d.qO)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:02.943124Z","response":" with","done":false}
+
+
+10:41:02.943262 IP localhost.59041 > localhost.11434: Flags [.], ack 28959, win 7957, options [nop,nop,TS val 701945619 ecr 1690005839], length 0
+E..4..@.@.............,.j..k..6......(.....
+)...d.qO
+10:41:03.033988 IP localhost.11434 > localhost.59041: Flags [P.], seq 28959:29070, ack 1, win 6318, options [nop,nop,TS val 1690005930 ecr 701945619], length 111
+E.....@.@...........,.....6.j..k...........
+d.q.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.033961Z","response":" Game","done":false}
+
+
+10:41:03.034031 IP localhost.59041 > localhost.11434: Flags [.], ack 29070, win 7956, options [nop,nop,TS val 701945710 ecr 1690005930], length 0
+E..4..@.@.............,.j..k..6s.....(.....
+)..nd.q.
+10:41:03.116716 IP localhost.11434 > localhost.59041: Flags [P.], seq 29070:29183, ack 1, win 6318, options [nop,nop,TS val 1690006012 ecr 701945710], length 113
+E.....@.@...........,.....6sj..k...........
+d.q.)..n6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.116694Z","response":" Engine","done":false}
+
+
+10:41:03.116779 IP localhost.59041 > localhost.11434: Flags [.], ack 29183, win 7955, options [nop,nop,TS val 701945792 ecr 1690006012], length 0
+E..4..@.@.............,.j..k..6......(.....
+)...d.q.
+10:41:03.197998 IP localhost.11434 > localhost.59041: Flags [P.], seq 29183:29291, ack 1, win 6318, options [nop,nop,TS val 1690006094 ecr 701945792], length 108
+E.....@.@...........,.....6.j..k...........
+d.rN)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.197973Z","response":"\n","done":false}
+
+
+10:41:03.198048 IP localhost.59041 > localhost.11434: Flags [.], ack 29291, win 7954, options [nop,nop,TS val 701945874 ecr 1690006094], length 0
+E..4..@.@.............,.j..k..7P.....(.....
+)...d.rN
+10:41:03.279760 IP localhost.11434 > localhost.59041: Flags [P.], seq 29291:29398, ack 1, win 6318, options [nop,nop,TS val 1690006175 ecr 701945874], length 107
+E.....@.@...........,.....7Pj..k...........
+d.r.)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.279737Z","response":"-","done":false}
+
+
+10:41:03.279808 IP localhost.59041 > localhost.11434: Flags [.], ack 29398, win 7953, options [nop,nop,TS val 701945955 ecr 1690006175], length 0
+E..4..@.@.............,.j..k..7......(.....
+)..cd.r.
+10:41:03.359879 IP localhost.11434 > localhost.59041: Flags [P.], seq 29398:29509, ack 1, win 6318, options [nop,nop,TS val 1690006256 ecr 701945955], length 111
+E.....@.@...........,.....7.j..k...........
+d.r.)..c69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.359856Z","response":" Test","done":false}
+
+
+10:41:03.359937 IP localhost.59041 > localhost.11434: Flags [.], ack 29509, win 7952, options [nop,nop,TS val 701946036 ecr 1690006256], length 0
+E..4..@.@.............,.j..k..8*.....(.....
+)...d.r.
+10:41:03.440600 IP localhost.11434 > localhost.59041: Flags [P.], seq 29509:29627, ack 1, win 6318, options [nop,nop,TS val 1690006336 ecr 701946036], length 118
+E.....@.@...........,.....8*j..k...........
+d.s@)...70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.440579Z","response":" integration","done":false}
+
+
+10:41:03.440684 IP localhost.59041 > localhost.11434: Flags [.], ack 29627, win 7951, options [nop,nop,TS val 701946116 ecr 1690006336], length 0
+E..4..@.@.............,.j..k..8......(.....
+)...d.s@
+10:41:03.524392 IP localhost.11434 > localhost.59041: Flags [P.], seq 29627:29735, ack 1, win 6318, options [nop,nop,TS val 1690006420 ecr 701946116], length 108
+E.....@.@...........,.....8.j..k...........
+d.s.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.52437Z","response":" of","done":false}
+
+
+10:41:03.524510 IP localhost.59041 > localhost.11434: Flags [.], ack 29735, win 7950, options [nop,nop,TS val 701946200 ecr 1690006420], length 0
+E..4..@.@.............,.j..k..9......(.....
+)..Xd.s.
+10:41:03.549188 IP localhost.11434 > localhost.52928: Flags [.], ack 1, win 6379, length 0
+E..(FE..@...........,.......>P..P.......
+10:41:03.549221 IP localhost.52928 > localhost.11434: Flags [.], ack 1, win 6380, options [nop,nop,TS val 1261825799 ecr 782160779], length 0
+E..4..@.@.............,.>P...........(.....
+K5......
+--
+E.....@.@...........,.....9.j..k...........
+d.s.)..X6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.606237Z","response":" Agent","done":false}
+
+
+10:41:03.606317 IP localhost.59041 > localhost.11434: Flags [.], ack 29847, win 7949, options [nop,nop,TS val 701946282 ecr 1690006502], length 0
+E..4..@.@.............,.j..k..9|.....(.....
+)...d.s.
+10:41:03.692003 IP localhost.11434 > localhost.59041: Flags [P.], seq 29847:29961, ack 1, win 6318, options [nop,nop,TS val 1690006588 ecr 701946282], length 114
+E.....@.@...........,.....9|j..k...........
+d.t<)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.691982Z","response":" Manager","done":false}
+
+
+10:41:03.692052 IP localhost.59041 > localhost.11434: Flags [.], ack 29961, win 7948, options [nop,nop,TS val 701946368 ecr 1690006588], length 0
+E..4..@.@.............,.j..k..9......(.....
+)...d.t<
+10:41:03.775710 IP localhost.11434 > localhost.59041: Flags [P.], seq 29961:30072, ack 1, win 6318, options [nop,nop,TS val 1690006671 ecr 701946368], length 111
+E.....@.@...........,.....9.j..k...........
+d.t.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.775688Z","response":" with","done":false}
+
+
+10:41:03.775759 IP localhost.59041 > localhost.11434: Flags [.], ack 30072, win 7947, options [nop,nop,TS val 701946451 ecr 1690006671], length 0
+E..4..@.@.............,.j..k..:].....(.....
+)..Sd.t.
+10:41:03.859362 IP localhost.11434 > localhost.59041: Flags [P.], seq 30072:30183, ack 1, win 6318, options [nop,nop,TS val 1690006755 ecr 701946451], length 111
+E.....@.@...........,.....:]j..k...........
+d.t.)..S69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.859333Z","response":" game","done":false}
+
+
+10:41:03.859414 IP localhost.59041 > localhost.11434: Flags [.], ack 30183, win 7946, options [nop,nop,TS val 701946535 ecr 1690006755], length 0
+E..4..@.@.............,.j..k..:....
+.(.....
+)...d.t.
+10:41:03.949156 IP localhost.11434 > localhost.59041: Flags [P.], seq 30183:30297, ack 1, win 6318, options [nop,nop,TS val 1690006845 ecr 701946535], length 114
+E.....@.@...........,.....:.j..k...........
+d.u=)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:03.94913Z","response":" entities","done":false}
+
+
+10:41:03.949208 IP localhost.59041 > localhost.11434: Flags [.], ack 30297, win 7945, options [nop,nop,TS val 701946625 ecr 1690006845], length 0
+E..4..@.@.............,.j..k..;>...	.(.....
+)...d.u=
+10:41:04.046495 IP localhost.11434 > localhost.59041: Flags [P.], seq 30297:30406, ack 1, win 6318, options [nop,nop,TS val 1690006942 ecr 701946625], length 109
+E.....@.@...........,.....;>j..k...........
+d.u.)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.046472Z","response":".\n","done":false}
+
+
+10:41:04.046578 IP localhost.59041 > localhost.11434: Flags [.], ack 30406, win 7944, options [nop,nop,TS val 701946722 ecr 1690006942], length 0
+E..4..@.@.............,.j..k..;......(.....
+)..bd.u.
+10:41:04.151988 IP localhost.11434 > localhost.59041: Flags [P.], seq 30406:30513, ack 1, win 6318, options [nop,nop,TS val 1690007048 ecr 701946722], length 107
+E.....@.@...........,.....;.j..k...........
+d.v.)..b65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.151965Z","response":"-","done":false}
+
+
+10:41:04.152075 IP localhost.59041 > localhost.11434: Flags [.], ack 30513, win 7943, options [nop,nop,TS val 701946828 ecr 1690007048], length 0
+E..4..@.@.............,.j..k..<......(.....
+)...d.v.
+10:41:04.255609 IP localhost.11434 > localhost.59041: Flags [P.], seq 30513:30624, ack 1, win 6318, options [nop,nop,TS val 1690007151 ecr 701946828], length 111
+E.....@.@...........,.....<.j..k...........
+d.vo)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.255565Z","response":" Test","done":false}
+
+
+10:41:04.255661 IP localhost.59041 > localhost.11434: Flags [.], ack 30624, win 7942, options [nop,nop,TS val 701946931 ecr 1690007151], length 0
+E..4..@.@.............,.j..k..<......(.....
+)..3d.vo
+10:41:04.356659 IP localhost.11434 > localhost.59041: Flags [P.], seq 30624:30744, ack 1, win 6318, options [nop,nop,TS val 1690007252 ecr 701946931], length 120
+E.....@.@...........,.....<.j..k...........
+d.v.)..372
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.356633Z","response":" communication","done":false}
+
+
+10:41:04.356724 IP localhost.59041 > localhost.11434: Flags [.], ack 30744, win 7941, options [nop,nop,TS val 701947032 ecr 1690007252], length 0
+E..4..@.@.............,.j..k..<......(.....
+)...d.v.
+10:41:04.456947 IP localhost.11434 > localhost.59041: Flags [P.], seq 30744:30858, ack 1, win 6318, options [nop,nop,TS val 1690007353 ecr 701947032], length 114
+E.....@.@...........,.....<.j..k...........
+d.w9)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.456922Z","response":" between","done":false}
+
+
+10:41:04.457003 IP localhost.59041 > localhost.11434: Flags [.], ack 30858, win 7940, options [nop,nop,TS val 701947133 ecr 1690007353], length 0
+E..4..@.@.............,.j..k..=o.....(.....
+)...d.w9
+10:41:04.553965 IP localhost.11434 > localhost.59041: Flags [P.], seq 30858:30970, ack 1, win 6318, options [nop,nop,TS val 1690007450 ecr 701947133], length 112
+E.....@.@...........,.....=oj..k...........
+d.w.)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.55394Z","response":" agents","done":false}
+
+
+10:41:04.554014 IP localhost.59041 > localhost.11434: Flags [.], ack 30970, win 7939, options [nop,nop,TS val 701947230 ecr 1690007450], length 0
+E..4..@.@.............,.j..k..=......(.....
+)..^d.w.
+10:41:04.650305 IP localhost.11434 > localhost.59041: Flags [P.], seq 30970:31079, ack 1, win 6318, options [nop,nop,TS val 1690007545 ecr 701947230], length 109
+E.....@.@...........,.....=.j..k...........
+d.w.)..^67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.650269Z","response":" in","done":false}
+
+
+10:41:04.650350 IP localhost.59041 > localhost.11434: Flags [.], ack 31079, win 7938, options [nop,nop,TS val 701947325 ecr 1690007545], length 0
+E..4..@.@.............,.j..k..>L.....(.....
+)...d.w.
+10:41:04.743897 IP localhost.11434 > localhost.59041: Flags [P.], seq 31079:31187, ack 1, win 6318, options [nop,nop,TS val 1690007640 ecr 701947325], length 108
+E.....@.@...........,.....>Lj..k...........
+d.xX)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.743875Z","response":" a","done":false}
+
+
+10:41:04.743945 IP localhost.59041 > localhost.11434: Flags [.], ack 31187, win 7937, options [nop,nop,TS val 701947420 ecr 1690007640], length 0
+E..4..@.@.............,.j..k..>......(.....
+)...d.xX
+10:41:04.837977 IP localhost.11434 > localhost.59041: Flags [P.], seq 31187:31303, ack 1, win 6318, options [nop,nop,TS val 1690007734 ecr 701947420], length 116
+E.....@.@...........,.....>.j..k...........
+d.x.)...6e
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.837954Z","response":" simulated","done":false}
+
+
+10:41:04.838025 IP localhost.59041 > localhost.11434: Flags [.], ack 31303, win 7936, options [nop,nop,TS val 701947514 ecr 1690007734], length 0
+E..4..@.@.............,.j..k..?,.....(.....
+)..zd.x.
+10:41:04.932141 IP localhost.11434 > localhost.59041: Flags [P.], seq 31303:31421, ack 1, win 6318, options [nop,nop,TS val 1690007828 ecr 701947514], length 118
+E.....@.@...........,.....?,j..k...........
+d.y.)..z70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:04.932113Z","response":" environment","done":false}
+
+
+10:41:04.932216 IP localhost.59041 > localhost.11434: Flags [.], ack 31421, win 7935, options [nop,nop,TS val 701947608 ecr 1690007828], length 0
+E..4..@.@.............,.j..k..?......(.....
+)...d.y.
+10:41:05.023166 IP localhost.11434 > localhost.59041: Flags [P.], seq 31421:31532, ack 1, win 6318, options [nop,nop,TS val 1690007919 ecr 701947608], length 111
+E.....@.@...........,.....?.j..k...........
+d.yo)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.023134Z","response":".\n\n","done":false}
+
+
+10:41:05.023222 IP localhost.59041 > localhost.11434: Flags [.], ack 31532, win 7934, options [nop,nop,TS val 701947699 ecr 1690007919], length 0
+E..4..@.@.............,.j..k..@......(.....
+)..3d.yo
+10:41:05.115277 IP localhost.11434 > localhost.59041: Flags [P.], seq 31532:31640, ack 1, win 6318, options [nop,nop,TS val 1690008011 ecr 701947699], length 108
+E.....@.@...........,.....@.j..k...........
+d.y.)..366
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.11525Z","response":"```","done":false}
+
+
+10:41:05.115329 IP localhost.59041 > localhost.11434: Flags [.], ack 31640, win 7933, options [nop,nop,TS val 701947791 ecr 1690008011], length 0
+E..4..@.@.............,.j..k..@}.....(.....
+)...d.y.
+10:41:05.207614 IP localhost.11434 > localhost.59041: Flags [P.], seq 31640:31752, ack 1, win 6318, options [nop,nop,TS val 1690008103 ecr 701947791], length 112
+E.....@.@...........,.....@}j..k...........
+d.z')...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.207591Z","response":"python","done":false}
+
+
+10:41:05.207650 IP localhost.59041 > localhost.11434: Flags [.], ack 31752, win 7932, options [nop,nop,TS val 701947883 ecr 1690008103], length 0
+E..4..@.@.............,.j..k..@......(.....
+)...d.z'
+10:41:05.298866 IP localhost.11434 > localhost.59041: Flags [P.], seq 31752:31860, ack 1, win 6318, options [nop,nop,TS val 1690008195 ecr 701947883], length 108
+E.....@.@...........,.....@.j..k...........
+d.z.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.298843Z","response":"\n","done":false}
+
+
+10:41:05.298921 IP localhost.59041 > localhost.11434: Flags [.], ack 31860, win 7931, options [nop,nop,TS val 701947975 ecr 1690008195], length 0
+E..4..@.@.............,.j..k..AY.....(.....
+)..Gd.z.
+10:41:05.393070 IP localhost.11434 > localhost.59041: Flags [P.], seq 31860:31969, ack 1, win 6318, options [nop,nop,TS val 1690008289 ecr 701947975], length 109
+E.....@.@...........,.....AYj..k...........
+d.z.)..G67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.393047Z","response":"def","done":false}
+
+
+10:41:05.393149 IP localhost.59041 > localhost.11434: Flags [.], ack 31969, win 7930, options [nop,nop,TS val 701948069 ecr 1690008289], length 0
+E..4..@.@.............,.j..k..A......(.....
+)...d.z.
+10:41:05.485500 IP localhost.11434 > localhost.59041: Flags [P.], seq 31969:32080, ack 1, win 6318, options [nop,nop,TS val 1690008381 ecr 701948069], length 111
+E.....@.@...........,.....A.j..k...........
+d.{=)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.485475Z","response":" test","done":false}
+
+
+10:41:05.485549 IP localhost.59041 > localhost.11434: Flags [.], ack 32080, win 7929, options [nop,nop,TS val 701948161 ecr 1690008381], length 0
+E..4..@.@.............,.j..k..B5.....(.....
+)...d.{=
+10:41:05.578379 IP localhost.11434 > localhost.59041: Flags [P.], seq 32080:32192, ack 1, win 6318, options [nop,nop,TS val 1690008474 ecr 701948161], length 112
+E.....@.@...........,.....B5j..k...........
+d.{.)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.578357Z","response":"_agent","done":false}
+
+
+10:41:05.578433 IP localhost.59041 > localhost.11434: Flags [.], ack 32192, win 7928, options [nop,nop,TS val 701948254 ecr 1690008474], length 0
+E..4..@.@.............,.j..k..B......(.....
+)..^d.{.
+10:41:05.670528 IP localhost.11434 > localhost.59041: Flags [P.], seq 32192:32303, ack 1, win 6318, options [nop,nop,TS val 1690008566 ecr 701948254], length 111
+E.....@.@...........,.....B.j..k...........
+d.{.)..^69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.670508Z","response":"_comm","done":false}
+
+
+10:41:05.670578 IP localhost.59041 > localhost.11434: Flags [.], ack 32303, win 7927, options [nop,nop,TS val 701948346 ecr 1690008566], length 0
+E..4..@.@.............,.j..k..C......(.....
+)...d.{.
+10:41:05.767533 IP localhost.11434 > localhost.59041: Flags [P.], seq 32303:32417, ack 1, win 6318, options [nop,nop,TS val 1690008663 ecr 701948346], length 114
+E.....@.@...........,.....C.j..k...........
+d.|W)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.76751Z","response":"unication","done":false}
+
+
+10:41:05.767611 IP localhost.59041 > localhost.11434: Flags [.], ack 32417, win 7926, options [nop,nop,TS val 701948443 ecr 1690008663], length 0
+E..4..@.@.............,.j..k..C......(.....
+)...d.|W
+10:41:05.863839 IP localhost.11434 > localhost.59041: Flags [P.], seq 32417:32528, ack 1, win 6318, options [nop,nop,TS val 1690008760 ecr 701948443], length 111
+E.....@.@...........,.....C.j..k...........
+d.|.)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.863811Z","response":"():\n","done":false}
+
+
+10:41:05.863892 IP localhost.59041 > localhost.11434: Flags [.], ack 32528, win 7925, options [nop,nop,TS val 701948540 ecr 1690008760], length 0
+E..4..@.@.............,.j..k..C......(.....
+)..|d.|.
+10:41:05.958789 IP localhost.11434 > localhost.59041: Flags [P.], seq 32528:32637, ack 1, win 6318, options [nop,nop,TS val 1690008854 ecr 701948540], length 109
+E.....@.@...........,.....C.j..k...........
+d.}.)..|67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:05.958766Z","response":"   ","done":false}
+
+
+10:41:05.958869 IP localhost.59041 > localhost.11434: Flags [.], ack 32637, win 7924, options [nop,nop,TS val 701948634 ecr 1690008854], length 0
+E..4..@.@.............,.j..k..Db.....(.....
+)...d.}.
+10:41:06.051208 IP localhost.11434 > localhost.59041: Flags [P.], seq 32637:32749, ack 1, win 6318, options [nop,nop,TS val 1690008947 ecr 701948634], length 112
+E.....@.@...........,.....Dbj..k...........
+d.}s)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.051183Z","response":" agent","done":false}
+
+
+10:41:06.051295 IP localhost.59041 > localhost.11434: Flags [.], ack 32749, win 7923, options [nop,nop,TS val 701948727 ecr 1690008947], length 0
+E..4..@.@.............,.j..k..D......(.....
+)..7d.}s
+10:41:06.139946 IP localhost.11434 > localhost.59041: Flags [P.], seq 32749:32856, ack 1, win 6318, options [nop,nop,TS val 1690009036 ecr 701948727], length 107
+E.....@.@...........,.....D.j..k...........
+d.}.)..765
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.139916Z","response":"1","done":false}
+
+
+10:41:06.140023 IP localhost.59041 > localhost.11434: Flags [.], ack 32856, win 7922, options [nop,nop,TS val 701948816 ecr 1690009036], length 0
+E..4..@.@.............,.j..k..E=.....(.....
+)...d.}.
+10:41:06.222636 IP localhost.11434 > localhost.59041: Flags [P.], seq 32856:32964, ack 1, win 6318, options [nop,nop,TS val 1690009118 ecr 701948816], length 108
+E.....@.@...........,.....E=j..k...........
+d.~.)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.222613Z","response":" =","done":false}
+
+
+10:41:06.222717 IP localhost.59041 > localhost.11434: Flags [.], ack 32964, win 7921, options [nop,nop,TS val 701948898 ecr 1690009118], length 0
+E..4..@.@.............,.j..k..E......(.....
+)...d.~.
+10:41:06.305291 IP localhost.11434 > localhost.59041: Flags [P.], seq 32964:33076, ack 1, win 6318, options [nop,nop,TS val 1690009201 ecr 701948898], length 112
+E.....@.@...........,.....E.j..k...........
+d.~q)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.305272Z","response":" agent","done":false}
+
+
+10:41:06.305348 IP localhost.59041 > localhost.11434: Flags [.], ack 33076, win 7920, options [nop,nop,TS val 701948981 ecr 1690009201], length 0
+E..4..@.@.............,.j..k..F......(.....
+)..5d.~q
+10:41:06.390473 IP localhost.11434 > localhost.59041: Flags [P.], seq 33076:33190, ack 1, win 6318, options [nop,nop,TS val 1690009286 ecr 701948981], length 114
+E.....@.@...........,.....F.j..k...........
+d.~.)..56c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.390444Z","response":"_manager","done":false}
+
+
+10:41:06.390527 IP localhost.59041 > localhost.11434: Flags [.], ack 33190, win 7919, options [nop,nop,TS val 701949066 ecr 1690009286], length 0
+E..4..@.@.............,.j..k..F......(.....
+)...d.~.
+10:41:06.476751 IP localhost.11434 > localhost.59041: Flags [P.], seq 33190:33303, ack 1, win 6318, options [nop,nop,TS val 1690009372 ecr 701949066], length 113
+E.....@.@...........,.....F.j..k...........
+d...)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.476729Z","response":".create","done":false}
+
+
+10:41:06.476799 IP localhost.59041 > localhost.11434: Flags [.], ack 33303, win 7918, options [nop,nop,TS val 701949152 ecr 1690009372], length 0
+E..4..@.@.............,.j..k..F......(.....
+)...d...
+10:41:06.563845 IP localhost.11434 > localhost.59041: Flags [P.], seq 33303:33414, ack 1, win 6318, options [nop,nop,TS val 1690009460 ecr 701949152], length 111
+E.....@.@...........,.....F.j..k...........
+d..t)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.56382Z","response":"_agent","done":false}
+
+
+10:41:06.563932 IP localhost.59041 > localhost.11434: Flags [.], ack 33414, win 7917, options [nop,nop,TS val 701949240 ecr 1690009460], length 0
+E..4..@.@.............,.j..k..Gk.....(.....
+)..8d..t
+10:41:06.649503 IP localhost.11434 > localhost.59041: Flags [P.], seq 33414:33523, ack 1, win 6318, options [nop,nop,TS val 1690009545 ecr 701949240], length 109
+E.....@.@...........,.....Gkj..k...........
+d...)..867
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.649471Z","response":"(\"","done":false}
+
+
+10:41:06.649554 IP localhost.59041 > localhost.11434: Flags [.], ack 33523, win 7916, options [nop,nop,TS val 701949325 ecr 1690009545], length 0
+E..4..@.@.............,.j..k..G......(.....
+)...d...
+10:41:06.734734 IP localhost.11434 > localhost.59041: Flags [P.], seq 33523:33632, ack 1, win 6318, options [nop,nop,TS val 1690009630 ecr 701949325], length 109
+E.....@.@...........,.....G.j..k...........
+d...)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.734713Z","response":"far","done":false}
+
+
+10:41:06.734782 IP localhost.59041 > localhost.11434: Flags [.], ack 33632, win 7915, options [nop,nop,TS val 701949410 ecr 1690009630], length 0
+E..4..@.@.............,.j..k..HE.....(.....
+)...d...
+10:41:06.821759 IP localhost.11434 > localhost.59041: Flags [P.], seq 33632:33741, ack 1, win 6318, options [nop,nop,TS val 1690009717 ecr 701949410], length 109
+E.....@.@...........,.....HEj..k...........
+d..u)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.821737Z","response":"mer","done":false}
+
+
+10:41:06.821811 IP localhost.59041 > localhost.11434: Flags [.], ack 33741, win 7914, options [nop,nop,TS val 701949497 ecr 1690009717], length 0
+E..4..@.@.............,.j..k..H......(.....
+)..9d..u
+10:41:06.908751 IP localhost.11434 > localhost.59041: Flags [P.], seq 33741:33852, ack 1, win 6318, options [nop,nop,TS val 1690009804 ecr 701949497], length 111
+E.....@.@...........,.....H.j..k...........
+d...)..969
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.908729Z","response":"\")\n","done":false}
+
+
+10:41:06.908806 IP localhost.59041 > localhost.11434: Flags [.], ack 33852, win 7913, options [nop,nop,TS val 701949584 ecr 1690009804], length 0
+E..4..@.@.............,.j..k..I!.....(.....
+)...d...
+10:41:06.989385 IP localhost.11434 > localhost.59041: Flags [P.], seq 33852:33961, ack 1, win 6318, options [nop,nop,TS val 1690009885 ecr 701949584], length 109
+E.....@.@...........,.....I!j..k...........
+d...)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:06.989364Z","response":"   ","done":false}
+
+
+10:41:06.989451 IP localhost.59041 > localhost.11434: Flags [.], ack 33961, win 7912, options [nop,nop,TS val 701949665 ecr 1690009885], length 0
+E..4..@.@.............,.j..k..I......(.....
+)...d...
+10:41:07.070906 IP localhost.11434 > localhost.59041: Flags [P.], seq 33961:34073, ack 1, win 6318, options [nop,nop,TS val 1690009967 ecr 701949665], length 112
+E.....@.@...........,.....I.j..k...........
+d..o)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.070883Z","response":" agent","done":false}
+
+
+10:41:07.070983 IP localhost.59041 > localhost.11434: Flags [.], ack 34073, win 7911, options [nop,nop,TS val 701949747 ecr 1690009967], length 0
+E..4..@.@.............,.j..k..I......(.....
+)..3d..o
+10:41:07.151165 IP localhost.11434 > localhost.59041: Flags [P.], seq 34073:34180, ack 1, win 6318, options [nop,nop,TS val 1690010047 ecr 701949747], length 107
+E.....@.@...........,.....I.j..k...........
+d...)..365
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.151139Z","response":"2","done":false}
+
+
+10:41:07.151217 IP localhost.59041 > localhost.11434: Flags [.], ack 34180, win 7910, options [nop,nop,TS val 701949827 ecr 1690010047], length 0
+E..4..@.@.............,.j..k..Ji.....(.....
+)...d...
+10:41:07.235365 IP localhost.11434 > localhost.59041: Flags [P.], seq 34180:34288, ack 1, win 6318, options [nop,nop,TS val 1690010131 ecr 701949827], length 108
+E.....@.@...........,.....Jij..k...........
+d...)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.235341Z","response":" =","done":false}
+
+
+10:41:07.235407 IP localhost.59041 > localhost.11434: Flags [.], ack 34288, win 7909, options [nop,nop,TS val 701949911 ecr 1690010131], length 0
+E..4..@.@.............,.j..k..J......(.....
+)...d...
+10:41:07.326500 IP localhost.11434 > localhost.59041: Flags [P.], seq 34288:34400, ack 1, win 6318, options [nop,nop,TS val 1690010222 ecr 701949911], length 112
+E.....@.@...........,.....J.j..k...........
+d..n)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.326473Z","response":" agent","done":false}
+
+
+10:41:07.326544 IP localhost.59041 > localhost.11434: Flags [.], ack 34400, win 7908, options [nop,nop,TS val 701950002 ecr 1690010222], length 0
+E..4..@.@.............,.j..k..KE.....(.....
+)..2d..n
+10:41:07.423827 IP localhost.11434 > localhost.59041: Flags [P.], seq 34400:34514, ack 1, win 6318, options [nop,nop,TS val 1690010320 ecr 701950002], length 114
+E.....@.@...........,.....KEj..k...........
+d...)..26c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.423801Z","response":"_manager","done":false}
+
+
+10:41:07.423887 IP localhost.59041 > localhost.11434: Flags [.], ack 34514, win 7907, options [nop,nop,TS val 701950100 ecr 1690010320], length 0
+E..4..@.@.............,.j..k..K......(.....
+)...d...
+10:41:07.516544 IP localhost.11434 > localhost.59041: Flags [P.], seq 34514:34627, ack 1, win 6318, options [nop,nop,TS val 1690010412 ecr 701950100], length 113
+E.....@.@...........,.....K.j..k...........
+d..,)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.516521Z","response":".create","done":false}
+
+
+10:41:07.516602 IP localhost.59041 > localhost.11434: Flags [.], ack 34627, win 7906, options [nop,nop,TS val 701950192 ecr 1690010412], length 0
+E..4..@.@.............,.j..k..L(.....(.....
+)...d..,
+10:41:07.607390 IP localhost.11434 > localhost.59041: Flags [P.], seq 34627:34739, ack 1, win 6318, options [nop,nop,TS val 1690010503 ecr 701950192], length 112
+E.....@.@...........,.....L(j..k...........
+d...)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.607359Z","response":"_agent","done":false}
+
+
+10:41:07.607438 IP localhost.59041 > localhost.11434: Flags [.], ack 34739, win 7905, options [nop,nop,TS val 701950283 ecr 1690010503], length 0
+E..4..@.@.............,.j..k..L......(.....
+)..Kd...
+10:41:07.697982 IP localhost.11434 > localhost.59041: Flags [P.], seq 34739:34848, ack 1, win 6318, options [nop,nop,TS val 1690010594 ecr 701950283], length 109
+E.....@.@...........,.....L.j..k...........
+d...)..K67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.697958Z","response":"(\"","done":false}
+
+
+10:41:07.698032 IP localhost.59041 > localhost.11434: Flags [.], ack 34848, win 7904, options [nop,nop,TS val 701950374 ecr 1690010594], length 0
+E..4..@.@.............,.j..k..M......(.....
+)...d...
+10:41:07.788138 IP localhost.11434 > localhost.59041: Flags [P.], seq 34848:34961, ack 1, win 6318, options [nop,nop,TS val 1690010684 ecr 701950374], length 113
+E.....@.@...........,.....M.j..k...........
+d..<)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.788114Z","response":"builder","done":false}
+
+
+10:41:07.788220 IP localhost.59041 > localhost.11434: Flags [.], ack 34961, win 7903, options [nop,nop,TS val 701950464 ecr 1690010684], length 0
+E..4..@.@.............,.j..k..Mv.....(.....
+)...d..<
+10:41:07.875917 IP localhost.11434 > localhost.59041: Flags [P.], seq 34961:35072, ack 1, win 6318, options [nop,nop,TS val 1690010772 ecr 701950464], length 111
+E.....@.@...........,.....Mvj..k...........
+d...)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.875894Z","response":"\")\n","done":false}
+
+
+10:41:07.875964 IP localhost.59041 > localhost.11434: Flags [.], ack 35072, win 7902, options [nop,nop,TS val 701950552 ecr 1690010772], length 0
+E..4..@.@.............,.j..k..M......(.....
+)..Xd...
+10:41:07.963934 IP localhost.11434 > localhost.59041: Flags [P.], seq 35072:35181, ack 1, win 6318, options [nop,nop,TS val 1690010860 ecr 701950552], length 109
+E.....@.@...........,.....M.j..k...........
+d...)..X67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:07.963899Z","response":"   ","done":false}
+
+
+10:41:07.964003 IP localhost.59041 > localhost.11434: Flags [.], ack 35181, win 7901, options [nop,nop,TS val 701950640 ecr 1690010860], length 0
+E..4..@.@.............,.j..k..NR.....(.....
+)...d...
+10:41:08.046831 IP localhost.11434 > localhost.59041: Flags [P.], seq 35181:35294, ack 1, win 6318, options [nop,nop,TS val 1690010943 ecr 701950640], length 113
+E.....@.@...........,.....NRj..k...........
+d..?)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.04681Z","response":" message","done":false}
+
+
+10:41:08.046917 IP localhost.59041 > localhost.11434: Flags [.], ack 35294, win 7900, options [nop,nop,TS val 701950723 ecr 1690010943], length 0
+E..4..@.@.............,.j..k..N......(.....
+)...d..?
+10:41:08.126175 IP localhost.11434 > localhost.59041: Flags [P.], seq 35294:35402, ack 1, win 6318, options [nop,nop,TS val 1690011022 ecr 701950723], length 108
+E.....@.@...........,.....N.j..k...........
+d...)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.126153Z","response":" =","done":false}
+
+
+10:41:08.126226 IP localhost.59041 > localhost.11434: Flags [.], ack 35402, win 7899, options [nop,nop,TS val 701950802 ecr 1690011022], length 0
+E..4..@.@.............,.j..k..O/.....(.....
+)..Rd...
+10:41:08.206116 IP localhost.11434 > localhost.59041: Flags [P.], seq 35402:35522, ack 1, win 6318, options [nop,nop,TS val 1690011102 ecr 701950802], length 120
+E.....@.@...........,.....O/j..k...........
+d...)..R72
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.206093Z","response":" communication","done":false}
+
+
+10:41:08.206192 IP localhost.59041 > localhost.11434: Flags [.], ack 35522, win 7898, options [nop,nop,TS val 701950882 ecr 1690011102], length 0
+E..4..@.@.............,.j..k..O......(.....
+)...d...
+10:41:08.286499 IP localhost.11434 > localhost.59041: Flags [P.], seq 35522:35635, ack 1, win 6318, options [nop,nop,TS val 1690011182 ecr 701950882], length 113
+E.....@.@...........,.....O.j..k...........
+d...)...6b
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.286475Z","response":"_module","done":false}
+
+
+10:41:08.286634 IP localhost.59041 > localhost.11434: Flags [.], ack 35635, win 7897, options [nop,nop,TS val 701950962 ecr 1690011182], length 0
+E..4..@.@.............,.j..k..P......(.....
+)...d...
+10:41:08.369025 IP localhost.11434 > localhost.59041: Flags [P.], seq 35635:35746, ack 1, win 6318, options [nop,nop,TS val 1690011265 ecr 701950962], length 111
+E.....@.@...........,.....P.j..k...........
+d...)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.369003Z","response":".send","done":false}
+
+
+10:41:08.369076 IP localhost.59041 > localhost.11434: Flags [.], ack 35746, win 7896, options [nop,nop,TS val 701951045 ecr 1690011265], length 0
+E..4..@.@.............,.j..k..P......(.....
+)..Ed...
+10:41:08.457524 IP localhost.11434 > localhost.59041: Flags [P.], seq 35746:35860, ack 1, win 6318, options [nop,nop,TS val 1690011353 ecr 701951045], length 114
+E.....@.@...........,.....P.j..k...........
+d...)..E6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.457503Z","response":"_message","done":false}
+
+
+10:41:08.457606 IP localhost.59041 > localhost.11434: Flags [.], ack 35860, win 7895, options [nop,nop,TS val 701951133 ecr 1690011353], length 0
+E..4..@.@.............,.j..k..P......(.....
+)...d...
+10:41:08.553058 IP localhost.11434 > localhost.59041: Flags [P.], seq 35860:35972, ack 1, win 6318, options [nop,nop,TS val 1690011449 ecr 701951133], length 112
+E.....@.@...........,.....P.j..k...........
+d..9)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.553038Z","response":"(agent","done":false}
+
+
+10:41:08.553137 IP localhost.59041 > localhost.11434: Flags [.], ack 35972, win 7894, options [nop,nop,TS val 701951229 ecr 1690011449], length 0
+E..4..@.@.............,.j..k..Qi.....(.....
+)...d..9
+10:41:08.650905 IP localhost.11434 > localhost.59041: Flags [P.], seq 35972:36079, ack 1, win 6318, options [nop,nop,TS val 1690011547 ecr 701951229], length 107
+E.....@.@...........,.....Qij..k...........
+d...)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.650884Z","response":"1","done":false}
+
+
+10:41:08.651007 IP localhost.59041 > localhost.11434: Flags [.], ack 36079, win 7893, options [nop,nop,TS val 701951327 ecr 1690011547], length 0
+E..4..@.@.............,.j..k..Q......(.....
+).._d...
+10:41:08.747843 IP localhost.11434 > localhost.59041: Flags [P.], seq 36079:36188, ack 1, win 6318, options [nop,nop,TS val 1690011644 ecr 701951327], length 109
+E.....@.@...........,.....Q.j..k...........
+d...).._67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.747818Z","response":".id","done":false}
+
+
+10:41:08.748045 IP localhost.59041 > localhost.11434: Flags [.], ack 36188, win 7892, options [nop,nop,TS val 701951424 ecr 1690011644], length 0
+E..4..@.@.............,.j..k..RA.....(.....
+)...d...
+10:41:08.841782 IP localhost.11434 > localhost.59041: Flags [P.], seq 36188:36295, ack 1, win 6318, options [nop,nop,TS val 1690011737 ecr 701951424], length 107
+E.....@.@...........,.....RAj..k...........
+d..Y)...65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.841758Z","response":",","done":false}
+
+
+10:41:08.841835 IP localhost.59041 > localhost.11434: Flags [.], ack 36295, win 7891, options [nop,nop,TS val 701951517 ecr 1690011737], length 0
+E..4..@.@.............,.j..k..R......(.....
+)...d..Y
+10:41:08.937757 IP localhost.11434 > localhost.59041: Flags [P.], seq 36295:36407, ack 1, win 6318, options [nop,nop,TS val 1690011833 ecr 701951517], length 112
+E.....@.@...........,.....R.j..k...........
+d...)...6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:08.937736Z","response":" agent","done":false}
+
+
+10:41:08.937843 IP localhost.59041 > localhost.11434: Flags [.], ack 36407, win 7890, options [nop,nop,TS val 701951613 ecr 1690011833], length 0
+E..4..@.@.............,.j..k..S......(.....
+)..}d...
+10:41:09.033922 IP localhost.11434 > localhost.59041: Flags [P.], seq 36407:36514, ack 1, win 6318, options [nop,nop,TS val 1690011929 ecr 701951613], length 107
+E.....@.@...........,.....S.j..k...........
+d...)..}65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.033891Z","response":"2","done":false}
+
+
+10:41:09.033971 IP localhost.59041 > localhost.11434: Flags [.], ack 36514, win 7889, options [nop,nop,TS val 701951709 ecr 1690011929], length 0
+E..4..@.@.............,.j..k..S......(.....
+)...d...
+10:41:09.129347 IP localhost.11434 > localhost.59041: Flags [P.], seq 36514:36623, ack 1, win 6318, options [nop,nop,TS val 1690012025 ecr 701951709], length 109
+E.....@.@...........,.....S.j..k...........
+d..y)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.129324Z","response":".id","done":false}
+
+
+10:41:09.129421 IP localhost.59041 > localhost.11434: Flags [.], ack 36623, win 7888, options [nop,nop,TS val 701951805 ecr 1690012025], length 0
+E..4..@.@.............,.j..k..S......(.....
+)..=d..y
+10:41:09.223987 IP localhost.11434 > localhost.59041: Flags [P.], seq 36623:36730, ack 1, win 6318, options [nop,nop,TS val 1690012119 ecr 701951805], length 107
+E.....@.@...........,.....S.j..k...........
+d...)..=65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.223963Z","response":",","done":false}
+
+
+10:41:09.224052 IP localhost.59041 > localhost.11434: Flags [.], ack 36730, win 7887, options [nop,nop,TS val 701951899 ecr 1690012119], length 0
+E..4..@.@.............,.j..k..T_.....(.....
+)...d...
+10:41:09.321101 IP localhost.11434 > localhost.59041: Flags [P.], seq 36730:36839, ack 1, win 6318, options [nop,nop,TS val 1690012217 ecr 701951899], length 109
+E.....@.@...........,.....T_j..k...........
+d..9)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.321079Z","response":" \"","done":false}
+
+
+10:41:09.321188 IP localhost.59041 > localhost.11434: Flags [.], ack 36839, win 7886, options [nop,nop,TS val 701951997 ecr 1690012217], length 0
+E..4..@.@.............,.j..k..T......(.....
+)...d..9
+10:41:09.418791 IP localhost.11434 > localhost.59041: Flags [P.], seq 36839:36950, ack 1, win 6318, options [nop,nop,TS val 1690012314 ecr 701951997], length 111
+E.....@.@...........,.....T.j..k...........
+d...)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.418767Z","response":"hello","done":false}
+
+
+10:41:09.418841 IP localhost.59041 > localhost.11434: Flags [.], ack 36950, win 7885, options [nop,nop,TS val 701952094 ecr 1690012314], length 0
+E..4..@.@.............,.j..k..U;.....(.....
+)..^d...
+10:41:09.517842 IP localhost.11434 > localhost.59041: Flags [P.], seq 36950:37061, ack 1, win 6318, options [nop,nop,TS val 1690012413 ecr 701952094], length 111
+E.....@.@...........,.....U;j..k...........
+d...)..^69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.517815Z","response":"\")\n","done":false}
+
+
+10:41:09.518093 IP localhost.59041 > localhost.11434: Flags [.], ack 37061, win 7884, options [nop,nop,TS val 701952193 ecr 1690012413], length 0
+E..4..@.@.............,.j..k..U......(.....
+)...d...
+10:41:09.615982 IP localhost.11434 > localhost.59041: Flags [P.], seq 37061:37170, ack 1, win 6318, options [nop,nop,TS val 1690012512 ecr 701952193], length 109
+E.....@.@...........,.....U.j..k...........
+d..`)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.615958Z","response":"   ","done":false}
+
+
+10:41:09.616035 IP localhost.59041 > localhost.11434: Flags [.], ack 37170, win 7883, options [nop,nop,TS val 701952292 ecr 1690012512], length 0
+E..4..@.@.............,.j..k..V......(.....
+)..$d..`
+10:41:09.712428 IP localhost.11434 > localhost.59041: Flags [P.], seq 37170:37282, ack 1, win 6318, options [nop,nop,TS val 1690012608 ecr 701952292], length 112
+E.....@.@...........,.....V.j..k...........
+d...)..$6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.71238Z","response":" assert","done":false}
+
+
+10:41:09.712504 IP localhost.59041 > localhost.11434: Flags [.], ack 37282, win 7882, options [nop,nop,TS val 701952388 ecr 1690012608], length 0
+E..4..@.@.............,.j..k..V......(.....
+)...d...
+10:41:09.809279 IP localhost.11434 > localhost.59041: Flags [P.], seq 37282:37396, ack 1, win 6318, options [nop,nop,TS val 1690012705 ecr 701952388], length 114
+E.....@.@...........,.....V.j..k...........
+d..!)...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.809255Z","response":" message","done":false}
+
+
+10:41:09.809336 IP localhost.59041 > localhost.11434: Flags [.], ack 37396, win 7881, options [nop,nop,TS val 701952485 ecr 1690012705], length 0
+E..4..@.@.............,.j..k..V......(.....
+)...d..!
+10:41:09.903537 IP localhost.11434 > localhost.59041: Flags [P.], seq 37396:37505, ack 1, win 6318, options [nop,nop,TS val 1690012799 ecr 701952485], length 109
+E.....@.@...........,.....V.j..k...........
+d...)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.903518Z","response":".re","done":false}
+
+
+10:41:09.903599 IP localhost.59041 > localhost.11434: Flags [.], ack 37505, win 7880, options [nop,nop,TS val 701952579 ecr 1690012799], length 0
+E..4..@.@.............,.j..k..Wf.....(.....
+)..Cd...
+10:41:09.997320 IP localhost.11434 > localhost.59041: Flags [P.], seq 37505:37617, ack 1, win 6318, options [nop,nop,TS val 1690012893 ecr 701952579], length 112
+E.....@.@...........,.....Wfj..k...........
+d...)..C6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:09.997297Z","response":"ceived","done":false}
+
+
+10:41:09.997377 IP localhost.59041 > localhost.11434: Flags [.], ack 37617, win 7879, options [nop,nop,TS val 701952673 ecr 1690012893], length 0
+E..4..@.@.............,.j..k..W......(.....
+)...d...
+10:41:10.083226 IP localhost.11434 > localhost.59041: Flags [P.], seq 37617:37725, ack 1, win 6318, options [nop,nop,TS val 1690012979 ecr 701952673], length 108
+E.....@.@...........,.....W.j..k...........
+d..3)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.083204Z","response":"\n","done":false}
+
+
+10:41:10.083278 IP localhost.59041 > localhost.11434: Flags [.], ack 37725, win 7878, options [nop,nop,TS val 701952759 ecr 1690012979], length 0
+E..4..@.@.............,.j..k..XB.....(.....
+)...d..3
+10:41:10.164217 IP localhost.11434 > localhost.59041: Flags [P.], seq 37725:37833, ack 1, win 6318, options [nop,nop,TS val 1690013060 ecr 701952759], length 108
+E.....@.@...........,.....XBj..k...........
+d...)...66
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.164194Z","response":"``","done":false}
+
+
+10:41:10.164303 IP localhost.59041 > localhost.11434: Flags [.], ack 37833, win 7877, options [nop,nop,TS val 701952840 ecr 1690013060], length 0
+E..4..@.@.............,.j..k..X......(.....
+)..Hd...
+10:41:10.244238 IP localhost.11434 > localhost.59041: Flags [P.], seq 37833:37944, ack 1, win 6318, options [nop,nop,TS val 1690013140 ecr 701952840], length 111
+E.....@.@...........,.....X.j..k...........
+d...)..H69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.244205Z","response":"`\n\n","done":false}
+
+
+10:41:10.244314 IP localhost.59041 > localhost.11434: Flags [.], ack 37944, win 7876, options [nop,nop,TS val 701952920 ecr 1690013140], length 0
+E..4..@.@.............,.j..k..Y......(.....
+)...d...
+10:41:10.324070 IP localhost.11434 > localhost.59041: Flags [P.], seq 37944:38053, ack 1, win 6318, options [nop,nop,TS val 1690013220 ecr 701952920], length 109
+E.....@.@...........,.....Y.j..k...........
+d..$)...67
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.324047Z","response":"###","done":false}
+
+
+10:41:10.324137 IP localhost.59041 > localhost.11434: Flags [.], ack 38053, win 7875, options [nop,nop,TS val 701953000 ecr 1690013220], length 0
+E..4..@.@.............,.j..k..Y......(.....
+)...d..$
+10:41:10.408780 IP localhost.11434 > localhost.59041: Flags [P.], seq 38053:38171, ack 1, win 6318, options [nop,nop,TS val 1690013304 ecr 701953000], length 118
+E.....@.@...........,.....Y.j..k...........
+d..x)...70
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.408756Z","response":" Performance","done":false}
+
+
+10:41:10.408833 IP localhost.59041 > localhost.11434: Flags [.], ack 38171, win 7874, options [nop,nop,TS val 701953084 ecr 1690013304], length 0
+E..4..@.@.............,.j..k..Z......(.....
+)..<d..x
+10:41:10.499785 IP localhost.11434 > localhost.59041: Flags [P.], seq 38171:38283, ack 1, win 6318, options [nop,nop,TS val 1690013395 ecr 701953084], length 112
+E.....@.@...........,.....Z.j..k...........
+d...)..<6a
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.499759Z","response":" Bench","done":false}
+
+
+10:41:10.499856 IP localhost.59041 > localhost.11434: Flags [.], ack 38283, win 7873, options [nop,nop,TS val 701953175 ecr 1690013395], length 0
+E..4..@.@.............,.j..k..Zp.....(.....
+)...d...
+10:41:10.590561 IP localhost.11434 > localhost.59041: Flags [P.], seq 38283:38394, ack 1, win 6318, options [nop,nop,TS val 1690013486 ecr 701953175], length 111
+E.....@.@...........,.....Zpj..k...........
+d...)...69
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.590529Z","response":"marks","done":false}
+
+
+10:41:10.590653 IP localhost.59041 > localhost.11434: Flags [.], ack 38394, win 7872, options [nop,nop,TS val 701953266 ecr 1690013486], length 0
+E..4..@.@.............,.j..k..Z......(.....
+)...d...
+10:41:10.673926 IP localhost.11434 > localhost.59041: Flags [P.], seq 38394:38500, ack 1, win 6318, options [nop,nop,TS val 1690013570 ecr 701953266], length 106
+E.....@.@...........,.....Z.j..k...........
+d...)...64
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.6739Z","response":"\n","done":false}
+
+
+10:41:10.674006 IP localhost.59041 > localhost.11434: Flags [.], ack 38500, win 7871, options [nop,nop,TS val 701953350 ecr 1690013570], length 0
+E..4..@.@.............,.j..k..[I.....(.....
+)..Fd...
+10:41:10.757885 IP localhost.11434 > localhost.59041: Flags [P.], seq 38500:38607, ack 1, win 6318, options [nop,nop,TS val 1690013654 ecr 701953350], length 107
+E.....@.@...........,.....[Ij..k...........
+d...)..F65
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.757864Z","response":"-","done":false}
+
+
+10:41:10.757964 IP localhost.59041 > localhost.11434: Flags [.], ack 38607, win 7870, options [nop,nop,TS val 701953434 ecr 1690013654], length 0
+E..4..@.@.............,.j..k..[......(.....
+)...d...
+10:41:10.841075 IP localhost.11434 > localhost.59041: Flags [P.], seq 38607:38721, ack 1, win 6318, options [nop,nop,TS val 1690013736 ecr 701953434], length 114
+E.....@.@...........,.....[.j..k...........
+d..()...6c
+{"model":"qwen2.5-coder:32b","created_at":"2025-08-05T14:41:10.841052Z","response":" Measure","done":false}
+
+
+10:41:10.841152 IP localhost.59041 > localhost.11434: Flags [.], ack 38721, win 7869, options [nop,nop,TS val 701953516 ecr 1690013736], length 0
+E..4..@.@.............,.j..k..\&.....(.....
+)...d..(
+
