@@ -1,0 +1,75 @@
+15:51:15.445362 IP localhost.58685 > localhost.11434: Flags [P.], seq 1:154, ack 1, win 6380, options [nop,nop,TS val 1626911362 ecr 3533364103], length 153
+E.....@.@............=,.S.R................
+`.......HEAD / HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Accept: application/json
+Content-Type: application/json
+
+
+15:51:15.445375 IP localhost.11434 > localhost.58685: Flags [.], ack 154, win 6378, options [nop,nop,TS val 3533364103 ecr 1626911362], length 0
+E..4..@.@...........,..=....S.S......(.....
+....`...
+15:51:15.445592 IP localhost.11434 > localhost.58685: Flags [P.], seq 1:118, ack 154, win 6378, options [nop,nop,TS val 3533364103 ecr 1626911362], length 117
+E.....@.@...........,..=....S.S............
+....`...HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 05 Aug 2025 19:51:15 GMT
+Content-Length: 17
+
+
+15:51:15.445609 IP localhost.58685 > localhost.11434: Flags [.], ack 118, win 6379, options [nop,nop,TS val 1626911362 ecr 3533364103], length 0
+E..4..@.@............=,.S.S....".....(.....
+`.......
+15:51:15.445711 IP localhost.58685 > localhost.11434: Flags [P.], seq 154:448, ack 118, win 6379, options [nop,nop,TS val 1626911362 ecr 3533364103], length 294
+E..Z..@.@............=,.S.S....".....N.....
+`.......POST /api/show HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Content-Length: 90
+Accept: application/json
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"model":"","system":"","template":"","verbose":false,"options":null,"name":"gpt-oss:20b"}
+15:51:15.445728 IP localhost.11434 > localhost.58685: Flags [.], ack 448, win 6374, options [nop,nop,TS val 3533364103 ecr 1626911362], length 0
+E..4..@.@...........,..=..."S.T......(.....
+....`...
+15:51:15.452214 IP localhost.11434 > localhost.58685: Flags [P.], seq 118:289, ack 448, win 6374, options [nop,nop,TS val 3533364110 ecr 1626911362], length 171
+E.....@.@...........,..=..."S.T............
+....`...HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+Date: Tue, 05 Aug 2025 19:51:15 GMT
+Content-Length: 41
+
+{"error":"model 'gpt-oss:20b' not found"}
+15:51:15.452238 IP localhost.58685 > localhost.11434: Flags [.], ack 289, win 6377, options [nop,nop,TS val 1626911369 ecr 3533364110], length 0
+E..4..@.@............=,.S.T..........(.....
+`.......
+15:51:15.452619 IP localhost.58685 > localhost.11434: Flags [P.], seq 448:717, ack 289, win 6377, options [nop,nop,TS val 1626911369 ecr 3533364110], length 269
+E..A..@.@............=,.S.T..........5.....
+`.......POST /api/pull HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Content-Length: 61
+Accept: application/x-ndjson
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"model":"","username":"","password":"","name":"gpt-oss:20b"}
+15:51:15.452635 IP localhost.11434 > localhost.58685: Flags [.], ack 717, win 6370, options [nop,nop,TS val 3533364110 ecr 1626911369], length 0
+E..4..@.@...........,..=....S.U......(.....
+....`...
+15:51:15.456052 IP localhost.11434 > localhost.58685: Flags [P.], seq 289:445, ack 717, win 6370, options [nop,nop,TS val 3533364113 ecr 1626911369], length 156
+E.....@.@...........,..=....S.U............
+....`...HTTP/1.1 200 OK
+Content-Type: application/x-ndjson
+Date: Tue, 05 Aug 2025 19:51:15 GMT
+Transfer-Encoding: chunked
+
+1e
+{"status":"pulling manifest"}
+
+
+15:51:15.456087 IP localhost.58685 > localhost.11434: Flags [.], ack 445, win 6375, options [nop,nop,TS val 1626911372 ecr 3533364113], length 0
+E..4..@.@............=,.S.U....i.....(.....

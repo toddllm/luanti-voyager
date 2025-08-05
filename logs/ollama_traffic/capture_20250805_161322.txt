@@ -1,0 +1,50 @@
+16:13:40.834142 IP localhost.52044 > localhost.11434: Flags [P.], seq 1:154, ack 1, win 6380, options [nop,nop,TS val 1564514502 ecr 3656913172], length 153
+E.....@.@............L,........>...........
+]@......HEAD / HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Accept: application/json
+Content-Type: application/json
+
+
+16:13:40.834161 IP localhost.11434 > localhost.52044: Flags [.], ack 154, win 6378, options [nop,nop,TS val 3656913172 ecr 1564514502], length 0
+E..4..@.@...........,..L...>.........(.....
+....]@..
+16:13:40.834498 IP localhost.11434 > localhost.52044: Flags [P.], seq 1:118, ack 154, win 6378, options [nop,nop,TS val 3656913172 ecr 1564514502], length 117
+E.....@.@...........,..L...>...............
+....]@..HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 05 Aug 2025 20:13:40 GMT
+Content-Length: 17
+
+
+16:13:40.834526 IP localhost.52044 > localhost.11434: Flags [.], ack 118, win 6379, options [nop,nop,TS val 1564514502 ecr 3656913172], length 0
+E..4..@.@............L,..............(.....
+]@......
+16:13:40.834645 IP localhost.52044 > localhost.11434: Flags [P.], seq 154:423, ack 118, win 6379, options [nop,nop,TS val 1564514502 ecr 3656913172], length 269
+E..A..@.@............L,..............5.....
+]@......POST /api/pull HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Content-Length: 61
+Accept: application/x-ndjson
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"model":"","username":"","password":"","name":"gpt-oss:20b"}
+16:13:40.834661 IP localhost.11434 > localhost.52044: Flags [.], ack 423, win 6374, options [nop,nop,TS val 3656913172 ecr 1564514502], length 0
+E..4..@.@...........,..L.......;.....(.....
+....]@..
+16:13:40.838760 IP localhost.11434 > localhost.52044: Flags [P.], seq 118:274, ack 423, win 6374, options [nop,nop,TS val 3656913177 ecr 1564514502], length 156
+E.....@.@...........,..L.......;...........
+....]@..HTTP/1.1 200 OK
+Content-Type: application/x-ndjson
+Date: Tue, 05 Aug 2025 20:13:40 GMT
+Transfer-Encoding: chunked
+
+1e
+{"status":"pulling manifest"}
+
+
+16:13:40.838795 IP localhost.52044 > localhost.11434: Flags [.], ack 274, win 6377, options [nop,nop,TS val 1564514507 ecr 3656913177], length 0
+E..4..@.@............L,....;...O.....(.....

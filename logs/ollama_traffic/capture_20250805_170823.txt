@@ -1,0 +1,24 @@
+17:08:40.779217 IP localhost.54775 > localhost.11434: Flags [P.], seq 1:154, ack 1, win 6380, options [nop,nop,TS val 1773818895 ecr 2949847857], length 153
+E.....@.@.............,.1.V................
+i.T....1HEAD / HTTP/1.1
+Host: 127.0.0.1:11434
+User-Agent: ollama/0.5.0 (arm64 darwin) Go/go1.23.4
+Accept: application/json
+Content-Type: application/json
+
+
+17:08:40.779253 IP localhost.11434 > localhost.54775: Flags [.], ack 154, win 6378, options [nop,nop,TS val 2949847857 ecr 1773818895], length 0
+E..4..@.@...........,.......1.V......(.....
+...1i.T.
+17:08:40.779692 IP localhost.11434 > localhost.54775: Flags [P.], seq 1:118, ack 154, win 6378, options [nop,nop,TS val 2949847857 ecr 1773818895], length 117
+E.....@.@...........,.......1.V............
+...1i.T.HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 05 Aug 2025 21:08:40 GMT
+Content-Length: 17
+
+
+17:08:40.779722 IP localhost.54775 > localhost.11434: Flags [.], ack 118, win 6379, options [nop,nop,TS val 1773818896 ecr 2949847857], length 0
+E..4..@.@.............,.1.V....>.....(.....
+i.T....1
+

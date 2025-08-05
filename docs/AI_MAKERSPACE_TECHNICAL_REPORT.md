@@ -123,6 +123,12 @@ luanti-voyager/
    - Performance: Faster than qwen2.5
    - Purpose: Extract insights from transcripts
 
+4. **gpt-oss:20b** (Ollama) - Added in follow-up experiment
+   - Used for: Alternative synthesis comparison
+   - Performance: 20-40 seconds per synthesis (10-15x faster than qwen2.5)
+   - Chosen for: Speed and game-dev focused output
+   - Trade-off: Less comprehensive but more practical
+
 ### Supporting Tools
 
 - **yt-dlp**: YouTube audio extraction
@@ -279,10 +285,12 @@ else:
 
 ### Generated Artifacts
 
-1. **Synthesis Documents** (15 total)
-   - 10 original synthesis files
-   - 5 enhanced versions with real notebooks
-   - Average size: 8-11KB per file
+1. **Synthesis Documents** (25 total across two experiments)
+   - 10 original synthesis files (qwen2.5)
+   - 5 enhanced versions with real notebooks (qwen2.5)
+   - 10 GPT-OSS synthesis files (comparison experiment)
+   - Qwen2.5 average size: 8-11KB per file
+   - GPT-OSS average size: 3-4KB per file
 
 2. **Implementation Guides**
    - Comprehensive guides for each AI topic
@@ -417,6 +425,24 @@ export RESOURCE_YOUTUBE="https://www.youtube.com/watch?v=..."
    - Document "hacky" solutions - they're valuable
    - Create reproduction guides immediately
    - Track all decisions and rationale
+
+### Model Comparison Insights (Added Post-Analysis)
+
+A follow-up experiment compared **gpt-oss:20b** with **qwen2.5-coder:32b**:
+
+1. **Speed vs Comprehensiveness Trade-off**
+   - GPT-OSS: 10-15x faster (20-40s vs 5-10min)
+   - Qwen2.5: 2-3x more content (8-11KB vs 3-4KB)
+   - Both achieved 100% synthesis success
+
+2. **Output Characteristics**
+   - **Qwen2.5**: Enterprise-focused, Python/ChromaDB, production-ready
+   - **GPT-OSS**: Game-dev focused, C#/Unity-style, prototype-ready
+
+3. **Use Case Alignment**
+   - GPT-OSS better suited for rapid game prototyping
+   - Qwen2.5 better for scalable infrastructure
+   - See [GPT_OSS_COMPARISON_REPORT.md](GPT_OSS_COMPARISON_REPORT.md) for details
 
 ## Future Work
 
