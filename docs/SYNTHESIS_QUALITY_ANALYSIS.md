@@ -168,10 +168,10 @@ def _add_memory(self, agent_id: str, text: str, metadata: dict, ttl_seconds: int
 
 ## Conclusion
 
-GPT-OSS produces significantly more comprehensive output with:
+As expected from a newer model, GPT-OSS delivers substantial improvements over qwen2.5:
 - 2.8x more content
 - 7.2x more code
 - Complete production implementations
 - Extensive operational guidance
 
-The quality difference is substantial, with GPT-OSS providing immediately deployable solutions versus Qwen2.5's conceptual frameworks.
+This first look quantifies the generational improvement, with GPT-OSS providing immediately deployable solutions versus Qwen2.5's conceptual frameworks. The newer model's advantages are clear and measurable.
