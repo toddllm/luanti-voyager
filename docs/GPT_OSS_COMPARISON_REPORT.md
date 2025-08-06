@@ -72,6 +72,23 @@ This report compares synthesis quality between GPT-OSS:20b and Qwen2.5-Coder:32b
 - **Testing platform**: MacBook with Apple Silicon
 - **Critical setting**: No timeout constraints for GPT-OSS
 
+## Quality Analysis Results
+
+A detailed analysis of synthesis outputs reveals significant quality differences:
+
+### For Vector Memory (with transcript):
+- **Content Volume**: GPT-OSS produced 2.8x more content (27,779 vs 9,795 chars)
+- **Code Quantity**: GPT-OSS included 7.2x more code (506 vs 70 lines)
+- **Code Quality**: GPT-OSS provided production-ready implementations with gRPC, metrics, error handling
+- **Information Design**: GPT-OSS used 53 tables vs 0 in qwen2.5
+
+### For All Topics:
+- **Average content**: GPT-OSS ~21,000 chars vs qwen2.5 ~8,700 chars (2.4x)
+- **Code blocks**: GPT-OSS averaged 9 vs qwen2.5's 1.5 (6x)
+- **Completeness**: GPT-OSS provided deployable solutions vs conceptual frameworks
+
+See [SYNTHESIS_QUALITY_ANALYSIS.md](SYNTHESIS_QUALITY_ANALYSIS.md) for detailed comparison.
+
 ## Summary
 
-While GPT-OSS shows promise and handles large prompts when given sufficient time, the lack of transcript data for 9/10 topics prevents definitive performance comparisons. The key takeaway is that artificial timeout constraints can create false impressions of model limitations.
+While only 1 topic had transcript data for timing comparison, the quality analysis shows GPT-OSS produces significantly more comprehensive and production-ready output. The key operational takeaway is that artificial timeout constraints can create false impressions of model limitations - GPT-OSS requires no timeouts to function properly.
