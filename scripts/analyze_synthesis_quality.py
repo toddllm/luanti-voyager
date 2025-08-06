@@ -4,6 +4,7 @@ Analyze and compare synthesis quality between qwen2.5 and GPT-OSS outputs
 """
 
 import re
+import argparse
 from pathlib import Path
 
 def analyze_markdown(file_path):
@@ -46,10 +47,24 @@ def analyze_markdown(file_path):
     
     return analysis
 
-def compare_topics():
+def compare_topics(qwen_dir=None, gpt_dir=None):
     """Compare all topics between qwen2.5 and GPT-OSS"""
-    qwen_dir = Path("docs/ai-makerspace-resources/synthesis")
-    gpt_dir = Path("docs/ai-makerspace-resources-gpt-oss/synthesis")
+    if qwen_dir is None:
+        qwen_dir = Path("docs/ai-makerspace-resources/synthesis")
+    else:
+        qwen_dir = Path(qwen_dir)
+        
+    if gpt_dir is None:
+        gpt_dir = Path("docs/ai-makerspace-resources-gpt-oss/synthesis")
+    else:
+        gpt_dir = Path(gpt_dir)
+    
+    # Validate directories exist
+    if not qwen_dir.exists():
+        print(f"Warning: Qwen directory not found: {qwen_dir}")
+    if not gpt_dir.exists():
+        print(f"Warning: GPT-OSS directory not found: {gpt_dir}")
+        return
     
     topics = [
         "21_vector_memory",
@@ -86,18 +101,33 @@ def compare_topics():
     print("\n## Detailed Analysis for Vector Memory (with transcript)\n")
     
     # Detailed comparison for Vector Memory
-    qwen_vm = analyze_markdown(list(qwen_dir.glob("21_vector_memory*.md"))[0])
-    gpt_vm = analyze_markdown(gpt_dir / "21_vector_memory.md")
-    
-    print("### Content Structure")
-    print(f"- **Qwen2.5**: {qwen_vm['total_chars']:,} chars, {qwen_vm['code_blocks']} code blocks")
-    print(f"- **GPT-OSS**: {gpt_vm['total_chars']:,} chars, {gpt_vm['code_blocks']} code blocks")
-    print(f"- **Ratio**: GPT-OSS has {gpt_vm['total_chars']/qwen_vm['total_chars']:.1f}x more content")
-    
-    print("\n### Code Content")
-    print(f"- **Qwen2.5**: {qwen_vm['code_lines']} lines of code")
-    print(f"- **GPT-OSS**: {gpt_vm['code_lines']} lines of code")
-    print(f"- **Ratio**: GPT-OSS has {gpt_vm['code_lines']/qwen_vm['code_lines']:.1f}x more code")
+    try:
+        qwen_files = list(qwen_dir.glob("21_vector_memory*.md"))
+        gpt_file = gpt_dir / "21_vector_memory.md"
+        
+        if qwen_files and gpt_file.exists():
+            qwen_vm = analyze_markdown(qwen_files[0])
+            gpt_vm = analyze_markdown(gpt_file)
+            
+            print("### Content Structure")
+            print(f"- **Qwen2.5**: {qwen_vm['total_chars']:,} chars, {qwen_vm['code_blocks']} code blocks")
+            print(f"- **GPT-OSS**: {gpt_vm['total_chars']:,} chars, {gpt_vm['code_blocks']} code blocks")
+            print(f"- **Ratio**: GPT-OSS has {gpt_vm['total_chars']/qwen_vm['total_chars']:.1f}x more content")
+            
+            print("\n### Code Content")
+            print(f"- **Qwen2.5**: {qwen_vm['code_lines']} lines of code")
+            print(f"- **GPT-OSS**: {gpt_vm['code_lines']} lines of code")
+            if qwen_vm['code_lines'] > 0:
+                print(f"- **Ratio**: GPT-OSS has {gpt_vm['code_lines']/qwen_vm['code_lines']:.1f}x more code")
+        else:
+            print("Note: Vector Memory files not found for comparison")
+    except Exception as e:
+        print(f"Error analyzing Vector Memory: {e}")
 
 if __name__ == "__main__":
-    compare_topics()
+    parser = argparse.ArgumentParser(description="Compare synthesis quality between models")
+    parser.add_argument("--qwen-dir", help="Path to qwen2.5 synthesis directory")
+    parser.add_argument("--gpt-dir", help="Path to GPT-OSS synthesis directory")
+    
+    args = parser.parse_args()
+    compare_topics(args.qwen_dir, args.gpt_dir)
