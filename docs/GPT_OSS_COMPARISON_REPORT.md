@@ -18,9 +18,9 @@ This report provides a first look at GPT-OSS:20b performance compared to the old
 ## Performance Analysis
 
 ### With Actual Transcript (Vector Memory Only)
-- **Qwen2.5-Coder**: ~5-10 minutes (estimated from previous runs)
-- **GPT-OSS**: 3.8 minutes for 8,215 char prompt
-- **Output**: 27.5 KB from GPT-OSS
+- **Qwen2.5-Coder**: ~5-10 minutes (estimated, no precise timing logged)
+- **GPT-OSS**: 3.8 minutes for 8,215 char prompt (precisely measured)
+- **Output**: 27.5 KB from GPT-OSS vs 9.8 KB from qwen2.5
 
 ### Without Transcripts (9 other topics)
 - **GPT-OSS**: 1.9-2.9 minutes
