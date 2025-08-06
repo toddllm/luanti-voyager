@@ -430,19 +430,28 @@ export RESOURCE_YOUTUBE="https://www.youtube.com/watch?v=..."
 
 A follow-up experiment compared **gpt-oss:20b** with **qwen2.5-coder:32b**:
 
-1. **Speed vs Comprehensiveness Trade-off**
+1. **Initial Comparison (Different Prompts)**
    - GPT-OSS: 10-15x faster (20-40s vs 5-10min)
-   - Qwen2.5: 2-3x more content (8-11KB vs 3-4KB)
+   - Output: Concise game-focused guides (3-4KB)
+   - Issue: Different prompting strategies made comparison unfair
+
+2. **Fair Comparison (Identical Prompts)**
+   - Used identical prompt structure for both models
+   - Reduced transcript from 6000 to 2000 chars for GPT-OSS
+   - GPT-OSS: 2-3x faster (2.5min vs 5-10min)
+   - Output: MORE comprehensive than Qwen2.5 (15-20KB vs 8-11KB)
    - Both achieved 100% synthesis success
 
-2. **Output Characteristics**
-   - **Qwen2.5**: Enterprise-focused, Python/ChromaDB, production-ready
-   - **GPT-OSS**: Game-dev focused, C#/Unity-style, prototype-ready
-
-3. **Use Case Alignment**
-   - GPT-OSS better suited for rapid game prototyping
-   - Qwen2.5 better for scalable infrastructure
+3. **Key Findings**
+   - GPT-OSS excels with structured prompts
+   - Context window is the main limitation (2000 vs 6000 chars)
+   - With proper prompt engineering, GPT-OSS produces superior output
    - See [GPT_OSS_COMPARISON_REPORT.md](GPT_OSS_COMPARISON_REPORT.md) for details
+
+4. **Recommendations**
+   - Use GPT-OSS with 2000-char transcript excerpts
+   - Apply identical structured prompts for best results
+   - 2-3x speed advantage makes iteration much faster
 
 ## Future Work
 

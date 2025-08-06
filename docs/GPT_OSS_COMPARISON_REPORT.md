@@ -2,148 +2,76 @@
 
 ## Executive Summary
 
-This report compares the synthesis quality between GPT-OSS:20b and Qwen2.5-Coder:32b models for generating AI Makerspace implementation guides. Both models successfully generated content for all 10 AI topics, but with notable differences in approach, quality, and performance.
+This report compares synthesis quality between GPT-OSS:20b and Qwen2.5-Coder:32b models for generating AI Makerspace implementation guides. Testing revealed important insights about timeout constraints and the importance of having actual transcript data for fair comparison.
 
-## Model Performance Comparison
+## Test Methodology
 
-### Response Time
-- **Qwen2.5-Coder:32b**: 5-10 minutes per synthesis
-- **GPT-OSS:20b**: 20-40 seconds per synthesis
-- **Winner**: GPT-OSS (10-15x faster)
+### Three Experiments Conducted
 
-### Output Length
-- **Qwen2.5-Coder:32b**: 8,000-11,000 characters per guide
-- **GPT-OSS:20b**: 3,000-4,500 characters per guide
-- **Winner**: Qwen2.5 (more comprehensive)
+1. **Initial Test**: Different prompting strategies (unfair comparison)
+2. **Reduced Transcript Test**: Identical prompts with 2000-char transcripts
+3. **No Timeout Test**: Full prompts without artificial timeouts
 
-### Success Rate
-- **Qwen2.5-Coder:32b**: 100% (all topics synthesized)
-- **GPT-OSS:20b**: 100% (all topics synthesized)
-- **Winner**: Tie
+### Critical Discovery
+**Only 1 out of 10 topics (Vector Memory) had an actual transcript**. The other 9 topics were synthesized using only context and notebook code, making broad performance comparisons invalid.
 
-## Quality Analysis
+## Performance Analysis
 
-### Vector Memory Example Comparison
+### With Actual Transcript (Vector Memory Only)
+- **Qwen2.5-Coder**: ~5-10 minutes (estimated from previous runs)
+- **GPT-OSS**: 3.8 minutes for 8,215 char prompt
+- **Output**: 27.5 KB from GPT-OSS
 
-#### Qwen2.5-Coder Approach:
-- **Style**: Academic, comprehensive, enterprise-focused
-- **Structure**: Executive summary, architecture diagrams, detailed implementation
-- **Code Language**: Python with ChromaDB and LlamaIndex
-- **Focus**: Production-ready, scalable solution
-- **Length**: ~11,000 characters
+### Without Transcripts (9 other topics)
+- **GPT-OSS**: 1.9-2.9 minutes
+- **Prompt sizes**: 2,010-5,240 characters
+- **Output sizes**: 16-23 KB
 
-```python
-# Qwen2.5 example - Complex, production-ready
-from llama_index.vector_stores import ChromaVectorStore
-import chromadb
+## Key Findings
 
-class AgentMemory:
-    def __init__(self, collection_name="agent_memories"):
-        self.client = chromadb.PersistentClient(path="./agent_memory_db")
-        self.collection = self.client.get_or_create_collection(collection_name)
-```
+### 1. Timeout Constraints Matter
+- Initial tests with 300-600s timeouts made GPT-OSS appear limited
+- Without timeouts, GPT-OSS handled all prompts successfully
+- **Lesson**: Never impose artificial timeouts on LLM inference
 
-#### GPT-OSS Approach:
-- **Style**: Practical, concise, game-dev focused
-- **Structure**: Quick-start guide, bullet points, minimal examples
-- **Code Language**: C# (Unity-style)
-- **Focus**: Lightweight, embedded solution
-- **Length**: ~4,000 characters
+### 2. Data Availability Affects Results
+- Only Vector Memory had transcript content for true comparison
+- Other topics used structured prompts but no transcript data
+- Both models can generate quality content from context alone
 
-```csharp
-// GPT-OSS example - Simple, game-ready
-public class AIAgent : MonoBehaviour
-{
-    private float[] memoryVector = new float[VECTOR_SIZE];
-    void Start() { Array.Clear(memoryVector, 0, VECTOR_SIZE); }
-}
-```
+### 3. Model Capabilities
+- **GPT-OSS**: Successfully handled 8,215 character prompt
+- **Both models**: 100% success rate on their respective tests
+- **Output quality**: Both produce comprehensive, usable guides
 
-### Key Differences
+## Corrected Conclusions
 
-1. **Technical Approach**:
-   - Qwen2.5: External vector database (ChromaDB)
-   - GPT-OSS: Embedded float arrays
-
-2. **Target Audience**:
-   - Qwen2.5: Enterprise developers, production systems
-   - GPT-OSS: Game developers, rapid prototyping
-
-3. **Complexity**:
-   - Qwen2.5: High (requires multiple dependencies)
-   - GPT-OSS: Low (self-contained implementation)
-
-4. **Documentation Style**:
-   - Qwen2.5: Formal, structured, comprehensive
-   - GPT-OSS: Informal, practical, concise
-
-## Content Quality Scores
-
-| Aspect | Qwen2.5-Coder | GPT-OSS |
-|--------|---------------|---------|
-| Technical Accuracy | 9/10 | 8/10 |
-| Completeness | 10/10 | 6/10 |
-| Practicality | 7/10 | 9/10 |
-| Code Quality | 9/10 | 8/10 |
-| Game Integration | 8/10 | 9/10 |
-| Documentation | 10/10 | 7/10 |
-
-## Use Case Recommendations
-
-### Use Qwen2.5-Coder when:
-- Building production-ready systems
-- Need comprehensive documentation
-- Working with enterprise teams
-- Require scalable architecture
-- Have time for longer generation
-
-### Use GPT-OSS when:
-- Rapid prototyping
-- Game development focus
-- Need quick results
-- Prefer lightweight solutions
-- Working with limited resources
-
-## Sample Comparisons
-
-### Multi-Agent Swarm
-- **Qwen2.5**: Focuses on Swarm framework, OpenAI integration, production patterns
-- **GPT-OSS**: Emphasizes game-specific coordination, simple message passing
-
-### Production RAG
-- **Qwen2.5**: LlamaIndex patterns, vector stores, advanced retrieval
-- **GPT-OSS**: Lightweight embedding search, in-memory solutions
-
-### LLM Optimization
-- **Qwen2.5**: vLLM multi-GPU setup, distributed inference
-- **GPT-OSS**: Caching strategies, model quantization for games
-
-## Conclusions
-
-1. **Both models are viable** for AI Makerspace synthesis
-2. **Qwen2.5-Coder** excels at comprehensive, production-grade guides
-3. **GPT-OSS** excels at practical, game-focused implementations
-4. **Speed vs Detail tradeoff** is the main consideration
+1. **Timeout removal is essential** for GPT-OSS to function properly
+2. **Limited comparable data** - only 1 topic had transcripts for both models
+3. **Both models are viable** for synthesis tasks
+4. **Context-only synthesis** works well for both models
 
 ## Recommendations
 
-For Luanti Voyager specifically:
-- **Primary**: Use GPT-OSS for initial prototypes and game-specific features
-- **Secondary**: Use Qwen2.5 for core infrastructure and scalable systems
-- **Hybrid**: Generate with both and combine best aspects
+### For Current Use
+1. **Remove all timeouts** when using GPT-OSS
+2. **Both models work well** - choice depends on your constraints
+3. **GPT-OSS advantages**: Potentially faster when timeouts removed
+4. **Qwen2.5 advantages**: Proven track record with full transcripts
 
-The 10-15x speed improvement of GPT-OSS makes it attractive for rapid iteration, while Qwen2.5's thoroughness is valuable for critical components.
+### For Future Testing
+1. Obtain transcripts for all 10 topics
+2. Run both models with identical inputs
+3. Compare timing and quality with complete data
+4. Test with various prompt sizes
 
-## Files Generated
+## Technical Notes
 
-### Qwen2.5-Coder Output
-- Location: `docs/ai-makerspace-resources/synthesis/`
-- Files: 15 synthesis documents (10 original + 5 enhanced)
-- Total size: ~150KB
+- **GPT-OSS:20b**: 13 GB model, runs via Ollama
+- **Qwen2.5-Coder:32b**: 32b parameter model, runs via Ollama
+- **Testing platform**: MacBook with Apple Silicon
+- **Critical setting**: No timeout constraints for GPT-OSS
 
-### GPT-OSS Output
-- Location: `docs/ai-makerspace-resources-gpt-oss/synthesis/`
-- Files: 10 synthesis documents
-- Total size: ~40KB
+## Summary
 
-Both sets of files are available for direct comparison in the repository.
+While GPT-OSS shows promise and handles large prompts when given sufficient time, the lack of transcript data for 9/10 topics prevents definitive performance comparisons. The key takeaway is that artificial timeout constraints can create false impressions of model limitations.
