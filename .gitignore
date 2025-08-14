@@ -61,3 +61,6 @@ test-server/test_world/
 test-server/test-server.log
 test-server/test-server-output.log
 docs/ai-makerspace-resources/audio/*.mp3
+
+# Ollama traffic logs (too many)
+logs/ollama_traffic/

@@ -1,0 +1,25 @@
+# Large media files
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+
+# Frame images (too many, too large)
+gpt-oss-harmony/frames/
+
+# Temporary files
+*.pid
+*.log
+processing.log
+gpt_oss_analysis.log
+
+# Old/renamed directories
+multi-agent-systems/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
