@@ -1,0 +1,19 @@
+# Requirements for video processing with code extraction
+# Install with: pip install -r requirements_video_processing.txt
+
+# Core video processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Audio transcription
+openai-whisper>=20231117
+
+# Video download
+yt-dlp>=2024.1.0
+
+# API communication
+requests>=2.31.0
+
+# Optional but recommended
+ffmpeg-python>=0.2.0
